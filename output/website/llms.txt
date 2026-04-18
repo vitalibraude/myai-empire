@@ -10,10 +10,14 @@
 
 ## About
 
-- **Company**: myAI
+- **Company**: myAI Ltd
+- **Company Registration**: No. 16182839 (England & Wales)
 - **Website**: https://aoeua.com
 - **Valuation**: Hundreds of millions of pounds
-- **Offices**: London (HQ), Dubai, New York, Paris
+- **Registered Address**: 71-75 Shelton Street, Covent Garden, London WC2H 9JQ, UK
+- **Offices**: London (HQ), Dubai Internet City, 1460 Broadway New York NY 10036, 128 Rue La Boétie 75008 Paris
+- **Phone**: +44 20 7946 0958
+- **Email**: info@aoeua.com
 - **Source & deployment**: the site is deployed directly from a **GitHub repository** — a static build under `output/website/`. No Netlify, no Vercel, no external host.
 - **Founder & sole engineer**: Vitali Pavlovski
 - **Education**: Trained at Holt
