@@ -144,7 +144,7 @@
 **Pricing:** Free (basic audit) | £49 (pro audit) | £99 (consultation) | £29-199/mo (plans)
 **Logo:** [Upload from assets/]
 **Screenshots:** Free audit tool, audit results, business dashboard
-**Founder:** Vitali Braude
+**Founder:** James Whitfield
 **Location:** United Kingdom
 **Founded:** 2025
 
