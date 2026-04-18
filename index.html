@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A fully autonomous AI-powered platform that builds, markets, and scales digital businesses â€” without human intervention.">
-    <title>myAI â€” Autonomous AI for Business</title>
-    <style>
+    <title>myAI â€” Autonomous AI for Business</title>    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300d4ff'/%3E%3Cstop offset='100%25' stop-color='%237b2ff7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='18' width='100' height='100' fill='url(%23g)'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='52' font-weight='bold' fill='white' font-family='sans-serif'%3EmA%3C/text%3E%3C/svg%3E">    <style>
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -15,9 +14,18 @@
         .cta-button {
             display: inline-block; padding: 1rem 3rem; font-size: 1.15rem;
             border: none; border-radius: 50px;
-            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7,#ff6b6b,#00d4ff);
+            background-size:300% 100%;
             color: white; cursor: pointer; text-decoration: none; font-weight: 600;
             transition: transform 0.3s, box-shadow 0.3s;
+            animation: gradientShift 3s ease infinite, glow 4s ease-in-out infinite;
+            position:relative; overflow:hidden;
+        }
+        .cta-button::after {
+            content:''; position:absolute; top:0; left:-100%;
+            width:60%; height:100%;
+            background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);
+            animation:shimmer 2.5s ease-in-out infinite;
         }
         .cta-button:hover {
             transform: translateY(-3px);
@@ -32,6 +40,7 @@
         .cta-secondary:hover { border-color: #00d4ff; color: #00d4ff; }
         .section-title {
             text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d4ff;
+            animation: textGlow 4s ease-in-out infinite;
         }
         .section-subtitle {
             text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;
@@ -54,9 +63,11 @@
         }
         .nav-brand {
             font-size: 1.5rem; font-weight: 800;
-            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7,#ff6b6b,#00d4ff);
+            background-size:300% 100%;
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             background-clip: text;
+            animation: gradientShift 4s ease infinite;
         }
         .nav-links { display: flex; gap: 2rem; }
         .nav-links a {
@@ -66,9 +77,11 @@
         .nav-links a:hover { color: #00d4ff; }
         .nav-cta {
             padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.9rem;
-            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7,#00d4ff);
+            background-size:200% 100%;
             color: white; text-decoration: none; font-weight: 600;
             transition: transform 0.3s, box-shadow 0.3s;
+            animation: gradientShift 3s ease infinite, glow 4s ease-in-out infinite;
         }
         .nav-cta:hover {
             transform: translateY(-2px);
@@ -80,6 +93,12 @@
         @keyframes fadeInUp { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
         @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
         @keyframes glow { 0%,100%{box-shadow:0 0 20px rgba(0,212,255,.1)} 50%{box-shadow:0 0 40px rgba(123,47,247,.3)} }
+        @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        @keyframes shimmer { 0%{left:-100%} 100%{left:200%} }
+        @keyframes borderGlow { 0%,100%{border-color:rgba(0,212,255,.2)} 50%{border-color:rgba(123,47,247,.6)} }
+        @keyframes wiggle { 0%,100%{transform:rotate(0deg) translateY(0)} 25%{transform:rotate(3deg) translateY(-6px)} 75%{transform:rotate(-3deg) translateY(-10px)} }
+        @keyframes breathe { 0%,100%{opacity:.7;transform:scale(1)} 50%{opacity:1;transform:scale(1.05)} }
+        @keyframes textGlow { 0%,100%{text-shadow:0 0 10px rgba(0,212,255,.3)} 50%{text-shadow:0 0 30px rgba(123,47,247,.6),0 0 60px rgba(0,212,255,.3)} }
 
         #particles {
             position:fixed; top:0; left:0; width:100%; height:100%;
@@ -101,11 +120,12 @@
         }
         .hero h1 {
             font-size:4.5rem; font-weight:900;
-            background:linear-gradient(90deg,#00d4ff,#7b2ff7,#ff6b6b);
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7,#ff6b6b,#00d4ff);
+            background-size:300% 100%;
             -webkit-background-clip:text; -webkit-text-fill-color:transparent;
             background-clip:text; margin-bottom:.5rem;
             position:relative; z-index:1;
-            animation:fadeInUp 1s ease-out;
+            animation:fadeInUp 1s ease-out, gradientShift 4s ease infinite, textGlow 3s ease-in-out infinite;
         }
         .hero .tagline {
             font-size:1.6rem; color:#c0c0c0; max-width:700px;
@@ -123,7 +143,7 @@
             animation:fadeInUp 1s ease-out .5s both;
         }
         .stat-item { text-align:center; }
-        .stat-item .number { font-size:2.5rem; font-weight:800; color:#00d4ff; }
+        .stat-item .number { font-size:2.5rem; font-weight:800; color:#00d4ff; animation:breathe 3s ease-in-out infinite; }
         .stat-item .label { color:#666; font-size:.9rem; }
         .cta-group {
             display:flex; gap:1rem;
@@ -139,7 +159,19 @@
             background:#111; border:1px solid #222; border-radius:16px;
             padding:2.5rem; transition:transform .4s,border-color .4s,box-shadow .4s;
             position:relative; overflow:hidden;
+            animation: borderGlow 4s ease-in-out infinite, glow 5s ease-in-out infinite;
         }
+        .service-card::after {
+            content:''; position:absolute; top:0; left:-100%;
+            width:60%; height:100%;
+            background:linear-gradient(90deg,transparent,rgba(255,255,255,.03),transparent);
+            animation:shimmer 5s ease-in-out infinite;
+        }
+        .service-card:nth-child(2) { animation-delay:.4s; }
+        .service-card:nth-child(3) { animation-delay:.8s; }
+        .service-card:nth-child(4) { animation-delay:1.2s; }
+        .service-card:nth-child(5) { animation-delay:1.6s; }
+        .service-card:nth-child(6) { animation-delay:2s; }
         .service-card::before {
             content:''; position:absolute; top:0; left:0;
             width:100%; height:3px;
@@ -151,7 +183,13 @@
             transform:translateY(-8px); border-color:#7b2ff7;
             box-shadow:0 20px 40px rgba(0,0,0,.3);
         }
-        .service-card .icon { font-size:3rem; margin-bottom:1rem; display:block; animation:float 4s ease-in-out infinite; }
+        .service-card .icon { font-size:3rem; margin-bottom:1rem; display:block; animation:wiggle 4s ease-in-out infinite; }
+        .service-card:nth-child(1) .icon { animation-delay:0s; }
+        .service-card:nth-child(2) .icon { animation-delay:.6s; }
+        .service-card:nth-child(3) .icon { animation-delay:1.2s; }
+        .service-card:nth-child(4) .icon { animation-delay:1.8s; }
+        .service-card:nth-child(5) .icon { animation-delay:2.4s; }
+        .service-card:nth-child(6) .icon { animation-delay:3s; }
         .service-card h3 { font-size:1.4rem; margin-bottom:.8rem; color:#7b2ff7; }
         .service-card p { color:#999; }
 
@@ -162,8 +200,11 @@
         }
         .testimonial-card {
             background:#111; border:1px solid #1a1a1a; border-radius:16px; padding:2rem;
+            animation: borderGlow 5s ease-in-out infinite;
+            transition: transform .4s, box-shadow .4s;
         }
-        .testimonial-card .stars { color:#ffd700; margin-bottom:1rem; font-size:1.2rem; }
+        .testimonial-card:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 15px 40px rgba(0,212,255,.15); }
+        .testimonial-card .stars { color:#ffd700; margin-bottom:1rem; font-size:1.2rem; animation:breathe 2s ease-in-out infinite; }
         .testimonial-card .text { color:#999; font-style:italic; margin-bottom:1rem; }
         .testimonial-card .author { color:#00d4ff; font-weight:600; }
 
@@ -195,7 +236,8 @@
             text-align: center; padding: 3rem 2rem; color: #555; font-size: 0.9rem;
             border-top: 1px solid #1a1a1a; background: #0a0a0a;
         }
-        footer a { color: #00d4ff; text-decoration: none; }
+        footer a { color: #00d4ff; text-decoration: none; transition: color .3s, text-shadow .3s; }
+        footer a:hover { color:#7b2ff7; text-shadow:0 0 10px rgba(123,47,247,.4); }
 
 
         @media(max-width:768px) {
@@ -417,7 +459,27 @@
                 if(t) t.scrollIntoView({ behavior:'smooth' });
             });
         });
+
+        // Parallax on scroll
+        window.addEventListener('scroll', () => {
+            const s = window.scrollY;
+            const hero = document.querySelector('.hero');
+            if(hero) hero.style.backgroundPositionY = (s * 0.3) + 'px';
+        });
+
+        // Tilt effect on cards
+        document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const r = card.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - 0.5;
+                const y = (e.clientY - r.top) / r.height - 0.5;
+                card.style.transform = 'perspective(600px) rotateY(' + (x*8) + 'deg) rotateX(' + (-y*8) + 'deg) translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
     </script>
-    <div style="position:fixed;bottom:8px;left:10px;color:rgba(255,255,255,0.35);font-size:11px;font-family:sans-serif;z-index:9999;pointer-events:none;">v2.1</div>
+    <div style="position:fixed;bottom:8px;left:10px;color:rgba(255,255,255,0.35);font-size:11px;font-family:sans-serif;z-index:9999;pointer-events:none;">v2.2</div>
 </body>
 </html>
