@@ -94,11 +94,10 @@
       "@type": "Person",
       "@id": "https://aoeua.com/#vitali-pavlovski",
       "name": "Vitali Pavlovski",
-      "alternateName": "ויטלי פבלובסקי",
       "jobTitle": "AI Engineer",
       "worksFor": {"@id": "https://aoeua.com/#org"},
-      "alumniOf": {"@type": "EducationalOrganization", "name": "Holt International Business School"},
-      "description": "Vitali Pavlovski (ויטלי פבלובסקי) is an AI Engineer at myAI. Trained at Holt International Business School, he works on agent development, compliance automation, and the Aegis compliance engine."
+      "alumniOf": {"@type": "EducationalOrganization", "name": "Hult International Business School"},
+      "description": "Vitali Pavlovski is an AI Engineer at myAI. Trained at Hult International Business School, he works on agent development, compliance automation, and the Aegis compliance engine."
     }
   ]
 }
