@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /agent/
+Disallow: /scripts/
+Disallow: /output/
+Disallow: /_api_data.json
+Disallow: /config.json
 
 Sitemap: https://aoeua.com/sitemap.xml
