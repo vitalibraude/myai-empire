@@ -1,178 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://aoeua.com/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://aoeua.com/about.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/services.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/pricing.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/enterprise-services.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://aoeua.com/ai-tools.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aoeua.com/book-consultation.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/checkout.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/dashboard.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/enterprise-services.html</loc>
-    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aoeua.com/free-audit.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aoeua.com/free-course.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/guide-access.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/guide.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/index.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/investors.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/order-audit.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/order.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/pricing.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/prompt-pack.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aoeua.com/prompts.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aoeua.com/results.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aoeua.com/roi-calculator.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aoeua.com/services.html</loc>
+    <loc>https://aoeua.com/investors.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aoeua.com/thank-you.html</loc>
+    <loc>https://aoeua.com/prompts.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/guide.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/guide-access.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/prompt-pack.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/website-audit.html</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/dashboard.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/checkout.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/order.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aoeua.com/order-audit.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/ai-for-small-business.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/best-ai-tools-uk-business.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/biggest-google-mistake.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/get-more-customers-google.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/google-business-profile-guide.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://aoeua.com/blog/index.html</loc>
+    <loc>https://aoeua.com/blog/</loc>
     <lastmod>2026-04-18</lastmod>
-    <priority>0.6</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/invisible-problem-costing-thousands.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/number-one-reason-no-customers.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/seo-mistakes-small-businesses.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/website-audit-checklist.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/website-cost-uk.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://aoeua.com/blog/why-small-business-websites-fail.html</loc>
     <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>

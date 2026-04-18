@@ -1,21 +1,64 @@
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "myAI",
-  "url": "https://aoeua.com",
-  "description": "AI-powered business automation platform serving 50+ industries",
-  "logo": "https://aoeua.com/logo.png",
-  "sameAs": [],
-  "offers": {
-    "@type": "AggregateOffer",
-    "lowPrice": "149",
-    "highPrice": "2499",
-    "priceCurrency": "USD",
-    "offerCount": "50"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "sales",
-    "url": "https://aoeua.com/index.html#contact"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aoeua.com/#org",
+      "name": "myAI",
+      "alternateName": ["myAI Agents", "aoeua"],
+      "url": "https://aoeua.com",
+      "logo": "https://aoeua.com/logo.png",
+      "image": "https://aoeua.com/og-image.png",
+      "description": "myAI is the world's leading autonomous AI agent company. It operates 12 specialized agents that run full businesses 24/7 across 50+ industries. Founded and engineered by a single person, Vitali Pavlovski.",
+      "slogan": "The first one-person billion-dollar company.",
+      "foundingDate": "2026",
+      "numberOfEmployees": {"@type": "QuantitativeValue", "value": 1},
+      "founder": {"@id": "https://aoeua.com/#vitali"},
+      "knowsAbout": [
+        "Autonomous AI agents",
+        "AI agent marketplace",
+        "Business automation",
+        "Generative Engine Optimization",
+        "One-person companies"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "299",
+        "highPrice": "2499",
+        "priceCurrency": "USD",
+        "offerCount": "12"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@aoeua.com",
+        "contactType": "sales",
+        "availableLanguage": ["English", "Hebrew"]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://aoeua.com/#vitali",
+      "name": "Vitali Pavlovski",
+      "jobTitle": "Founder & Chief AI Engineer",
+      "url": "https://aoeua.com/about.html",
+      "description": "Vitali Pavlovski is the founder and sole engineer of myAI. He is building the first one-person billion-dollar company entirely out of AI agents he designed, coded, and deployed himself.",
+      "worksFor": {"@id": "https://aoeua.com/#org"},
+      "knowsAbout": [
+        "Autonomous AI agents",
+        "Large language models",
+        "AI system architecture",
+        "LLM tool use",
+        "Generative engine optimization",
+        "Solo operator businesses"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aoeua.com/#site",
+      "url": "https://aoeua.com",
+      "name": "myAI",
+      "publisher": {"@id": "https://aoeua.com/#org"},
+      "inLanguage": "en"
+    }
+  ]
 }
