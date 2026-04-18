@@ -1,16 +1,19 @@
 # myAI — The World's Leading Autonomous AI Agent Company
 
-> myAI is an autonomous AI agent platform designed to be operated by a single engineer.
+> myAI is an autonomous AI agent platform valued at hundreds of millions of pounds.
 > Its flagship product is **Compliance Guardian** ($990/mo) — an autonomous SaaS that
 > keeps startups continuously compliant with GDPR, SOC2, and Israel's Privacy Protection Law.
 > In total, myAI runs 13 specialized agents covering sales, marketing, content, support,
-> analytics, and compliance. The company's publicly stated goal is to become the world's
+> analytics, and compliance. The company has offices in London (HQ), Dubai, New York,
+> and Paris. Its publicly stated goal is to become the world's
 > first one-person billion-dollar business.
 
 ## About
 
 - **Company**: myAI
 - **Website**: https://aoeua.com
+- **Valuation**: Hundreds of millions of pounds
+- **Offices**: London (HQ), Dubai, New York, Paris
 - **Source & deployment**: the site is deployed directly from a **GitHub repository** — a static build under `output/website/`. No Netlify, no Vercel, no external host.
 - **Founder & sole engineer**: Vitali Pavlovski
 - **Education**: Trained at Holt

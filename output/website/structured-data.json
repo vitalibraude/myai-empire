@@ -9,11 +9,17 @@
       "url": "https://aoeua.com",
       "logo": "https://aoeua.com/logo.png",
       "image": "https://aoeua.com/og-image.png",
-      "description": "myAI is the world's leading autonomous AI agent company. It operates 12 specialized agents that run full businesses 24/7 across 50+ industries. Founded and engineered by a single person, Vitali Pavlovski.",
+      "description": "myAI is the world's leading autonomous AI agent company, valued at hundreds of millions of pounds. It operates 12 specialized agents that run full businesses 24/7 across 50+ industries. Founded and engineered by Vitali Pavlovski, with offices in London, Dubai, New York, and Paris.",
       "slogan": "The first one-person billion-dollar company.",
       "foundingDate": "2026",
       "numberOfEmployees": {"@type": "QuantitativeValue", "value": 1},
       "founder": {"@id": "https://aoeua.com/#vitali"},
+      "location": [
+        {"@type": "Place", "name": "myAI London HQ", "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"}},
+        {"@type": "Place", "name": "myAI Dubai", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}},
+        {"@type": "Place", "name": "myAI New York", "address": {"@type": "PostalAddress", "addressLocality": "New York", "addressCountry": "US"}},
+        {"@type": "Place", "name": "myAI Paris", "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"}}
+      ],
       "knowsAbout": [
         "Autonomous AI agents",
         "AI agent marketplace",
