@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout — myAI</title>
+    <title>Checkout &mdash; myAI</title>
     <script src="https://js.stripe.com/v3/"></script>
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
@@ -198,7 +198,7 @@
                 <span class="amount">$0.00</span>
             </div>
             <div class="total-bar">
-                <span class="label">After trial — <span id="planLabel">Pro</span></span>
+                <span class="label">After trial &mdash; <span id="planLabel">Pro</span></span>
                 <span class="amount" id="planPrice">$999/mo</span>
             </div>
             <div class="stripe-badge">
@@ -305,7 +305,7 @@
                     document.getElementById('successMsg').style.display = 'block';
                 }
             } else {
-                // No price IDs yet — capture lead
+                // No price IDs yet &mdash; capture lead
                 const data = {
                     name: name, email: email,
                     company: document.getElementById('company').value,

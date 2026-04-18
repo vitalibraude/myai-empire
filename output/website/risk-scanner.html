@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free 60-second compliance risk scan. See where your startup stands on GDPR, SOC2, and Israel's Privacy Protection Law — before an enterprise buyer asks.">
+    <meta name="description" content="Free 60-second compliance risk scan. See where your startup stands on GDPR, SOC2, and Israel's Privacy Protection Law &mdash; before an enterprise buyer asks.">
     <link rel="canonical" href="https://aoeua.com/risk-scanner.html">
-    <title>Free Compliance Risk Scan — 60 seconds | myAI Compliance Guardian</title>
+    <title>Free Compliance Risk Scan &mdash; 60 seconds | myAI Compliance Guardian</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -367,7 +367,7 @@
                     Are enterprise customers asking for SOC2 or a security questionnaire?
                 </label>
                 <div class="options">
-                    <label class="option"><input type="radio" name="enterprise" value="yes"> Yes — and it's slowing deals</label>
+                    <label class="option"><input type="radio" name="enterprise" value="yes"> Yes &mdash; and it's slowing deals</label>
                     <label class="option"><input type="radio" name="enterprise" value="soon"> Starting to, expect it within 6 months</label>
                     <label class="option"><input type="radio" name="enterprise" value="no"> Not yet</label>
                 </div>
@@ -413,7 +413,7 @@
 
         <div class="report" id="reportPanel">
             <div class="score-panel" id="scorePanel">
-                <div class="score-num" id="scoreNum">—</div>
+                <div class="score-num" id="scoreNum">&mdash;</div>
                 <div class="score-label" id="scoreLabel">out of 100 · Compliance Readiness</div>
                 <div class="score-verdict" id="scoreVerdict"></div>
             </div>
@@ -423,8 +423,8 @@
 
             <div class="final-cta-box">
                 <h3>Fix all of this in 10 minutes.</h3>
-                <p id="ctaCopy">Compliance Guardian deploys Aegis — an autonomous AI agent — that closes every gap above continuously, for $990/mo. No lawyers. No consultants.</p>
-                <a href="/checkout.html?plan=compliance-guardian" class="cta-primary">Deploy Aegis — $990/mo →</a>
+                <p id="ctaCopy">Compliance Guardian deploys Aegis &mdash; an autonomous AI agent &mdash; that closes every gap above continuously, for $990/mo. No lawyers. No consultants.</p>
+                <a href="/checkout.html?plan=compliance-guardian" class="cta-primary">Deploy Aegis &mdash; $990/mo →</a>
                 <p style="margin-top:1rem; color:#666; font-size:0.85rem;">Or <a href="/compliance.html" style="color:#00d4ff;">read how Aegis works first</a>.</p>
             </div>
         </div>
@@ -506,7 +506,7 @@
             if (!have.includes('dpa')) {
                 score -= 10;
                 findings.push({ level: 'warn', title: 'No DPA template ready to sign.',
-                    desc: 'Every B2B deal will require one. Preparing it reactively adds 1–3 weeks per enterprise deal.' });
+                    desc: 'Every B2B deal will require one. Preparing it reactively adds 1&ndash;3 weeks per enterprise deal.' });
             }
             // Data map
             if (!have.includes('data-map')) {
@@ -546,7 +546,7 @@
             if (data.includes('health')) {
                 score -= 10;
                 findings.push({ level: 'critical', title: 'Processing health data without visible safeguards.',
-                    desc: 'GDPR Art. 9 classifies health data as "special category" — explicit consent and DPIA required. ISR-PPL has parallel provisions.' });
+                    desc: 'GDPR Art. 9 classifies health data as "special category" &mdash; explicit consent and DPIA required. ISR-PPL has parallel provisions.' });
             }
             if (data.includes('minors')) {
                 score -= 8;
@@ -556,7 +556,7 @@
             if (data.includes('biometric')) {
                 score -= 8;
                 findings.push({ level: 'critical', title: 'Processing biometric data.',
-                    desc: 'Special category data — requires DPIA, explicit consent, and in some EU states, prior authority notification.' });
+                    desc: 'Special category data &mdash; requires DPIA, explicit consent, and in some EU states, prior authority notification.' });
             }
             // Israel amendment 13
             if (israelApplies) {
@@ -564,7 +564,7 @@
                     desc: 'Effective 2024, Israeli regulators now have GDPR-comparable enforcement powers including fines of up to 5M ILS.' });
                 if (!have.includes('dpo')) {
                     score -= 5;
-                    findings.push({ level: 'warn', title: 'No DPO — required under ISR-PPL Amendment 13.',
+                    findings.push({ level: 'warn', title: 'No DPO &mdash; required under ISR-PPL Amendment 13.',
                         desc: 'If you process data on more than 10,000 data subjects in Israel, a DPO is mandatory.' });
                 }
             }
@@ -584,7 +584,7 @@
             // Positive note if user has done real work
             if (have.length >= 6) {
                 findings.push({ level: 'info', title: `You've done real work on compliance (${have.length}/8).`,
-                    desc: 'The gap now is maintenance — keeping all of this alive as your stack changes. That\'s the exact problem Aegis solves.' });
+                    desc: 'The gap now is maintenance &mdash; keeping all of this alive as your stack changes. That\'s the exact problem Aegis solves.' });
             }
 
             score = Math.max(score, 0);
@@ -610,15 +610,15 @@
             if (score < 50) {
                 panel.classList.add('critical');
                 verdict.textContent = `${company || 'Your startup'} is at critical compliance risk. An enterprise audit today would fail.`;
-                cta.textContent = 'You have 8+ gaps an auditor or enterprise buyer will catch. Aegis closes all of them in 10 minutes of setup — and keeps them closed, continuously, for $990/mo.';
+                cta.textContent = 'You have 8+ gaps an auditor or enterprise buyer will catch. Aegis closes all of them in 10 minutes of setup &mdash; and keeps them closed, continuously, for $990/mo.';
             } else if (score < 80) {
                 panel.classList.add('warn');
-                verdict.textContent = `${company || 'Your startup'} is partially compliant — but the gaps are the expensive kind.`;
+                verdict.textContent = `${company || 'Your startup'} is partially compliant &mdash; but the gaps are the expensive kind.`;
                 cta.textContent = 'You\'ve done some work, but the remaining gaps are exactly the ones that kill enterprise deals. Aegis closes them continuously, for $990/mo.';
             } else {
                 panel.classList.add('ok');
-                verdict.textContent = `${company || 'Your startup'} is in reasonable shape. Your real risk is maintenance — keeping it alive as you grow.`;
-                cta.textContent = 'You\'re ahead of 90% of startups. The failure mode now is drift — policies going stale, new vendors not mapped, evidence lockers not updated. Aegis prevents that for $990/mo.';
+                verdict.textContent = `${company || 'Your startup'} is in reasonable shape. Your real risk is maintenance &mdash; keeping it alive as you grow.`;
+                cta.textContent = 'You\'re ahead of 90% of startups. The failure mode now is drift &mdash; policies going stale, new vendors not mapped, evidence lockers not updated. Aegis prevents that for $990/mo.';
             }
 
             list.innerHTML = findings.map(f =>
