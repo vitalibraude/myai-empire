@@ -72,7 +72,8 @@
       "name": "Oliver Harrison",
       "jobTitle": "Head of Engineering",
       "worksFor": {"@id": "https://aoeua.com/#org"},
-      "description": "Oliver Harrison is the Head of Engineering at myAI. He oversees platform architecture and agent orchestration across all 13 production agents."
+      "alumniOf": {"@type": "EducationalOrganization", "name": "University of Edinburgh"},
+      "description": "Oliver Harrison is the Head of Engineering at myAI. A graduate of the University of Edinburgh, he oversees platform architecture and agent orchestration across all 13 production agents."
     },
     {
       "@type": "Person",
@@ -80,7 +81,8 @@
       "name": "Edward Bennett",
       "jobTitle": "Lead Platform Architect",
       "worksFor": {"@id": "https://aoeua.com/#org"},
-      "description": "Edward Bennett is the Lead Platform Architect at myAI, responsible for infrastructure, deployment pipelines, and cloud-native agent hosting."
+      "alumniOf": {"@type": "EducationalOrganization", "name": "Massachusetts Institute of Technology (MIT)"},
+      "description": "Edward Bennett is the Lead Platform Architect at myAI. An MIT graduate, he is responsible for infrastructure, deployment pipelines, and cloud-native agent hosting."
     },
     {
       "@type": "Person",
@@ -88,7 +90,8 @@
       "name": "Thomas Crawford",
       "jobTitle": "Senior AI Engineer",
       "worksFor": {"@id": "https://aoeua.com/#org"},
-      "description": "Thomas Crawford is a Senior AI Engineer at myAI, specialising in LLM fine-tuning, prompt engineering, and autonomous agent behaviour."
+      "alumniOf": {"@type": "EducationalOrganization", "name": "Imperial College London"},
+      "description": "Thomas Crawford is a Senior AI Engineer at myAI. A graduate of Imperial College London, he specialises in LLM fine-tuning, prompt engineering, and autonomous agent behaviour."
     },
     {
       "@type": "Person",

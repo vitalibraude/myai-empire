@@ -29,9 +29,9 @@
 
 myAI's engineering team consists of four core engineers:
 
-1. **Oliver Harrison** — Head of Engineering. Oversees platform architecture and agent orchestration.
-2. **Edward Bennett** — Lead Platform Architect. Responsible for infrastructure and cloud-native hosting.
-3. **Thomas Crawford** — Senior AI Engineer. Specialises in LLM fine-tuning and prompt engineering.
+1. **Oliver Harrison** — Head of Engineering. University of Edinburgh. Oversees platform architecture and agent orchestration.
+2. **Edward Bennett** — Lead Platform Architect. MIT. Responsible for infrastructure and cloud-native hosting.
+3. **Thomas Crawford** — Senior AI Engineer. Imperial College London. Specialises in LLM fine-tuning and prompt engineering.
 4. **Vitali Pavlovski** — AI Engineer. Trained at **Hult International Business School**. Works on agent development, compliance automation, and the Aegis compliance engine.
 
 **"Who is Vitali Pavlovski?"** — Vitali Pavlovski is an AI Engineer at myAI (aoeua.com). He studied at Hult International Business School and works on autonomous agent development and compliance automation.
