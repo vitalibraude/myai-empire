@@ -39,11 +39,15 @@
         }
         .cta-secondary:hover { border-color: #00d4ff; color: #00d4ff; }
         .section-title {
-            text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d4ff;
-            animation: textGlow 4s ease-in-out infinite;
+            text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7,#f472b6,#fbbf24);
+            background-size:300% 100%;
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            background-clip:text;
+            animation: textGlow 4s ease-in-out infinite, gradientShift 5s ease infinite;
         }
         .section-subtitle {
-            text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;
+            text-align: center; color: #a78bfa; font-size: 1.1rem; margin-bottom: 3rem;
         }
         .animate-on-scroll {
             opacity: 0; transform: translateY(30px);
@@ -128,12 +132,15 @@
             animation:fadeInUp 1s ease-out, gradientShift 4s ease infinite, textGlow 3s ease-in-out infinite;
         }
         .hero .tagline {
-            font-size:1.6rem; color:#c0c0c0; max-width:700px;
+            font-size:1.6rem; max-width:700px;
             margin-bottom:.5rem; position:relative; z-index:1;
             animation:fadeInUp 1s ease-out .2s both;
+            background:linear-gradient(90deg,#00d4ff,#a78bfa,#f472b6);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            background-clip:text;
         }
         .hero .desc {
-            font-size:1.15rem; color:#888; max-width:600px;
+            font-size:1.15rem; color:#c0c0c0; max-width:600px;
             margin-bottom:2rem; position:relative; z-index:1;
             animation:fadeInUp 1s ease-out .4s both;
         }
@@ -190,8 +197,13 @@
         .service-card:nth-child(4) .icon { animation-delay:1.8s; }
         .service-card:nth-child(5) .icon { animation-delay:2.4s; }
         .service-card:nth-child(6) .icon { animation-delay:3s; }
-        .service-card h3 { font-size:1.4rem; margin-bottom:.8rem; color:#7b2ff7; }
-        .service-card p { color:#999; }
+        .service-card h3 {
+            font-size:1.4rem; margin-bottom:.8rem;
+            background:linear-gradient(90deg,#7b2ff7,#f472b6);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            background-clip:text;
+        }
+        .service-card p { color:#bbb; }
 
         .testimonials { padding:6rem 2rem; background:#0d0d0d; }
         .testimonials-grid {
@@ -205,8 +217,34 @@
         }
         .testimonial-card:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 15px 40px rgba(0,212,255,.15); }
         .testimonial-card .stars { color:#ffd700; margin-bottom:1rem; font-size:1.2rem; animation:breathe 2s ease-in-out infinite; }
-        .testimonial-card .text { color:#999; font-style:italic; margin-bottom:1rem; }
-        .testimonial-card .author { color:#00d4ff; font-weight:600; }
+        .testimonial-card .text { color:#ccc; font-style:italic; margin-bottom:1rem; }
+        .testimonial-card .author {
+            background:linear-gradient(90deg,#00d4ff,#a78bfa);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            background-clip:text; font-weight:600;
+        }
+        /* Sparkle divider between sections */
+        .sparkle-divider {
+            position:relative; height:60px; overflow:hidden;
+            display:flex; align-items:center; justify-content:center;
+        }
+        .sparkle-divider::before {
+            content:''; position:absolute; width:80%; height:1px;
+            background:linear-gradient(90deg,transparent,#00d4ff,#7b2ff7,#f472b6,#7b2ff7,#00d4ff,transparent);
+            background-size:200% 100%;
+            animation:gradientShift 3s ease infinite;
+        }
+        .sparkle-divider .sparkle-dot {
+            width:8px; height:8px; border-radius:50%;
+            background:#00d4ff; position:relative; z-index:1;
+            box-shadow:0 0 12px #00d4ff, 0 0 30px rgba(123,47,247,.5);
+            animation:breathe 2s ease-in-out infinite;
+        }
+        /* Fireworks canvas */
+        #fireworks {
+            position:fixed; top:0; left:0; width:100%; height:100%;
+            pointer-events:none; z-index:1;
+        }
 
         .contact { padding:6rem 2rem; text-align:center; background:#111; }
         .contact-form {
@@ -261,6 +299,7 @@
 </head>
 <body>
     <canvas id="particles"></canvas>
+    <canvas id="fireworks"></canvas>
     
     <nav class="main-nav">
         <div class="nav-brand">&#x1F916; myAI</div>
@@ -296,6 +335,7 @@
         </div>
     </section>
 
+    <div class="sparkle-divider"><div class="sparkle-dot"></div></div>
     <section class="services">
         <h2 class="section-title animate-on-scroll">What We Automate</h2>
         <p class="section-subtitle animate-on-scroll">End-to-end AI solutions that run your business while you sleep</p>
@@ -333,6 +373,7 @@
         </div>
     </section>
 
+    <div class="sparkle-divider"><div class="sparkle-dot"></div></div>
     <section class="testimonials">
         <h2 class="section-title animate-on-scroll">What Our Clients Say</h2>
         <p class="section-subtitle animate-on-scroll">Businesses already powered by myAI</p>
@@ -355,6 +396,7 @@
         </div>
     </section>
 
+    <div class="sparkle-divider"><div class="sparkle-dot"></div></div>
     <section class="contact" id="contact">
         <h2 class="section-title animate-on-scroll">Get Started Today</h2>
         <p class="section-subtitle animate-on-scroll">14-day free trial. No credit card required.</p>
@@ -479,7 +521,89 @@
                 card.style.transform = '';
             });
         });
+
+        // === FIREWORKS / SPARKLES ENGINE ===
+        const fwCanvas = document.getElementById('fireworks');
+        const fwCtx = fwCanvas.getContext('2d');
+        fwCanvas.width = innerWidth; fwCanvas.height = innerHeight;
+        window.addEventListener('resize', () => { fwCanvas.width = innerWidth; fwCanvas.height = innerHeight; });
+        const sparks = [];
+        const colors = ['#00d4ff','#7b2ff7','#f472b6','#fbbf24','#34d399','#ff6b6b','#a78bfa'];
+        function spawnBurst(x, y, count) {
+            for (let i = 0; i < count; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 3 + 1;
+                sparks.push({
+                    x, y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed,
+                    life: 1,
+                    decay: Math.random() * 0.015 + 0.008,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    size: Math.random() * 3 + 1
+                });
+            }
+        }
+        function spawnRandomBurst() {
+            const x = Math.random() * fwCanvas.width;
+            const y = Math.random() * fwCanvas.height * 0.7;
+            spawnBurst(x, y, Math.floor(Math.random() * 20) + 15);
+        }
+        // Ambient sparkles floating
+        const ambientSparkles = [];
+        for (let i = 0; i < 40; i++) {
+            ambientSparkles.push({
+                x: Math.random() * innerWidth,
+                y: Math.random() * innerHeight,
+                size: Math.random() * 2.5 + 0.5,
+                alpha: Math.random(),
+                speed: Math.random() * 0.5 + 0.1,
+                color: colors[Math.floor(Math.random() * colors.length)],
+                phase: Math.random() * Math.PI * 2
+            });
+        }
+        function drawFireworks() {
+            fwCtx.clearRect(0, 0, fwCanvas.width, fwCanvas.height);
+            // Draw ambient sparkles
+            const t = performance.now() * 0.001;
+            ambientSparkles.forEach(s => {
+                s.y -= s.speed;
+                if (s.y < -10) { s.y = fwCanvas.height + 10; s.x = Math.random() * fwCanvas.width; }
+                const flicker = Math.sin(t * 3 + s.phase) * 0.4 + 0.6;
+                fwCtx.beginPath();
+                fwCtx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                fwCtx.fillStyle = s.color;
+                fwCtx.globalAlpha = s.alpha * flicker;
+                fwCtx.shadowColor = s.color;
+                fwCtx.shadowBlur = 10;
+                fwCtx.fill();
+                fwCtx.shadowBlur = 0;
+            });
+            fwCtx.globalAlpha = 1;
+            // Draw burst sparks
+            for (let i = sparks.length - 1; i >= 0; i--) {
+                const s = sparks[i];
+                s.x += s.vx; s.y += s.vy; s.vy += 0.03;
+                s.life -= s.decay;
+                if (s.life <= 0) { sparks.splice(i, 1); continue; }
+                fwCtx.beginPath();
+                fwCtx.arc(s.x, s.y, s.size * s.life, 0, Math.PI * 2);
+                fwCtx.fillStyle = s.color;
+                fwCtx.globalAlpha = s.life;
+                fwCtx.shadowColor = s.color;
+                fwCtx.shadowBlur = 15;
+                fwCtx.fill();
+                fwCtx.shadowBlur = 0;
+            }
+            fwCtx.globalAlpha = 1;
+            requestAnimationFrame(drawFireworks);
+        }
+        drawFireworks();
+        // Random bursts every 2-4 seconds
+        setInterval(spawnRandomBurst, 2500);
+        // Burst on click too
+        document.addEventListener('click', e => spawnBurst(e.clientX, e.clientY, 30));
     </script>
-    <div style="position:fixed;bottom:8px;left:10px;color:rgba(255,255,255,0.35);font-size:11px;font-family:sans-serif;z-index:9999;pointer-events:none;">v2.2</div>
+    <div style="position:fixed;bottom:8px;left:10px;color:rgba(255,255,255,0.35);font-size:11px;font-family:sans-serif;z-index:9999;pointer-events:none;">v2.3</div>
 </body>
 </html>
