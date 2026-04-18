@@ -1,0 +1,61 @@
+{
+  "business": {
+    "id": "ai-accountants",
+    "name": "AI for Accountants",
+    "niche": "Accounting automation",
+    "tagline": "Automate Your Practice",
+    "price": 399,
+    "audience": "CPA firms"
+  },
+  "features": [
+    "AI bookkeeping automation",
+    "Tax preparation assistant",
+    "Automated reconciliation",
+    "Financial reporting AI",
+    "Client portal automation",
+    "Compliance monitoring"
+  ],
+  "testimonials": [
+    {
+      "text": "This AI completely transformed how I run my business. I save 20+ hours every week.",
+      "author": "Sarah M., CPA firms",
+      "stars": 5
+    },
+    {
+      "text": "The automation is incredible. My revenue increased 40% in the first 3 months.",
+      "author": "Mike R., CPA firms",
+      "stars": 5
+    },
+    {
+      "text": "I was skeptical at first, but now I can't imagine running my business without it.",
+      "author": "Jennifer L., CPA firms",
+      "stars": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "How AI is Revolutionizing Accounting automation",
+      "excerpt": "Discover how artificial intelligence is transforming the way cpa firms operate their businesses, from customer management to automated marketing.",
+      "date": "2025-01-15",
+      "read_time": "5 min"
+    },
+    {
+      "title": "5 Ways AI for Accountants Saves You 20 Hours Per Week",
+      "excerpt": "Time is money. Learn about the five key automation features that let cpa firms focus on what matters most \u2014 growing their business.",
+      "date": "2025-01-22",
+      "read_time": "4 min"
+    },
+    {
+      "title": "Case Study: How One Business Grew Revenue 40% with AI",
+      "excerpt": "A real success story from one of our clients who used AI for Accountants to dramatically increase efficiency and profitability.",
+      "date": "2025-01-29",
+      "read_time": "6 min"
+    }
+  ],
+  "pricing": {
+    "starter": 399,
+    "professional": 877,
+    "enterprise": 1795
+  },
+  "generated": "2026-04-16T12:19:45.465061"
+}

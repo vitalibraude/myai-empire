@@ -1,0 +1,9 @@
+{
+  "name": "ai-agencies",
+  "version": "1.0.0",
+  "description": "AI for Agencies \u2014 Run Your Agency on Autopilot",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ai-laundromats",
+  "version": "1.0.0",
+  "description": "AI for Laundromats \u2014 Clean Profits, Automated",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ai-therapists",
+  "version": "1.0.0",
+  "description": "AI for Therapists \u2014 Focus on Healing, Not Billing",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

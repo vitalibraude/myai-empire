@@ -1,0 +1,9 @@
+{
+  "name": "ai-trucking",
+  "version": "1.0.0",
+  "description": "AI for Trucking \u2014 AI-Powered Fleet Management",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

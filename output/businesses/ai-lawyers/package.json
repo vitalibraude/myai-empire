@@ -1,0 +1,9 @@
+{
+  "name": "ai-lawyers",
+  "version": "1.0.0",
+  "description": "AI for Law Firms \u2014 AI-Powered Legal Efficiency",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

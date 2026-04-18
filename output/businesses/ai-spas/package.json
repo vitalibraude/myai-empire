@@ -1,0 +1,9 @@
+{
+  "name": "ai-spas",
+  "version": "1.0.0",
+  "description": "AI for Spas \u2014 Relax, Your Business Runs Itself",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

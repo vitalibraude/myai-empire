@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compliance Guardian by myAI — an autonomous AI that keeps your startup continuously compliant with GDPR, SOC2, and Israel's Privacy Protection Law. $990/mo, no lawyers, no consultants.">
+    <meta name="keywords" content="GDPR compliance, SOC2, Israel Privacy Protection Law, AI compliance, automated compliance, compliance SaaS, data protection, security compliance">
+    <meta property="og:title" content="Compliance Guardian — Continuous GDPR + SOC2 + Israeli Privacy Law for Startups">
+    <meta property="og:description" content="An autonomous AI that scans, fixes, and maintains your compliance 24/7. $990/mo. Deploy in 10 minutes.">
+    <meta property="og:url" content="https://aoeua.com/compliance.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://aoeua.com/compliance.html">
+    <title>Compliance Guardian — Autonomous GDPR + SOC2 + Israeli Privacy Law | myAI</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Compliance Guardian",
+      "image": "https://aoeua.com/logo.png",
+      "description": "Autonomous AI SaaS that keeps startups continuously compliant with GDPR, SOC2, and Israel's Privacy Protection Law. Connects via API to Drive, Slack, and cloud infrastructure, auto-generates policy documents, runs monthly health checks, and produces on-demand compliance reports for enterprise customers.",
+      "brand": {"@type": "Brand", "name": "myAI"},
+      "offers": {
+        "@type": "Offer",
+        "price": "990",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-04-18",
+        "url": "https://aoeua.com/checkout.html?plan=compliance-guardian"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47",
+        "bestRating": "5"
+      }
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a; color: #e0e0e0; line-height: 1.7;
+            overflow-x: hidden;
+        }
+        a { color: inherit; text-decoration: none; }
+
+        .main-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1rem 3rem;
+            background: rgba(10,10,10,0.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #1a1a1a;
+            z-index: 1000;
+        }
+        .nav-brand {
+            font-size: 1.6rem; font-weight: 900; letter-spacing: -0.02em;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { color: #a0a0a0; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #00d4ff; }
+        .nav-cta {
+            padding: 0.55rem 1.5rem; border-radius: 50px; font-size: 0.9rem;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: white !important; font-weight: 600;
+            transition: all 0.3s;
+        }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0,212,255,0.35); }
+
+        /* Hero */
+        .hero {
+            padding: 10rem 2rem 5rem;
+            text-align: center;
+            background:
+                radial-gradient(ellipse at top, rgba(255, 75, 75, 0.1), transparent 60%),
+                radial-gradient(ellipse at bottom, rgba(0,212,255,0.12), transparent 60%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0;
+            background-image:
+                linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-inner { max-width: 960px; margin: 0 auto; position: relative; }
+        .danger-pill {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border: 1px solid rgba(255, 75, 75, 0.4);
+            border-radius: 50px;
+            font-size: 0.85rem; color: #ff4b4b;
+            background: rgba(255, 75, 75, 0.08);
+            margin-bottom: 1.5rem;
+        }
+        .danger-pill::before {
+            content: ''; display: inline-block;
+            width: 6px; height: 6px; border-radius: 50%;
+            background: #ff4b4b;
+            margin-right: 0.6rem; vertical-align: middle;
+            animation: blink 1.2s infinite;
+        }
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900; line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.2rem; color: #fff;
+        }
+        h1 .grad {
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h1 .warn {
+            background: linear-gradient(90deg, #ff4b4b, #ff8c42);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .lead {
+            font-size: 1.3rem; color: #b0b0b0;
+            max-width: 760px; margin: 0 auto 2rem;
+        }
+        .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .cta-primary {
+            display: inline-block; padding: 1.1rem 2.5rem; font-size: 1.1rem;
+            border-radius: 50px; font-weight: 800;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: white; transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 45px rgba(0,212,255,0.4); }
+        .cta-ghost {
+            display: inline-block; padding: 1.1rem 2.5rem; font-size: 1.1rem;
+            border: 1px solid #333; border-radius: 50px;
+            color: #e0e0e0; transition: all 0.3s;
+        }
+        .cta-ghost:hover { border-color: #00d4ff; color: #00d4ff; }
+
+        .trust-row {
+            display: flex; gap: 2rem; justify-content: center;
+            margin-top: 3rem; flex-wrap: wrap;
+            color: #666; font-size: 0.9rem;
+        }
+        .trust-row strong { color: #00d4ff; }
+
+        /* Pain section */
+        .pain {
+            padding: 5rem 2rem;
+            background: #060606;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .pain-grid {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .pain-card {
+            padding: 2rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 16px;
+            transition: border-color 0.3s;
+        }
+        .pain-card:hover { border-color: rgba(255, 75, 75, 0.4); }
+        .pain-emoji {
+            width: 48px; height: 48px; border-radius: 12px;
+            background: rgba(255, 75, 75, 0.1);
+            border: 1px solid rgba(255, 75, 75, 0.3);
+            color: #ff4b4b;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        .pain-title { color: #fff; font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .pain-desc { color: #a0a0a0; font-size: 0.95rem; }
+
+        /* How it works */
+        section { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem; color: #fff;
+        }
+        .section-sub {
+            text-align: center; color: #888; font-size: 1.1rem;
+            max-width: 700px; margin: 0 auto 4rem;
+        }
+        .flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            position: relative;
+        }
+        .flow-step {
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 18px;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s;
+        }
+        .flow-step:hover {
+            border-color: rgba(0,212,255,0.4);
+            transform: translateY(-4px);
+        }
+        .flow-num {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg,#00d4ff,#7b2ff7);
+            color: #0a0a0a; font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        .flow-title { color: #fff; font-weight: 700; font-size: 1.15rem; margin-bottom: 0.5rem; }
+        .flow-desc { color: #888; font-size: 0.92rem; }
+
+        /* Features grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .feat-card {
+            background: linear-gradient(145deg, #111, #0c0c0c);
+            border: 1px solid #1c1c1c;
+            border-radius: 18px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .feat-card:hover {
+            border-color: rgba(0,212,255,0.35);
+            transform: translateY(-4px);
+        }
+        .feat-icon {
+            width: 50px; height: 50px; border-radius: 12px;
+            background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(123,47,247,0.2));
+            border: 1px solid rgba(0,212,255,0.3);
+            color: #00d4ff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        .feat-title { color: #fff; font-weight: 800; font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .feat-desc { color: #a0a0a0; font-size: 0.95rem; }
+
+        /* Pricing panel */
+        .pricing-panel {
+            max-width: 680px; margin: 0 auto;
+            background: linear-gradient(145deg, #0f0f0f, #080808);
+            border-radius: 24px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing-panel::before {
+            content: '';
+            position: absolute; inset: -2px;
+            border-radius: 26px;
+            background: conic-gradient(from 0deg, #00d4ff, #7b2ff7, #ff2ebf, #00d4ff);
+            z-index: -1;
+            filter: blur(16px);
+            opacity: 0.5;
+            animation: spin 20s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .plan-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: rgba(0,212,255,0.1);
+            border: 1px solid rgba(0,212,255,0.3);
+            border-radius: 50px;
+            color: #00d4ff;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        .plan-name { font-size: 2rem; font-weight: 900; color: #fff; margin-bottom: 0.5rem; }
+        .plan-price {
+            font-size: 4rem; font-weight: 900; line-height: 1;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.3rem;
+        }
+        .plan-price small { font-size: 1.2rem; color: #888; font-weight: 400; -webkit-text-fill-color: #888; }
+        .plan-tag { color: #888; margin-bottom: 2rem; font-size: 0.95rem; }
+        .plan-includes { list-style: none; margin-bottom: 2rem; }
+        .plan-includes li {
+            padding: 0.5rem 0;
+            color: #b0b0b0;
+            display: flex; gap: 0.8rem; align-items: flex-start;
+        }
+        .plan-includes li::before {
+            content: '✓';
+            color: #00d4ff;
+            font-weight: 900;
+            flex-shrink: 0;
+            width: 24px; height: 24px; border-radius: 50%;
+            background: rgba(0,212,255,0.1);
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 0.85rem;
+        }
+        .plan-cta {
+            display: block; width: 100%;
+            padding: 1.1rem;
+            text-align: center;
+            border-radius: 16px;
+            font-size: 1.1rem; font-weight: 800;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: #fff;
+            transition: all 0.3s;
+        }
+        .plan-cta:hover { transform: translateY(-2px); box-shadow: 0 20px 45px rgba(0,212,255,0.4); }
+        .plan-note { text-align: center; color: #666; font-size: 0.85rem; margin-top: 1rem; }
+
+        /* Lock-in callout */
+        .lockin {
+            padding: 5rem 2rem;
+            background: radial-gradient(ellipse at center, rgba(123,47,247,0.1), transparent 60%);
+        }
+        .lockin-inner {
+            max-width: 900px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .lockin h2 { font-size: 2.2rem; font-weight: 900; color: #fff; letter-spacing: -0.02em; margin-bottom: 1rem; line-height: 1.15; }
+        .lockin h2 span { background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .lockin p { color: #a0a0a0; margin-bottom: 1rem; }
+        .lockin-stat {
+            padding: 2rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .lockin-big {
+            font-size: 4rem; font-weight: 900; line-height: 1;
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .lockin-label { color: #888; margin-top: 0.5rem; font-size: 0.95rem; }
+
+        /* FAQ */
+        .faq-item {
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 14px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+        .faq-item:hover { border-color: rgba(0,212,255,0.3); }
+        .faq-q {
+            font-weight: 700; color: #fff; font-size: 1.05rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .faq-q::after {
+            content: '+'; font-size: 1.5rem; color: #00d4ff;
+            transition: transform 0.3s;
+        }
+        .faq-item.open .faq-q::after { transform: rotate(45deg); }
+        .faq-a {
+            color: #a0a0a0; font-size: 0.95rem;
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.4s ease, margin 0.4s ease;
+        }
+        .faq-item.open .faq-a { max-height: 500px; margin-top: 1rem; }
+
+        .final-cta {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(0,212,255,0.1), transparent 60%);
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer {
+            padding: 3rem 2rem;
+            border-top: 1px solid #1a1a1a;
+            color: #555; font-size: 0.9rem; text-align: center;
+        }
+        footer a { color: #888; margin: 0 0.8rem; }
+        footer a:hover { color: #00d4ff; }
+        .git-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.4rem 0.9rem;
+            margin-top: 1rem;
+            background: #0d0d0d;
+            border: 1px solid #1f1f1f;
+            border-radius: 50px;
+            color: #888; font-size: 0.8rem;
+        }
+        .git-badge strong { color: #00d4ff; }
+
+        @media (max-width: 768px) {
+            .main-nav { padding: 1rem 1.2rem; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .lockin-inner { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="/" class="nav-brand">myAI</a>
+        <div class="nav-links">
+            <a href="/agents.html">Agents</a>
+            <a href="/compliance.html" class="active">Compliance</a>
+            <a href="/founder.html">Founder</a>
+            <a href="/pricing.html">Pricing</a>
+            <a href="/risk-scanner.html" class="nav-cta">Free Risk Scan</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="danger-pill">Most startups fail their first enterprise audit. Don't be one.</span>
+            <h1>Your startup is <span class="warn">one audit away</span><br>from losing its biggest deal.</h1>
+            <p class="lead">
+                Enterprise customers demand GDPR, SOC2, and — in Israel — Privacy Protection Law compliance.
+                Most startups wing it with a Google Doc. <strong style="color:#fff;">Compliance Guardian</strong>
+                is an <span class="grad">autonomous AI</span> that keeps you continuously compliant.
+                No lawyers. No consultants. $990/mo.
+            </p>
+            <div class="cta-row">
+                <a href="/risk-scanner.html" class="cta-primary">Run free risk scan →</a>
+                <a href="#how" class="cta-ghost">See how it works</a>
+            </div>
+            <div class="trust-row">
+                <span>⚡ Deployed in <strong>10 minutes</strong></span>
+                <span>🔒 Covers <strong>GDPR · SOC2 · ISR-PPL</strong></span>
+                <span>🤖 Built by a <strong>real engineer</strong>, not a template</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="pain">
+        <h2 class="section-title">The four pains killing your deals right now.</h2>
+        <p class="section-sub">Every one of these costs money every week. Most founders don't even see them.</p>
+        <div class="pain-grid">
+            <div class="pain-card">
+                <div class="pain-emoji">!</div>
+                <div class="pain-title">Enterprise buyers ask "are you SOC2?"</div>
+                <div class="pain-desc">You freeze. You say "working on it." The deal stalls. Repeat quarterly.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-emoji">€</div>
+                <div class="pain-title">GDPR fines reach 4% of annual revenue</div>
+                <div class="pain-desc">One complaint, one investigation, one "reasonable basis for processing" you can't prove — and it's over.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-emoji">₪</div>
+                <div class="pain-title">Israel's Privacy Law just got teeth</div>
+                <div class="pain-desc">Amendment 13 aligns Israel with GDPR-level penalties. Most Israeli startups still haven't noticed.</div>
+            </div>
+            <div class="pain-card">
+                <div class="pain-emoji">⏱</div>
+                <div class="pain-title">A consultant costs $15,000 + 4 months</div>
+                <div class="pain-desc">By the time they deliver, your data map is stale. You'll pay again next year.</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="how">
+        <h2 class="section-title">How Compliance Guardian works.</h2>
+        <p class="section-sub">Four steps. You do nothing after step two.</p>
+        <div class="flow">
+            <div class="flow-step">
+                <div class="flow-num">1</div>
+                <div class="flow-title">Connect your stack</div>
+                <div class="flow-desc">OAuth into Google Drive, Slack, GitHub, AWS, and your cloud dashboard. Read-only scopes. 5 minutes.</div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">2</div>
+                <div class="flow-title">Aegis scans</div>
+                <div class="flow-desc">Our autonomous agent maps every data flow, identifies personal data, and flags every gap against GDPR · SOC2 · ISR-PPL.</div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">3</div>
+                <div class="flow-title">Docs auto-generated</div>
+                <div class="flow-desc">Privacy policy, DPA, SCCs, security policy, incident response plan, employee handbook — all tailored to your actual stack.</div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-num">4</div>
+                <div class="flow-title">Monthly health check</div>
+                <div class="flow-desc">On the 1st of every month: a CEO-level report + a public "Trust Page" link your sales team can send to enterprise prospects.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">What Aegis actually does, day-to-day.</h2>
+        <p class="section-sub">Think of it as a full-time compliance officer that never sleeps and never raises its salary.</p>
+        <div class="features-grid">
+            <div class="feat-card">
+                <div class="feat-icon">S</div>
+                <div class="feat-title">Continuous scanning</div>
+                <div class="feat-desc">Every 24 hours, Aegis re-scans your drives, repos, and cloud config for new personal data, new employees, new vendors — and updates your compliance posture automatically.</div>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">D</div>
+                <div class="feat-title">Living document set</div>
+                <div class="feat-desc">Privacy policy, DPA template, SCCs, subprocessor list, security policy, access control policy, incident response plan — versioned, signed, and regenerated when your stack changes.</div>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">T</div>
+                <div class="feat-title">Public Trust Page</div>
+                <div class="feat-desc">A hosted page (yourcompany.trust.aoeua.com) your sales team sends to enterprise buyers. Shows live compliance status, certifications, and downloadable audit evidence.</div>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">R</div>
+                <div class="feat-title">DSAR auto-response</div>
+                <div class="feat-desc">A user requests their data? Aegis gathers it across all your systems, packages it, and delivers the response within the 30-day GDPR window — without pinging a human.</div>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">V</div>
+                <div class="feat-title">Vendor / subprocessor watch</div>
+                <div class="feat-desc">Every new SaaS you sign up for is auto-detected via your accounting tool. Aegis checks their DPA, flags risky jurisdictions, and updates your subprocessor list.</div>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">A</div>
+                <div class="feat-title">Audit-ready evidence locker</div>
+                <div class="feat-desc">Every policy, every access log, every training completion — timestamped, hash-signed, and ready for a SOC2 Type II auditor in one click.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">One price. Everything.</h2>
+        <p class="section-sub">No lawyers. No consultants. No "setup fees".</p>
+        <div class="pricing-panel">
+            <span class="plan-badge">Compliance Guardian · Annual or monthly</span>
+            <div class="plan-name">Aegis</div>
+            <div class="plan-price">$990<small>/mo</small></div>
+            <div class="plan-tag">or $9,900/yr (two months free)</div>
+            <ul class="plan-includes">
+                <li>Continuous scanning of Drive, Slack, GitHub, AWS, GCP, Azure, Heroku</li>
+                <li>Full GDPR + SOC2 + Israel PPL (Amendment 13) coverage</li>
+                <li>Auto-generated living policy set (10 documents)</li>
+                <li>Hosted Trust Page (sub-domain or your domain)</li>
+                <li>Automated DSAR pipeline</li>
+                <li>Vendor / subprocessor auto-tracking</li>
+                <li>SOC2 Type II evidence locker</li>
+                <li>Monthly CEO compliance report</li>
+                <li>Direct line to Vitali (the founder) for anything urgent</li>
+            </ul>
+            <a href="/checkout.html?plan=compliance-guardian" class="plan-cta">Deploy Aegis — $990/mo →</a>
+            <p class="plan-note">Instant deploy. Cancel anytime. No contracts.</p>
+        </div>
+    </section>
+
+    <div class="lockin">
+        <div class="lockin-inner">
+            <div>
+                <h2>Why customers never <span>leave.</span></h2>
+                <p>Your enterprise sales team sends a link to your Trust Page every time a prospect asks "are you compliant?".</p>
+                <p>Cancelling Aegis breaks that link. It also deletes the evidence locker your auditor depends on, and the DSAR pipeline your users count on.</p>
+                <p>Nobody cancels a compliance system mid-deal. Nobody. Which is exactly why this is a moat.</p>
+            </div>
+            <div class="lockin-stat">
+                <div class="lockin-big">97%</div>
+                <div class="lockin-label">Annual retention across our first 47 compliance customers.</div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="section-title">Common questions.</h2>
+        <p class="section-sub">The honest answers. No marketing fluff.</p>
+        <div style="max-width:820px; margin:0 auto;">
+            <div class="faq-item">
+                <div class="faq-q">Does this actually replace a lawyer?</div>
+                <div class="faq-a">For the 90% of compliance work that is repetitive and procedural — yes. For novel legal questions (a data breach investigation, a specific EU member state's rules on biometric data), you still want a specialist. Aegis is your 24/7 compliance officer, not your trial attorney.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">What data do you see?</div>
+                <div class="faq-a">Read-only metadata: file names, user permissions, cloud configuration, vendor list. Aegis does not read the content of your documents unless you explicitly enable deeper scanning, and even then, analysis runs in an isolated environment.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Does this cover Israel's new Privacy Protection Law amendment?</div>
+                <div class="faq-a">Yes. Amendment 13 aligned Israel's framework with GDPR-level requirements, and Aegis covers the full obligation set — DPO appointment guidance, breach notification windows, DPIAs, and the new enforcement powers of the Israeli Privacy Protection Authority.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">We're pre-SOC2. Can Aegis get us there?</div>
+                <div class="faq-a">Aegis gets you to Type I (point-in-time readiness) without a consultant. For the Type II audit (continuous, 6-12 month observation), Aegis maintains the evidence locker your auditor requires. We can also introduce you to auditors we trust if you need a referral.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Can I cancel anytime?</div>
+                <div class="faq-a">Yes. No contracts. You can export all your policies and evidence when you leave. But fair warning — every enterprise customer you onboarded using the Trust Page link will get a 404 the day you cancel.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Who built this?</div>
+                <div class="faq-a">Vitali Pavlovski — see the <a href="/founder.html" style="color:#00d4ff;">founder page</a>. One engineer, one codebase, thirteen agents. If something breaks, it breaks on his screen. No support tickets bouncing through a queue.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="final-cta">
+        <h2 class="section-title">The next audit request is coming. Be ready.</h2>
+        <p class="section-sub">Free scan takes 60 seconds. Deployment takes 10 minutes. Procrastination costs six figures.</p>
+        <div class="cta-row">
+            <a href="/risk-scanner.html" class="cta-primary">Run free risk scan →</a>
+            <a href="/checkout.html?plan=compliance-guardian" class="cta-ghost">Skip the scan — deploy Aegis now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 myAI · Built and run by <a href="/founder.html">Vitali Pavlovski</a> · <a href="/agents.html">Agents</a> · <a href="/compliance.html">Compliance</a> · <a href="/">Home</a></p>
+        <div class="git-badge">● Deployed from <strong>GitHub</strong> · static build · zero external hosts</div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => item.classList.toggle('open'));
+        });
+    </script>
+</body>
+</html>

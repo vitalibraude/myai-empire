@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Business Automation Guide — 10 Steps to Automate Your Business</title>
+<meta name="description" content="The complete guide to automating your business with AI. 10 chapters, real tools, step-by-step instructions. Only £10.">
+<link rel="canonical" href="https://aoeua.com/guide.html">
+<meta property="og:title" content="AI Business Automation Guide">
+<meta property="og:description" content="10 steps to automate your business with AI. Real tools, real results.">
+<meta property="og:url" content="https://aoeua.com/guide.html">
+<script src="https://js.stripe.com/v3/"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.7}
+a{color:#00d4ff;text-decoration:none}
+.hero{text-align:center;padding:80px 20px 60px;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#0a0a0a 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(0,212,255,0.08),transparent 60%),radial-gradient(circle at 70% 50%,rgba(123,47,247,0.08),transparent 60%)}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;margin-bottom:16px;background:linear-gradient(90deg,#fff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative}
+.hero .sub{font-size:1.2rem;color:#888;margin-bottom:30px;position:relative}
+.badge{display:inline-block;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;padding:8px 24px;border-radius:50px;font-size:1.1rem;font-weight:700;margin-bottom:30px;position:relative}
+.price-box{background:#111;border:2px solid #00d4ff;border-radius:16px;display:inline-block;padding:30px 50px;margin:20px 0;position:relative}
+.price-box .old{color:#666;text-decoration:line-through;font-size:1.1rem}
+.price-box .now{font-size:3rem;font-weight:800;color:#00d4ff}
+.price-box .currency{font-size:1.5rem;color:#00d4ff;vertical-align:super}
+.price-box .note{color:#888;font-size:0.9rem;margin-top:5px}
+.cta-btn{display:inline-block;padding:16px 48px;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;border:none;border-radius:50px;font-size:1.2rem;font-weight:700;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;margin-top:20px;position:relative}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,212,255,0.3)}
+.container{max-width:800px;margin:0 auto;padding:0 20px}
+.section{padding:60px 0}
+.section h2{font-size:1.8rem;font-weight:700;margin-bottom:30px;text-align:center;color:#fff}
+.chapters{list-style:none}
+.chapters li{background:#111;border:1px solid #1a1a1a;border-radius:12px;padding:20px 24px;margin-bottom:12px;display:flex;align-items:flex-start;gap:16px;transition:border-color 0.2s}
+.chapters li:hover{border-color:#00d4ff}
+.ch-num{background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;flex-shrink:0}
+.ch-content h3{font-size:1.1rem;font-weight:600;color:#fff;margin-bottom:4px}
+.ch-content p{color:#888;font-size:0.9rem}
+.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
+.benefit{background:#111;border:1px solid #1a1a1a;border-radius:12px;padding:24px;text-align:center}
+.benefit .icon{font-size:2rem;margin-bottom:12px}
+.benefit h3{font-size:1rem;font-weight:600;margin-bottom:8px}
+.benefit p{color:#888;font-size:0.85rem}
+.guarantee{background:#111;border:1px solid #222;border-radius:16px;padding:40px;text-align:center;margin:40px 0}
+.guarantee h3{font-size:1.3rem;margin-bottom:12px}
+.guarantee p{color:#888;max-width:500px;margin:0 auto}
+.faq{margin-top:30px}
+.faq details{background:#111;border:1px solid #1a1a1a;border-radius:10px;margin-bottom:10px;padding:16px 20px}
+.faq summary{font-weight:600;cursor:pointer;color:#fff;font-size:1rem}
+.faq details p{color:#888;margin-top:10px;font-size:0.9rem}
+.bottom-cta{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#111,#1a1a2e);border-top:1px solid #222}
+footer{text-align:center;padding:20px;color:#444;font-size:0.8rem;border-top:1px solid #111}
+@media(max-width:600px){.price-box{padding:20px 30px}.price-box .now{font-size:2.2rem}.cta-btn{padding:14px 36px;font-size:1rem}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="badge">📘 Digital Guide — Instant Download</div>
+<h1>AI Business Automation Guide</h1>
+<p class="sub">10 steps to automate your entire business with AI — save 20+ hours/week</p>
+
+<div class="price-box">
+<div class="old">Was £49</div>
+<div class="now"><span class="currency">£</span>10</div>
+<div class="note">One-time payment · Instant access · PDF download</div>
+</div>
+
+<br>
+<button class="cta-btn" onclick="buyGuide()">Buy Now — £10</button>
+<p style="color:#555;font-size:0.85rem;margin-top:12px;position:relative">✓ Instant delivery · ✓ 30-day money-back guarantee · ✓ Secure payment via Stripe</p>
+</div>
+
+<div class="container">
+
+<section class="section">
+<h2>What You'll Learn</h2>
+<ol class="chapters">
+<li>
+<div class="ch-num">1</div>
+<div class="ch-content">
+<h3>The AI Automation Mindset</h3>
+<p>Why 80% of businesses fail at automation — and the simple shift that makes it work.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">2</div>
+<div class="ch-content">
+<h3>Audit Your Time</h3>
+<p>How to identify the 20% of tasks eating 80% of your time — the exact tasks AI can replace today.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">3</div>
+<div class="ch-content">
+<h3>Automate Customer Service</h3>
+<p>Set up an AI chatbot that handles 70% of customer inquiries — with free tools, step by step.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">4</div>
+<div class="ch-content">
+<h3>Email Marketing on Autopilot</h3>
+<p>Build email sequences that nurture leads and convert — without writing a single email manually.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">5</div>
+<div class="ch-content">
+<h3>Social Media That Runs Itself</h3>
+<p>The exact tools and prompts to generate 30 days of social content in 30 minutes.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">6</div>
+<div class="ch-content">
+<h3>AI Content Factory</h3>
+<p>Produce blog posts, landing pages, and marketing copy 10x faster — with quality that converts.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">7</div>
+<div class="ch-content">
+<h3>Automated Lead Generation</h3>
+<p>Build a system that finds and qualifies leads while you sleep — no cold calling required.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">8</div>
+<div class="ch-content">
+<h3>Financial Automation</h3>
+<p>Automate invoicing, expense tracking, and financial reports — save 5+ hours/week.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">9</div>
+<div class="ch-content">
+<h3>Scaling Without Hiring</h3>
+<p>How one-person businesses use AI to operate like a team of 10 — real case studies and numbers.</p>
+</div>
+</li>
+<li>
+<div class="ch-num">10</div>
+<div class="ch-content">
+<h3>Your 30-Day Action Plan</h3>
+<p>A day-by-day roadmap to implement everything in this guide — with templates and checklists included.</p>
+</div>
+</li>
+</ol>
+</section>
+
+<section class="section">
+<h2>Why This Guide?</h2>
+<div class="benefits">
+<div class="benefit">
+<div class="icon">⏱️</div>
+<h3>Save 20+ Hours/Week</h3>
+<p>Automate repetitive tasks that eat your day</p>
+</div>
+<div class="benefit">
+<div class="icon">💷</div>
+<h3>Only £10</h3>
+<p>Less than a lunch — could save you thousands</p>
+</div>
+<div class="benefit">
+<div class="icon">🛠️</div>
+<h3>Real Tools</h3>
+<p>No theory — specific tools, prompts, and templates</p>
+</div>
+<div class="benefit">
+<div class="icon">📋</div>
+<h3>30-Day Plan</h3>
+<p>Step-by-step roadmap you can start today</p>
+</div>
+</div>
+</section>
+
+<div class="guarantee">
+<h3>💰 30-Day Money-Back Guarantee</h3>
+<p>If the guide doesn't save you at least 5 hours in the first week, email us for a full refund. No questions asked.</p>
+</div>
+
+<section class="section">
+<h2>FAQ</h2>
+<div class="faq">
+<details>
+<summary>What format is the guide?</summary>
+<p>You'll receive an instant-access HTML page you can read on any device, plus a downloadable PDF version.</p>
+</details>
+<details>
+<summary>Do I need technical skills?</summary>
+<p>No. Every step is explained in plain English with screenshots. If you can use email, you can follow this guide.</p>
+</details>
+<details>
+<summary>What industries does this work for?</summary>
+<p>Any service-based or product-based business. We include examples for restaurants, dental practices, law firms, salons, e-commerce, freelancers, and more.</p>
+</details>
+<details>
+<summary>Is there a refund policy?</summary>
+<p>Yes — 30 days, no questions asked. If it doesn't help, you get your money back.</p>
+</details>
+<details>
+<summary>Will AI replace my employees?</summary>
+<p>No. This guide focuses on automating repetitive admin tasks — freeing your team to do higher-value work.</p>
+</details>
+</div>
+</section>
+
+<div class="bottom-cta">
+<h2 style="margin-bottom:16px">Ready to Automate Your Business?</h2>
+<p style="color:#888;margin-bottom:24px">Join hundreds of business owners who are saving 20+ hours/week with AI automation.</p>
+<button class="cta-btn" onclick="buyGuide()">Get the Guide — £10</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 myAI · <a href="index.html">Home</a> · <a href="mailto:info@aoeua.com">info@aoeua.com</a> · <a href="https://aoeua.com">aoeua.com</a></p>
+</footer>
+
+<script>
+const stripe = Stripe('pk_test_51TMrjyV05ZeABEBU5X9gUkF6HkJW6SC5RcuNlN0XQIlPs4utgiIwSutb1DqP9yaMeSXGq5l79Syktz22JMQHCovE00j8DBaJCn');
+
+function buyGuide() {
+    stripe.redirectToCheckout({
+        lineItems: [{price: 'price_1TMsh6V05ZeABEBUhwzmn6Nn', quantity: 1}],
+        mode: 'payment',
+        successUrl: window.location.origin + '/guide-access.html?session_id={CHECKOUT_SESSION_ID}',
+        cancelUrl: window.location.origin + '/guide.html',
+    }).then(function(result) {
+        if (result.error) {
+            alert(result.error.message);
+        }
+    });
+}
+</script>
+
+</body>
+</html>

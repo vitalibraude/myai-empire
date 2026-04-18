@@ -1,0 +1,9 @@
+{
+  "name": "ai-restaurants",
+  "version": "1.0.0",
+  "description": "AI for Restaurants \u2014 AI That Runs Your Restaurant",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

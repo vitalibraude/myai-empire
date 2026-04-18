@@ -1,0 +1,9 @@
+{
+  "name": "ai-coaches",
+  "version": "1.0.0",
+  "description": "AI for Coaches \u2014 Scale Your Coaching Empire",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

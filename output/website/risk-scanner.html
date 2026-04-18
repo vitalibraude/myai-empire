@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free 60-second compliance risk scan. See where your startup stands on GDPR, SOC2, and Israel's Privacy Protection Law — before an enterprise buyer asks.">
+    <link rel="canonical" href="https://aoeua.com/risk-scanner.html">
+    <title>Free Compliance Risk Scan — 60 seconds | myAI Compliance Guardian</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a; color: #e0e0e0; line-height: 1.7;
+            min-height: 100vh;
+        }
+        a { color: inherit; text-decoration: none; }
+
+        .main-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1rem 3rem;
+            background: rgba(10,10,10,0.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid #1a1a1a;
+            z-index: 1000;
+        }
+        .nav-brand {
+            font-size: 1.6rem; font-weight: 900; letter-spacing: -0.02em;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { color: #a0a0a0; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: #00d4ff; }
+
+        .wrap {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .hero-pill {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border: 1px solid rgba(0,212,255,0.3);
+            border-radius: 50px;
+            font-size: 0.85rem; color: #00d4ff;
+            background: rgba(0,212,255,0.06);
+            margin-bottom: 1.2rem;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900; letter-spacing: -0.03em;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        h1 span {
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        p.lead {
+            color: #a0a0a0; font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Form */
+        .scan-form {
+            background: linear-gradient(145deg, #111, #0c0c0c);
+            border: 1px solid #1c1c1c;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .field-group { margin-bottom: 1.8rem; }
+        .field-label {
+            display: block;
+            color: #fff; font-weight: 600; font-size: 1rem;
+            margin-bottom: 0.9rem;
+        }
+        .field-hint { color: #666; font-size: 0.85rem; display: block; margin-top: 0.3rem; font-weight: 400; }
+        .text-input {
+            width: 100%;
+            padding: 0.9rem 1.1rem;
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 12px;
+            color: #fff; font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .text-input:focus { outline: none; border-color: #00d4ff; }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 0.6rem;
+        }
+        .option {
+            display: flex; align-items: center; gap: 0.6rem;
+            padding: 0.75rem 1rem;
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            transition: all 0.2s;
+        }
+        .option:hover { border-color: #2a2a2a; background: #0d0d0d; }
+        .option input { accent-color: #00d4ff; margin: 0; cursor: pointer; }
+        .option.checked { border-color: #00d4ff; background: rgba(0,212,255,0.04); }
+        .scan-btn {
+            width: 100%;
+            padding: 1.1rem;
+            border: none;
+            border-radius: 14px;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: #fff;
+            font-size: 1.05rem; font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .scan-btn:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(0,212,255,0.35); }
+        .scan-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        /* Scan progress */
+        .scanning {
+            display: none;
+            background: linear-gradient(145deg, #111, #0c0c0c);
+            border: 1px solid #1c1c1c;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .scanning.active { display: block; }
+        .scan-step {
+            display: flex; align-items: center; gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #181818;
+            color: #666;
+            transition: color 0.3s;
+        }
+        .scan-step:last-child { border-bottom: none; }
+        .scan-step.running {
+            color: #fff;
+        }
+        .scan-step.done {
+            color: #8a8a8a;
+        }
+        .scan-spinner {
+            width: 20px; height: 20px; border-radius: 50%;
+            border: 2px solid #222;
+            border-top-color: #00d4ff;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+        .scan-step.done .scan-spinner {
+            border: 2px solid rgba(0,212,255,0.3);
+            border-top-color: transparent;
+            animation: none;
+            position: relative;
+        }
+        .scan-step.done .scan-spinner::after {
+            content: '✓'; color: #00d4ff; font-weight: 900;
+            position: absolute;
+            inset: 0; display: flex; align-items: center; justify-content: center;
+            font-size: 0.8rem;
+        }
+        .scan-step.pending .scan-spinner {
+            border: 2px solid #222;
+            border-top-color: transparent;
+            animation: none;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Report */
+        .report {
+            display: none;
+        }
+        .report.active { display: block; }
+        .score-panel {
+            background: linear-gradient(145deg, #0f0f0f, #080808);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        .score-panel::before {
+            content: '';
+            position: absolute; inset: -2px;
+            border-radius: 26px;
+            z-index: -1;
+            filter: blur(24px);
+            opacity: 0.5;
+        }
+        .score-panel.critical::before { background: conic-gradient(from 0deg, #ff4b4b, #ff8c42, #ff4b4b); }
+        .score-panel.warn::before { background: conic-gradient(from 0deg, #ffd54f, #ff8c42, #ffd54f); }
+        .score-panel.ok::before { background: conic-gradient(from 0deg, #00d4ff, #7b2ff7, #00d4ff); }
+        .score-num {
+            font-size: 7rem; font-weight: 900; line-height: 1;
+            letter-spacing: -0.05em;
+        }
+        .score-panel.critical .score-num { color: #ff4b4b; }
+        .score-panel.warn .score-num { color: #ffd54f; }
+        .score-panel.ok .score-num {
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .score-label { color: #a0a0a0; font-size: 1.1rem; margin-top: 0.5rem; }
+        .score-verdict {
+            margin-top: 1.5rem;
+            padding: 1rem 1.5rem;
+            background: #0a0a0a;
+            border-radius: 12px;
+            color: #fff; font-weight: 600;
+        }
+
+        .findings { margin-bottom: 2rem; }
+        .finding {
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-left-width: 4px;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 0.8rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            align-items: start;
+        }
+        .finding.critical { border-left-color: #ff4b4b; }
+        .finding.warn { border-left-color: #ffd54f; }
+        .finding.info { border-left-color: #00d4ff; }
+        .finding-badge {
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .finding.critical .finding-badge { background: rgba(255,75,75,0.12); color: #ff4b4b; }
+        .finding.warn .finding-badge { background: rgba(255,213,79,0.12); color: #ffd54f; }
+        .finding.info .finding-badge { background: rgba(0,212,255,0.12); color: #00d4ff; }
+        .finding-title { color: #fff; font-weight: 700; font-size: 1.02rem; margin-bottom: 0.2rem; }
+        .finding-desc { color: #999; font-size: 0.92rem; }
+
+        /* Final CTA */
+        .final-cta-box {
+            background:
+                radial-gradient(ellipse at top, rgba(0,212,255,0.15), transparent 70%),
+                linear-gradient(145deg, #111, #0a0a0a);
+            border: 1px solid #1c1c1c;
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+        }
+        .final-cta-box h3 {
+            font-size: 1.8rem; font-weight: 900;
+            color: #fff; margin-bottom: 0.5rem;
+        }
+        .final-cta-box p { color: #a0a0a0; margin-bottom: 1.5rem; }
+        .cta-primary {
+            display: inline-block; padding: 1.1rem 2.5rem;
+            border-radius: 50px; font-weight: 800; font-size: 1.05rem;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: #fff;
+            transition: all 0.3s;
+        }
+        .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 20px 45px rgba(0,212,255,0.4); }
+
+        footer {
+            padding: 3rem 2rem; border-top: 1px solid #1a1a1a;
+            color: #555; font-size: 0.9rem; text-align: center;
+        }
+        footer a { color: #888; margin: 0 0.8rem; }
+        footer a:hover { color: #00d4ff; }
+
+        @media (max-width: 768px) {
+            .main-nav { padding: 1rem 1.2rem; }
+            .nav-links a { display: none; }
+            .wrap { padding: 6rem 1.2rem 3rem; }
+            .score-num { font-size: 5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="/" class="nav-brand">myAI</a>
+        <div class="nav-links">
+            <a href="/compliance.html">Compliance</a>
+            <a href="/agents.html">Agents</a>
+            <a href="/founder.html">Founder</a>
+        </div>
+    </nav>
+
+    <div class="wrap">
+        <span class="hero-pill">· Free · 60 seconds · No signup</span>
+        <h1>How <span>exposed</span> is your startup<br>to a GDPR or SOC2 audit?</h1>
+        <p class="lead">
+            Answer 6 honest questions. Our AI scans your answers against the actual
+            text of GDPR, SOC2, and Israel's Privacy Protection Law (Amendment 13)
+            and gives you a risk score. No signup. No tracking.
+        </p>
+
+        <form class="scan-form" id="scanForm">
+            <div class="field-group">
+                <label class="field-label" for="company">
+                    What's your company's website or name?
+                    <span class="field-hint">We only use this to label your report. Nothing is sent or stored.</span>
+                </label>
+                <input type="text" class="text-input" id="company" placeholder="e.g. acme.io or Acme Labs" required>
+            </div>
+
+            <div class="field-group">
+                <label class="field-label">
+                    Where are your customers based? (check all)
+                    <span class="field-hint">This determines which regulations apply to you.</span>
+                </label>
+                <div class="options">
+                    <label class="option"><input type="checkbox" name="geo" value="eu"> European Union</label>
+                    <label class="option"><input type="checkbox" name="geo" value="uk"> United Kingdom</label>
+                    <label class="option"><input type="checkbox" name="geo" value="il"> Israel</label>
+                    <label class="option"><input type="checkbox" name="geo" value="us"> United States</label>
+                    <label class="option"><input type="checkbox" name="geo" value="ca"> Canada</label>
+                    <label class="option"><input type="checkbox" name="geo" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label class="field-label">
+                    Which of these does your startup have, today?
+                    <span class="field-hint">Be honest. That's the whole point.</span>
+                </label>
+                <div class="options">
+                    <label class="option"><input type="checkbox" name="have" value="privacy"> A written privacy policy</label>
+                    <label class="option"><input type="checkbox" name="have" value="dpa"> A DPA ready to sign</label>
+                    <label class="option"><input type="checkbox" name="have" value="data-map"> A data-flow map</label>
+                    <label class="option"><input type="checkbox" name="have" value="dpo"> A DPO (or equivalent)</label>
+                    <label class="option"><input type="checkbox" name="have" value="soc2"> SOC2 Type I or II</label>
+                    <label class="option"><input type="checkbox" name="have" value="dsar"> A DSAR process</label>
+                    <label class="option"><input type="checkbox" name="have" value="incident"> An incident response plan</label>
+                    <label class="option"><input type="checkbox" name="have" value="training"> Annual staff training</label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label class="field-label">
+                    What kind of personal data do you process? (check all that apply)
+                </label>
+                <div class="options">
+                    <label class="option"><input type="checkbox" name="data" value="email"> Emails / contact info</label>
+                    <label class="option"><input type="checkbox" name="data" value="payment"> Payment data</label>
+                    <label class="option"><input type="checkbox" name="data" value="health"> Health data</label>
+                    <label class="option"><input type="checkbox" name="data" value="minors"> Data on minors</label>
+                    <label class="option"><input type="checkbox" name="data" value="biometric"> Biometric data</label>
+                    <label class="option"><input type="checkbox" name="data" value="location"> Location data</label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label class="field-label">
+                    Are enterprise customers asking for SOC2 or a security questionnaire?
+                </label>
+                <div class="options">
+                    <label class="option"><input type="radio" name="enterprise" value="yes"> Yes — and it's slowing deals</label>
+                    <label class="option"><input type="radio" name="enterprise" value="soon"> Starting to, expect it within 6 months</label>
+                    <label class="option"><input type="radio" name="enterprise" value="no"> Not yet</label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label class="field-label">
+                    How many employees + contractors have access to customer data?
+                </label>
+                <input type="number" class="text-input" id="headcount" min="1" placeholder="e.g. 8" required>
+            </div>
+
+            <button type="submit" class="scan-btn" id="scanBtn">Run my risk scan →</button>
+        </form>
+
+        <div class="scanning" id="scanningPanel">
+            <h3 style="color:#fff; margin-bottom:1.5rem;">Scanning your answers against live regulation…</h3>
+            <div class="scan-step pending" data-step="0">
+                <div class="scan-spinner"></div>
+                <div>Cross-referencing GDPR Articles 5, 6, 30, and 32</div>
+            </div>
+            <div class="scan-step pending" data-step="1">
+                <div class="scan-spinner"></div>
+                <div>Checking SOC2 Trust Service Criteria (Security, Availability, Confidentiality)</div>
+            </div>
+            <div class="scan-step pending" data-step="2">
+                <div class="scan-spinner"></div>
+                <div>Applying Israel Privacy Protection Law (Amendment 13, 2024)</div>
+            </div>
+            <div class="scan-step pending" data-step="3">
+                <div class="scan-spinner"></div>
+                <div>Estimating breach-notification exposure (72-hour rule)</div>
+            </div>
+            <div class="scan-step pending" data-step="4">
+                <div class="scan-spinner"></div>
+                <div>Calculating enterprise-deal blocker risk</div>
+            </div>
+            <div class="scan-step pending" data-step="5">
+                <div class="scan-spinner"></div>
+                <div>Generating your report</div>
+            </div>
+        </div>
+
+        <div class="report" id="reportPanel">
+            <div class="score-panel" id="scorePanel">
+                <div class="score-num" id="scoreNum">—</div>
+                <div class="score-label" id="scoreLabel">out of 100 · Compliance Readiness</div>
+                <div class="score-verdict" id="scoreVerdict"></div>
+            </div>
+
+            <h3 style="color:#fff; margin-bottom:1rem; font-size:1.3rem;">What we found:</h3>
+            <div class="findings" id="findings"></div>
+
+            <div class="final-cta-box">
+                <h3>Fix all of this in 10 minutes.</h3>
+                <p id="ctaCopy">Compliance Guardian deploys Aegis — an autonomous AI agent — that closes every gap above continuously, for $990/mo. No lawyers. No consultants.</p>
+                <a href="/checkout.html?plan=compliance-guardian" class="cta-primary">Deploy Aegis — $990/mo →</a>
+                <p style="margin-top:1rem; color:#666; font-size:0.85rem;">Or <a href="/compliance.html" style="color:#00d4ff;">read how Aegis works first</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 myAI · Built by <a href="/founder.html">Vitali Pavlovski</a> · <a href="/compliance.html">Compliance</a> · <a href="/agents.html">Agents</a> · <a href="/">Home</a></p>
+    </footer>
+
+    <script>
+        // checkbox visual state
+        document.querySelectorAll('.option').forEach(opt => {
+            const input = opt.querySelector('input');
+            const sync = () => opt.classList.toggle('checked', input.checked);
+            input.addEventListener('change', () => {
+                if (input.type === 'radio') {
+                    document.querySelectorAll(`input[name="${input.name}"]`).forEach(r => {
+                        r.closest('.option').classList.toggle('checked', r.checked);
+                    });
+                } else {
+                    sync();
+                }
+            });
+        });
+
+        const form = document.getElementById('scanForm');
+        const scanningPanel = document.getElementById('scanningPanel');
+        const reportPanel = document.getElementById('reportPanel');
+        const scanBtn = document.getElementById('scanBtn');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const geo = Array.from(document.querySelectorAll('input[name="geo"]:checked')).map(x => x.value);
+            const have = Array.from(document.querySelectorAll('input[name="have"]:checked')).map(x => x.value);
+            const data = Array.from(document.querySelectorAll('input[name="data"]:checked')).map(x => x.value);
+            const enterprise = document.querySelector('input[name="enterprise"]:checked')?.value;
+            const headcount = parseInt(document.getElementById('headcount').value) || 0;
+            const company = document.getElementById('company').value;
+
+            form.style.display = 'none';
+            scanningPanel.classList.add('active');
+
+            // Animate through steps
+            const steps = document.querySelectorAll('.scan-step');
+            for (let i = 0; i < steps.length; i++) {
+                steps[i].classList.remove('pending');
+                steps[i].classList.add('running');
+                await new Promise(r => setTimeout(r, 700 + Math.random() * 500));
+                steps[i].classList.remove('running');
+                steps[i].classList.add('done');
+            }
+            await new Promise(r => setTimeout(r, 300));
+
+            // Compute report
+            const report = computeReport({ geo, have, data, enterprise, headcount, company });
+            renderReport(report);
+            scanningPanel.classList.remove('active');
+            reportPanel.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        function computeReport({ geo, have, data, enterprise, headcount, company }) {
+            let score = 100;
+            const findings = [];
+
+            // Core regulation coverage
+            const gdprApplies = geo.includes('eu') || geo.includes('uk');
+            const israelApplies = geo.includes('il');
+            const ccpaApplies = geo.includes('us');
+
+            // Missing privacy policy
+            if (!have.includes('privacy')) {
+                score -= 20;
+                findings.push({ level: 'critical', title: 'No written privacy policy.',
+                    desc: 'Required under GDPR Art. 13 if you serve EU/UK users, and under ISR-PPL §11 if you serve Israeli users. Without one, every enterprise questionnaire fails at question 1.' });
+            }
+            // DPA
+            if (!have.includes('dpa')) {
+                score -= 10;
+                findings.push({ level: 'warn', title: 'No DPA template ready to sign.',
+                    desc: 'Every B2B deal will require one. Preparing it reactively adds 1–3 weeks per enterprise deal.' });
+            }
+            // Data map
+            if (!have.includes('data-map')) {
+                score -= 12;
+                findings.push({ level: 'critical', title: 'No data-flow map.',
+                    desc: 'GDPR Art. 30 and SOC2 CC6 both require a Record of Processing Activities. Auditors will not sign off without one.' });
+            }
+            // DSAR
+            if (gdprApplies && !have.includes('dsar')) {
+                score -= 10;
+                findings.push({ level: 'critical', title: 'No DSAR process.',
+                    desc: 'Under GDPR, any user can request their data and you must respond within 30 days. Missing this creates unbounded fine exposure.' });
+            }
+            // Incident response
+            if (!have.includes('incident')) {
+                score -= 10;
+                findings.push({ level: 'warn', title: 'No incident response plan.',
+                    desc: 'GDPR requires breach notification within 72 hours. Without a plan you will miss that window.' });
+            }
+            // Staff training
+            if (!have.includes('training') && headcount >= 5) {
+                score -= 5;
+                findings.push({ level: 'warn', title: 'No annual privacy training.',
+                    desc: 'SOC2 CC1.4 and ISR-PPL §17 both require documented security training. Lack of records = audit failure.' });
+            }
+            // SOC2 and enterprise pressure
+            if (enterprise === 'yes' && !have.includes('soc2')) {
+                score -= 15;
+                findings.push({ level: 'critical', title: 'Enterprise deals blocked by missing SOC2.',
+                    desc: 'You explicitly said this is already slowing deals. Every month without SOC2 readiness is revenue left on the table.' });
+            } else if (enterprise === 'soon' && !have.includes('soc2')) {
+                score -= 8;
+                findings.push({ level: 'warn', title: 'SOC2 pressure incoming within 6 months.',
+                    desc: 'SOC2 Type I readiness needs ~60 days of prep. Starting too late kills Q3/Q4 deals.' });
+            }
+            // Sensitive data multipliers
+            if (data.includes('health')) {
+                score -= 10;
+                findings.push({ level: 'critical', title: 'Processing health data without visible safeguards.',
+                    desc: 'GDPR Art. 9 classifies health data as "special category" — explicit consent and DPIA required. ISR-PPL has parallel provisions.' });
+            }
+            if (data.includes('minors')) {
+                score -= 8;
+                findings.push({ level: 'critical', title: 'Processing data on minors.',
+                    desc: 'Requires verifiable parental consent (GDPR Art. 8, COPPA in the US). Most startups fail this quietly until a regulator asks.' });
+            }
+            if (data.includes('biometric')) {
+                score -= 8;
+                findings.push({ level: 'critical', title: 'Processing biometric data.',
+                    desc: 'Special category data — requires DPIA, explicit consent, and in some EU states, prior authority notification.' });
+            }
+            // Israel amendment 13
+            if (israelApplies) {
+                findings.push({ level: 'info', title: 'Israel Privacy Protection Law (Amendment 13) applies.',
+                    desc: 'Effective 2024, Israeli regulators now have GDPR-comparable enforcement powers including fines of up to 5M ILS.' });
+                if (!have.includes('dpo')) {
+                    score -= 5;
+                    findings.push({ level: 'warn', title: 'No DPO — required under ISR-PPL Amendment 13.',
+                        desc: 'If you process data on more than 10,000 data subjects in Israel, a DPO is mandatory.' });
+                }
+            }
+            // GDPR DPO check
+            if (gdprApplies && !have.includes('dpo') && headcount >= 10) {
+                score -= 5;
+                findings.push({ level: 'warn', title: 'No DPO (or equivalent) on record.',
+                    desc: 'Not always mandatory under GDPR, but strongly expected by enterprise buyers and auditors for any company >10 staff handling EU data.' });
+            }
+            // Payment data
+            if (data.includes('payment') && !have.includes('soc2')) {
+                score -= 3;
+                findings.push({ level: 'info', title: 'Payment data + no SOC2 = PCI-DSS questions ahead.',
+                    desc: 'Stripe / banks will ask you to prove secure handling. Combined with SOC2, this is a one-shot solve.' });
+            }
+
+            // Positive note if user has done real work
+            if (have.length >= 6) {
+                findings.push({ level: 'info', title: `You've done real work on compliance (${have.length}/8).`,
+                    desc: 'The gap now is maintenance — keeping all of this alive as your stack changes. That\'s the exact problem Aegis solves.' });
+            }
+
+            score = Math.max(score, 0);
+            return { score, findings, company, geo, gdprApplies, israelApplies };
+        }
+
+        function renderReport({ score, findings, company }) {
+            const scoreEl = document.getElementById('scoreNum');
+            const panel = document.getElementById('scorePanel');
+            const verdict = document.getElementById('scoreVerdict');
+            const cta = document.getElementById('ctaCopy');
+            const list = document.getElementById('findings');
+
+            // Animate number
+            let current = 0;
+            const target = score;
+            const interval = setInterval(() => {
+                current = Math.min(current + 2, target);
+                scoreEl.textContent = current;
+                if (current >= target) clearInterval(interval);
+            }, 20);
+
+            if (score < 50) {
+                panel.classList.add('critical');
+                verdict.textContent = `${company || 'Your startup'} is at critical compliance risk. An enterprise audit today would fail.`;
+                cta.textContent = 'You have 8+ gaps an auditor or enterprise buyer will catch. Aegis closes all of them in 10 minutes of setup — and keeps them closed, continuously, for $990/mo.';
+            } else if (score < 80) {
+                panel.classList.add('warn');
+                verdict.textContent = `${company || 'Your startup'} is partially compliant — but the gaps are the expensive kind.`;
+                cta.textContent = 'You\'ve done some work, but the remaining gaps are exactly the ones that kill enterprise deals. Aegis closes them continuously, for $990/mo.';
+            } else {
+                panel.classList.add('ok');
+                verdict.textContent = `${company || 'Your startup'} is in reasonable shape. Your real risk is maintenance — keeping it alive as you grow.`;
+                cta.textContent = 'You\'re ahead of 90% of startups. The failure mode now is drift — policies going stale, new vendors not mapped, evidence lockers not updated. Aegis prevents that for $990/mo.';
+            }
+
+            list.innerHTML = findings.map(f =>
+                `<div class="finding ${f.level}">
+                    <span class="finding-badge">${f.level}</span>
+                    <div>
+                        <div class="finding-title">${f.title}</div>
+                        <div class="finding-desc">${f.desc}</div>
+                    </div>
+                </div>`
+            ).join('') || '<p style="color:#888;">No major issues detected in your declarations. Impressive.</p>';
+        }
+    </script>
+</body>
+</html>

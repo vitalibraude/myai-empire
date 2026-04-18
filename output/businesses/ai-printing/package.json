@@ -1,0 +1,9 @@
+{
+  "name": "ai-printing",
+  "version": "1.0.0",
+  "description": "AI for Print Shops \u2014 Print Money with AI Automation",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

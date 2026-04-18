@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for E-Commerce — Your Store Runs Itself</title>
+    <meta name="description" content="AI for E-Commerce: Your Store Runs Itself. AI-powered e-commerce automation for online store owners. Starting at $399/mo.">
+    <meta name="keywords" content="E-commerce automation, AI, automation, Online store owners, AI for E-Commerce">
+    <meta property="og:title" content="AI for E-Commerce — Your Store Runs Itself">
+    <meta property="og:description" content="AI-powered e-commerce automation starting at $399/mo.">
+    <meta property="og:type" content="website">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.7; }
+        nav { position: fixed; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 1rem 3rem; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #1a1a1a; z-index: 1000; }
+        .brand { font-size: 1.5rem; font-weight: 800; background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        nav a { color: #a0a0a0; text-decoration: none; margin-left: 2rem; }
+        nav a:hover { color: #00d4ff; }
+        .cta-btn { display: inline-block; padding: 0.8rem 2.5rem; border-radius: 50px; background: linear-gradient(90deg,#00d4ff,#7b2ff7); color: white; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,212,255,0.3); }
+        .cta-outline { display: inline-block; padding: 0.8rem 2.5rem; border-radius: 50px; border: 2px solid #333; background: transparent; color: #a0a0a0; text-decoration: none; transition: all 0.3s; }
+        .cta-outline:hover { border-color: #00d4ff; color: #00d4ff; }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 6rem 2rem 4rem; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 50%; left: 50%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,212,255,0.08), transparent 70%); transform: translate(-50%,-50%); pointer-events: none; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero h1 span { background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.3rem; color: #a0a0a0; max-width: 600px; margin-bottom: 2rem; }
+        .buttons { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d4ff; }
+        .section-sub { text-align: center; color: #777; margin-bottom: 3rem; }
+        .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #111; border: 1px solid #1a1a1a; border-radius: 16px; padding: 2rem; transition: transform 0.3s, border-color 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .card p { color: #888; font-size: 0.95rem; }
+        .card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .pricing-card { background: #111; border: 1px solid #1a1a1a; border-radius: 16px; padding: 2.5rem; text-align: center; }
+        .pricing-card.featured { border-color: #00d4ff; position: relative; }
+        .pricing-card.featured::before { content: 'MOST POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg,#00d4ff,#7b2ff7); padding: 0.3rem 1.5rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; color: white; }
+        .price { font-size: 3rem; font-weight: 800; margin: 1rem 0; }
+        .price span { font-size: 1rem; color: #777; font-weight: 400; }
+        .features { list-style: none; margin: 1.5rem 0; text-align: left; }
+        .features li { padding: 0.5rem 0; border-bottom: 1px solid #1a1a1a; color: #aaa; }
+        .features li::before { content: '\2713 '; color: #00d4ff; font-weight: 700; }
+        .testimonial { background: #111; border: 1px solid #1a1a1a; border-radius: 16px; padding: 2rem; }
+        .testimonial .stars { color: #ffd700; margin-bottom: 1rem; }
+        .testimonial .author { color: #00d4ff; font-weight: 600; margin-top: 1rem; }
+        #contact { background: #111; border-radius: 16px; padding: 3rem; max-width: 600px; margin: 4rem auto; }
+        #contact input, #contact textarea { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #333; border-radius: 8px; background: #0a0a0a; color: #e0e0e0; font-size: 1rem; }
+        #contact textarea { min-height: 120px; resize: vertical; }
+        footer { text-align: center; padding: 3rem 2rem; color: #555; border-top: 1px solid #1a1a1a; }
+        footer a { color: #00d4ff; text-decoration: none; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; padding: 3rem 0; }
+        .stats .num { font-size: 2.5rem; font-weight: 800; background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stats .label { color: #777; font-size: 0.9rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } .stats { grid-template-columns: repeat(2, 1fr); } nav { padding: 1rem 1.5rem; } }
+    </style>
+
+    <link rel="canonical" href="https://businesses.aoeua.com/ai-ecommerce/">
+    <meta property="og:title" content="AI for E-Commerce — AI Automation">
+    <meta property="og:url" content="https://businesses.aoeua.com/ai-ecommerce/">
+    <meta property="og:type" content="product">
+    <meta property="og:description" content="Your Store Runs Itself">
+    <meta property="og:site_name" content="myAI">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <nav>
+        <div class="brand">&#x1F916; AI for E-Commerce</div>
+        <div>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Your <span>Store Runs Itself</span></h1>
+        <p>AI for E-Commerce uses advanced AI to automate every aspect of your e-commerce automation — so you can focus on what matters most.</p>
+        <div class="buttons">
+            <a href="#pricing" class="cta-btn">Start Free Trial</a>
+            <a href="#features" class="cta-outline">See Features</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="stats">
+            <div><div class="num">500+</div><div class="label">Active Businesses</div></div>
+            <div><div class="num">20hrs</div><div class="label">Saved Per Week</div></div>
+            <div><div class="num">40%</div><div class="label">Revenue Increase</div></div>
+            <div><div class="num">99.9%</div><div class="label">Uptime</div></div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2 class="section-title">Powerful Features</h2>
+        <p class="section-sub">Everything online store owners need to run smarter</p>
+        <div class="grid3">
+            <div class="card">
+                <div class="icon">&#x1F4CA;</div>
+                <h3>AI product recommendations</h3>
+                <p>Powered by advanced AI to automate and optimize every aspect of your e-commerce automation.</p>
+            </div>
+            <div class="card">
+                <div class="icon">&#x1F916;</div>
+                <h3>Automated inventory management</h3>
+                <p>Powered by advanced AI to automate and optimize every aspect of your e-commerce automation.</p>
+            </div>
+            <div class="card">
+                <div class="icon">&#x26A1;</div>
+                <h3>Dynamic pricing engine</h3>
+                <p>Powered by advanced AI to automate and optimize every aspect of your e-commerce automation.</p>
+            </div>
+            <div class="card">
+                <div class="icon">&#x1F4B0;</div>
+                <h3>Cart abandonment recovery</h3>
+                <p>Powered by advanced AI to automate and optimize every aspect of your e-commerce automation.</p>
+            </div>
+            <div class="card">
+                <div class="icon">&#x1F4E7;</div>
+                <h3>Multi-channel selling AI</h3>
+                <p>Powered by advanced AI to automate and optimize every aspect of your e-commerce automation.</p>
+            </div>
+            <div class="card">
+                <div class="icon">&#x1F50D;</div>
+                <h3>Smart fulfillment routing</h3>
+                <p>Powered by advanced AI to automate and optimize every aspect of your e-commerce automation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2 class="section-title">Simple Pricing</h2>
+        <p class="section-sub">Start free. Scale when you're ready.</p>
+        <div class="grid3">
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <div class="price">$399<span>/mo</span></div>
+                <ul class="features"><li>AI product recommendations</li>
+<li>Automated inventory management</li>
+<li>Dynamic pricing engine</li></ul>
+                <a href="#contact" class="cta-btn" style="width:100%;text-align:center;">Start Free Trial</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Professional</h3>
+                <div class="price">$877<span>/mo</span></div>
+                <ul class="features"><li>AI product recommendations</li>
+<li>Automated inventory management</li>
+<li>Dynamic pricing engine</li>
+<li>Cart abandonment recovery</li>
+<li>Multi-channel selling AI</li></ul>
+                <a href="#contact" class="cta-btn" style="width:100%;text-align:center;">Start Free Trial</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">$1795<span>/mo</span></div>
+                <ul class="features"><li>AI product recommendations</li>
+<li>Automated inventory management</li>
+<li>Dynamic pricing engine</li>
+<li>Cart abandonment recovery</li>
+<li>Multi-channel selling AI</li>
+<li>Smart fulfillment routing</li></ul>
+                <a href="#contact" class="cta-btn" style="width:100%;text-align:center;">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="section-title">Trusted by Online store owners</h2>
+        <p class="section-sub">Join hundreds of businesses already using AI</p>
+        <div class="grid3">
+            <div class="testimonial">
+                <div class="stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
+                <p>"This AI completely transformed how I run my business. I save 20+ hours every week."</p>
+                <div class="author">— Sarah M., Online store owners</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
+                <p>"The automation is incredible. My revenue increased 40% in the first 3 months."</p>
+                <div class="author">— Mike R., Online store owners</div>
+            </div>
+            <div class="testimonial">
+                <div class="stars">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</div>
+                <p>"I was skeptical at first, but now I can't imagine running my business without it."</p>
+                <div class="author">— Jennifer L., Online store owners</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2 class="section-title">Latest Insights</h2>
+        <p class="section-sub">Learn how AI is transforming e-commerce automation</p>
+        <div class="grid3">
+            <div class="card">
+                <p style="color:#00d4ff;font-size:0.85rem;">2025-01-15 &middot; 5 min read</p>
+                <h3>How AI is Revolutionizing E-commerce automation</h3>
+                <p>Discover how artificial intelligence is transforming the way online store owners operate their businesses, from customer management to automated marketing.</p>
+            </div>
+            <div class="card">
+                <p style="color:#00d4ff;font-size:0.85rem;">2025-01-22 &middot; 4 min read</p>
+                <h3>5 Ways AI for E-Commerce Saves You 20 Hours Per Week</h3>
+                <p>Time is money. Learn about the five key automation features that let online store owners focus on what matters most — growing their business.</p>
+            </div>
+            <div class="card">
+                <p style="color:#00d4ff;font-size:0.85rem;">2025-01-29 &middot; 6 min read</p>
+                <h3>Case Study: How One Business Grew Revenue 40% with AI</h3>
+                <p>A real success story from one of our clients who used AI for E-Commerce to dramatically increase efficiency and profitability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get Started Today</h2>
+        <p class="section-sub">14-day free trial. No credit card required.</p>
+        <div style="max-width:600px;margin:2rem auto;">
+            <form name="contact-ai-ecommerce" method="POST" data-netlify="true" action="/thank-you.html">
+                <input type="hidden" name="form-name" value="contact-ai-ecommerce">
+                <input type="hidden" name="business-niche" value="AI for E-Commerce">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+                <input type="text" name="company" placeholder="Your Business Name">
+                <select name="plan" style="width:100%;padding:0.8rem;margin-bottom:1rem;border:1px solid #333;border-radius:8px;background:#0a0a0a;color:#e0e0e0;font-size:1rem;">
+                    <option value="">Select a Plan</option>
+                    <option value="starter-$399">Starter — $399/mo</option>
+                    <option value="pro-$877">Professional — $877/mo</option>
+                    <option value="enterprise-$1795">Enterprise — $1795/mo</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your e-commerce automation needs..."></textarea>
+                <button type="submit" class="cta-btn" style="width:100%;text-align:center;font-size:1.1rem;padding:1rem;">Get My Free Trial</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AI for E-Commerce — Powered by <a href="../index.html">myAI</a> | <a href="mailto:hello@myai.business">hello@myai.business</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const el = document.querySelector(a.getAttribute('href'));
+                if(el) el.scrollIntoView({behavior:'smooth'});
+            });
+        });
+    </script>
+</body>
+</html>

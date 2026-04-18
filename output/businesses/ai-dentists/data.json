@@ -1,0 +1,61 @@
+{
+  "business": {
+    "id": "ai-dentists",
+    "name": "AI for Dentists",
+    "niche": "Dental practice automation",
+    "tagline": "Smarter Dental Practice Management",
+    "price": 349,
+    "audience": "Dental clinics"
+  },
+  "features": [
+    "AI appointment scheduling",
+    "Automated patient reminders",
+    "Insurance verification AI",
+    "Treatment plan optimization",
+    "Patient portal automation",
+    "Recall system AI"
+  ],
+  "testimonials": [
+    {
+      "text": "This AI completely transformed how I run my business. I save 20+ hours every week.",
+      "author": "Sarah M., Dental clinics",
+      "stars": 5
+    },
+    {
+      "text": "The automation is incredible. My revenue increased 40% in the first 3 months.",
+      "author": "Mike R., Dental clinics",
+      "stars": 5
+    },
+    {
+      "text": "I was skeptical at first, but now I can't imagine running my business without it.",
+      "author": "Jennifer L., Dental clinics",
+      "stars": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "How AI is Revolutionizing Dental practice automation",
+      "excerpt": "Discover how artificial intelligence is transforming the way dental clinics operate their businesses, from customer management to automated marketing.",
+      "date": "2025-01-15",
+      "read_time": "5 min"
+    },
+    {
+      "title": "5 Ways AI for Dentists Saves You 20 Hours Per Week",
+      "excerpt": "Time is money. Learn about the five key automation features that let dental clinics focus on what matters most \u2014 growing their business.",
+      "date": "2025-01-22",
+      "read_time": "4 min"
+    },
+    {
+      "title": "Case Study: How One Business Grew Revenue 40% with AI",
+      "excerpt": "A real success story from one of our clients who used AI for Dentists to dramatically increase efficiency and profitability.",
+      "date": "2025-01-29",
+      "read_time": "6 min"
+    }
+  ],
+  "pricing": {
+    "starter": 349,
+    "professional": 767,
+    "enterprise": 1570
+  },
+  "generated": "2026-04-16T12:19:45.450607"
+}

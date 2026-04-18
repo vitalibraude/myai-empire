@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing — myAI</title>
+    <style>
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a; color: #e0e0e0; line-height: 1.7;
+        }
+        .cta-button {
+            display: inline-block; padding: 1rem 3rem; font-size: 1.15rem;
+            border: none; border-radius: 50px;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: white; cursor: pointer; text-decoration: none; font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+        }
+        .cta-secondary {
+            display: inline-block; padding: 1rem 3rem; font-size: 1.15rem;
+            border: 2px solid #333; border-radius: 50px;
+            background: transparent; color: #a0a0a0; cursor: pointer;
+            text-decoration: none; transition: all 0.3s;
+        }
+        .cta-secondary:hover { border-color: #00d4ff; color: #00d4ff; }
+        .section-title {
+            text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d4ff;
+        }
+        .section-subtitle {
+            text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;
+        }
+        .animate-on-scroll {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+        
+        .main-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1rem 3rem;
+            background: rgba(10,10,10,0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #1a1a1a;
+            z-index: 1000;
+        }
+        .nav-brand {
+            font-size: 1.5rem; font-weight: 800;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a {
+            color: #a0a0a0; text-decoration: none; font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #00d4ff; }
+        .nav-cta {
+            padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.9rem;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: white; text-decoration: none; font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.3);
+        }
+
+        .hero-mini {
+            padding:8rem 2rem 4rem; text-align:center;
+            background:linear-gradient(135deg,#0a0a0a,#1a1a2e);
+        }
+        .hero-mini h1 {
+            font-size:3rem;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+            margin-bottom:1rem;
+        }
+        .hero-mini p { color:#888; font-size:1.2rem; }
+        .pricing-grid {
+            max-width:1100px; margin:0 auto; padding:4rem 2rem;
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem;
+        }
+        .plan {
+            background:#111; border:1px solid #222; border-radius:20px;
+            padding:3rem 2rem; text-align:center;
+            transition:transform .3s,border-color .3s; position:relative;
+        }
+        .plan:hover { transform:translateY(-5px); border-color:#333; }
+        .plan.featured { border-color:#7b2ff7; transform:scale(1.05); }
+        .plan.featured:hover { transform:scale(1.05) translateY(-5px); }
+        .plan .badge {
+            position:absolute; top:-12px; left:50%; transform:translateX(-50%);
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color:white; padding:.3rem 1.5rem; border-radius:20px;
+            font-size:.85rem; font-weight:600;
+        }
+        .plan h3 { color:#00d4ff; font-size:1.5rem; margin-bottom:.5rem; }
+        .plan .price { font-size:3rem; font-weight:800; margin:1rem 0; }
+        .plan .price span { font-size:1rem; color:#666; }
+        .plan .features { list-style:none; margin:2rem 0; text-align:left; }
+        .plan .features li { padding:.5rem 0; border-bottom:1px solid #1a1a1a; color:#999; }
+        .plan .features li::before { content:'\2713 '; color:#00d4ff; }
+        .plan .features li.disabled { color:#444; }
+        .plan .features li.disabled::before { content:'\2717 '; color:#444; }
+        .plan-btn {
+            display:inline-block; width:100%; padding:1rem; border:none;
+            border-radius:50px; font-size:1.1rem; cursor:pointer;
+            text-decoration:none; transition:all .3s;
+        }
+        .plan-btn.primary { background:linear-gradient(90deg,#00d4ff,#7b2ff7); color:white; }
+        .plan-btn.secondary { background:transparent; border:2px solid #333; color:#a0a0a0; }
+        .plan-btn:hover { transform:translateY(-2px); }
+        .faq { max-width:800px; margin:0 auto; padding:4rem 2rem; }
+        .faq h2 { text-align:center; color:#00d4ff; font-size:2rem; margin-bottom:2rem; }
+        .faq-item {
+            background:#111; border:1px solid #222; border-radius:12px;
+            margin-bottom:1rem; overflow:hidden;
+        }
+        .faq-item summary { padding:1.2rem; cursor:pointer; color:#e0e0e0; font-weight:600; }
+        .faq-item summary:hover { color:#00d4ff; }
+        .faq-item p { padding:0 1.2rem 1.2rem; color:#888; }
+        
+        footer {
+            text-align: center; padding: 3rem 2rem; color: #555; font-size: 0.9rem;
+            border-top: 1px solid #1a1a1a; background: #0a0a0a;
+        }
+        footer a { color: #00d4ff; text-decoration: none; }
+
+        @media(max-width:768px) {
+            .plan.featured { transform:scale(1); }
+            .plan.featured:hover { transform:translateY(-5px); }
+        }
+    </style>
+
+    <link rel="canonical" href="https://aoeua.com/pricing.html">
+    <meta property="og:title" content="Pricing — myAI">
+    <meta property="og:url" content="https://aoeua.com/pricing.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="AI-powered business automation for 50+ industries. Automate operations, boost revenue, save time.">
+    <meta property="og:site_name" content="myAI">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pricing — myAI">
+</head>
+<body>
+    
+    <nav class="main-nav">
+        <div class="nav-brand">&#x1F916; myAI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://businesses.aoeua.com">50 Businesses</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <a href="index.html#contact" class="nav-cta">Get Started</a>
+    </nav>
+
+    <section class="hero-mini">
+        <h1>Simple, Transparent Pricing</h1>
+        <p>14-day free trial on all plans. Cancel anytime.</p>
+    </section>
+
+    <div class="pricing-grid">
+        <div class="plan">
+            <h3>Starter</h3>
+            <div class="price">$399<span>/mo</span></div>
+            <p style="color:#666;">For small businesses getting started with AI</p>
+            <ul class="features">
+                <li>1 AI Agent</li>
+                <li>Landing page + blog</li>
+                <li>5 social posts/week</li>
+                <li>2 video scripts/month</li>
+                <li>Monthly reports</li>
+                <li class="disabled">AI Customer Service</li>
+                <li class="disabled">Custom API</li>
+            </ul>
+            <a href="index.html#contact" class="plan-btn secondary">Start Free Trial</a>
+        </div>
+        <div class="plan featured">
+            <div class="badge">Most Popular</div>
+            <h3>Pro</h3>
+            <div class="price">$999<span>/mo</span></div>
+            <p style="color:#666;">For growing businesses that want full automation</p>
+            <ul class="features">
+                <li>3 AI Agents</li>
+                <li>Full website (5+ pages)</li>
+                <li>Daily social posts (all platforms)</li>
+                <li>8 video scripts/month + thumbnails</li>
+                <li>Weekly reports</li>
+                <li>AI Customer Service chatbot</li>
+                <li class="disabled">Custom API</li>
+            </ul>
+            <a href="index.html#contact" class="plan-btn primary">Start Free Trial</a>
+        </div>
+        <div class="plan">
+            <h3>Enterprise</h3>
+            <div class="price">$2499<span>/mo</span></div>
+            <p style="color:#666;">For organizations that need the full suite</p>
+            <ul class="features">
+                <li>Unlimited AI Agents</li>
+                <li>Full website + web app</li>
+                <li>Unlimited content</li>
+                <li>Real-time dashboards</li>
+                <li>Advanced AI Customer Service</li>
+                <li>Multi-platform campaigns + SEO</li>
+                <li>Custom API &amp; integrations</li>
+            </ul>
+            <a href="index.html#contact" class="plan-btn secondary">Contact Sales</a>
+        </div>
+    </div>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details class="faq-item"><summary>Can I upgrade my plan?</summary><p>Yes! Upgrade anytime. Billing adjusts pro-rata for the remaining period.</p></details>
+        <details class="faq-item"><summary>Is there a free trial?</summary><p>All plans include a 14-day free trial. No credit card required.</p></details>
+        <details class="faq-item"><summary>What's the difference between agent types?</summary><p>Starter agents handle simple tasks from templates. Pro agents can learn, adapt, and make autonomous decisions based on data.</p></details>
+        <details class="faq-item"><summary>How does support work?</summary><p>All plans include 24/7 AI chatbot support. Pro and Enterprise also get dedicated human support and onboarding.</p></details>
+        <details class="faq-item"><summary>Can I get a custom solution?</summary><p>Enterprise customers get fully customized agents, APIs, and integrations tailored to their specific business needs.</p></details>
+    </section>
+    
+    <footer>
+        <div style="max-width:900px;margin:0 auto;">
+            <p style="margin-bottom:1rem;">&#x1F916; <strong>myAI</strong> — Autonomous AI That Runs Your Business</p>
+            <p>
+                <a href="index.html">Home</a> &middot;
+                <a href="about.html">About</a> &middot;
+                <a href="services.html">Services</a> &middot;
+                <a href="pricing.html">Pricing</a> &middot;
+                <a href="blog.html">Blog</a> &middot;
+                <a href="index.html#contact">Contact</a>
+            </p>
+            <p style="margin-top:1.5rem;">&copy; 2026 myAI Inc. All rights reserved. Built autonomously by AI.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "ai-realestate",
+  "version": "1.0.0",
+  "description": "AI for Real Estate \u2014 Close Deals on Autopilot",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

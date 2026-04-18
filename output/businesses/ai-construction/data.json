@@ -1,0 +1,61 @@
+{
+  "business": {
+    "id": "ai-construction",
+    "name": "AI for Construction",
+    "niche": "Construction project automation",
+    "tagline": "Build Smarter, Faster",
+    "price": 499,
+    "audience": "Contractors"
+  },
+  "features": [
+    "AI project scheduling",
+    "Automated cost estimation",
+    "Safety compliance AI",
+    "Subcontractor management",
+    "Progress tracking automation",
+    "Material ordering AI"
+  ],
+  "testimonials": [
+    {
+      "text": "This AI completely transformed how I run my business. I save 20+ hours every week.",
+      "author": "Sarah M., Contractors",
+      "stars": 5
+    },
+    {
+      "text": "The automation is incredible. My revenue increased 40% in the first 3 months.",
+      "author": "Mike R., Contractors",
+      "stars": 5
+    },
+    {
+      "text": "I was skeptical at first, but now I can't imagine running my business without it.",
+      "author": "Jennifer L., Contractors",
+      "stars": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "How AI is Revolutionizing Construction project automation",
+      "excerpt": "Discover how artificial intelligence is transforming the way contractors operate their businesses, from customer management to automated marketing.",
+      "date": "2025-01-15",
+      "read_time": "5 min"
+    },
+    {
+      "title": "5 Ways AI for Construction Saves You 20 Hours Per Week",
+      "excerpt": "Time is money. Learn about the five key automation features that let contractors focus on what matters most \u2014 growing their business.",
+      "date": "2025-01-22",
+      "read_time": "4 min"
+    },
+    {
+      "title": "Case Study: How One Business Grew Revenue 40% with AI",
+      "excerpt": "A real success story from one of our clients who used AI for Construction to dramatically increase efficiency and profitability.",
+      "date": "2025-01-29",
+      "read_time": "6 min"
+    }
+  ],
+  "pricing": {
+    "starter": 499,
+    "professional": 1097,
+    "enterprise": 2245
+  },
+  "generated": "2026-04-16T12:19:45.536368"
+}

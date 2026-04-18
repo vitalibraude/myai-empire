@@ -1,0 +1,9 @@
+{
+  "name": "ai-weddings",
+  "version": "1.0.0",
+  "description": "AI for Wedding Planners \u2014 Perfect Weddings, Zero Stress",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

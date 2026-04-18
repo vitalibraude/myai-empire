@@ -1,0 +1,9 @@
+{
+  "name": "ai-notary",
+  "version": "1.0.0",
+  "description": "AI for Notaries \u2014 Sign, Seal, Automate",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

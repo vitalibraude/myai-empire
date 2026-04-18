@@ -1,0 +1,9 @@
+{
+  "name": "ai-tattoo",
+  "version": "1.0.0",
+  "description": "AI for Tattoo Studios \u2014 Ink Your Success Story",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

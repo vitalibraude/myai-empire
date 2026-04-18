@@ -1,0 +1,9 @@
+{
+  "name": "ai-movers",
+  "version": "1.0.0",
+  "description": "AI for Moving Companies \u2014 Move Smarter, Not Harder",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ai-pest-control",
+  "version": "1.0.0",
+  "description": "AI for Pest Control \u2014 Bug-Free Business Management",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

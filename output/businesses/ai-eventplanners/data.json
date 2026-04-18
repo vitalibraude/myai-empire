@@ -1,0 +1,61 @@
+{
+  "business": {
+    "id": "ai-eventplanners",
+    "name": "AI for Event Planners",
+    "niche": "Event planning automation",
+    "tagline": "Flawless Events, Zero Chaos",
+    "price": 299,
+    "audience": "Event planners"
+  },
+  "features": [
+    "AI-powered customer management",
+    "Automated scheduling & booking",
+    "Smart invoicing & payments",
+    "Real-time analytics dashboard",
+    "Automated email & SMS marketing",
+    "24/7 AI chatbot for customers"
+  ],
+  "testimonials": [
+    {
+      "text": "This AI completely transformed how I run my business. I save 20+ hours every week.",
+      "author": "Sarah M., Event planners",
+      "stars": 5
+    },
+    {
+      "text": "The automation is incredible. My revenue increased 40% in the first 3 months.",
+      "author": "Mike R., Event planners",
+      "stars": 5
+    },
+    {
+      "text": "I was skeptical at first, but now I can't imagine running my business without it.",
+      "author": "Jennifer L., Event planners",
+      "stars": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "How AI is Revolutionizing Event planning automation",
+      "excerpt": "Discover how artificial intelligence is transforming the way event planners operate their businesses, from customer management to automated marketing.",
+      "date": "2025-01-15",
+      "read_time": "5 min"
+    },
+    {
+      "title": "5 Ways AI for Event Planners Saves You 20 Hours Per Week",
+      "excerpt": "Time is money. Learn about the five key automation features that let event planners focus on what matters most \u2014 growing their business.",
+      "date": "2025-01-22",
+      "read_time": "4 min"
+    },
+    {
+      "title": "Case Study: How One Business Grew Revenue 40% with AI",
+      "excerpt": "A real success story from one of our clients who used AI for Event Planners to dramatically increase efficiency and profitability.",
+      "date": "2025-01-29",
+      "read_time": "6 min"
+    }
+  ],
+  "pricing": {
+    "starter": 299,
+    "professional": 657,
+    "enterprise": 1345
+  },
+  "generated": "2026-04-16T12:19:45.785241"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ai-landscapers",
+  "version": "1.0.0",
+  "description": "AI for Landscapers \u2014 Grow Your Business Automatically",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

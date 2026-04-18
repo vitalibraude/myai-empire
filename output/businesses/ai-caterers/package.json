@@ -1,0 +1,9 @@
+{
+  "name": "ai-caterers",
+  "version": "1.0.0",
+  "description": "AI for Caterers \u2014 Serve More, Stress Less",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

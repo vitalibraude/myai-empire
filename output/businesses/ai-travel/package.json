@@ -1,0 +1,9 @@
+{
+  "name": "ai-travel",
+  "version": "1.0.0",
+  "description": "AI for Travel Agencies \u2014 Automate Trips, Maximize Bookings",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "business": {
+    "id": "ai-trucking",
+    "name": "AI for Trucking",
+    "niche": "Fleet & logistics automation",
+    "tagline": "AI-Powered Fleet Management",
+    "price": 399,
+    "audience": "Trucking companies"
+  },
+  "features": [
+    "AI route optimization",
+    "Automated fleet tracking",
+    "Fuel management AI",
+    "Driver scheduling automation",
+    "Compliance monitoring",
+    "Load matching AI"
+  ],
+  "testimonials": [
+    {
+      "text": "This AI completely transformed how I run my business. I save 20+ hours every week.",
+      "author": "Sarah M., Trucking companies",
+      "stars": 5
+    },
+    {
+      "text": "The automation is incredible. My revenue increased 40% in the first 3 months.",
+      "author": "Mike R., Trucking companies",
+      "stars": 5
+    },
+    {
+      "text": "I was skeptical at first, but now I can't imagine running my business without it.",
+      "author": "Jennifer L., Trucking companies",
+      "stars": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "How AI is Revolutionizing Fleet & logistics automation",
+      "excerpt": "Discover how artificial intelligence is transforming the way trucking companies operate their businesses, from customer management to automated marketing.",
+      "date": "2025-01-15",
+      "read_time": "5 min"
+    },
+    {
+      "title": "5 Ways AI for Trucking Saves You 20 Hours Per Week",
+      "excerpt": "Time is money. Learn about the five key automation features that let trucking companies focus on what matters most \u2014 growing their business.",
+      "date": "2025-01-22",
+      "read_time": "4 min"
+    },
+    {
+      "title": "Case Study: How One Business Grew Revenue 40% with AI",
+      "excerpt": "A real success story from one of our clients who used AI for Trucking to dramatically increase efficiency and profitability.",
+      "date": "2025-01-29",
+      "read_time": "6 min"
+    }
+  ],
+  "pricing": {
+    "starter": 399,
+    "professional": 877,
+    "enterprise": 1795
+  },
+  "generated": "2026-04-16T12:19:45.544366"
+}

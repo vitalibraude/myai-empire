@@ -1,0 +1,9 @@
+{
+  "name": "ai-electricians",
+  "version": "1.0.0",
+  "description": "AI for Electricians \u2014 Power Up Your Business with AI",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

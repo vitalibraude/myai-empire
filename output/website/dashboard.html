@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myAI — Empire Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; background: #060611; color: #e0e0e0; line-height: 1.6; }
+
+        /* Sidebar */
+        .sidebar { position: fixed; top: 0; left: 0; width: 240px; height: 100vh; background: #0a0a1a; border-right: 1px solid #1a1a2e; padding: 1.5rem 0; overflow-y: auto; z-index: 100; }
+        .sidebar .logo { padding: 0 1.5rem; font-size: 1.4rem; font-weight: 800; background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 2rem; }
+        .sidebar a { display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 1.5rem; color: #888; text-decoration: none; font-size: 0.9rem; transition: all 0.2s; border-left: 3px solid transparent; }
+        .sidebar a:hover, .sidebar a.active { color: #00d4ff; background: rgba(0,212,255,0.05); border-left-color: #00d4ff; }
+        .sidebar .section-label { padding: 1.5rem 1.5rem 0.5rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1rem; color: #555; }
+
+        /* Main */
+        .main { margin-left: 240px; padding: 2rem; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+        .header h1 { font-size: 1.8rem; font-weight: 700; }
+        .header .live-badge { background: #00c853; color: #000; padding: 0.3rem 1rem; border-radius: 50px; font-size: 0.8rem; font-weight: 700; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+
+        /* Stat Cards */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin-bottom: 2rem; }
+        .stat-card { background: #0d0d20; border: 1px solid #1a1a2e; border-radius: 16px; padding: 1.5rem; position: relative; overflow: hidden; }
+        .stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,#00d4ff,#7b2ff7); }
+        .stat-card .label { font-size: 0.85rem; color: #777; margin-bottom: 0.3rem; }
+        .stat-card .value { font-size: 2rem; font-weight: 800; }
+        .stat-card .value.blue { color: #00d4ff; }
+        .stat-card .value.purple { color: #7b2ff7; }
+        .stat-card .value.green { color: #00c853; }
+        .stat-card .value.gold { color: #ffd700; }
+        .stat-card .change { font-size: 0.8rem; color: #00c853; margin-top: 0.3rem; }
+
+        /* Charts placeholder */
+        .chart-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.2rem; margin-bottom: 2rem; }
+        .chart-card { background: #0d0d20; border: 1px solid #1a1a2e; border-radius: 16px; padding: 1.5rem; }
+        .chart-card h3 { font-size: 1rem; color: #aaa; margin-bottom: 1rem; }
+        .bar-chart { display: flex; align-items: flex-end; gap: 4px; height: 200px; padding-top: 1rem; }
+        .bar { flex: 1; background: linear-gradient(180deg, #00d4ff, #7b2ff7); border-radius: 4px 4px 0 0; min-width: 20px; position: relative; transition: all 0.3s; cursor: pointer; }
+        .bar:hover { opacity: 0.8; }
+        .bar .tooltip { display: none; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); background: #1a1a2e; padding: 0.3rem 0.6rem; border-radius: 6px; font-size: 0.75rem; white-space: nowrap; }
+        .bar:hover .tooltip { display: block; }
+        .donut-container { display: flex; justify-content: center; align-items: center; height: 200px; }
+        .donut { width: 180px; height: 180px; border-radius: 50%; background: conic-gradient(#00d4ff 0deg 120deg, #7b2ff7 120deg 220deg, #00c853 220deg 300deg, #ffd700 300deg 360deg); position: relative; }
+        .donut::after { content: '50'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100px; height: 100px; background: #0d0d20; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: #00d4ff; }
+
+        /* Table */
+        .table-card { background: #0d0d20; border: 1px solid #1a1a2e; border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem; overflow-x: auto; }
+        .table-card h3 { font-size: 1rem; color: #aaa; margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 0.8rem; color: #555; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05rem; border-bottom: 1px solid #1a1a2e; }
+        td { padding: 0.7rem 0.8rem; border-bottom: 1px solid #0a0a1a; font-size: 0.9rem; }
+        tr:hover { background: rgba(0,212,255,0.03); }
+        .status-badge { padding: 0.25rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; }
+        .status-badge.live { background: rgba(0,200,83,0.15); color: #00c853; }
+        .status-badge.completed { background: rgba(0,212,255,0.15); color: #00d4ff; }
+        .status-badge.pending { background: rgba(255,215,0,0.15); color: #ffd700; }
+        .lead-count { background: #1a1a2e; padding: 0.2rem 0.6rem; border-radius: 8px; font-weight: 600; }
+
+        /* Revenue Simulator */
+        .simulator { background: #0d0d20; border: 1px solid #1a1a2e; border-radius: 16px; padding: 2rem; margin-bottom: 2rem; }
+        .simulator h3 { color: #aaa; margin-bottom: 1rem; }
+        .slider-group { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+        .slider-group label { min-width: 200px; color: #888; font-size: 0.9rem; }
+        .slider-group input[type=range] { flex: 1; accent-color: #00d4ff; }
+        .slider-group .val { min-width: 60px; text-align: right; font-weight: 700; color: #00d4ff; }
+        .revenue-result { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #1a1a2e; }
+        .revenue-result .item { text-align: center; }
+        .revenue-result .big { font-size: 1.8rem; font-weight: 800; background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .revenue-result .sub { font-size: 0.8rem; color: #666; }
+
+        /* Lead feed */
+        .lead-feed { background: #0d0d20; border: 1px solid #1a1a2e; border-radius: 16px; padding: 1.5rem; }
+        .lead-feed h3 { color: #aaa; margin-bottom: 1rem; }
+        .lead-item { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; border-bottom: 1px solid #0a0a1a; }
+        .lead-item .info { display: flex; flex-direction: column; }
+        .lead-item .name { font-weight: 600; color: #e0e0e0; }
+        .lead-item .source { font-size: 0.8rem; color: #666; }
+        .lead-item .time { font-size: 0.8rem; color: #555; }
+        .empty-state { text-align: center; padding: 3rem; color: #555; }
+        .empty-state .icon { font-size: 3rem; margin-bottom: 1rem; }
+
+        /* Tabs */
+        .tab-bar { display: flex; gap: 0; margin-bottom: 1.5rem; background: #0a0a1a; border-radius: 12px; overflow: hidden; border: 1px solid #1a1a2e; }
+        .tab { padding: 0.7rem 1.5rem; cursor: pointer; color: #666; font-size: 0.9rem; transition: all 0.2s; }
+        .tab:hover { color: #aaa; }
+        .tab.active { background: #0d0d20; color: #00d4ff; font-weight: 600; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        @media (max-width: 900px) {
+            .sidebar { display: none; }
+            .main { margin-left: 0; }
+            .chart-grid { grid-template-columns: 1fr; }
+            .revenue-result { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+
+    <link rel="canonical" href="https://aoeua.com/dashboard.html">
+    <meta property="og:title" content="myAI — Empire Dashboard">
+    <meta property="og:url" content="https://aoeua.com/dashboard.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="AI-powered business automation for 50+ industries. Automate operations, boost revenue, save time.">
+    <meta property="og:site_name" content="myAI">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="myAI — Empire Dashboard">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo">&#x1F916; myAI</div>
+    <a href="#" class="active">&#x1F4CA; Dashboard</a>
+    <a href="#businesses-section">&#x1F3E2; Businesses</a>
+    <a href="#revenue-section">&#x1F4B0; Revenue</a>
+    <a href="#leads-section">&#x1F4E9; Leads</a>
+    <div class="section-label">Operations</div>
+    <a href="#tasks-section">&#x2705; Tasks</a>
+    <a href="#agent-section">&#x1F916; Agent Runs</a>
+    <div class="section-label">Sites</div>
+    <a href="https://businesses.aoeua.com">&#x1F310; All 50 Sites</a>
+    <a href="index.html">&#x1F3E0; Main Site</a>
+    <a href="investors.html">&#x1F4BC; Investor Page</a>
+    <a href="checkout.html">&#x1F4B3; Checkout</a>
+    <div class="section-label">Data</div>
+    <a href="blog.html">&#x1F4DD; Blog (19 runs)</a>
+</div>
+
+<div class="main">
+    <div class="header">
+        <h1>Empire Dashboard</h1>
+        <div class="live-badge">&#x1F7E2; LIVE on Netlify</div>
+    </div>
+
+    <!-- Stat Cards -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="label">Active Businesses</div>
+            <div class="value blue">50</div>
+            <div class="change">All deployed &amp; ready</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Potential MRR (1 client/biz)</div>
+            <div class="value green">$14,150</div>
+            <div class="change">50 niches &times; avg price</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Agent Runs</div>
+            <div class="value purple">20</div>
+            <div class="change">100 tasks completed</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Tasks Completed</div>
+            <div class="value gold">100</div>
+            <div class="change">5 pending</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Total Pages</div>
+            <div class="value blue">57</div>
+            <div class="change">7 main + 50 niche sites</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Content Pieces</div>
+            <div class="value purple">700+</div>
+            <div class="change">Blog + Social + Email + Video</div>
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Revenue by Niche (Monthly Price per Client)</h3>
+            <div class="bar-chart" id="revenue-chart">
+                <div class="bar" style="height:49px;"><div class="tooltip">AI for Restaurants: $299</div></div><div class="bar" style="height:83px;"><div class="tooltip">AI for Real Estate: $499</div></div><div class="bar" style="height:66px;"><div class="tooltip">AI for E-Commerce: $399</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Fitness: $199</div></div><div class="bar" style="height:58px;"><div class="tooltip">AI for Dentists: $349</div></div><div class="bar" style="height:99px;"><div class="tooltip">AI for Law Firms: $599</div></div><div class="bar" style="height:66px;"><div class="tooltip">AI for Accountants: $399</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Plumbers: $199</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for HVAC: $249</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Salons: $199</div></div><div class="bar" style="height:49px;"><div class="tooltip">AI for Coaches: $299</div></div><div class="bar" style="height:83px;"><div class="tooltip">AI for Agencies: $499</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Freelancers: $149</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Photographers: $199</div></div><div class="bar" style="height:49px;"><div class="tooltip">AI for Wedding Planners: $299</div></div><div class="bar" style="height:83px;"><div class="tooltip">AI for Construction: $499</div></div><div class="bar" style="height:66px;"><div class="tooltip">AI for Trucking: $399</div></div><div class="bar" style="height:74px;"><div class="tooltip">AI for Insurance: $449</div></div><div class="bar" style="height:49px;"><div class="tooltip">AI for Chiropractors: $299</div></div><div class="bar" style="height:49px;"><div class="tooltip">AI for Veterinarians: $299</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Tutors: $149</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Daycares: $249</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Cleaning Services: $199</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Landscapers: $199</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Pet Groomers: $149</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Auto Shops: $249</div></div><div class="bar" style="height:58px;"><div class="tooltip">AI for Pharmacies: $349</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Yoga Studios: $199</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Bakeries: $199</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Coffee Shops: $199</div></div><div class="bar" style="height:49px;"><div class="tooltip">AI for Therapists: $299</div></div><div class="bar" style="height:74px;"><div class="tooltip">AI for Architects: $449</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Caterers: $249</div></div><div class="bar" style="height:49px;"><div class="tooltip">AI for Event Planners: $299</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Florists: $149</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Moving Companies: $249</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Pest Control: $199</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Roofers: $249</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Electricians: $249</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Towing: $199</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Tattoo Studios: $149</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Music Teachers: $149</div></div><div class="bar" style="height:58px;"><div class="tooltip">AI for Travel Agencies: $349</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Spas: $249</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Print Shops: $199</div></div><div class="bar" style="height:33px;"><div class="tooltip">AI for Notaries: $199</div></div><div class="bar" style="height:74px;"><div class="tooltip">AI for Staffing Agencies: $449</div></div><div class="bar" style="height:83px;"><div class="tooltip">AI for Auto Dealers: $499</div></div><div class="bar" style="height:41px;"><div class="tooltip">AI for Self-Storage: $249</div></div><div class="bar" style="height:24px;"><div class="tooltip">AI for Laundromats: $149</div></div>
+            </div>
+        </div>
+        <div class="chart-card">
+            <h3>Business Categories</h3>
+            <div class="donut-container">
+                <div class="donut"></div>
+            </div>
+            <div style="display:flex;gap:1rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                <span style="color:#00d4ff;font-size:0.8rem;">&#x25CF; Services (15)</span>
+                <span style="color:#7b2ff7;font-size:0.8rem;">&#x25CF; Health (8)</span>
+                <span style="color:#00c853;font-size:0.8rem;">&#x25CF; Professional (12)</span>
+                <span style="color:#ffd700;font-size:0.8rem;">&#x25CF; Retail & Other (15)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revenue Simulator -->
+    <div class="simulator" id="revenue-section">
+        <h3>&#x1F4B0; Revenue Simulator</h3>
+        <div class="slider-group">
+            <label>Clients per Business:</label>
+            <input type="range" min="0" max="100" value="1" id="clients-slider" oninput="updateRevenue()">
+            <span class="val" id="clients-val">1</span>
+        </div>
+        <div class="slider-group">
+            <label>Conversion Rate (leads → clients):</label>
+            <input type="range" min="1" max="30" value="5" id="conv-slider" oninput="updateRevenue()">
+            <span class="val" id="conv-val">5%</span>
+        </div>
+        <div class="revenue-result">
+            <div class="item">
+                <div class="big" id="rev-mrr">$14,150</div>
+                <div class="sub">Monthly Revenue (MRR)</div>
+            </div>
+            <div class="item">
+                <div class="big" id="rev-arr">$169,800</div>
+                <div class="sub">Annual Revenue (ARR)</div>
+            </div>
+            <div class="item">
+                <div class="big" id="rev-profit">$12,735</div>
+                <div class="sub">Monthly Profit (90%)</div>
+            </div>
+            <div class="item">
+                <div class="big" id="rev-leads">1,000</div>
+                <div class="sub">Leads Needed/Month</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leads Section -->
+    <div id="leads-section">
+        <div class="tab-bar">
+            <div class="tab active" onclick="switchTab('all-leads')">All Leads</div>
+            <div class="tab" onclick="switchTab('hot-leads')">Hot Leads</div>
+            <div class="tab" onclick="switchTab('form-subs')">Form Submissions</div>
+        </div>
+        <div class="lead-feed tab-content active" id="all-leads">
+            <h3>&#x1F4E9; Incoming Leads (via Netlify Forms)</h3>
+            <div class="empty-state">
+                <div class="icon">&#x1F4EC;</div>
+                <p>Leads will appear here when visitors submit forms on your sites.</p>
+                <p style="margin-top:0.5rem;font-size:0.85rem;">Check <strong>Netlify Dashboard → Forms</strong> for real submissions.</p>
+                <a href="https://app.netlify.com" target="_blank" style="display:inline-block;margin-top:1rem;padding:0.6rem 1.5rem;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:white;text-decoration:none;border-radius:50px;font-size:0.9rem;">Open Netlify Forms</a>
+            </div>
+        </div>
+        <div class="lead-feed tab-content" id="hot-leads">
+            <h3>&#x1F525; Hot Leads</h3>
+            <div class="empty-state">
+                <div class="icon">&#x1F525;</div>
+                <p>High-intent leads from pricing pages will show here.</p>
+            </div>
+        </div>
+        <div class="lead-feed tab-content" id="form-subs">
+            <h3>&#x1F4CB; Form Submissions</h3>
+            <div class="empty-state">
+                <div class="icon">&#x1F4CB;</div>
+                <p>All form data synced from Netlify.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Businesses Table -->
+    <div class="table-card" id="businesses-section" style="margin-top:2rem;">
+        <h3>&#x1F3E2; All 50 Businesses</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Business</th>
+                    <th>Target Audience</th>
+                    <th>Starter</th>
+                    <th>Pro</th>
+                    <th>Enterprise</th>
+                    <th>Status</th>
+                    <th>Leads</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="../businesses/ai-restaurants/index.html" style="color:#00d4ff;text-decoration:none;">AI for Restaurants</a></td>
+                <td>Restaurant owners</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-restaurants">0</span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="../businesses/ai-realestate/index.html" style="color:#00d4ff;text-decoration:none;">AI for Real Estate</a></td>
+                <td>Real estate agents</td>
+                <td>$499</td>
+                <td>$1097</td>
+                <td>$2245</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-realestate">0</span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="../businesses/ai-ecommerce/index.html" style="color:#00d4ff;text-decoration:none;">AI for E-Commerce</a></td>
+                <td>Online store owners</td>
+                <td>$399</td>
+                <td>$877</td>
+                <td>$1795</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-ecommerce">0</span></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="../businesses/ai-fitness/index.html" style="color:#00d4ff;text-decoration:none;">AI for Fitness</a></td>
+                <td>Gym owners & trainers</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-fitness">0</span></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="../businesses/ai-dentists/index.html" style="color:#00d4ff;text-decoration:none;">AI for Dentists</a></td>
+                <td>Dental clinics</td>
+                <td>$349</td>
+                <td>$767</td>
+                <td>$1570</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-dentists">0</span></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="../businesses/ai-lawyers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Law Firms</a></td>
+                <td>Law firms</td>
+                <td>$599</td>
+                <td>$1317</td>
+                <td>$2695</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-lawyers">0</span></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="../businesses/ai-accountants/index.html" style="color:#00d4ff;text-decoration:none;">AI for Accountants</a></td>
+                <td>CPA firms</td>
+                <td>$399</td>
+                <td>$877</td>
+                <td>$1795</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-accountants">0</span></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="../businesses/ai-plumbers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Plumbers</a></td>
+                <td>Plumbing companies</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-plumbers">0</span></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="../businesses/ai-hvac/index.html" style="color:#00d4ff;text-decoration:none;">AI for HVAC</a></td>
+                <td>HVAC companies</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-hvac">0</span></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="../businesses/ai-salons/index.html" style="color:#00d4ff;text-decoration:none;">AI for Salons</a></td>
+                <td>Salon owners</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-salons">0</span></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><a href="../businesses/ai-coaches/index.html" style="color:#00d4ff;text-decoration:none;">AI for Coaches</a></td>
+                <td>Business & life coaches</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-coaches">0</span></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><a href="../businesses/ai-agencies/index.html" style="color:#00d4ff;text-decoration:none;">AI for Agencies</a></td>
+                <td>Marketing agencies</td>
+                <td>$499</td>
+                <td>$1097</td>
+                <td>$2245</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-agencies">0</span></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td><a href="../businesses/ai-freelancers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Freelancers</a></td>
+                <td>Freelancers</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-freelancers">0</span></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td><a href="../businesses/ai-photographers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Photographers</a></td>
+                <td>Photographers</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-photographers">0</span></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td><a href="../businesses/ai-weddings/index.html" style="color:#00d4ff;text-decoration:none;">AI for Wedding Planners</a></td>
+                <td>Wedding planners</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-weddings">0</span></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><a href="../businesses/ai-construction/index.html" style="color:#00d4ff;text-decoration:none;">AI for Construction</a></td>
+                <td>Contractors</td>
+                <td>$499</td>
+                <td>$1097</td>
+                <td>$2245</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-construction">0</span></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td><a href="../businesses/ai-trucking/index.html" style="color:#00d4ff;text-decoration:none;">AI for Trucking</a></td>
+                <td>Trucking companies</td>
+                <td>$399</td>
+                <td>$877</td>
+                <td>$1795</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-trucking">0</span></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td><a href="../businesses/ai-insurance/index.html" style="color:#00d4ff;text-decoration:none;">AI for Insurance</a></td>
+                <td>Insurance agents</td>
+                <td>$449</td>
+                <td>$987</td>
+                <td>$2020</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-insurance">0</span></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td><a href="../businesses/ai-chiropractors/index.html" style="color:#00d4ff;text-decoration:none;">AI for Chiropractors</a></td>
+                <td>Chiropractors</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-chiropractors">0</span></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td><a href="../businesses/ai-vets/index.html" style="color:#00d4ff;text-decoration:none;">AI for Veterinarians</a></td>
+                <td>Vet clinics</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-vets">0</span></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td><a href="../businesses/ai-tutors/index.html" style="color:#00d4ff;text-decoration:none;">AI for Tutors</a></td>
+                <td>Tutors</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-tutors">0</span></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td><a href="../businesses/ai-daycares/index.html" style="color:#00d4ff;text-decoration:none;">AI for Daycares</a></td>
+                <td>Daycare owners</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-daycares">0</span></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td><a href="../businesses/ai-cleaners/index.html" style="color:#00d4ff;text-decoration:none;">AI for Cleaning Services</a></td>
+                <td>Cleaning companies</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-cleaners">0</span></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td><a href="../businesses/ai-landscapers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Landscapers</a></td>
+                <td>Landscaping companies</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-landscapers">0</span></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td><a href="../businesses/ai-petgrooming/index.html" style="color:#00d4ff;text-decoration:none;">AI for Pet Groomers</a></td>
+                <td>Pet groomers</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-petgrooming">0</span></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td><a href="../businesses/ai-mechanics/index.html" style="color:#00d4ff;text-decoration:none;">AI for Auto Shops</a></td>
+                <td>Auto repair shops</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-mechanics">0</span></td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td><a href="../businesses/ai-pharmacies/index.html" style="color:#00d4ff;text-decoration:none;">AI for Pharmacies</a></td>
+                <td>Pharmacy owners</td>
+                <td>$349</td>
+                <td>$767</td>
+                <td>$1570</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-pharmacies">0</span></td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td><a href="../businesses/ai-yoga/index.html" style="color:#00d4ff;text-decoration:none;">AI for Yoga Studios</a></td>
+                <td>Yoga studio owners</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-yoga">0</span></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td><a href="../businesses/ai-bakeries/index.html" style="color:#00d4ff;text-decoration:none;">AI for Bakeries</a></td>
+                <td>Bakery owners</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-bakeries">0</span></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td><a href="../businesses/ai-coffeeshops/index.html" style="color:#00d4ff;text-decoration:none;">AI for Coffee Shops</a></td>
+                <td>Coffee shop owners</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-coffeeshops">0</span></td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><a href="../businesses/ai-therapists/index.html" style="color:#00d4ff;text-decoration:none;">AI for Therapists</a></td>
+                <td>Therapists</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-therapists">0</span></td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td><a href="../businesses/ai-architects/index.html" style="color:#00d4ff;text-decoration:none;">AI for Architects</a></td>
+                <td>Architecture firms</td>
+                <td>$449</td>
+                <td>$987</td>
+                <td>$2020</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-architects">0</span></td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><a href="../businesses/ai-caterers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Caterers</a></td>
+                <td>Catering companies</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-caterers">0</span></td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td><a href="../businesses/ai-eventplanners/index.html" style="color:#00d4ff;text-decoration:none;">AI for Event Planners</a></td>
+                <td>Event planners</td>
+                <td>$299</td>
+                <td>$657</td>
+                <td>$1345</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-eventplanners">0</span></td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td><a href="../businesses/ai-florists/index.html" style="color:#00d4ff;text-decoration:none;">AI for Florists</a></td>
+                <td>Florists</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-florists">0</span></td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td><a href="../businesses/ai-movers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Moving Companies</a></td>
+                <td>Moving companies</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-movers">0</span></td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td><a href="../businesses/ai-pest-control/index.html" style="color:#00d4ff;text-decoration:none;">AI for Pest Control</a></td>
+                <td>Pest control companies</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-pest-control">0</span></td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><a href="../businesses/ai-roofing/index.html" style="color:#00d4ff;text-decoration:none;">AI for Roofers</a></td>
+                <td>Roofing companies</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-roofing">0</span></td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td><a href="../businesses/ai-electricians/index.html" style="color:#00d4ff;text-decoration:none;">AI for Electricians</a></td>
+                <td>Electrical companies</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-electricians">0</span></td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td><a href="../businesses/ai-towing/index.html" style="color:#00d4ff;text-decoration:none;">AI for Towing</a></td>
+                <td>Towing companies</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-towing">0</span></td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td><a href="../businesses/ai-tattoo/index.html" style="color:#00d4ff;text-decoration:none;">AI for Tattoo Studios</a></td>
+                <td>Tattoo artists</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-tattoo">0</span></td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td><a href="../businesses/ai-music-teachers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Music Teachers</a></td>
+                <td>Music teachers</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-music-teachers">0</span></td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td><a href="../businesses/ai-travel/index.html" style="color:#00d4ff;text-decoration:none;">AI for Travel Agencies</a></td>
+                <td>Travel agents</td>
+                <td>$349</td>
+                <td>$767</td>
+                <td>$1570</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-travel">0</span></td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td><a href="../businesses/ai-spas/index.html" style="color:#00d4ff;text-decoration:none;">AI for Spas</a></td>
+                <td>Spa owners</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-spas">0</span></td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td><a href="../businesses/ai-printing/index.html" style="color:#00d4ff;text-decoration:none;">AI for Print Shops</a></td>
+                <td>Print shop owners</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-printing">0</span></td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td><a href="../businesses/ai-notary/index.html" style="color:#00d4ff;text-decoration:none;">AI for Notaries</a></td>
+                <td>Notaries</td>
+                <td>$199</td>
+                <td>$437</td>
+                <td>$895</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-notary">0</span></td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td><a href="../businesses/ai-staffing/index.html" style="color:#00d4ff;text-decoration:none;">AI for Staffing Agencies</a></td>
+                <td>Staffing agencies</td>
+                <td>$449</td>
+                <td>$987</td>
+                <td>$2020</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-staffing">0</span></td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td><a href="../businesses/ai-auto-dealers/index.html" style="color:#00d4ff;text-decoration:none;">AI for Auto Dealers</a></td>
+                <td>Car dealerships</td>
+                <td>$499</td>
+                <td>$1097</td>
+                <td>$2245</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-auto-dealers">0</span></td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td><a href="../businesses/ai-storage/index.html" style="color:#00d4ff;text-decoration:none;">AI for Self-Storage</a></td>
+                <td>Storage facility owners</td>
+                <td>$249</td>
+                <td>$547</td>
+                <td>$1120</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-storage">0</span></td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td><a href="../businesses/ai-laundromats/index.html" style="color:#00d4ff;text-decoration:none;">AI for Laundromats</a></td>
+                <td>Laundromat owners</td>
+                <td>$149</td>
+                <td>$327</td>
+                <td>$670</td>
+                <td><span class="status-badge live">Live</span></td>
+                <td><span class="lead-count" id="leads-ai-laundromats">0</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tasks -->
+    <div class="table-card" id="tasks-section">
+        <h3>&#x2705; Recent Tasks (Last 20)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#105</td>
+                <td>Review and enrich client database — round #21</td>
+                <td><span class="status-badge pending">Pending</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#104</td>
+                <td>Update website with new features — round #21</td>
+                <td><span class="status-badge pending">Pending</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#103</td>
+                <td>Analyze performance and improve conversions — round #21</td>
+                <td><span class="status-badge pending">Pending</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#102</td>
+                <td>Generate new content — posts #61 to #63</td>
+                <td><span class="status-badge pending">Pending</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#101</td>
+                <td>Optimize and improve the system — run #21</td>
+                <td><span class="status-badge pending">Pending</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#100</td>
+                <td>Review and enrich client database — round #20</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#99</td>
+                <td>Update website with new features — round #20</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#98</td>
+                <td>Analyze performance and improve conversions — round #20</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#97</td>
+                <td>Generate new content — posts #58 to #60</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#96</td>
+                <td>Optimize and improve the system — run #20</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#95</td>
+                <td>Review and enrich client database — round #19</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#94</td>
+                <td>Update website with new features — round #19</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#93</td>
+                <td>Analyze performance and improve conversions — round #19</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#92</td>
+                <td>Generate new content — posts #55 to #57</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#91</td>
+                <td>Optimize and improve the system — run #19</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#90</td>
+                <td>Review and enrich client database — round #18</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#89</td>
+                <td>Update website with new features — round #18</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#88</td>
+                <td>Analyze performance and improve conversions — round #18</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>Medium</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#87</td>
+                <td>Generate new content — posts #52 to #54</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            <tr>
+                <td>#86</td>
+                <td>Optimize and improve the system — run #18</td>
+                <td><span class="status-badge completed">Completed</span></td>
+                <td>High</td>
+                <td>2026-04-16T12:06</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Agent Runs -->
+    <div class="table-card" id="agent-section">
+        <h3>&#x1F916; Agent Run History</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:0.8rem;">
+            <div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #1</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #2</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #3</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #4</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #5</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #6</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #7</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #8</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #9</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #10</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #11</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #12</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #13</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #14</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #15</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #16</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #17</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #18</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #19</div></div><div style="text-align:center;padding:1rem;background:#0a0a1a;border-radius:12px;border:1px solid #1a1a2e;"><div style="font-size:1.2rem;font-weight:800;color:#00c853;">5/5</div><div style="font-size:0.75rem;color:#666;">Run #20</div></div>
+        </div>
+    </div>
+
+    <!-- Bank Account Section -->
+    <div class="simulator" style="border: 1px solid #00c853; margin-top: 2rem;">
+        <h3>&#x1F3E6; Payment Setup</h3>
+        <p style="color:#888;margin-bottom:1rem;">To start receiving payments from customers, connect your payment processor.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
+            <div style="background:#0a0a1a;padding:1.5rem;border-radius:12px;border:1px solid #1a1a2e;">
+                <h4 style="color:#00d4ff;margin-bottom:0.5rem;">Stripe (Recommended)</h4>
+                <p style="color:#666;font-size:0.85rem;">Accept credit cards worldwide. Funds go directly to your bank.</p>
+                <p style="color:#00c853;font-size:0.85rem;margin-top:0.5rem;">Status: <strong>Pending Setup</strong></p>
+            </div>
+            <div style="background:#0a0a1a;padding:1.5rem;border-radius:12px;border:1px solid #1a1a2e;">
+                <h4 style="color:#7b2ff7;margin-bottom:0.5rem;">PayPal</h4>
+                <p style="color:#666;font-size:0.85rem;">Accept PayPal payments. Easy setup, instant transfers.</p>
+                <p style="color:#ffd700;font-size:0.85rem;margin-top:0.5rem;">Status: <strong>Optional</strong></p>
+            </div>
+            <div style="background:#0a0a1a;padding:1.5rem;border-radius:12px;border:1px solid #1a1a2e;">
+                <h4 style="color:#00c853;margin-bottom:0.5rem;">Netlify Forms (Active!)</h4>
+                <p style="color:#666;font-size:0.85rem;">Free lead capture on all 50 sites. Already working!</p>
+                <p style="color:#00c853;font-size:0.85rem;margin-top:0.5rem;">Status: <strong>&#x2705; Active</strong></p>
+            </div>
+        </div>
+        <p style="color:#555;font-size:0.8rem;margin-top:1rem;">When you're ready, tell me and I'll configure your Stripe keys across all 50 checkout pages.</p>
+    </div>
+</div>
+
+<script>
+    const BIZ_PRICES = [299, 499, 399, 199, 349, 599, 399, 199, 249, 199, 299, 499, 149, 199, 299, 499, 399, 449, 299, 299, 149, 249, 199, 199, 149, 249, 349, 199, 199, 199, 299, 449, 249, 299, 149, 249, 199, 249, 249, 199, 149, 149, 349, 249, 199, 199, 449, 499, 249, 149];
+    const TOTAL_BASE = BIZ_PRICES.reduce((a, b) => a + b, 0);
+
+    function updateRevenue() {
+        const clients = parseInt(document.getElementById('clients-slider').value);
+        const conv = parseInt(document.getElementById('conv-slider').value);
+        document.getElementById('clients-val').textContent = clients;
+        document.getElementById('conv-val').textContent = conv + '%';
+
+        const mrr = TOTAL_BASE * clients;
+        const arr = mrr * 12;
+        const profit = Math.floor(mrr * 0.9);
+        const leadsNeeded = clients > 0 ? Math.ceil((clients * 50) / (conv / 100)) : 0;
+
+        document.getElementById('rev-mrr').textContent = '$' + mrr.toLocaleString();
+        document.getElementById('rev-arr').textContent = '$' + arr.toLocaleString();
+        document.getElementById('rev-profit').textContent = '$' + profit.toLocaleString();
+        document.getElementById('rev-leads').textContent = leadsNeeded.toLocaleString();
+    }
+
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        event.target.classList.add('active');
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('.sidebar a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            const el = document.querySelector(a.getAttribute('href'));
+            if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+        });
+    });
+</script>
+
+</body>
+</html>

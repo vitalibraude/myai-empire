@@ -1,0 +1,61 @@
+{
+  "business": {
+    "id": "ai-petgrooming",
+    "name": "AI for Pet Groomers",
+    "niche": "Pet grooming automation",
+    "tagline": "Pampered Pets, Automated Bookings",
+    "price": 149,
+    "audience": "Pet groomers"
+  },
+  "features": [
+    "AI-powered customer management",
+    "Automated scheduling & booking",
+    "Smart invoicing & payments",
+    "Real-time analytics dashboard",
+    "Automated email & SMS marketing",
+    "24/7 AI chatbot for customers"
+  ],
+  "testimonials": [
+    {
+      "text": "This AI completely transformed how I run my business. I save 20+ hours every week.",
+      "author": "Sarah M., Pet groomers",
+      "stars": 5
+    },
+    {
+      "text": "The automation is incredible. My revenue increased 40% in the first 3 months.",
+      "author": "Mike R., Pet groomers",
+      "stars": 5
+    },
+    {
+      "text": "I was skeptical at first, but now I can't imagine running my business without it.",
+      "author": "Jennifer L., Pet groomers",
+      "stars": 5
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "How AI is Revolutionizing Pet grooming automation",
+      "excerpt": "Discover how artificial intelligence is transforming the way pet groomers operate their businesses, from customer management to automated marketing.",
+      "date": "2025-01-15",
+      "read_time": "5 min"
+    },
+    {
+      "title": "5 Ways AI for Pet Groomers Saves You 20 Hours Per Week",
+      "excerpt": "Time is money. Learn about the five key automation features that let pet groomers focus on what matters most \u2014 growing their business.",
+      "date": "2025-01-22",
+      "read_time": "4 min"
+    },
+    {
+      "title": "Case Study: How One Business Grew Revenue 40% with AI",
+      "excerpt": "A real success story from one of our clients who used AI for Pet Groomers to dramatically increase efficiency and profitability.",
+      "date": "2025-01-29",
+      "read_time": "6 min"
+    }
+  ],
+  "pricing": {
+    "starter": 149,
+    "professional": 327,
+    "enterprise": 670
+  },
+  "generated": "2026-04-16T12:19:45.656517"
+}

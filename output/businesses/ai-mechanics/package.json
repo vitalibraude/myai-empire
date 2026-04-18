@@ -1,0 +1,9 @@
+{
+  "name": "ai-mechanics",
+  "version": "1.0.0",
+  "description": "AI for Auto Shops \u2014 Drive Your Shop Forward with AI",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

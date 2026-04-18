@@ -1,0 +1,9 @@
+{
+  "name": "ai-petgrooming",
+  "version": "1.0.0",
+  "description": "AI for Pet Groomers \u2014 Pampered Pets, Automated Bookings",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

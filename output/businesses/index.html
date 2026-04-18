@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myAI — 50 AI-Powered Businesses</title>
+    <meta name="description" content="myAI: 50 autonomous AI-powered business solutions across every industry. Find the perfect AI automation for your niche.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.7; }
+        nav { position: fixed; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 1rem 3rem; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #1a1a1a; z-index: 1000; }
+        .brand { font-size: 1.5rem; font-weight: 800; background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        nav a { color: #a0a0a0; text-decoration: none; margin-left: 2rem; }
+        nav a:hover { color: #00d4ff; }
+        .cta-btn { display: inline-block; padding: 0.8rem 2.5rem; border-radius: 50px; background: linear-gradient(90deg,#00d4ff,#7b2ff7); color: white; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,212,255,0.3); }
+        .cta-outline { display: inline-block; padding: 0.8rem 2.5rem; border-radius: 50px; border: 2px solid #333; background: transparent; color: #a0a0a0; text-decoration: none; transition: all 0.3s; }
+        .cta-outline:hover { border-color: #00d4ff; color: #00d4ff; }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 6rem 2rem 4rem; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 50%; left: 50%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,212,255,0.08), transparent 70%); transform: translate(-50%,-50%); pointer-events: none; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero h1 span { background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.3rem; color: #a0a0a0; max-width: 600px; margin-bottom: 2rem; }
+        .buttons { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d4ff; }
+        .section-sub { text-align: center; color: #777; margin-bottom: 3rem; }
+        .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #111; border: 1px solid #1a1a1a; border-radius: 16px; padding: 2rem; transition: transform 0.3s, border-color 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .card p { color: #888; font-size: 0.95rem; }
+        .card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .pricing-card { background: #111; border: 1px solid #1a1a1a; border-radius: 16px; padding: 2.5rem; text-align: center; }
+        .pricing-card.featured { border-color: #00d4ff; position: relative; }
+        .pricing-card.featured::before { content: 'MOST POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg,#00d4ff,#7b2ff7); padding: 0.3rem 1.5rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; color: white; }
+        .price { font-size: 3rem; font-weight: 800; margin: 1rem 0; }
+        .price span { font-size: 1rem; color: #777; font-weight: 400; }
+        .features { list-style: none; margin: 1.5rem 0; text-align: left; }
+        .features li { padding: 0.5rem 0; border-bottom: 1px solid #1a1a1a; color: #aaa; }
+        .features li::before { content: '\2713 '; color: #00d4ff; font-weight: 700; }
+        .testimonial { background: #111; border: 1px solid #1a1a1a; border-radius: 16px; padding: 2rem; }
+        .testimonial .stars { color: #ffd700; margin-bottom: 1rem; }
+        .testimonial .author { color: #00d4ff; font-weight: 600; margin-top: 1rem; }
+        #contact { background: #111; border-radius: 16px; padding: 3rem; max-width: 600px; margin: 4rem auto; }
+        #contact input, #contact textarea { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #333; border-radius: 8px; background: #0a0a0a; color: #e0e0e0; font-size: 1rem; }
+        #contact textarea { min-height: 120px; resize: vertical; }
+        footer { text-align: center; padding: 3rem 2rem; color: #555; border-top: 1px solid #1a1a1a; }
+        footer a { color: #00d4ff; text-decoration: none; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; padding: 3rem 0; }
+        .stats .num { font-size: 2.5rem; font-weight: 800; background: linear-gradient(90deg,#00d4ff,#7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stats .label { color: #777; font-size: 0.9rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } .stats { grid-template-columns: repeat(2, 1fr); } nav { padding: 1rem 1.5rem; } }
+    
+        .grid3 { grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); }
+        .hero h1 { font-size: 3rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="brand">&#x1F916; myAI Empire</div>
+        <div>
+            <a href="https://aoeua.com">Home</a>
+            <a href="#businesses">All Businesses</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>50 AI Businesses. <span>One Platform.</span></h1>
+        <p>We've built AI-powered automation solutions for every industry. Each one is a complete business — ready to deploy, ready to earn.</p>
+        <div class="buttons">
+            <a href="#businesses" class="cta-btn">Explore All Businesses</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="stats">
+            <div><div class="num">50</div><div class="label">Active Businesses</div></div>
+            <div><div class="num">$14,150</div><div class="label">Potential MRR (1 client each)</div></div>
+            <div><div class="num">150</div><div class="label">Blog Posts</div></div>
+            <div><div class="num">500+</div><div class="label">Marketing Assets</div></div>
+        </div>
+    </section>
+
+    <section id="businesses">
+        <h2 class="section-title">All 50 Businesses</h2>
+        <p class="section-sub">Click any card to view the full landing page</p>
+        <div class="grid3">
+            <a href="ai-restaurants/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Restaurants</h3>
+                <p>AI That Runs Your Restaurant</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Restaurant owners</p>
+            </a>
+            <a href="ai-realestate/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Real Estate</h3>
+                <p>Close Deals on Autopilot</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $499/mo</p>
+                <p style="font-size:0.85rem;">Target: Real estate agents</p>
+            </a>
+            <a href="ai-ecommerce/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for E-Commerce</h3>
+                <p>Your Store Runs Itself</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $399/mo</p>
+                <p style="font-size:0.85rem;">Target: Online store owners</p>
+            </a>
+            <a href="ai-fitness/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Fitness</h3>
+                <p>AI Personal Training at Scale</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Gym owners & trainers</p>
+            </a>
+            <a href="ai-dentists/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Dentists</h3>
+                <p>Smarter Dental Practice Management</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $349/mo</p>
+                <p style="font-size:0.85rem;">Target: Dental clinics</p>
+            </a>
+            <a href="ai-lawyers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Law Firms</h3>
+                <p>AI-Powered Legal Efficiency</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $599/mo</p>
+                <p style="font-size:0.85rem;">Target: Law firms</p>
+            </a>
+            <a href="ai-accountants/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Accountants</h3>
+                <p>Automate Your Practice</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $399/mo</p>
+                <p style="font-size:0.85rem;">Target: CPA firms</p>
+            </a>
+            <a href="ai-plumbers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Plumbers</h3>
+                <p>More Jobs, Less Paperwork</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Plumbing companies</p>
+            </a>
+            <a href="ai-hvac/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for HVAC</h3>
+                <p>Cool Operations, Hot Revenue</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: HVAC companies</p>
+            </a>
+            <a href="ai-salons/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Salons</h3>
+                <p>Beautiful Business Automation</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Salon owners</p>
+            </a>
+            <a href="ai-coaches/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Coaches</h3>
+                <p>Scale Your Coaching Empire</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Business & life coaches</p>
+            </a>
+            <a href="ai-agencies/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Agencies</h3>
+                <p>Run Your Agency on Autopilot</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $499/mo</p>
+                <p style="font-size:0.85rem;">Target: Marketing agencies</p>
+            </a>
+            <a href="ai-freelancers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Freelancers</h3>
+                <p>Freelance Smarter, Not Harder</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Freelancers</p>
+            </a>
+            <a href="ai-photographers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Photographers</h3>
+                <p>Focus on Shooting, Not Admin</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Photographers</p>
+            </a>
+            <a href="ai-weddings/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Wedding Planners</h3>
+                <p>Perfect Weddings, Zero Stress</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Wedding planners</p>
+            </a>
+            <a href="ai-construction/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Construction</h3>
+                <p>Build Smarter, Faster</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $499/mo</p>
+                <p style="font-size:0.85rem;">Target: Contractors</p>
+            </a>
+            <a href="ai-trucking/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Trucking</h3>
+                <p>AI-Powered Fleet Management</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $399/mo</p>
+                <p style="font-size:0.85rem;">Target: Trucking companies</p>
+            </a>
+            <a href="ai-insurance/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Insurance</h3>
+                <p>Automate Claims & Policies</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $449/mo</p>
+                <p style="font-size:0.85rem;">Target: Insurance agents</p>
+            </a>
+            <a href="ai-chiropractors/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Chiropractors</h3>
+                <p>Align Your Practice with AI</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Chiropractors</p>
+            </a>
+            <a href="ai-vets/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Veterinarians</h3>
+                <p>Smart Care for Every Pet</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Vet clinics</p>
+            </a>
+            <a href="ai-tutors/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Tutors</h3>
+                <p>Teach More, Admin Less</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Tutors</p>
+            </a>
+            <a href="ai-daycares/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Daycares</h3>
+                <p>Happy Kids, Smooth Operations</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Daycare owners</p>
+            </a>
+            <a href="ai-cleaners/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Cleaning Services</h3>
+                <p>Clean Schedules, Clean Profits</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Cleaning companies</p>
+            </a>
+            <a href="ai-landscapers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Landscapers</h3>
+                <p>Grow Your Business Automatically</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Landscaping companies</p>
+            </a>
+            <a href="ai-petgrooming/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Pet Groomers</h3>
+                <p>Pampered Pets, Automated Bookings</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Pet groomers</p>
+            </a>
+            <a href="ai-mechanics/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Auto Shops</h3>
+                <p>Drive Your Shop Forward with AI</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Auto repair shops</p>
+            </a>
+            <a href="ai-pharmacies/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Pharmacies</h3>
+                <p>AI-Powered Pharmacy Operations</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $349/mo</p>
+                <p style="font-size:0.85rem;">Target: Pharmacy owners</p>
+            </a>
+            <a href="ai-yoga/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Yoga Studios</h3>
+                <p>Find Your Flow, Automate the Rest</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Yoga studio owners</p>
+            </a>
+            <a href="ai-bakeries/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Bakeries</h3>
+                <p>Rise to the Occasion with AI</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Bakery owners</p>
+            </a>
+            <a href="ai-coffeeshops/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Coffee Shops</h3>
+                <p>Brew Success Automatically</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Coffee shop owners</p>
+            </a>
+            <a href="ai-therapists/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Therapists</h3>
+                <p>Focus on Healing, Not Billing</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Therapists</p>
+            </a>
+            <a href="ai-architects/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Architects</h3>
+                <p>Design More, Manage Less</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $449/mo</p>
+                <p style="font-size:0.85rem;">Target: Architecture firms</p>
+            </a>
+            <a href="ai-caterers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Caterers</h3>
+                <p>Serve More, Stress Less</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Catering companies</p>
+            </a>
+            <a href="ai-eventplanners/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Event Planners</h3>
+                <p>Flawless Events, Zero Chaos</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $299/mo</p>
+                <p style="font-size:0.85rem;">Target: Event planners</p>
+            </a>
+            <a href="ai-florists/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Florists</h3>
+                <p>Bloom Your Business with AI</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Florists</p>
+            </a>
+            <a href="ai-movers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Moving Companies</h3>
+                <p>Move Smarter, Not Harder</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Moving companies</p>
+            </a>
+            <a href="ai-pest-control/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Pest Control</h3>
+                <p>Bug-Free Business Management</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Pest control companies</p>
+            </a>
+            <a href="ai-roofing/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Roofers</h3>
+                <p>Top-Level Business Automation</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Roofing companies</p>
+            </a>
+            <a href="ai-electricians/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Electricians</h3>
+                <p>Power Up Your Business with AI</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Electrical companies</p>
+            </a>
+            <a href="ai-towing/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Towing</h3>
+                <p>Tow More, Worry Less</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Towing companies</p>
+            </a>
+            <a href="ai-tattoo/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Tattoo Studios</h3>
+                <p>Ink Your Success Story</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Tattoo artists</p>
+            </a>
+            <a href="ai-music-teachers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Music Teachers</h3>
+                <p>Harmonize Teaching & Business</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Music teachers</p>
+            </a>
+            <a href="ai-travel/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Travel Agencies</h3>
+                <p>Automate Trips, Maximize Bookings</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $349/mo</p>
+                <p style="font-size:0.85rem;">Target: Travel agents</p>
+            </a>
+            <a href="ai-spas/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Spas</h3>
+                <p>Relax, Your Business Runs Itself</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Spa owners</p>
+            </a>
+            <a href="ai-printing/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Print Shops</h3>
+                <p>Print Money with AI Automation</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Print shop owners</p>
+            </a>
+            <a href="ai-notary/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Notaries</h3>
+                <p>Sign, Seal, Automate</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $199/mo</p>
+                <p style="font-size:0.85rem;">Target: Notaries</p>
+            </a>
+            <a href="ai-staffing/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Staffing Agencies</h3>
+                <p>Hire Faster with AI</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $449/mo</p>
+                <p style="font-size:0.85rem;">Target: Staffing agencies</p>
+            </a>
+            <a href="ai-auto-dealers/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Auto Dealers</h3>
+                <p>Sell More Cars on Autopilot</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $499/mo</p>
+                <p style="font-size:0.85rem;">Target: Car dealerships</p>
+            </a>
+            <a href="ai-storage/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Self-Storage</h3>
+                <p>Store More, Do Less</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $249/mo</p>
+                <p style="font-size:0.85rem;">Target: Storage facility owners</p>
+            </a>
+            <a href="ai-laundromats/index.html" class="card" style="text-decoration:none;">
+                <h3 style="color:#00d4ff;">AI for Laundromats</h3>
+                <p>Clean Profits, Automated</p>
+                <p style="color:#7b2ff7;font-weight:700;">Starting at $149/mo</p>
+                <p style="font-size:0.85rem;">Target: Laundromat owners</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 myAI Empire — 50 Businesses, One AI Platform | <a href="mailto:hello@myai.business">hello@myai.business</a></p>
+    </footer>
+</body>
+</html>

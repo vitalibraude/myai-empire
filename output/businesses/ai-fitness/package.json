@@ -1,0 +1,9 @@
+{
+  "name": "ai-fitness",
+  "version": "1.0.0",
+  "description": "AI for Fitness \u2014 AI Personal Training at Scale",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ai-florists",
+  "version": "1.0.0",
+  "description": "AI for Florists \u2014 Bloom Your Business with AI",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}

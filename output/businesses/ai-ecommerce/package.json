@@ -1,0 +1,9 @@
+{
+  "name": "ai-ecommerce",
+  "version": "1.0.0",
+  "description": "AI for E-Commerce \u2014 Your Store Runs Itself",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site \u2014 no build needed'"
+  }
+}
