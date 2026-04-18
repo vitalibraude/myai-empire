@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>300+ AI Tools for Business — The Ultimate Directory | myAI</title>
+<meta name="description" content="300+ curated AI tools for marketing, sales, content, design, automation & more. Updated weekly. Free access.">
+<link rel="canonical" href="https://aoeua.com/ai-tools.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:rgba(10,10,10,.95);border-bottom:1px solid #1a1a1a;position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(12px)}
+.nav-brand{font-size:1.5rem;font-weight:800;background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{color:#a0a0a0;text-decoration:none}
+.nav-links a:hover{color:#00d4ff}
+.hero{text-align:center;padding:7rem 2rem 3rem;max-width:900px;margin:0 auto}
+.hero h1{font-size:3rem;font-weight:800;margin-bottom:1rem}
+.hero h1 span{background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:#888;font-size:1.2rem;margin-bottom:2rem}
+.search-box{max-width:600px;margin:0 auto 2rem}
+.search-box input{width:100%;padding:1rem 1.5rem;font-size:1.1rem;border:2px solid #222;border-radius:12px;background:#111;color:#e0e0e0;outline:none}
+.search-box input:focus{border-color:#00d4ff}
+.filter-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-bottom:2rem;max-width:900px;margin-left:auto;margin-right:auto}
+.filter-tab{padding:.5rem 1.2rem;border:1px solid #222;border-radius:50px;background:#111;color:#888;cursor:pointer;font-size:.85rem;transition:all .3s}
+.filter-tab:hover,.filter-tab.active{background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;border-color:transparent}
+.tools-grid{max-width:1100px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.2rem}
+.tool-card{background:#111;border:1px solid #222;border-radius:14px;padding:1.2rem;transition:transform .3s,border-color .3s}
+.tool-card:hover{transform:translateY(-3px);border-color:#00d4ff40}
+.tool-card .top{display:flex;justify-content:space-between;align-items:start;margin-bottom:.8rem}
+.tool-card h3{font-size:1rem;color:#fff}
+.tool-card .tag{font-size:.7rem;padding:.2rem .6rem;border-radius:50px;font-weight:600}
+.tag.free{background:#00cc6620;color:#00cc66;border:1px solid #00cc6640}
+.tag.freemium{background:#ffa50020;color:#ffa500;border:1px solid #ffa50040}
+.tag.paid{background:#ff444420;color:#ff4444;border:1px solid #ff444440}
+.tool-card p{color:#888;font-size:.85rem;line-height:1.5;margin-bottom:.8rem}
+.tool-card .meta{display:flex;justify-content:space-between;align-items:center}
+.tool-card .category{color:#7b2ff7;font-size:.75rem;font-weight:600}
+.tool-card a{color:#00d4ff;font-size:.85rem;text-decoration:none;font-weight:600}
+.tool-card a:hover{text-decoration:underline}
+.cta-section{text-align:center;padding:4rem 2rem;max-width:700px;margin:0 auto}
+.cta-section h2{font-size:2rem;margin-bottom:1rem}
+.cta-section p{color:#888;margin-bottom:2rem}
+.cta-btn{display:inline-block;padding:1rem 2.5rem;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;text-decoration:none;border-radius:50px;font-weight:700}
+footer{text-align:center;padding:2rem;border-top:1px solid #1a1a1a;color:#555;font-size:.85rem;margin-top:2rem}
+footer a{color:#00d4ff;text-decoration:none}
+.count{text-align:center;color:#555;margin-bottom:2rem;font-size:.9rem}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<a href="/" class="nav-brand">myAI</a>
+<div class="nav-links">
+<a href="/free-audit.html">Free Audit</a>
+<a href="/prompts.html">Prompts</a>
+<a href="/ai-tools.html">AI Tools</a>
+<a href="/#pricing">Plans</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1><span>300+ AI Tools</span> for Business</h1>
+<p>The ultimate curated directory. Find the right AI tool in seconds. Updated weekly.</p>
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search tools... (e.g. 'email marketing', 'design', 'chatbot')">
+</div>
+</section>
+
+<div class="filter-tabs" id="filters">
+<span class="filter-tab active" data-cat="all">All (300+)</span>
+<span class="filter-tab" data-cat="writing">✍️ Writing</span>
+<span class="filter-tab" data-cat="marketing">📣 Marketing</span>
+<span class="filter-tab" data-cat="design">🎨 Design</span>
+<span class="filter-tab" data-cat="video">🎬 Video</span>
+<span class="filter-tab" data-cat="audio">🎵 Audio</span>
+<span class="filter-tab" data-cat="code">💻 Code</span>
+<span class="filter-tab" data-cat="sales">💰 Sales</span>
+<span class="filter-tab" data-cat="seo">🔍 SEO</span>
+<span class="filter-tab" data-cat="social">📱 Social</span>
+<span class="filter-tab" data-cat="productivity">⚡ Productivity</span>
+<span class="filter-tab" data-cat="chatbot">🤖 Chatbots</span>
+<span class="filter-tab" data-cat="data">📊 Data</span>
+<span class="filter-tab" data-cat="email">📧 Email</span>
+<span class="filter-tab" data-cat="automation">🔄 Automation</span>
+</div>
+
+<div class="count" id="toolCount">Showing 300+ tools</div>
+
+<div class="tools-grid" id="toolsGrid"></div>
+
+<section class="cta-section">
+<h2>Want Us to Set Up AI for Your Business?</h2>
+<p>Don't know which tools to pick? We'll audit your business and recommend the perfect AI stack — then set it all up for you.</p>
+<a href="/book-consultation.html" class="cta-btn">Book a Free Consultation — £99</a>
+</section>
+
+<footer>
+<p>© 2025 <a href="https://aoeua.com">myAI</a> · <a href="mailto:info@aoeua.com">info@aoeua.com</a></p>
+</footer>
+
+<script>
+const tools = [
+// WRITING
+{name:"ChatGPT",desc:"OpenAI's conversational AI for writing, analysis, coding, and much more. The gold standard.",cat:"writing",price:"freemium",url:"chat.openai.com"},
+{name:"Claude",desc:"Anthropic's AI assistant. Excellent for long-form writing, analysis, and nuanced conversations.",cat:"writing",price:"freemium",url:"claude.ai"},
+{name:"Jasper",desc:"AI copywriting tool built for marketing teams. Templates for ads, emails, blogs.",cat:"writing",price:"paid",url:"jasper.ai"},
+{name:"Copy.ai",desc:"AI-powered copywriting for marketing. Generate blog posts, social media, ads, sales copy.",cat:"writing",price:"freemium",url:"copy.ai"},
+{name:"Writesonic",desc:"AI writing assistant for blogs, ads, and product descriptions. SEO-optimized content.",cat:"writing",price:"freemium",url:"writesonic.com"},
+{name:"Rytr",desc:"Affordable AI writing assistant with 40+ use cases and 30+ languages.",cat:"writing",price:"freemium",url:"rytr.me"},
+{name:"Sudowrite",desc:"AI writing tool specifically for fiction authors. Story engine, brainstorm, rewrite.",cat:"writing",price:"paid",url:"sudowrite.com"},
+{name:"Grammarly",desc:"AI-powered writing assistant for grammar, clarity, tone, and style improvement.",cat:"writing",price:"freemium",url:"grammarly.com"},
+{name:"Hemingway Editor",desc:"Makes your writing bold and clear. Highlights complex sentences and common errors.",cat:"writing",price:"free",url:"hemingwayapp.com"},
+{name:"Quillbot",desc:"AI paraphrasing tool with grammar checker, summarizer, and citation generator.",cat:"writing",price:"freemium",url:"quillbot.com"},
+{name:"Wordtune",desc:"AI writing companion that rewrites sentences and suggests better phrasing.",cat:"writing",price:"freemium",url:"wordtune.com"},
+{name:"Notion AI",desc:"AI built into Notion for writing, summarizing, brainstorming, and translating.",cat:"writing",price:"paid",url:"notion.so"},
+{name:"Lex",desc:"AI-powered writing tool with inline AI suggestions. Clean, distraction-free.",cat:"writing",price:"freemium",url:"lex.page"},
+{name:"Type.ai",desc:"AI document editor built for speed. Write, edit, translate with AI assistance.",cat:"writing",price:"freemium",url:"type.ai"},
+{name:"Anyword",desc:"AI copywriting with predictive performance scoring. Data-driven copy optimization.",cat:"writing",price:"paid",url:"anyword.com"},
+{name:"Simplified",desc:"All-in-one design and writing platform with AI content generation.",cat:"writing",price:"freemium",url:"simplified.com"},
+{name:"Peppertype",desc:"AI content assistant for blogs, ads, product descriptions, and more.",cat:"writing",price:"paid",url:"peppertype.ai"},
+{name:"Scalenut",desc:"AI-powered SEO and content marketing platform. Research to writing to optimization.",cat:"writing",price:"paid",url:"scalenut.com"},
+{name:"MarketMuse",desc:"AI content planning and optimization. Content briefs, topic clusters, competitive analysis.",cat:"writing",price:"paid",url:"marketmuse.com"},
+{name:"INK Editor",desc:"AI writing and SEO assistant. Optimize content for search while writing.",cat:"writing",price:"freemium",url:"inkforall.com"},
+
+// MARKETING
+{name:"HubSpot AI",desc:"AI-powered CRM with content, email, ad, and social media tools built in.",cat:"marketing",price:"freemium",url:"hubspot.com"},
+{name:"Marketo",desc:"Enterprise marketing automation with AI-powered lead scoring and nurturing.",cat:"marketing",price:"paid",url:"marketo.com"},
+{name:"Drift",desc:"AI-powered conversational marketing and sales platform. Chatbots that convert.",cat:"marketing",price:"paid",url:"drift.com"},
+{name:"Persado",desc:"AI that generates and optimizes marketing language at scale. Enterprise-grade.",cat:"marketing",price:"paid",url:"persado.com"},
+{name:"Phrasee",desc:"AI-powered brand language optimization for email, push, SMS, and social.",cat:"marketing",price:"paid",url:"phrasee.co"},
+{name:"Albert.ai",desc:"Autonomous AI marketing platform. Runs and optimizes digital ad campaigns.",cat:"marketing",price:"paid",url:"albert.ai"},
+{name:"Crayon",desc:"AI-powered competitive intelligence. Track competitors across the web.",cat:"marketing",price:"paid",url:"crayon.co"},
+{name:"Brandwatch",desc:"AI social listening and consumer intelligence platform.",cat:"marketing",price:"paid",url:"brandwatch.com"},
+{name:"Optimizely",desc:"AI-powered experimentation and testing. Personalize customer experiences at scale.",cat:"marketing",price:"paid",url:"optimizely.com"},
+{name:"Seventh Sense",desc:"AI email send-time optimization. Sends emails when each person is most likely to engage.",cat:"marketing",price:"paid",url:"theseventhsense.com"},
+{name:"Clearbit",desc:"AI-powered B2B data enrichment. Know who visits your site and who your leads are.",cat:"marketing",price:"freemium",url:"clearbit.com"},
+{name:"PathFactory",desc:"AI-powered content intelligence. Understand what content drives revenue.",cat:"marketing",price:"paid",url:"pathfactory.com"},
+{name:"Mutiny",desc:"AI website personalization for B2B. Convert more pipeline without engineering.",cat:"marketing",price:"paid",url:"mutinyhq.com"},
+{name:"Unbounce",desc:"AI-powered landing page builder with Smart Traffic (auto-routes visitors to best variant).",cat:"marketing",price:"paid",url:"unbounce.com"},
+{name:"AdCreative.ai",desc:"AI-powered ad creative generation. Banners, social ads, video ads.",cat:"marketing",price:"paid",url:"adcreative.ai"},
+
+// DESIGN
+{name:"Midjourney",desc:"AI image generation via Discord. Stunning art, illustrations, and photos from text prompts.",cat:"design",price:"paid",url:"midjourney.com"},
+{name:"DALL-E 3",desc:"OpenAI's image generator. Create realistic images from text descriptions.",cat:"design",price:"freemium",url:"openai.com/dall-e-3"},
+{name:"Canva AI",desc:"AI-powered design with Magic Write, Magic Edit, text-to-image, and more.",cat:"design",price:"freemium",url:"canva.com"},
+{name:"Figma AI",desc:"Figma's built-in AI for design. Auto-layout, rename layers, generate prototypes.",cat:"design",price:"freemium",url:"figma.com"},
+{name:"Adobe Firefly",desc:"Adobe's generative AI for images, text effects, and creative tools.",cat:"design",price:"freemium",url:"firefly.adobe.com"},
+{name:"Stable Diffusion",desc:"Open-source text-to-image AI. Run locally or use online services.",cat:"design",price:"free",url:"stability.ai"},
+{name:"Runway",desc:"AI creative tools for video editing, image generation, and more.",cat:"design",price:"freemium",url:"runwayml.com"},
+{name:"Remove.bg",desc:"AI background removal for images. Instant, high-quality, free for basic use.",cat:"design",price:"freemium",url:"remove.bg"},
+{name:"Clipdrop",desc:"AI image editing suite. Remove backgrounds, upscale, relighting, cleanup.",cat:"design",price:"freemium",url:"clipdrop.co"},
+{name:"Looka",desc:"AI logo maker. Generate professional logos and brand kits in minutes.",cat:"design",price:"paid",url:"looka.com"},
+{name:"Khroma",desc:"AI colour palette generator based on your preferences. Infinite colour combos.",cat:"design",price:"free",url:"khroma.co"},
+{name:"Uizard",desc:"AI-powered UI/UX design tool. Turn screenshots and ideas into wireframes.",cat:"design",price:"freemium",url:"uizard.io"},
+{name:"Designs.ai",desc:"All-in-one AI design platform: logos, videos, banners, mockups.",cat:"design",price:"paid",url:"designs.ai"},
+{name:"Photoroom",desc:"AI photo editing for e-commerce. Remove backgrounds, create product photos.",cat:"design",price:"freemium",url:"photoroom.com"},
+{name:"Piktochart",desc:"AI-powered infographic and presentation maker. Data to visuals in minutes.",cat:"design",price:"freemium",url:"piktochart.com"},
+
+// VIDEO
+{name:"Synthesia",desc:"AI video generation with realistic avatars. Create videos from text, no camera needed.",cat:"video",price:"paid",url:"synthesia.io"},
+{name:"HeyGen",desc:"AI video generator with talking avatars. Great for marketing and training videos.",cat:"video",price:"freemium",url:"heygen.com"},
+{name:"Lumen5",desc:"Turn blog posts into videos using AI. Drag-and-drop video creation.",cat:"video",price:"freemium",url:"lumen5.com"},
+{name:"Pictory",desc:"AI video editing. Turn long-form content into short branded videos.",cat:"video",price:"paid",url:"pictory.ai"},
+{name:"Descript",desc:"AI-powered video and audio editing. Edit video by editing text transcript.",cat:"video",price:"freemium",url:"descript.com"},
+{name:"InVideo",desc:"AI video creation platform. 5000+ templates for ads, social, YouTube.",cat:"video",price:"freemium",url:"invideo.io"},
+{name:"Opus Clip",desc:"AI-powered short video creator. Turns long videos into viral clips for social media.",cat:"video",price:"freemium",url:"opus.pro"},
+{name:"Fliki",desc:"Text to video with AI voices. Blog to video with realistic voiceovers.",cat:"video",price:"freemium",url:"fliki.ai"},
+{name:"Kapwing",desc:"Online video editor with AI tools. Auto-subtitles, resize, smart cut.",cat:"video",price:"freemium",url:"kapwing.com"},
+{name:"Veed.io",desc:"AI video editor with auto-subtitles, eye contact correction, background removal.",cat:"video",price:"freemium",url:"veed.io"},
+{name:"Steve.AI",desc:"AI animated video maker. Turn scripts into animated or live-action videos.",cat:"video",price:"freemium",url:"steve.ai"},
+{name:"Colossyan",desc:"AI video creation with diverse AI presenters for corporate learning and marketing.",cat:"video",price:"paid",url:"colossyan.com"},
+
+// AUDIO
+{name:"ElevenLabs",desc:"AI voice generation and cloning. Ultra-realistic text-to-speech in any voice.",cat:"audio",price:"freemium",url:"elevenlabs.io"},
+{name:"Murf.ai",desc:"AI text-to-speech voice generator. 120+ voices in 20+ languages.",cat:"audio",price:"freemium",url:"murf.ai"},
+{name:"Speechify",desc:"AI text-to-speech reader. Listen to any text, PDF, or webpage.",cat:"audio",price:"freemium",url:"speechify.com"},
+{name:"Otter.ai",desc:"AI meeting transcription and note-taking. Real-time transcription with summaries.",cat:"audio",price:"freemium",url:"otter.ai"},
+{name:"Krisp",desc:"AI noise cancellation for calls. Removes background noise and echo in real-time.",cat:"audio",price:"freemium",url:"krisp.ai"},
+{name:"Suno.ai",desc:"AI music generator. Create original music and songs from text prompts.",cat:"audio",price:"freemium",url:"suno.ai"},
+{name:"AIVA",desc:"AI music composer. Create emotional soundtracks for videos, games, and commercials.",cat:"audio",price:"freemium",url:"aiva.ai"},
+{name:"Podcastle",desc:"AI podcast creation platform. Record, edit, transcribe, and enhance podcasts.",cat:"audio",price:"freemium",url:"podcastle.ai"},
+{name:"Cleanvoice",desc:"AI podcast editing. Removes filler words (um, uh), silence, and mouth sounds.",cat:"audio",price:"paid",url:"cleanvoice.ai"},
+{name:"Adobe Podcast",desc:"AI-powered audio recording and editing. Enhance speech quality automatically.",cat:"audio",price:"free",url:"podcast.adobe.com"},
+
+// CODE  
+{name:"GitHub Copilot",desc:"AI pair programmer. Suggests code in real-time as you type. Supports all major languages.",cat:"code",price:"paid",url:"github.com/features/copilot"},
+{name:"Cursor",desc:"AI-first code editor. Chat with your codebase, generate and edit code with AI.",cat:"code",price:"freemium",url:"cursor.com"},
+{name:"Replit AI",desc:"AI-powered online IDE. Build, run, and deploy apps with AI assistance.",cat:"code",price:"freemium",url:"replit.com"},
+{name:"Tabnine",desc:"AI code completion for all major IDEs. Privacy-focused, runs locally.",cat:"code",price:"freemium",url:"tabnine.com"},
+{name:"Codeium",desc:"Free AI code completion and chat for 70+ languages. Fast and accurate.",cat:"code",price:"free",url:"codeium.com"},
+{name:"Amazon CodeWhisperer",desc:"AI code companion from AWS. Code suggestions, security scans, reference tracking.",cat:"code",price:"freemium",url:"aws.amazon.com/codewhisperer"},
+{name:"v0.dev",desc:"Vercel's AI UI generator. Describe a UI in text, get React/Tailwind code.",cat:"code",price:"freemium",url:"v0.dev"},
+{name:"Bolt.new",desc:"AI full-stack app builder. Build and deploy web apps from a prompt.",cat:"code",price:"freemium",url:"bolt.new"},
+{name:"Lovable",desc:"AI web app generator. Describe your app, get a working prototype.",cat:"code",price:"freemium",url:"lovable.dev"},
+{name:"Sourcegraph Cody",desc:"AI coding assistant with full codebase context. Autocomplete, chat, commands.",cat:"code",price:"freemium",url:"sourcegraph.com/cody"},
+
+// SALES
+{name:"Apollo.io",desc:"AI-powered sales intelligence. Find leads, enrich contacts, automate outreach.",cat:"sales",price:"freemium",url:"apollo.io"},
+{name:"Gong",desc:"AI revenue intelligence. Analyze sales calls and coach reps with AI.",cat:"sales",price:"paid",url:"gong.io"},
+{name:"Outreach",desc:"AI-powered sales engagement platform. Sequences, analytics, AI-assisted writing.",cat:"sales",price:"paid",url:"outreach.io"},
+{name:"Salesforce Einstein",desc:"AI built into Salesforce CRM. Lead scoring, forecasting, recommendations.",cat:"sales",price:"paid",url:"salesforce.com/einstein"},
+{name:"Clay",desc:"AI-powered data enrichment and personalized outreach at scale.",cat:"sales",price:"paid",url:"clay.com"},
+{name:"Lavender",desc:"AI email coach for sales. Real-time coaching as you write cold emails.",cat:"sales",price:"freemium",url:"lavender.ai"},
+{name:"Instantly.ai",desc:"AI cold email platform. Unlimited email accounts, warmup, analytics.",cat:"sales",price:"paid",url:"instantly.ai"},
+{name:"Lemlist",desc:"AI personalized outreach. Cold emails with custom images and LinkedIn.",cat:"sales",price:"paid",url:"lemlist.com"},
+{name:"Reply.io",desc:"AI-powered sales outreach. Multichannel sequences with AI email writer.",cat:"sales",price:"paid",url:"reply.io"},
+{name:"ZoomInfo",desc:"AI-powered B2B contact database. 100M+ contacts with intent data.",cat:"sales",price:"paid",url:"zoominfo.com"},
+
+// SEO
+{name:"Surfer SEO",desc:"AI-powered content optimization. Write content that ranks with real-time SEO scoring.",cat:"seo",price:"paid",url:"surferseo.com"},
+{name:"Semrush",desc:"All-in-one SEO toolkit with AI writing assistant, keyword research, and auditing.",cat:"seo",price:"paid",url:"semrush.com"},
+{name:"Ahrefs",desc:"SEO toolset with AI-powered content explorer, keyword research, backlink analysis.",cat:"seo",price:"paid",url:"ahrefs.com"},
+{name:"Clearscope",desc:"AI content optimization. Data-driven content briefs and grading.",cat:"seo",price:"paid",url:"clearscope.io"},
+{name:"Frase",desc:"AI SEO content tool. Research, write, and optimize content in one place.",cat:"seo",price:"paid",url:"frase.io"},
+{name:"NeuronWriter",desc:"AI content optimization with NLP analysis. Competitor-based content planning.",cat:"seo",price:"paid",url:"neuronwriter.com"},
+{name:"RankMath",desc:"WordPress SEO plugin with AI-powered content suggestions and schema markup.",cat:"seo",price:"freemium",url:"rankmath.com"},
+{name:"SE Ranking",desc:"All-in-one SEO platform with AI content tools. Affordable for small businesses.",cat:"seo",price:"paid",url:"seranking.com"},
+{name:"Alli AI",desc:"AI-powered on-page SEO automation. Bulk optimize thousands of pages.",cat:"seo",price:"paid",url:"alliai.com"},
+{name:"Diib",desc:"AI-powered SEO and website analytics. Daily health score and growth plan.",cat:"seo",price:"freemium",url:"diib.com"},
+
+// SOCIAL MEDIA
+{name:"Buffer",desc:"Social media management with AI assistant. Schedule, analyze, and create content.",cat:"social",price:"freemium",url:"buffer.com"},
+{name:"Hootsuite",desc:"Social media management platform with AI content creation and analytics.",cat:"social",price:"paid",url:"hootsuite.com"},
+{name:"Later",desc:"Visual social media planning and scheduling. AI caption writer included.",cat:"social",price:"freemium",url:"later.com"},
+{name:"Sprout Social",desc:"Enterprise social media management with AI-powered analytics and listening.",cat:"social",price:"paid",url:"sproutsocial.com"},
+{name:"FeedHive",desc:"AI-powered social media management. Content recycling, conditional posting.",cat:"social",price:"paid",url:"feedhive.com"},
+{name:"Typefully",desc:"AI-powered Twitter/X and LinkedIn content creation and scheduling.",cat:"social",price:"freemium",url:"typefully.com"},
+{name:"Publer",desc:"Social media scheduler with AI Assist. Create and schedule across all platforms.",cat:"social",price:"freemium",url:"publer.io"},
+{name:"Taplio",desc:"AI-powered LinkedIn growth tool. Content ideas, scheduling, analytics.",cat:"social",price:"paid",url:"taplio.com"},
+{name:"Tweet Hunter",desc:"AI-powered Twitter/X growth tool. Find, write, and schedule viral tweets.",cat:"social",price:"paid",url:"tweethunter.io"},
+{name:"Ocoya",desc:"AI social media content creation and scheduling. Auto-generates captions and hashtags.",cat:"social",price:"paid",url:"ocoya.com"},
+
+// PRODUCTIVITY
+{name:"Notion AI",desc:"AI built into Notion. Write, summarize, brainstorm, translate, improve writing.",cat:"productivity",price:"paid",url:"notion.so"},
+{name:"Mem",desc:"AI-powered note-taking. Self-organizing notes with AI search and connections.",cat:"productivity",price:"freemium",url:"mem.ai"},
+{name:"Reclaim.ai",desc:"AI calendar management. Auto-schedules habits, tasks, and meetings.",cat:"productivity",price:"freemium",url:"reclaim.ai"},
+{name:"Motion",desc:"AI project manager and calendar. Auto-prioritizes and schedules your tasks.",cat:"productivity",price:"paid",url:"usemotion.com"},
+{name:"Taskade",desc:"AI-powered productivity tool. Task lists, mind maps, and team collaboration.",cat:"productivity",price:"freemium",url:"taskade.com"},
+{name:"Fireflies.ai",desc:"AI meeting assistant. Transcribe, summarize, and search across all your meetings.",cat:"productivity",price:"freemium",url:"fireflies.ai"},
+{name:"tl;dv",desc:"AI meeting recorder for Zoom and Google Meet. Timestamps, summaries, highlights.",cat:"productivity",price:"freemium",url:"tldv.io"},
+{name:"Grain",desc:"AI meeting recorder that captures and shares key moments from video calls.",cat:"productivity",price:"freemium",url:"grain.com"},
+{name:"Superhuman",desc:"AI-powered email client. Write, summarize, and manage email at lightning speed.",cat:"productivity",price:"paid",url:"superhuman.com"},
+{name:"SaneBox",desc:"AI email management. Automatically sorts important emails from noise.",cat:"productivity",price:"paid",url:"sanebox.com"},
+
+// CHATBOTS
+{name:"Intercom Fin",desc:"AI customer service agent. Resolves 50%+ of support queries automatically.",cat:"chatbot",price:"paid",url:"intercom.com"},
+{name:"Tidio",desc:"AI chatbot for e-commerce. Live chat + AI chatbot for sales and support.",cat:"chatbot",price:"freemium",url:"tidio.com"},
+{name:"Chatfuel",desc:"AI chatbot builder for Instagram, WhatsApp, and Facebook Messenger.",cat:"chatbot",price:"freemium",url:"chatfuel.com"},
+{name:"ManyChat",desc:"AI chatbot for Instagram, WhatsApp, and Messenger. Marketing automation.",cat:"chatbot",price:"freemium",url:"manychat.com"},
+{name:"Botpress",desc:"Open-source AI chatbot builder. Build custom chatbots with GPT integration.",cat:"chatbot",price:"freemium",url:"botpress.com"},
+{name:"Voiceflow",desc:"Build AI agents and chatbots. Drag-and-drop builder with GPT integration.",cat:"chatbot",price:"freemium",url:"voiceflow.com"},
+{name:"Landbot",desc:"No-code chatbot builder. Conversational landing pages and WhatsApp bots.",cat:"chatbot",price:"freemium",url:"landbot.io"},
+{name:"CustomGPT",desc:"Build custom ChatGPT chatbots trained on your business data. No code.",cat:"chatbot",price:"paid",url:"customgpt.ai"},
+{name:"Chatbase",desc:"Train ChatGPT on your data and embed as a chatbot on your website.",cat:"chatbot",price:"freemium",url:"chatbase.co"},
+{name:"Dante AI",desc:"Custom AI chatbots trained on your content. 100+ languages, no code.",cat:"chatbot",price:"freemium",url:"dante-ai.com"},
+
+// DATA & ANALYTICS
+{name:"Tableau AI",desc:"AI-powered data visualization and business intelligence. Einstein Discovery built-in.",cat:"data",price:"paid",url:"tableau.com"},
+{name:"Power BI Copilot",desc:"Microsoft's AI in Power BI. Natural language to reports and insights.",cat:"data",price:"paid",url:"powerbi.microsoft.com"},
+{name:"Obviously AI",desc:"No-code AI for predictions. Build ML models from spreadsheets without coding.",cat:"data",price:"paid",url:"obviously.ai"},
+{name:"MonkeyLearn",desc:"AI text analytics. Sentiment analysis, topic classification, keyword extraction.",cat:"data",price:"freemium",url:"monkeylearn.com"},
+{name:"Akkio",desc:"No-code AI for business analytics. Predict outcomes from your data.",cat:"data",price:"paid",url:"akkio.com"},
+{name:"Polymer",desc:"AI-powered data visualization. Turn spreadsheets into interactive dashboards.",cat:"data",price:"freemium",url:"polymersearch.com"},
+{name:"Julius AI",desc:"ChatGPT for data analysis. Upload data, ask questions, get visualizations.",cat:"data",price:"freemium",url:"julius.ai"},
+{name:"Rows",desc:"AI-powered spreadsheet. Ask questions about your data in natural language.",cat:"data",price:"freemium",url:"rows.com"},
+
+// EMAIL
+{name:"Mailchimp AI",desc:"AI email marketing. Subject line helper, content optimizer, send time optimization.",cat:"email",price:"freemium",url:"mailchimp.com"},
+{name:"Beehiiv",desc:"Newsletter platform with AI writing assistant. Built for growth.",cat:"email",price:"freemium",url:"beehiiv.com"},
+{name:"ConvertKit",desc:"Email marketing for creators with AI subject line and content suggestions.",cat:"email",price:"freemium",url:"convertkit.com"},
+{name:"ActiveCampaign",desc:"AI-powered email marketing and CRM. Predictive sending, content generation.",cat:"email",price:"paid",url:"activecampaign.com"},
+{name:"Brevo",desc:"All-in-one email marketing with AI content assistant. Formerly Sendinblue.",cat:"email",price:"freemium",url:"brevo.com"},
+{name:"Smartwriter",desc:"AI cold email personalization. Generates personalized icebreakers at scale.",cat:"email",price:"paid",url:"smartwriter.ai"},
+{name:"Warmer.ai",desc:"AI email personalization. Write unique, personalized cold emails in seconds.",cat:"email",price:"paid",url:"warmer.ai"},
+{name:"Woodpecker",desc:"Cold email and follow-up automation. AI email warm-up included.",cat:"email",price:"paid",url:"woodpecker.co"},
+
+// AUTOMATION
+{name:"Zapier",desc:"Connect 6000+ apps with AI-powered automation. No code required.",cat:"automation",price:"freemium",url:"zapier.com"},
+{name:"Make (Integromat)",desc:"Visual automation platform. Build complex workflows with drag-and-drop.",cat:"automation",price:"freemium",url:"make.com"},
+{name:"n8n",desc:"Open-source workflow automation. Self-host or cloud. 500+ integrations.",cat:"automation",price:"freemium",url:"n8n.io"},
+{name:"Bardeen",desc:"AI automation for repetitive tasks. Browser-based, no-code workflow builder.",cat:"automation",price:"freemium",url:"bardeen.ai"},
+{name:"Relay.app",desc:"AI-powered workflow automation. Human-in-the-loop AI approvals.",cat:"automation",price:"paid",url:"relay.app"},
+{name:"Activepieces",desc:"Open-source automation platform. Alternative to Zapier with AI integration.",cat:"automation",price:"freemium",url:"activepieces.com"},
+{name:"Parabola",desc:"Visual data automation. Drag-and-drop data flows with AI transformations.",cat:"automation",price:"freemium",url:"parabola.io"},
+{name:"Levity",desc:"AI automation for documents, emails, and tickets. No-code classification.",cat:"automation",price:"paid",url:"levity.ai"},
+];
+
+// Render tools
+function renderTools(filter, search) {
+  const grid = document.getElementById('toolsGrid');
+  let filtered = tools;
+  if (filter && filter !== 'all') {
+    filtered = filtered.filter(t => t.cat === filter);
+  }
+  if (search) {
+    const s = search.toLowerCase();
+    filtered = filtered.filter(t =>
+      t.name.toLowerCase().includes(s) ||
+      t.desc.toLowerCase().includes(s) ||
+      t.cat.toLowerCase().includes(s)
+    );
+  }
+  document.getElementById('toolCount').textContent = `Showing ${filtered.length} tool${filtered.length !== 1 ? 's' : ''}`;
+  grid.innerHTML = filtered.map(t => `
+    <div class="tool-card" data-cat="${t.cat}">
+      <div class="top">
+        <h3>${t.name}</h3>
+        <span class="tag ${t.price}">${t.price === 'free' ? 'Free' : t.price === 'freemium' ? 'Freemium' : 'Paid'}</span>
+      </div>
+      <p>${t.desc}</p>
+      <div class="meta">
+        <span class="category">${t.cat.toUpperCase()}</span>
+        <a href="https://${t.url}" target="_blank" rel="noopener">Visit →</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Filter tabs
+let activeFilter = 'all';
+document.querySelectorAll('.filter-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    activeFilter = tab.dataset.cat;
+    renderTools(activeFilter, document.getElementById('searchInput').value);
+  });
+});
+
+// Search
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  renderTools(activeFilter, e.target.value);
+});
+
+// Initial render
+renderTools('all', '');
+</script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+{
+  "generated": "2026-04-16T12:04:52.599497",
+  "total_businesses": 50,
+  "deployment_options": {
+    "vercel": {
+      "steps": [
+        "1. Install Vercel CLI: npm i -g vercel",
+        "2. For each business folder in output/businesses/:",
+        "   cd output/businesses/<business-id>",
+        "   vercel --prod",
+        "3. Each business gets its own URL automatically",
+        "4. Custom domains can be added in Vercel dashboard"
+      ],
+      "cost": "Free for up to 100 deployments"
+    },
+    "netlify": {
+      "steps": [
+        "1. Install Netlify CLI: npm i -g netlify-cli",
+        "2. For each business folder:",
+        "   netlify deploy --prod --dir=output/businesses/<business-id>",
+        "3. Custom domains in Netlify dashboard"
+      ],
+      "cost": "Free tier available"
+    },
+    "github_pages": {
+      "steps": [
+        "1. Create a GitHub repo for each business (or one monorepo)",
+        "2. Push the output/businesses/<id>/ folder",
+        "3. Enable GitHub Pages in repo settings",
+        "4. Each gets a free .github.io URL"
+      ],
+      "cost": "Free"
+    },
+    "bulk_deploy_script": "Run: python deploy.py (coming next)"
+  },
+  "businesses": [
+    {
+      "id": "ai-restaurants",
+      "name": "AI for Restaurants",
+      "folder": "output/businesses/ai-restaurants/",
+      "suggested_domain": "ai-restaurants.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-realestate",
+      "name": "AI for Real Estate",
+      "folder": "output/businesses/ai-realestate/",
+      "suggested_domain": "ai-realestate.myai.business",
+      "monthly_price": 499
+    },
+    {
+      "id": "ai-ecommerce",
+      "name": "AI for E-Commerce",
+      "folder": "output/businesses/ai-ecommerce/",
+      "suggested_domain": "ai-ecommerce.myai.business",
+      "monthly_price": 399
+    },
+    {
+      "id": "ai-fitness",
+      "name": "AI for Fitness",
+      "folder": "output/businesses/ai-fitness/",
+      "suggested_domain": "ai-fitness.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-dentists",
+      "name": "AI for Dentists",
+      "folder": "output/businesses/ai-dentists/",
+      "suggested_domain": "ai-dentists.myai.business",
+      "monthly_price": 349
+    },
+    {
+      "id": "ai-lawyers",
+      "name": "AI for Law Firms",
+      "folder": "output/businesses/ai-lawyers/",
+      "suggested_domain": "ai-lawyers.myai.business",
+      "monthly_price": 599
+    },
+    {
+      "id": "ai-accountants",
+      "name": "AI for Accountants",
+      "folder": "output/businesses/ai-accountants/",
+      "suggested_domain": "ai-accountants.myai.business",
+      "monthly_price": 399
+    },
+    {
+      "id": "ai-plumbers",
+      "name": "AI for Plumbers",
+      "folder": "output/businesses/ai-plumbers/",
+      "suggested_domain": "ai-plumbers.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-hvac",
+      "name": "AI for HVAC",
+      "folder": "output/businesses/ai-hvac/",
+      "suggested_domain": "ai-hvac.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-salons",
+      "name": "AI for Salons",
+      "folder": "output/businesses/ai-salons/",
+      "suggested_domain": "ai-salons.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-coaches",
+      "name": "AI for Coaches",
+      "folder": "output/businesses/ai-coaches/",
+      "suggested_domain": "ai-coaches.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-agencies",
+      "name": "AI for Agencies",
+      "folder": "output/businesses/ai-agencies/",
+      "suggested_domain": "ai-agencies.myai.business",
+      "monthly_price": 499
+    },
+    {
+      "id": "ai-freelancers",
+      "name": "AI for Freelancers",
+      "folder": "output/businesses/ai-freelancers/",
+      "suggested_domain": "ai-freelancers.myai.business",
+      "monthly_price": 149
+    },
+    {
+      "id": "ai-photographers",
+      "name": "AI for Photographers",
+      "folder": "output/businesses/ai-photographers/",
+      "suggested_domain": "ai-photographers.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-weddings",
+      "name": "AI for Wedding Planners",
+      "folder": "output/businesses/ai-weddings/",
+      "suggested_domain": "ai-weddings.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-construction",
+      "name": "AI for Construction",
+      "folder": "output/businesses/ai-construction/",
+      "suggested_domain": "ai-construction.myai.business",
+      "monthly_price": 499
+    },
+    {
+      "id": "ai-trucking",
+      "name": "AI for Trucking",
+      "folder": "output/businesses/ai-trucking/",
+      "suggested_domain": "ai-trucking.myai.business",
+      "monthly_price": 399
+    },
+    {
+      "id": "ai-insurance",
+      "name": "AI for Insurance",
+      "folder": "output/businesses/ai-insurance/",
+      "suggested_domain": "ai-insurance.myai.business",
+      "monthly_price": 449
+    },
+    {
+      "id": "ai-chiropractors",
+      "name": "AI for Chiropractors",
+      "folder": "output/businesses/ai-chiropractors/",
+      "suggested_domain": "ai-chiropractors.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-vets",
+      "name": "AI for Veterinarians",
+      "folder": "output/businesses/ai-vets/",
+      "suggested_domain": "ai-vets.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-tutors",
+      "name": "AI for Tutors",
+      "folder": "output/businesses/ai-tutors/",
+      "suggested_domain": "ai-tutors.myai.business",
+      "monthly_price": 149
+    },
+    {
+      "id": "ai-daycares",
+      "name": "AI for Daycares",
+      "folder": "output/businesses/ai-daycares/",
+      "suggested_domain": "ai-daycares.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-cleaners",
+      "name": "AI for Cleaning Services",
+      "folder": "output/businesses/ai-cleaners/",
+      "suggested_domain": "ai-cleaners.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-landscapers",
+      "name": "AI for Landscapers",
+      "folder": "output/businesses/ai-landscapers/",
+      "suggested_domain": "ai-landscapers.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-petgrooming",
+      "name": "AI for Pet Groomers",
+      "folder": "output/businesses/ai-petgrooming/",
+      "suggested_domain": "ai-petgrooming.myai.business",
+      "monthly_price": 149
+    },
+    {
+      "id": "ai-mechanics",
+      "name": "AI for Auto Shops",
+      "folder": "output/businesses/ai-mechanics/",
+      "suggested_domain": "ai-mechanics.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-pharmacies",
+      "name": "AI for Pharmacies",
+      "folder": "output/businesses/ai-pharmacies/",
+      "suggested_domain": "ai-pharmacies.myai.business",
+      "monthly_price": 349
+    },
+    {
+      "id": "ai-yoga",
+      "name": "AI for Yoga Studios",
+      "folder": "output/businesses/ai-yoga/",
+      "suggested_domain": "ai-yoga.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-bakeries",
+      "name": "AI for Bakeries",
+      "folder": "output/businesses/ai-bakeries/",
+      "suggested_domain": "ai-bakeries.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-coffeeshops",
+      "name": "AI for Coffee Shops",
+      "folder": "output/businesses/ai-coffeeshops/",
+      "suggested_domain": "ai-coffeeshops.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-therapists",
+      "name": "AI for Therapists",
+      "folder": "output/businesses/ai-therapists/",
+      "suggested_domain": "ai-therapists.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-architects",
+      "name": "AI for Architects",
+      "folder": "output/businesses/ai-architects/",
+      "suggested_domain": "ai-architects.myai.business",
+      "monthly_price": 449
+    },
+    {
+      "id": "ai-caterers",
+      "name": "AI for Caterers",
+      "folder": "output/businesses/ai-caterers/",
+      "suggested_domain": "ai-caterers.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-eventplanners",
+      "name": "AI for Event Planners",
+      "folder": "output/businesses/ai-eventplanners/",
+      "suggested_domain": "ai-eventplanners.myai.business",
+      "monthly_price": 299
+    },
+    {
+      "id": "ai-florists",
+      "name": "AI for Florists",
+      "folder": "output/businesses/ai-florists/",
+      "suggested_domain": "ai-florists.myai.business",
+      "monthly_price": 149
+    },
+    {
+      "id": "ai-movers",
+      "name": "AI for Moving Companies",
+      "folder": "output/businesses/ai-movers/",
+      "suggested_domain": "ai-movers.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-pest-control",
+      "name": "AI for Pest Control",
+      "folder": "output/businesses/ai-pest-control/",
+      "suggested_domain": "ai-pest-control.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-roofing",
+      "name": "AI for Roofers",
+      "folder": "output/businesses/ai-roofing/",
+      "suggested_domain": "ai-roofing.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-electricians",
+      "name": "AI for Electricians",
+      "folder": "output/businesses/ai-electricians/",
+      "suggested_domain": "ai-electricians.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-towing",
+      "name": "AI for Towing",
+      "folder": "output/businesses/ai-towing/",
+      "suggested_domain": "ai-towing.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-tattoo",
+      "name": "AI for Tattoo Studios",
+      "folder": "output/businesses/ai-tattoo/",
+      "suggested_domain": "ai-tattoo.myai.business",
+      "monthly_price": 149
+    },
+    {
+      "id": "ai-music-teachers",
+      "name": "AI for Music Teachers",
+      "folder": "output/businesses/ai-music-teachers/",
+      "suggested_domain": "ai-music-teachers.myai.business",
+      "monthly_price": 149
+    },
+    {
+      "id": "ai-travel",
+      "name": "AI for Travel Agencies",
+      "folder": "output/businesses/ai-travel/",
+      "suggested_domain": "ai-travel.myai.business",
+      "monthly_price": 349
+    },
+    {
+      "id": "ai-spas",
+      "name": "AI for Spas",
+      "folder": "output/businesses/ai-spas/",
+      "suggested_domain": "ai-spas.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-printing",
+      "name": "AI for Print Shops",
+      "folder": "output/businesses/ai-printing/",
+      "suggested_domain": "ai-printing.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-notary",
+      "name": "AI for Notaries",
+      "folder": "output/businesses/ai-notary/",
+      "suggested_domain": "ai-notary.myai.business",
+      "monthly_price": 199
+    },
+    {
+      "id": "ai-staffing",
+      "name": "AI for Staffing Agencies",
+      "folder": "output/businesses/ai-staffing/",
+      "suggested_domain": "ai-staffing.myai.business",
+      "monthly_price": 449
+    },
+    {
+      "id": "ai-auto-dealers",
+      "name": "AI for Auto Dealers",
+      "folder": "output/businesses/ai-auto-dealers/",
+      "suggested_domain": "ai-auto-dealers.myai.business",
+      "monthly_price": 499
+    },
+    {
+      "id": "ai-storage",
+      "name": "AI for Self-Storage",
+      "folder": "output/businesses/ai-storage/",
+      "suggested_domain": "ai-storage.myai.business",
+      "monthly_price": 249
+    },
+    {
+      "id": "ai-laundromats",
+      "name": "AI for Laundromats",
+      "folder": "output/businesses/ai-laundromats/",
+      "suggested_domain": "ai-laundromats.myai.business",
+      "monthly_price": 149
+    }
+  ],
+  "revenue_potential": {
+    "if_1_client_each": 14150,
+    "if_10_clients_each": 141500,
+    "if_100_clients_each": 1415000,
+    "note": "Monthly recurring revenue (MRR) estimates"
+  }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROI Calculator: Is a Website Audit Worth It? | myAI</title>
+<meta name="description" content="Free ROI calculator. Find out how much revenue you're losing from website issues and how much you could gain from a professional audit.">
+<link rel="canonical" href="https://aoeua.com/roi-calculator.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:#0a0a0a;color:#e0e0e0;min-height:100vh}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:rgba(10,10,10,.95);border-bottom:1px solid #1a1a1a;position:fixed;top:0;left:0;right:0;z-index:100}
+.nav-brand{font-size:1.5rem;font-weight:800;background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{color:#a0a0a0;text-decoration:none}
+
+.hero{text-align:center;padding:7rem 2rem 2rem;max-width:700px;margin:0 auto}
+.hero h1{font-size:2.5rem;font-weight:800;margin-bottom:1rem;line-height:1.2}
+.hero h1 span{background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:#888;font-size:1.1rem}
+
+.calculator{max-width:700px;margin:2rem auto;padding:2rem;background:#111;border:1px solid #222;border-radius:20px}
+.calc-section{margin-bottom:2rem}
+.calc-section h3{color:#00d4ff;font-size:1rem;margin-bottom:1rem;text-transform:uppercase;letter-spacing:1px}
+.input-group{margin-bottom:1.2rem}
+.input-group label{display:block;color:#aaa;font-size:.9rem;margin-bottom:.4rem}
+.input-group input,.input-group select{width:100%;padding:.8rem 1rem;border:1px solid #333;border-radius:8px;background:#0a0a0a;color:#fff;font-size:1rem}
+.input-group input:focus,.input-group select:focus{outline:none;border-color:#00d4ff}
+.input-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.calc-btn{width:100%;padding:1rem;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;border:none;border-radius:10px;font-size:1.1rem;font-weight:700;cursor:pointer;margin-top:1rem}
+.calc-btn:hover{opacity:.9}
+
+.results{display:none;max-width:700px;margin:2rem auto;padding:2rem}
+.results h2{text-align:center;font-size:1.8rem;margin-bottom:2rem}
+.result-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+.result-card{background:#111;border:1px solid #222;border-radius:16px;padding:1.5rem;text-align:center}
+.result-card.negative{border-color:#ff4444}
+.result-card.positive{border-color:#00cc66}
+.result-card .label{color:#888;font-size:.85rem;margin-bottom:.5rem}
+.result-card .value{font-size:2rem;font-weight:800}
+.result-card.negative .value{color:#ff4444}
+.result-card.positive .value{color:#00cc66}
+.result-card .sub{color:#666;font-size:.8rem;margin-top:.3rem}
+.result-summary{background:#111;border:1px solid #222;border-radius:16px;padding:2rem;text-align:center;margin-bottom:2rem}
+.result-summary .big-number{font-size:3rem;font-weight:800;background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.result-summary p{color:#888;margin-top:.5rem}
+.cta-box{text-align:center;padding:2rem;background:linear-gradient(135deg,#0d1117,#1a1a2e);border:1px solid #222;border-radius:16px}
+.cta-box h3{color:#00d4ff;margin-bottom:.5rem}
+.cta-box p{color:#888;margin-bottom:1.5rem}
+.cta-btn{display:inline-block;padding:1rem 2.5rem;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;text-decoration:none;border-radius:50px;font-weight:700;margin:.3rem}
+
+footer{text-align:center;padding:2rem;border-top:1px solid #1a1a1a;color:#555;font-size:.85rem;margin-top:3rem}
+footer a{color:#00d4ff;text-decoration:none}
+@media(max-width:640px){.input-row,.result-cards{grid-template-columns:1fr}.hero h1{font-size:2rem}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<a href="/" class="nav-brand">myAI</a>
+<div class="nav-links">
+<a href="/free-audit.html">Free Audit</a>
+<a href="/prompts.html">Prompts</a>
+<a href="/ai-tools.html">AI Tools</a>
+<a href="/blog/">Blog</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Website <span>ROI Calculator</span></h1>
+<p>Find out how much money your website issues are costing you — and how much you could gain from fixing them.</p>
+</section>
+
+<div class="calculator">
+<div class="calc-section">
+<h3>Your Business</h3>
+<div class="input-row">
+<div class="input-group">
+<label>Monthly website visitors</label>
+<input type="number" id="visitors" value="500" min="0">
+</div>
+<div class="input-group">
+<label>Average customer value (&pound;)</label>
+<input type="number" id="customerValue" value="200" min="0">
+</div>
+</div>
+<div class="input-row">
+<div class="input-group">
+<label>Current conversion rate (%)</label>
+<input type="number" id="conversionRate" value="2" min="0" max="100" step="0.1">
+</div>
+<div class="input-group">
+<label>Industry</label>
+<select id="industry">
+<option value="1.5">Dental / Healthcare</option>
+<option value="1.2">Legal / Professional</option>
+<option value="2.0" selected>Trades (Plumber, Electrician)</option>
+<option value="1.8">Beauty / Wellness</option>
+<option value="2.5">Restaurant / Hospitality</option>
+<option value="1.3">Financial Services</option>
+<option value="2.2">Fitness / Gym</option>
+<option value="1.7">Other</option>
+</select>
+</div>
+</div>
+</div>
+
+<div class="calc-section">
+<h3>Your Website Issues</h3>
+<div class="input-row">
+<div class="input-group">
+<label>Page load time (seconds)</label>
+<input type="number" id="loadTime" value="5" min="0" step="0.1">
+</div>
+<div class="input-group">
+<label>Mobile-friendly?</label>
+<select id="mobileFriendly">
+<option value="no">No — Not mobile optimised</option>
+<option value="partial">Partial — Some issues</option>
+<option value="yes">Yes — Fully responsive</option>
+</select>
+</div>
+</div>
+<div class="input-row">
+<div class="input-group">
+<label>Has SSL (HTTPS)?</label>
+<select id="hasSSL">
+<option value="no">No</option>
+<option value="yes" selected>Yes</option>
+</select>
+</div>
+<div class="input-group">
+<label>SEO optimised?</label>
+<select id="seoOptimised">
+<option value="no" selected>No — Basic or no SEO</option>
+<option value="partial">Partial — Some basics done</option>
+<option value="yes">Yes — Fully optimised</option>
+</select>
+</div>
+</div>
+</div>
+
+<button class="calc-btn" onclick="calculate()">Calculate My ROI &rarr;</button>
+</div>
+
+<div class="results" id="results">
+<h2>Your Website ROI Analysis</h2>
+
+<div class="result-cards">
+<div class="result-card negative">
+<div class="label">Revenue You're Losing Monthly</div>
+<div class="value" id="revenueLost">&pound;0</div>
+<div class="sub">From website issues</div>
+</div>
+<div class="result-card positive">
+<div class="value" id="revenueGain">&pound;0</div>
+<div class="label">Potential Monthly Revenue Gain</div>
+<div class="sub">After fixing issues</div>
+</div>
+<div class="result-card negative">
+<div class="label">Annual Revenue Lost</div>
+<div class="value" id="annualLoss">&pound;0</div>
+<div class="sub">12 months of lost growth</div>
+</div>
+<div class="result-card positive">
+<div class="label">ROI on &pound;49 Audit</div>
+<div class="value" id="roiPercent">0%</div>
+<div class="sub">Return on investment</div>
+</div>
+</div>
+
+<div class="result-summary">
+<div class="big-number" id="paybackDays">0 days</div>
+<p>Time to pay back a &pound;49 audit investment</p>
+</div>
+
+<div class="cta-box">
+<h3>Ready to Stop Losing Money?</h3>
+<p>Get your free website audit now, or invest &pound;49 for a detailed professional report with step-by-step fix instructions.</p>
+<a href="/free-audit.html" class="cta-btn">Free Audit</a>
+<a href="/order-audit.html" class="cta-btn" style="background:#111;border:1px solid #333">&pound;49 Full Report</a>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2025 <a href="https://aoeua.com">myAI</a> &middot; <a href="mailto:info@aoeua.com">info@aoeua.com</a></p>
+</footer>
+
+<script>
+function calculate() {
+    const visitors = parseInt(document.getElementById('visitors').value) || 0;
+    const customerValue = parseInt(document.getElementById('customerValue').value) || 0;
+    const conversionRate = parseFloat(document.getElementById('conversionRate').value) || 0;
+    const loadTime = parseFloat(document.getElementById('loadTime').value) || 0;
+    const mobileFriendly = document.getElementById('mobileFriendly').value;
+    const hasSSL = document.getElementById('hasSSL').value;
+    const seoOptimised = document.getElementById('seoOptimised').value;
+
+    // Calculate current revenue
+    const currentCustomers = visitors * (conversionRate / 100);
+    const currentRevenue = currentCustomers * customerValue;
+
+    // Calculate lost visitors from speed
+    let speedLoss = 0;
+    if (loadTime > 3) speedLoss = Math.min((loadTime - 3) * 0.07, 0.5); // 7% per second over 3s, max 50%
+
+    // Mobile loss
+    let mobileLoss = 0;
+    if (mobileFriendly === 'no') mobileLoss = 0.35; // 35% of mobile visitors bounce
+    else if (mobileFriendly === 'partial') mobileLoss = 0.15;
+
+    // SSL loss
+    let sslLoss = hasSSL === 'no' ? 0.15 : 0;
+
+    // SEO traffic potential
+    let seoMultiplier = 1;
+    if (seoOptimised === 'no') seoMultiplier = 2.5; // Could get 2.5x traffic with SEO
+    else if (seoOptimised === 'partial') seoMultiplier = 1.5;
+
+    // Total effective loss rate
+    const totalLossRate = Math.min(speedLoss + mobileLoss * 0.62 + sslLoss, 0.7); // 62% of traffic is mobile
+
+    // Conversion improvement from fixes
+    const improvedConvRate = conversionRate * (1 + totalLossRate); // Recovery adds back the lost conversions
+    const improvedVisitors = visitors * seoMultiplier;
+    const improvedCustomers = improvedVisitors * (improvedConvRate / 100);
+    const improvedRevenue = improvedCustomers * customerValue;
+
+    // Revenue lost and gained
+    const revenueLost = Math.round(currentRevenue * totalLossRate);
+    const revenueGain = Math.round(improvedRevenue - currentRevenue);
+    const annualLoss = revenueLost * 12;
+    const auditCost = 49;
+    const roi = revenueGain > 0 ? Math.round((revenueGain / auditCost) * 100) : 0;
+    const paybackDays = revenueGain > 0 ? Math.max(1, Math.round((auditCost / revenueGain) * 30)) : 999;
+
+    // Display results
+    document.getElementById('revenueLost').textContent = '\u00A3' + revenueLost.toLocaleString();
+    document.getElementById('revenueGain').textContent = '\u00A3' + revenueGain.toLocaleString();
+    document.getElementById('annualLoss').textContent = '\u00A3' + annualLoss.toLocaleString();
+    document.getElementById('roiPercent').textContent = roi.toLocaleString() + '%';
+    document.getElementById('paybackDays').textContent = paybackDays < 30 ? paybackDays + ' days' : Math.round(paybackDays/30) + ' months';
+
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

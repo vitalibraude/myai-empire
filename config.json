@@ -1,0 +1,52 @@
+{
+    "business": {
+        "name": "myAI",
+        "tagline": "Autonomous AI That Runs Your Business",
+        "description": "A fully autonomous AI-powered platform that builds, markets, and scales digital businesses — without human intervention.",
+        "language": "en",
+        "domain": "ai-automation",
+        "url": "https://aoeua.com"
+    },
+    "agent": {
+        "tasks_per_run": 5,
+        "max_retries": 3,
+        "log_level": "INFO"
+    },
+    "website": {
+        "title": "myAI — Autonomous AI for Business",
+        "output_dir": "output/website",
+        "theme": "modern-dark"
+    },
+    "publisher": {
+        "platforms": ["blog", "youtube", "tiktok", "instagram", "linkedin", "twitter"],
+        "content_dir": "output/content"
+    },
+    "marketing": {
+        "video_platforms": ["youtube", "tiktok", "instagram_reels", "linkedin"],
+        "social_platforms": ["twitter", "linkedin", "instagram", "tiktok"],
+        "output_dir": "output/marketing",
+        "posting_schedule": {
+            "youtube": "weekly",
+            "tiktok": "daily",
+            "instagram_reels": "3x_weekly",
+            "linkedin": "2x_weekly",
+            "twitter": "daily"
+        }
+    },
+    "pricing": {
+        "currency": "USD",
+        "plans": {
+            "starter": {"price": 399, "name": "Starter"},
+            "pro": {"price": 999, "name": "Pro"},
+            "enterprise": {"price": 2499, "name": "Enterprise"}
+        }
+    },
+    "paths": {
+        "tasks": "data/tasks.json",
+        "clients": "data/clients.json",
+        "logs": "data/logs",
+        "readme": "README.md",
+        "social_queue": "data/social_queue.json",
+        "content_calendar": "data/content_calendar.json"
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "generated": "2026-04-16T15:02:34.749182",
+  "total": 11,
+  "videos": [
+    {
+      "type": "youtube",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\youtube\\myai_promo_youtube.mp4"
+    },
+    {
+      "type": "shorts",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\shorts\\myai_promo_shorts.mp4"
+    },
+    {
+      "type": "shorts_restaurants",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\shorts\\myai_restaurants_short.mp4"
+    },
+    {
+      "type": "shorts_dental",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\shorts\\myai_dental_short.mp4"
+    },
+    {
+      "type": "shorts_legal",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\shorts\\myai_legal_short.mp4"
+    },
+    {
+      "type": "thumbnail",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\thumbnails\\thumb_main.png"
+    },
+    {
+      "type": "thumbnail",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\thumbnails\\thumb_30days.png"
+    },
+    {
+      "type": "thumbnail",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\thumbnails\\thumb_5tasks.png"
+    },
+    {
+      "type": "thumbnail",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\thumbnails\\thumb_restaurants.png"
+    },
+    {
+      "type": "thumbnail",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\thumbnails\\thumb_dental.png"
+    },
+    {
+      "type": "thumbnail",
+      "path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\videos\\thumbnails\\thumb_legal.png"
+    }
+  ]
+}

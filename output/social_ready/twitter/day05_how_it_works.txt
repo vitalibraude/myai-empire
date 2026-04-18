@@ -1,0 +1,11 @@
+How myAI works (simple version):
+
+1. You set goals
+2. AI creates a plan
+3. AI executes 24/7
+4. AI learns & improves
+5. You review results
+
+That's it. Fully autonomous.
+
+#AI #Automation

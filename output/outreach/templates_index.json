@@ -1,0 +1,72 @@
+[
+  {
+    "niche": "restaurants",
+    "subject": "[Free Demo] AI automation for your restaurants",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_restaurants.html",
+    "page_url": "https://businesses.aoeua.com/ai-restaurants/",
+    "price": "$299/month"
+  },
+  {
+    "niche": "real-estate",
+    "subject": "Quick question about your real-estate business",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_real-estate.html",
+    "page_url": "https://businesses.aoeua.com/ai-realestate/",
+    "price": "$399/month"
+  },
+  {
+    "niche": "dental",
+    "subject": "[Free Demo] AI automation for your dental",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_dental.html",
+    "page_url": "https://businesses.aoeua.com/ai-dentists/",
+    "price": "$349/month"
+  },
+  {
+    "niche": "fitness",
+    "subject": "Is your fitness business losing money to manual work?",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_fitness.html",
+    "page_url": "https://businesses.aoeua.com/ai-fitness/",
+    "price": "$249/month"
+  },
+  {
+    "niche": "legal",
+    "subject": "Quick question about your legal business",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_legal.html",
+    "page_url": "https://businesses.aoeua.com/ai-lawyers/",
+    "price": "$499/month"
+  },
+  {
+    "niche": "salon",
+    "subject": "How salon businesses are saving 20+ hours/week with AI",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_salon.html",
+    "page_url": "https://businesses.aoeua.com/ai-salons/",
+    "price": "$199/month"
+  },
+  {
+    "niche": "accounting",
+    "subject": "Quick question about your accounting business",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_accounting.html",
+    "page_url": "https://businesses.aoeua.com/ai-accountants/",
+    "price": "$399/month"
+  },
+  {
+    "niche": "ecommerce",
+    "subject": "Is your ecommerce business losing money to manual work?",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_ecommerce.html",
+    "page_url": "https://businesses.aoeua.com/ai-ecommerce/",
+    "price": "$349/month"
+  },
+  {
+    "niche": "construction",
+    "subject": "[Free Demo] AI automation for your construction",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_construction.html",
+    "page_url": "https://businesses.aoeua.com/ai-construction/",
+    "price": "$449/month"
+  },
+  {
+    "niche": "photography",
+    "subject": "Quick question about your photography business",
+    "template_path": "C:\\Users\\ABC\\Desktop\\myAI\\output\\outreach\\outreach_photography.html",
+    "page_url": "https://businesses.aoeua.com/ai-photographers/",
+    "price": "$199/month"
+  }
+]

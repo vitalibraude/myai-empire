@@ -1,0 +1,410 @@
+{
+  "total_businesses": 50,
+  "generated_at": "2026-04-16T12:19:45.941214",
+  "total_pages": 50,
+  "total_social_posts": 500,
+  "total_email_templates": 100,
+  "total_blog_posts": 150,
+  "businesses": [
+    {
+      "id": "ai-restaurants",
+      "name": "AI for Restaurants",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-restaurants\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-restaurants\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-restaurants\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-realestate",
+      "name": "AI for Real Estate",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-realestate\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-realestate\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-realestate\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-ecommerce",
+      "name": "AI for E-Commerce",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-ecommerce\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-ecommerce\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-ecommerce\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-fitness",
+      "name": "AI for Fitness",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-fitness\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-fitness\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-fitness\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-dentists",
+      "name": "AI for Dentists",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-dentists\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-dentists\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-dentists\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-lawyers",
+      "name": "AI for Law Firms",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-lawyers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-lawyers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-lawyers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-accountants",
+      "name": "AI for Accountants",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-accountants\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-accountants\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-accountants\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-plumbers",
+      "name": "AI for Plumbers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-plumbers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-plumbers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-plumbers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-hvac",
+      "name": "AI for HVAC",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-hvac\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-hvac\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-hvac\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-salons",
+      "name": "AI for Salons",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-salons\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-salons\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-salons\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-coaches",
+      "name": "AI for Coaches",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-coaches\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-coaches\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-coaches\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-agencies",
+      "name": "AI for Agencies",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-agencies\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-agencies\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-agencies\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-freelancers",
+      "name": "AI for Freelancers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-freelancers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-freelancers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-freelancers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-photographers",
+      "name": "AI for Photographers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-photographers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-photographers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-photographers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-weddings",
+      "name": "AI for Wedding Planners",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-weddings\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-weddings\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-weddings\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-construction",
+      "name": "AI for Construction",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-construction\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-construction\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-construction\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-trucking",
+      "name": "AI for Trucking",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-trucking\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-trucking\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-trucking\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-insurance",
+      "name": "AI for Insurance",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-insurance\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-insurance\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-insurance\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-chiropractors",
+      "name": "AI for Chiropractors",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-chiropractors\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-chiropractors\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-chiropractors\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-vets",
+      "name": "AI for Veterinarians",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-vets\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-vets\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-vets\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-tutors",
+      "name": "AI for Tutors",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-tutors\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-tutors\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-tutors\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-daycares",
+      "name": "AI for Daycares",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-daycares\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-daycares\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-daycares\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-cleaners",
+      "name": "AI for Cleaning Services",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-cleaners\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-cleaners\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-cleaners\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-landscapers",
+      "name": "AI for Landscapers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-landscapers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-landscapers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-landscapers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-petgrooming",
+      "name": "AI for Pet Groomers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-petgrooming\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-petgrooming\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-petgrooming\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-mechanics",
+      "name": "AI for Auto Shops",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-mechanics\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-mechanics\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-mechanics\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-pharmacies",
+      "name": "AI for Pharmacies",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-pharmacies\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-pharmacies\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-pharmacies\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-yoga",
+      "name": "AI for Yoga Studios",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-yoga\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-yoga\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-yoga\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-bakeries",
+      "name": "AI for Bakeries",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-bakeries\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-bakeries\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-bakeries\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-coffeeshops",
+      "name": "AI for Coffee Shops",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-coffeeshops\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-coffeeshops\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-coffeeshops\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-therapists",
+      "name": "AI for Therapists",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-therapists\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-therapists\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-therapists\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-architects",
+      "name": "AI for Architects",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-architects\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-architects\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-architects\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-caterers",
+      "name": "AI for Caterers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-caterers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-caterers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-caterers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-eventplanners",
+      "name": "AI for Event Planners",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-eventplanners\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-eventplanners\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-eventplanners\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-florists",
+      "name": "AI for Florists",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-florists\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-florists\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-florists\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-movers",
+      "name": "AI for Moving Companies",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-movers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-movers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-movers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-pest-control",
+      "name": "AI for Pest Control",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-pest-control\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-pest-control\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-pest-control\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-roofing",
+      "name": "AI for Roofers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-roofing\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-roofing\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-roofing\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-electricians",
+      "name": "AI for Electricians",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-electricians\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-electricians\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-electricians\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-towing",
+      "name": "AI for Towing",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-towing\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-towing\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-towing\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-tattoo",
+      "name": "AI for Tattoo Studios",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-tattoo\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-tattoo\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-tattoo\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-music-teachers",
+      "name": "AI for Music Teachers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-music-teachers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-music-teachers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-music-teachers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-travel",
+      "name": "AI for Travel Agencies",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-travel\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-travel\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-travel\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-spas",
+      "name": "AI for Spas",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-spas\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-spas\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-spas\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-printing",
+      "name": "AI for Print Shops",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-printing\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-printing\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-printing\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-notary",
+      "name": "AI for Notaries",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-notary\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-notary\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-notary\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-staffing",
+      "name": "AI for Staffing Agencies",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-staffing\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-staffing\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-staffing\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-auto-dealers",
+      "name": "AI for Auto Dealers",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-auto-dealers\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-auto-dealers\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-auto-dealers\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-storage",
+      "name": "AI for Self-Storage",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-storage\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-storage\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-storage\\emails",
+      "status": "generated"
+    },
+    {
+      "id": "ai-laundromats",
+      "name": "AI for Laundromats",
+      "site": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-laundromats\\index.html",
+      "social": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-laundromats\\social_content.json",
+      "emails": "C:\\Users\\ABC\\Desktop\\myAI\\output\\businesses\\ai-laundromats\\emails",
+      "status": "generated"
+    }
+  ]
+}

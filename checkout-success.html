@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to myAI!</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
+            background:#0a0a0a; color:#e0e0e0; min-height:100vh;
+            display:flex; flex-direction:column; align-items:center; justify-content:center;
+        }
+        .success-container {
+            max-width:600px; text-align:center; padding:4rem 2rem;
+        }
+        .checkmark {
+            width:100px; height:100px; border-radius:50%;
+            background:linear-gradient(135deg,#00d4ff,#7b2ff7);
+            display:flex; align-items:center; justify-content:center;
+            margin:0 auto 2rem; font-size:3rem;
+            animation: popIn 0.5s ease-out;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0); }
+            80% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+        h1 {
+            font-size:2.5rem; margin-bottom:1rem;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+        }
+        p { color:#888; font-size:1.1rem; line-height:1.7; margin-bottom:1rem; }
+        .steps {
+            text-align:left; background:#111; border:1px solid #222;
+            border-radius:15px; padding:2rem; margin:2rem 0;
+        }
+        .steps h3 { color:#00d4ff; margin-bottom:1rem; }
+        .steps li {
+            padding:.6rem 0; color:#aaa; list-style:none;
+            border-bottom:1px solid #1a1a1a;
+        }
+        .steps li::before { content:'✓ '; color:#00d4ff; font-weight:bold; }
+        .steps li:last-child { border-bottom:none; }
+        .cta-btn {
+            display:inline-block; padding:1rem 2.5rem; border:none; border-radius:50px;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color:white; font-size:1.1rem; font-weight:700; text-decoration:none;
+            margin-top:1.5rem; transition:transform .3s;
+        }
+        .cta-btn:hover { transform:translateY(-2px); }
+        .support { color:#555; font-size:.85rem; margin-top:2rem; }
+        .support a { color:#00d4ff; text-decoration:none; }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">&#x2713;</div>
+        <h1>Welcome to myAI!</h1>
+        <p>Your 14-day free trial is now active. We're setting up your AI agents right now.</p>
+
+        <div class="steps">
+            <h3>What happens next:</h3>
+            <ul>
+                <li>Check your email for login credentials</li>
+                <li>Your AI agent starts building your website</li>
+                <li>SEO optimization begins automatically</li>
+                <li>Social media content gets scheduled</li>
+                <li>Your first weekly report arrives in 7 days</li>
+            </ul>
+        </div>
+
+        <p>Your card will <strong>not</strong> be charged during the trial period. Cancel anytime from your dashboard.</p>
+
+        <a href="index.html" class="cta-btn">Go to Dashboard &rarr;</a>
+
+        <p class="support">
+            Questions? Email us at <a href="mailto:info@aoeua.com">info@aoeua.com</a>
+        </p>
+    </div>
+</body>
+</html>

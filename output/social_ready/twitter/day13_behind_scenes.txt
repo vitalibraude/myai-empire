@@ -1,0 +1,12 @@
+Behind the scenes of myAI:
+
+Every 60 minutes, the agent:
+→ Checks for new tasks
+→ Executes highest priority
+→ Generates new tasks
+→ Logs everything
+→ Optimizes based on results
+
+A self-perpetuating business engine.
+
+#BuildInPublic #AI

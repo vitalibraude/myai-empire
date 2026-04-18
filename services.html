@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — myAI</title>
+    <style>
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a; color: #e0e0e0; line-height: 1.7;
+        }
+        .cta-button {
+            display: inline-block; padding: 1rem 3rem; font-size: 1.15rem;
+            border: none; border-radius: 50px;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: white; cursor: pointer; text-decoration: none; font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+        }
+        .cta-secondary {
+            display: inline-block; padding: 1rem 3rem; font-size: 1.15rem;
+            border: 2px solid #333; border-radius: 50px;
+            background: transparent; color: #a0a0a0; cursor: pointer;
+            text-decoration: none; transition: all 0.3s;
+        }
+        .cta-secondary:hover { border-color: #00d4ff; color: #00d4ff; }
+        .section-title {
+            text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; color: #00d4ff;
+        }
+        .section-subtitle {
+            text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;
+        }
+        .animate-on-scroll {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+        
+        .main-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1rem 3rem;
+            background: rgba(10,10,10,0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #1a1a1a;
+            z-index: 1000;
+        }
+        .nav-brand {
+            font-size: 1.5rem; font-weight: 800;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a {
+            color: #a0a0a0; text-decoration: none; font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #00d4ff; }
+        .nav-cta {
+            padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.9rem;
+            background: linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color: white; text-decoration: none; font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.3);
+        }
+
+        .hero-mini {
+            padding:8rem 2rem 4rem; text-align:center;
+            background:linear-gradient(135deg,#0a0a0a,#1a1a2e);
+        }
+        .hero-mini h1 {
+            font-size:3rem;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+            margin-bottom:1rem;
+        }
+        .hero-mini p { color:#888; font-size:1.2rem; }
+        .services-detail { max-width:1000px; margin:0 auto; padding:4rem 2rem; }
+        .service-block {
+            display:grid; grid-template-columns:1fr 1fr; gap:3rem;
+            margin-bottom:5rem; align-items:center;
+        }
+        .service-block.reverse { direction:rtl; }
+        .service-block.reverse > * { direction:ltr; }
+        .service-info h2 { color:#00d4ff; font-size:1.8rem; margin-bottom:1rem; }
+        .service-info p { color:#999; margin-bottom:1rem; }
+        .service-info ul { list-style:none; }
+        .service-info ul li { padding:.4rem 0; color:#a0a0a0; }
+        .service-info ul li::before { content:'\2713 '; color:#00d4ff; font-weight:bold; }
+        .service-visual {
+            background:#111; border:1px solid #222; border-radius:20px;
+            padding:3rem; text-align:center; font-size:5rem;
+        }
+        .process { padding:5rem 2rem; background:#0d0d0d; }
+        .process h2 { text-align:center; color:#00d4ff; font-size:2.5rem; margin-bottom:3rem; }
+        .process-steps {
+            max-width:900px; margin:0 auto;
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2rem;
+        }
+        .step { text-align:center; padding:2rem; }
+        .step .number {
+            width:50px; height:50px; border-radius:50%;
+            background:linear-gradient(135deg,#00d4ff,#7b2ff7);
+            display:flex; justify-content:center; align-items:center;
+            font-size:1.5rem; font-weight:bold; margin:0 auto 1rem;
+        }
+        .step h3 { color:#e0e0e0; margin-bottom:.5rem; }
+        .step p { color:#888; font-size:.9rem; }
+        .cta-section { text-align:center; padding:4rem 2rem; }
+        
+        footer {
+            text-align: center; padding: 3rem 2rem; color: #555; font-size: 0.9rem;
+            border-top: 1px solid #1a1a1a; background: #0a0a0a;
+        }
+        footer a { color: #00d4ff; text-decoration: none; }
+
+        @media(max-width:768px) { .service-block { grid-template-columns:1fr; } }
+    </style>
+
+    <link rel="canonical" href="https://aoeua.com/services.html">
+    <meta property="og:title" content="Services — myAI">
+    <meta property="og:url" content="https://aoeua.com/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="AI-powered business automation for 50+ industries. Automate operations, boost revenue, save time.">
+    <meta property="og:site_name" content="myAI">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services — myAI">
+</head>
+<body>
+    
+    <nav class="main-nav">
+        <div class="nav-brand">&#x1F916; myAI</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://businesses.aoeua.com">50 Businesses</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <a href="index.html#contact" class="nav-cta">Get Started</a>
+    </nav>
+
+    <section class="hero-mini">
+        <h1>Our Services</h1>
+        <p>End-to-end autonomous AI solutions for modern businesses</p>
+    </section>
+
+    <div class="services-detail">
+        <div class="service-block">
+            <div class="service-info">
+                <h2>&#x1F916; Autonomous AI Agents</h2>
+                <p>Deploy intelligent agents that run your business processes end-to-end.</p>
+                <ul>
+                    <li>Automated data analysis &amp; decision-making</li>
+                    <li>Task scheduling &amp; execution</li>
+                    <li>Real-time monitoring &amp; reporting</li>
+                    <li>Self-learning &amp; continuous improvement</li>
+                </ul>
+            </div>
+            <div class="service-visual">&#x1F916;</div>
+        </div>
+        <div class="service-block reverse">
+            <div class="service-visual">&#x1F3AC;</div>
+            <div class="service-info">
+                <h2>&#x1F3AC; Video &amp; Reels Marketing</h2>
+                <p>Automated video content pipeline for all major platforms.</p>
+                <ul>
+                    <li>YouTube scripts (5-10 min educational content)</li>
+                    <li>TikTok &amp; Instagram Reels (15-60 sec hooks)</li>
+                    <li>Thumbnail generation &amp; A/B testing</li>
+                    <li>Content calendar with optimal posting times</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="service-info">
+                <h2>&#x1F310; Smart Website Builder</h2>
+                <p>Websites that evolve autonomously with fresh content and design.</p>
+                <ul>
+                    <li>Responsive, modern design (auto-generated)</li>
+                    <li>Dynamic content that updates itself</li>
+                    <li>Built-in SEO optimization</li>
+                    <li>Lead capture &amp; CRM integration</li>
+                </ul>
+            </div>
+            <div class="service-visual">&#x1F310;</div>
+        </div>
+        <div class="service-block reverse">
+            <div class="service-visual">&#x1F4E3;</div>
+            <div class="service-info">
+                <h2>&#x1F4E3; Social Media Automation</h2>
+                <p>Full-stack social media presence on autopilot.</p>
+                <ul>
+                    <li>Multi-platform content (Twitter, LinkedIn, Instagram, TikTok)</li>
+                    <li>Platform-specific captions &amp; hashtags</li>
+                    <li>Scheduling based on peak engagement times</li>
+                    <li>Performance tracking &amp; optimization</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="service-info">
+                <h2>&#x1F4CA; Analytics &amp; Reporting</h2>
+                <p>Data-driven insights delivered automatically.</p>
+                <ul>
+                    <li>Market &amp; competitor analysis</li>
+                    <li>Weekly performance reports</li>
+                    <li>Revenue forecasting</li>
+                    <li>Interactive dashboards</li>
+                </ul>
+            </div>
+            <div class="service-visual">&#x1F4CA;</div>
+        </div>
+        <div class="service-block reverse">
+            <div class="service-visual">&#x1F4AC;</div>
+            <div class="service-info">
+                <h2>&#x1F4AC; AI Customer Service</h2>
+                <p>Smart chatbot handling support and sales 24/7.</p>
+                <ul>
+                    <li>Natural language conversations</li>
+                    <li>Automated meeting scheduling</li>
+                    <li>Seamless handoff to human agents</li>
+                    <li>Continuous learning from interactions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="process">
+        <h2>How It Works</h2>
+        <div class="process-steps">
+            <div class="step"><div class="number">1</div><h3>Discovery</h3><p>We understand your business goals &amp; needs</p></div>
+            <div class="step"><div class="number">2</div><h3>Setup</h3><p>Configure agents &amp; tools for your stack</p></div>
+            <div class="step"><div class="number">3</div><h3>Launch</h3><p>Activate the system and validate results</p></div>
+            <div class="step"><div class="number">4</div><h3>Autopilot</h3><p>The AI runs and improves continuously</p></div>
+        </div>
+    </section>
+
+    <div class="cta-section">
+        <h2 style="color:#00d4ff;margin-bottom:1rem;">Ready to automate?</h2>
+        <a href="pricing.html" class="cta-button">See Pricing</a>
+    </div>
+    
+    <footer>
+        <div style="max-width:900px;margin:0 auto;">
+            <p style="margin-bottom:1rem;">&#x1F916; <strong>myAI</strong> — Autonomous AI That Runs Your Business</p>
+            <p>
+                <a href="index.html">Home</a> &middot;
+                <a href="about.html">About</a> &middot;
+                <a href="services.html">Services</a> &middot;
+                <a href="pricing.html">Pricing</a> &middot;
+                <a href="blog.html">Blog</a> &middot;
+                <a href="index.html#contact">Contact</a>
+            </p>
+            <p style="margin-top:1.5rem;">&copy; 2026 myAI Inc. All rights reserved. Built autonomously by AI.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

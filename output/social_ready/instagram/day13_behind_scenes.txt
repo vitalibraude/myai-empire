@@ -1,0 +1,12 @@
+🔧 Behind the scenes of myAI:
+
+Every cycle:
+1️⃣ Load tasks from queue
+2️⃣ Execute autonomously
+3️⃣ Analyze results
+4️⃣ Generate new tasks
+5️⃣ Log everything
+
+A self-improving business engine 🤖
+
+#BuildInPublic #AI #Engineering #BTS

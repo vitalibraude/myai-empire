@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit Report — https://www.dorwest.com</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',sans-serif; background:#0a0a0a; color:#e0e0e0; padding:2rem; }
+.report { max-width:900px; margin:0 auto; }
+.header { text-align:center; margin-bottom:3rem; padding:3rem; background:#111; border-radius:20px; border:1px solid #222; }
+.brand { font-size:1.2rem; color:#00d4ff; margin-bottom:1rem; }
+.url { color:#888; font-size:1rem; word-break:break-all; }
+.score-circle { width:160px; height:160px; border-radius:50%; border:6px solid #ffa500;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  margin:2rem auto; }
+.score-num { font-size:3rem; font-weight:800; color:#ffa500; }
+.score-grade { font-size:1.2rem; color:#888; }
+.date { color:#555; font-size:0.9rem; margin-top:1rem; }
+.section { background:#111; border:1px solid #222; border-radius:16px; padding:2rem; margin-bottom:1.5rem; }
+.section h2 { font-size:1.4rem; margin-bottom:1rem; color:#00d4ff; }
+ul { list-style:none; }
+li { padding:0.6rem 0; border-bottom:1px solid #1a1a1a; padding-left:1.5rem; position:relative; }
+li:last-child { border:none; }
+li::before { position:absolute; left:0; }
+.issue::before { content:"\2716"; color:#ff4444; }
+.warning::before { content:"\26A0"; color:#ffa500; }
+.good::before { content:"\2714"; color:#00cc66; }
+.stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+.stat { background:#0a0a0a; padding:1rem; border-radius:10px; text-align:center; }
+.stat-value { font-size:1.8rem; font-weight:700; color:#00d4ff; }
+.stat-label { font-size:0.85rem; color:#888; margin-top:0.3rem; }
+.cta { text-align:center; margin-top:3rem; padding:3rem; background:linear-gradient(135deg,#111,#1a1a2e);
+  border-radius:20px; border:1px solid #222; }
+.cta h2 { color:#00d4ff; margin-bottom:1rem; }
+.cta p { color:#888; margin-bottom:2rem; }
+.cta a { display:inline-block; padding:1rem 3rem; background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+  color:#fff; text-decoration:none; border-radius:50px; font-weight:600; font-size:1.1rem; }
+.footer { text-align:center; margin-top:2rem; color:#444; font-size:0.85rem; }
+</style>
+</head>
+<body>
+<div class="report">
+<div class="header">
+  <div class="brand">myAI Website Audit Report</div>
+  <div class="score-circle">
+    <div class="score-num">77</div>
+    <div class="score-grade">Grade: C+</div>
+  </div>
+  <div class="url">https://www.dorwest.com</div>
+  <div class="date">Generated: 2026-04-16</div>
+</div>
+
+<div class="section">
+<h2>Key Statistics</h2>
+<div class="stats-grid">
+  <div class="stat"><div class="stat-value">1.16s</div><div class="stat-label">Load Time</div></div>
+  <div class="stat"><div class="stat-value">775.6KB</div><div class="stat-label">Page Size</div></div>
+  <div class="stat"><div class="stat-value">918</div><div class="stat-label">Word Count</div></div>
+  <div class="stat"><div class="stat-value">187</div><div class="stat-label">Images</div></div>
+  <div class="stat"><div class="stat-value">137</div><div class="stat-label">Internal Links</div></div>
+  <div class="stat"><div class="stat-value">6</div><div class="stat-label">External Links</div></div>
+</div>
+</div>
+
+<div class='section'><h2>Critical Issues (1)</h2><ul><li class="issue">94 of 187 images missing alt text</li></ul></div>
+
+<div class='section'><h2>Warnings (4)</h2><ul><li class="warning">Title too long (152 chars). Keep under 60 chars</li><li class="warning">Meta description too long (198 chars). Keep under 160</li><li class="warning">Multiple H1 tags (2). Best practice: one H1 per page</li><li class="warning">Large page size (776KB). Consider optimizing</li></ul></div>
+
+<div class="section"><h2>What's Working Well (14)</h2><ul><li class="good">Uses H2 subheadings (17 found)</li><li class="good">Viewport meta tag present (mobile-friendly)</li><li class="good">HTTPS enabled</li><li class="good">Fast load time (1.2s)</li><li class="good">Open Graph tags present (good for social sharing)</li><li class="good">Twitter Card tags present</li><li class="good">Canonical URL set</li><li class="good">Favicon found</li><li class="good">Structured data (JSON-LD) found</li><li class="good">HSTS header present</li><li class="good">X-Frame-Options header present</li><li class="good">X-Content-Type-Options header present</li><li class="good">Good content length (918 words)</li><li class="good">Links: 137 internal, 6 external</li></ul></div>
+
+<div class="cta">
+  <h2>Want Us to Fix These Issues?</h2>
+  <p>Our AI-powered service can automatically fix SEO issues, optimize performance, and improve your website's ranking.</p>
+  <a href="https://aoeua.com/services.html">Get Professional Fix - Starting at $49</a>
+</div>
+
+<div class="footer">
+  Powered by myAI | info@aoeua.com | <a href="https://aoeua.com/" style="color:#444;">aoeua.com</a>
+</div>
+</div>
+</body>
+</html>

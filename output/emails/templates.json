@@ -1,0 +1,38 @@
+[
+  {
+    "name": "welcome",
+    "subject": "Welcome to myAI! \ud83d\ude80",
+    "body": "\n        <h2 style=\"color:#00d4ff; margin-top:0;\">Welcome aboard!</h2>\n        <p>Thanks for joining myAI. We're thrilled to have you.</p>\n        <p>Here's what you can do right now:</p>\n        <ul style=\"color:#a0a0a0;\">\n            <li>&#x1F916; Set up your first AI agent</li>\n            <li>&#x1F310; View the website built for you</li>\n            <li>&#x1F4CA; Track your automated reports</li>\n            <li>&#x1F3AC; Explore video marketing tools</li>\n        </ul>\n        <p>Your 14-day free trial is active. No credit card needed.</p>\n        <p style=\"text-align:center; margin-top:2rem;\">\n            <a href=\"#\" style=\"background:linear-gradient(90deg,#00d4ff,#7b2ff7); color:white; padding:0.8rem 2rem; border-radius:50px; text-decoration:none; font-weight:600;\">\n                Get Started Now\n            </a>\n        </p>\n        ",
+    "created": "2026-04-16T11:43:30.791354"
+  },
+  {
+    "name": "weekly_report",
+    "subject": "Your Weekly myAI Report \ud83d\udcca",
+    "body": "\n        <h2 style=\"color:#00d4ff; margin-top:0;\">Weekly Summary</h2>\n        <p>Here's what your AI accomplished this week:</p>\n        <div style=\"background:#1a1a1a; padding:1.5rem; border-radius:8px; margin:1rem 0;\">\n            <p>&#x1F4C8; <strong style=\"color:#00d4ff;\">Tasks Completed:</strong> {{tasks_completed}}</p>\n            <p>&#x1F465; <strong style=\"color:#00d4ff;\">New Leads:</strong> {{new_leads}}</p>\n            <p>&#x1F4DD; <strong style=\"color:#00d4ff;\">Content Published:</strong> {{content_published}}</p>\n            <p>&#x1F310; <strong style=\"color:#00d4ff;\">Website Visitors:</strong> {{site_visits}}</p>\n            <p>&#x1F3AC; <strong style=\"color:#00d4ff;\">Videos Scripted:</strong> {{videos_scripted}}</p>\n            <p>&#x1F4F1; <strong style=\"color:#00d4ff;\">Social Posts:</strong> {{social_posts}}</p>\n        </div>\n        <p style=\"color:#888;\">Full report available in your admin dashboard.</p>\n        ",
+    "created": "2026-04-16T11:43:30.795355"
+  },
+  {
+    "name": "new_lead",
+    "subject": "New Lead Captured! \ud83c\udfaf",
+    "body": "\n        <h2 style=\"color:#00d4ff; margin-top:0;\">New Lead!</h2>\n        <p>A new inquiry was received through your website:</p>\n        <div style=\"background:#1a1a1a; padding:1.5rem; border-radius:8px; margin:1rem 0;\">\n            <p>&#x1F464; <strong>Name:</strong> {{lead_name}}</p>\n            <p>&#x1F4E7; <strong>Email:</strong> {{lead_email}}</p>\n            <p>&#x1F4F1; <strong>Phone:</strong> {{lead_phone}}</p>\n            <p>&#x1F3AF; <strong>Interest:</strong> {{lead_interest}}</p>\n            <p>&#x1F4AC; <strong>Message:</strong> {{lead_message}}</p>\n        </div>\n        <p style=\"text-align:center; margin-top:2rem;\">\n            <a href=\"#\" style=\"background:linear-gradient(90deg,#00d4ff,#7b2ff7); color:white; padding:0.8rem 2rem; border-radius:50px; text-decoration:none; font-weight:600;\">\n                View in CRM\n            </a>\n        </p>\n        ",
+    "created": "2026-04-16T11:43:30.812046"
+  },
+  {
+    "name": "welcome",
+    "subject": "Welcome to myAI! \ud83d\ude80",
+    "body": "\n        <h2 style=\"color:#00d4ff; margin-top:0;\">Welcome aboard!</h2>\n        <p>Thanks for joining myAI. We're thrilled to have you.</p>\n        <p>Here's what you can do right now:</p>\n        <ul style=\"color:#a0a0a0;\">\n            <li>&#x1F916; Set up your first AI agent</li>\n            <li>&#x1F310; View the website built for you</li>\n            <li>&#x1F4CA; Track your automated reports</li>\n            <li>&#x1F3AC; Explore video marketing tools</li>\n        </ul>\n        <p>Your 14-day free trial is active. No credit card needed.</p>\n        <p style=\"text-align:center; margin-top:2rem;\">\n            <a href=\"#\" style=\"background:linear-gradient(90deg,#00d4ff,#7b2ff7); color:white; padding:0.8rem 2rem; border-radius:50px; text-decoration:none; font-weight:600;\">\n                Get Started Now\n            </a>\n        </p>\n        ",
+    "created": "2026-04-16T12:04:52.195522"
+  },
+  {
+    "name": "weekly_report",
+    "subject": "Your Weekly myAI Report \ud83d\udcca",
+    "body": "\n        <h2 style=\"color:#00d4ff; margin-top:0;\">Weekly Summary</h2>\n        <p>Here's what your AI accomplished this week:</p>\n        <div style=\"background:#1a1a1a; padding:1.5rem; border-radius:8px; margin:1rem 0;\">\n            <p>&#x1F4C8; <strong style=\"color:#00d4ff;\">Tasks Completed:</strong> {{tasks_completed}}</p>\n            <p>&#x1F465; <strong style=\"color:#00d4ff;\">New Leads:</strong> {{new_leads}}</p>\n            <p>&#x1F4DD; <strong style=\"color:#00d4ff;\">Content Published:</strong> {{content_published}}</p>\n            <p>&#x1F310; <strong style=\"color:#00d4ff;\">Website Visitors:</strong> {{site_visits}}</p>\n            <p>&#x1F3AC; <strong style=\"color:#00d4ff;\">Videos Scripted:</strong> {{videos_scripted}}</p>\n            <p>&#x1F4F1; <strong style=\"color:#00d4ff;\">Social Posts:</strong> {{social_posts}}</p>\n        </div>\n        <p style=\"color:#888;\">Full report available in your admin dashboard.</p>\n        ",
+    "created": "2026-04-16T12:04:52.224497"
+  },
+  {
+    "name": "new_lead",
+    "subject": "New Lead Captured! \ud83c\udfaf",
+    "body": "\n        <h2 style=\"color:#00d4ff; margin-top:0;\">New Lead!</h2>\n        <p>A new inquiry was received through your website:</p>\n        <div style=\"background:#1a1a1a; padding:1.5rem; border-radius:8px; margin:1rem 0;\">\n            <p>&#x1F464; <strong>Name:</strong> {{lead_name}}</p>\n            <p>&#x1F4E7; <strong>Email:</strong> {{lead_email}}</p>\n            <p>&#x1F4F1; <strong>Phone:</strong> {{lead_phone}}</p>\n            <p>&#x1F3AF; <strong>Interest:</strong> {{lead_interest}}</p>\n            <p>&#x1F4AC; <strong>Message:</strong> {{lead_message}}</p>\n        </div>\n        <p style=\"text-align:center; margin-top:2rem;\">\n            <a href=\"#\" style=\"background:linear-gradient(90deg,#00d4ff,#7b2ff7); color:white; padding:0.8rem 2rem; border-radius:50px; text-decoration:none; font-weight:600;\">\n                View in CRM\n            </a>\n        </p>\n        ",
+    "created": "2026-04-16T12:04:52.249498"
+  }
+]

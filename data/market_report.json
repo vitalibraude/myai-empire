@@ -1,0 +1,36 @@
+{
+  "date": "2026-04-16T12:04:52.332497",
+  "market": "AI Automation & Autonomous Agents",
+  "size": "$500B projected by 2027",
+  "trends": [
+    "300% growth in demand for AI agents",
+    "SMBs adopting automation at an accelerating pace",
+    "Video-first marketing becoming dominant acquisition channel",
+    "AI SaaS platforms reaching $200B TAM",
+    "Autonomous business operations \u2014 the next frontier"
+  ],
+  "opportunities": [
+    "AI-as-a-service for small and mid-size businesses",
+    "Automated customer service replacing call centers",
+    "AI-powered video marketing at scale",
+    "Self-maintaining digital businesses",
+    "Enterprise API integrations for autonomous workflows"
+  ],
+  "competitors": [
+    {
+      "name": "Jasper AI",
+      "focus": "Content generation",
+      "weakness": "No full automation"
+    },
+    {
+      "name": "HubSpot",
+      "focus": "CRM & Marketing",
+      "weakness": "Expensive, not autonomous"
+    },
+    {
+      "name": "Zapier",
+      "focus": "Workflow automation",
+      "weakness": "Requires manual setup"
+    }
+  ]
+}

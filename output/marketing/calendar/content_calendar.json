@@ -1,0 +1,663 @@
+{
+  "generated": "2026-04-16T12:04:48.834499",
+  "period": "2026-04-16 to 2026-05-14",
+  "total_pieces": 72,
+  "breakdown": {
+    "youtube": 4,
+    "tiktok": 12,
+    "instagram": 12,
+    "linkedin": 8,
+    "twitter": 28,
+    "blog": 8
+  },
+  "entries": [
+    {
+      "date": "2026-04-21",
+      "platform": "youtube",
+      "type": "long_form_video",
+      "title": "Week 1 YouTube Video",
+      "description": "Educational video covering AI automation topic #1",
+      "status": "scripted",
+      "time": "weekly"
+    },
+    {
+      "date": "2026-04-16",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W1D1",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-18",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W1D2",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-20",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W1D3",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-17",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W1D1",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-04-19",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W1D2",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-04-21",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W1D3",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-04-17",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W1",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-04-19",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W1",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-04-16",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D1",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-17",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D2",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-18",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D3",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-19",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D4",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-20",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D5",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-21",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D6",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-22",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W1D7",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-16",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W1",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-04-19",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W1",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-04-28",
+      "platform": "youtube",
+      "type": "long_form_video",
+      "title": "Week 2 YouTube Video",
+      "description": "Educational video covering AI automation topic #2",
+      "status": "planned",
+      "time": "weekly"
+    },
+    {
+      "date": "2026-04-23",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W2D1",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-25",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W2D2",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-27",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W2D3",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-24",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W2D1",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-04-26",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W2D2",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-04-28",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W2D3",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-04-24",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W2",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-04-26",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W2",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-04-23",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D1",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-24",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D2",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-25",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D3",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-26",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D4",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-27",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D5",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-28",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D6",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-29",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W2D7",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-23",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W2",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-04-26",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W2",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-05-05",
+      "platform": "youtube",
+      "type": "long_form_video",
+      "title": "Week 3 YouTube Video",
+      "description": "Educational video covering AI automation topic #3",
+      "status": "planned",
+      "time": "weekly"
+    },
+    {
+      "date": "2026-04-30",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W3D1",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-02",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W3D2",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-04",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W3D3",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-01",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W3D1",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-05-03",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W3D2",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-05-05",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W3D3",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-05-01",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W3",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-05-03",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W3",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-04-30",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D1",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-01",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D2",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-02",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D3",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-03",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D4",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-04",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D5",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-05",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D6",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-06",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W3D7",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-04-30",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W3",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-05-03",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W3",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-05-12",
+      "platform": "youtube",
+      "type": "long_form_video",
+      "title": "Week 4 YouTube Video",
+      "description": "Educational video covering AI automation topic #4",
+      "status": "planned",
+      "time": "weekly"
+    },
+    {
+      "date": "2026-05-07",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W4D1",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-09",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W4D2",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-11",
+      "platform": "tiktok",
+      "type": "short_form_reel",
+      "title": "TikTok Reel \u2014 W4D3",
+      "description": "Short-form vertical content (15-60s)",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-08",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W4D1",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-05-10",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W4D2",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-05-12",
+      "platform": "instagram",
+      "type": "reel",
+      "title": "Instagram Reel \u2014 W4D3",
+      "description": "Reel optimized for Explore page",
+      "status": "planned",
+      "time": "Daily 17:00 UTC"
+    },
+    {
+      "date": "2026-05-08",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W4",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-05-10",
+      "platform": "linkedin",
+      "type": "thought_leadership_post",
+      "title": "LinkedIn Post \u2014 W4",
+      "description": "Professional AI industry insights",
+      "status": "planned",
+      "time": "2x_weekly"
+    },
+    {
+      "date": "2026-05-07",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D1",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-08",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D2",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-09",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D3",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-10",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D4",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-11",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D5",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-12",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D6",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-13",
+      "platform": "twitter",
+      "type": "tweet_thread",
+      "title": "Twitter Thread \u2014 W4D7",
+      "description": "Short insights, tips, or build-in-public updates",
+      "status": "planned",
+      "time": "daily"
+    },
+    {
+      "date": "2026-05-07",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W4",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    },
+    {
+      "date": "2026-05-10",
+      "platform": "blog",
+      "type": "article",
+      "title": "Blog Post \u2014 W4",
+      "description": "Long-form SEO-optimized article",
+      "status": "planned",
+      "time": "Mon/Thu 12:00 UTC"
+    }
+  ]
+}

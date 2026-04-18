@@ -1,0 +1,2851 @@
+[
+  {
+    "to": "info@trattoria-nyc.com",
+    "to_name": "Mario",
+    "subject": "[Free Demo] AI automation for your restaurants",
+    "sent_at": "2026-04-16T16:36:29.402963",
+    "status": "sent"
+  },
+  {
+    "to": "hello@kimchihouse.com",
+    "to_name": "Chef Kim",
+    "subject": "How restaurants businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:36:34.145808",
+    "status": "sent"
+  },
+  {
+    "to": "contact@thegrilledcheesefactory.com",
+    "to_name": "Manager",
+    "subject": "How restaurants businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:36:38.540589",
+    "status": "sent"
+  },
+  {
+    "to": "info@pizzaparadiso.com",
+    "to_name": "Owner",
+    "subject": "[Free Demo] AI automation for your restaurants",
+    "sent_at": "2026-04-16T16:36:42.761354",
+    "status": "sent"
+  },
+  {
+    "to": "info@thaibasilrestaurant.com",
+    "to_name": "Management",
+    "subject": "How restaurants businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:36:47.148667",
+    "status": "sent"
+  },
+  {
+    "to": "info@primehomerealty.com",
+    "to_name": "Agent",
+    "subject": "[Free Demo] AI automation for your real-estate",
+    "sent_at": "2026-04-16T16:36:53.612229",
+    "status": "sent"
+  },
+  {
+    "to": "contact@cityscaperealtors.com",
+    "to_name": "Broker",
+    "subject": "Is your real-estate business losing money to manual work?",
+    "sent_at": "2026-04-16T16:36:57.924848",
+    "status": "sent"
+  },
+  {
+    "to": "hello@sunriserealestate.com",
+    "to_name": "Office",
+    "subject": "Quick question about your real-estate business",
+    "sent_at": "2026-04-16T16:37:02.256104",
+    "status": "sent"
+  },
+  {
+    "to": "info@keystoneproperties.com",
+    "to_name": "Agent",
+    "subject": "How real-estate businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:37:06.755308",
+    "status": "sent"
+  },
+  {
+    "to": "contact@blueoceanrealty.com",
+    "to_name": "Manager",
+    "subject": "How real-estate businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:37:10.993829",
+    "status": "sent"
+  },
+  {
+    "to": "info@brightsmilesdental.com",
+    "to_name": "Dr. Office",
+    "subject": "Quick question about your dental business",
+    "sent_at": "2026-04-16T16:37:17.427392",
+    "status": "sent"
+  },
+  {
+    "to": "appointments@gentledentalcare.com",
+    "to_name": "Front Desk",
+    "subject": "[Free Demo] AI automation for your dental",
+    "sent_at": "2026-04-16T16:37:21.776250",
+    "status": "sent"
+  },
+  {
+    "to": "info@familydentalgroup.com",
+    "to_name": "Practice",
+    "subject": "Is your dental business losing money to manual work?",
+    "sent_at": "2026-04-16T16:37:27.026386",
+    "status": "sent"
+  },
+  {
+    "to": "hello@moderndentalarts.com",
+    "to_name": "Office",
+    "subject": "Quick question about your dental business",
+    "sent_at": "2026-04-16T16:37:31.476570",
+    "status": "sent"
+  },
+  {
+    "to": "contact@smilecenterdental.com",
+    "to_name": "Manager",
+    "subject": "Is your dental business losing money to manual work?",
+    "sent_at": "2026-04-16T16:37:35.809933",
+    "status": "sent"
+  },
+  {
+    "to": "info@ironworksgyms.com",
+    "to_name": "Owner",
+    "subject": "Quick question about your fitness business",
+    "sent_at": "2026-04-16T16:37:43.053680",
+    "status": "sent"
+  },
+  {
+    "to": "hello@flexfitstudio.com",
+    "to_name": "Manager",
+    "subject": "Is your fitness business losing money to manual work?",
+    "sent_at": "2026-04-16T16:37:47.258206",
+    "status": "sent"
+  },
+  {
+    "to": "info@powerlifefitness.com",
+    "to_name": "Director",
+    "subject": "Quick question about your fitness business",
+    "sent_at": "2026-04-16T16:37:51.511176",
+    "status": "sent"
+  },
+  {
+    "to": "contact@zenflowstudio.com",
+    "to_name": "Admin",
+    "subject": "[Free Demo] AI automation for your fitness",
+    "sent_at": "2026-04-16T16:37:55.823081",
+    "status": "sent"
+  },
+  {
+    "to": "info@crossfitdowntown.com",
+    "to_name": "Team",
+    "subject": "Quick question about your fitness business",
+    "sent_at": "2026-04-16T16:38:00.061125",
+    "status": "sent"
+  },
+  {
+    "to": "info@smithlawpartners.com",
+    "to_name": "Attorney",
+    "subject": "How legal businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:38:06.449469",
+    "status": "sent"
+  },
+  {
+    "to": "contact@justicefirm.com",
+    "to_name": "Paralegal",
+    "subject": "[Free Demo] AI automation for your legal",
+    "sent_at": "2026-04-16T16:38:10.642533",
+    "status": "sent"
+  },
+  {
+    "to": "info@legaleaglelaw.com",
+    "to_name": "Office",
+    "subject": "Quick question about your legal business",
+    "sent_at": "2026-04-16T16:38:14.915062",
+    "status": "sent"
+  },
+  {
+    "to": "hello@defenderslaw.com",
+    "to_name": "Attorney",
+    "subject": "Is your legal business losing money to manual work?",
+    "sent_at": "2026-04-16T16:38:19.176075",
+    "status": "sent"
+  },
+  {
+    "to": "contact@rightsidelegal.com",
+    "to_name": "Admin",
+    "subject": "Is your legal business losing money to manual work?",
+    "sent_at": "2026-04-16T16:38:23.377459",
+    "status": "sent"
+  },
+  {
+    "to": "info@glamourhairsalon.com",
+    "to_name": "Stylist",
+    "subject": "How salon businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:38:29.657308",
+    "status": "sent"
+  },
+  {
+    "to": "hello@thebeautylounge.com",
+    "to_name": "Owner",
+    "subject": "Quick question about your salon business",
+    "sent_at": "2026-04-16T16:38:34.126705",
+    "status": "sent"
+  },
+  {
+    "to": "info@cutsandcolors.com",
+    "to_name": "Manager",
+    "subject": "[Free Demo] AI automation for your salon",
+    "sent_at": "2026-04-16T16:38:38.459245",
+    "status": "sent"
+  },
+  {
+    "to": "contact@luxehairspa.com",
+    "to_name": "Front Desk",
+    "subject": "Is your salon business losing money to manual work?",
+    "sent_at": "2026-04-16T16:38:42.713857",
+    "status": "sent"
+  },
+  {
+    "to": "info@stylestudiospa.com",
+    "to_name": "Team",
+    "subject": "[Free Demo] AI automation for your salon",
+    "sent_at": "2026-04-16T16:38:48.078505",
+    "status": "sent"
+  },
+  {
+    "to": "info@precisionaccounting.com",
+    "to_name": "CPA",
+    "subject": "Is your accounting business losing money to manual work?",
+    "sent_at": "2026-04-16T16:38:54.467238",
+    "status": "sent"
+  },
+  {
+    "to": "contact@balancebookkeeping.com",
+    "to_name": "Bookkeeper",
+    "subject": "Is your accounting business losing money to manual work?",
+    "sent_at": "2026-04-16T16:38:59.756819",
+    "status": "sent"
+  },
+  {
+    "to": "hello@taxproservices.com",
+    "to_name": "Team",
+    "subject": "Is your accounting business losing money to manual work?",
+    "sent_at": "2026-04-16T16:39:04.239198",
+    "status": "sent"
+  },
+  {
+    "to": "info@numbersright.com",
+    "to_name": "CPA",
+    "subject": "[Free Demo] AI automation for your accounting",
+    "sent_at": "2026-04-16T16:39:08.596962",
+    "status": "sent"
+  },
+  {
+    "to": "contact@clearledger.com",
+    "to_name": "Office",
+    "subject": "Quick question about your accounting business",
+    "sent_at": "2026-04-16T16:39:12.875029",
+    "status": "sent"
+  },
+  {
+    "to": "info@trendifyshop.com",
+    "to_name": "Owner",
+    "subject": "How ecommerce businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:39:19.241467",
+    "status": "sent"
+  },
+  {
+    "to": "hello@urbanoutfitstore.com",
+    "to_name": "Manager",
+    "subject": "Quick question about your ecommerce business",
+    "sent_at": "2026-04-16T16:39:23.774334",
+    "status": "sent"
+  },
+  {
+    "to": "info@craftedgoods.com",
+    "to_name": "Support",
+    "subject": "Is your ecommerce business losing money to manual work?",
+    "sent_at": "2026-04-16T16:39:28.058638",
+    "status": "sent"
+  },
+  {
+    "to": "contact@shopnestco.com",
+    "to_name": "Team",
+    "subject": "How ecommerce businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:39:32.341353",
+    "status": "sent"
+  },
+  {
+    "to": "info@dailydealsmarket.com",
+    "to_name": "Admin",
+    "subject": "How ecommerce businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:39:36.825030",
+    "status": "sent"
+  },
+  {
+    "to": "info@solidbuildconstruction.com",
+    "to_name": "Contractor",
+    "subject": "[Free Demo] AI automation for your construction",
+    "sent_at": "2026-04-16T16:39:43.256776",
+    "status": "sent"
+  },
+  {
+    "to": "contact@redhammerconstruction.com",
+    "to_name": "PM",
+    "subject": "Quick question about your construction business",
+    "sent_at": "2026-04-16T16:39:47.540044",
+    "status": "sent"
+  },
+  {
+    "to": "hello@precisionbuildersllc.com",
+    "to_name": "Estimator",
+    "subject": "[Free Demo] AI automation for your construction",
+    "sent_at": "2026-04-16T16:39:52.055815",
+    "status": "sent"
+  },
+  {
+    "to": "info@ironcladsolutions.com",
+    "to_name": "Office",
+    "subject": "Is your construction business losing money to manual work?",
+    "sent_at": "2026-04-16T16:39:56.324145",
+    "status": "sent"
+  },
+  {
+    "to": "contact@skylineconstruction.com",
+    "to_name": "Manager",
+    "subject": "[Free Demo] AI automation for your construction",
+    "sent_at": "2026-04-16T16:40:00.546922",
+    "status": "sent"
+  },
+  {
+    "to": "info@lensandlightstudio.com",
+    "to_name": "Photographer",
+    "subject": "[Free Demo] AI automation for your photography",
+    "sent_at": "2026-04-16T16:40:07.106186",
+    "status": "sent"
+  },
+  {
+    "to": "hello@capturedmomentsphotography.com",
+    "to_name": "Creative",
+    "subject": "How photography businesses are saving 20+ hours/week with AI",
+    "sent_at": "2026-04-16T16:40:11.464848",
+    "status": "sent"
+  },
+  {
+    "to": "info@frameperfectphoto.com",
+    "to_name": "Studio",
+    "subject": "[Free Demo] AI automation for your photography",
+    "sent_at": "2026-04-16T16:40:15.925318",
+    "status": "sent"
+  },
+  {
+    "to": "contact@shutterspacestudio.com",
+    "to_name": "Owner",
+    "subject": "Is your photography business losing money to manual work?",
+    "sent_at": "2026-04-16T16:40:20.159289",
+    "status": "sent"
+  },
+  {
+    "to": "info@visionaryphotography.com",
+    "to_name": "Team",
+    "subject": "Quick question about your photography business",
+    "sent_at": "2026-04-16T16:40:24.626589",
+    "status": "sent"
+  },
+  {
+    "to": "hello@dis-loyalty.com",
+    "to_name": "Dis-loyalty",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:02:34.395822",
+    "status": "sent"
+  },
+  {
+    "to": "info@hallsintl.com",
+    "to_name": "Hallsintl",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:02:39.059488",
+    "status": "sent"
+  },
+  {
+    "to": "info@brentlinenhire.co.uk",
+    "to_name": "Brent Linen Hire",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:02:43.410074",
+    "status": "sent"
+  },
+  {
+    "to": "info@parishouse.co.uk",
+    "to_name": "Paris House Restaurant in Woburn by Phil Fanning",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:02:48.091697",
+    "status": "sent"
+  },
+  {
+    "to": "help@winawedgewithmartstons.com",
+    "to_name": "The Lincolnshire Poacher",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:02:52.728084",
+    "status": "sent"
+  },
+  {
+    "to": "info@westend-dental.com",
+    "to_name": "West End Dental",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:02:57.050576",
+    "status": "sent"
+  },
+  {
+    "to": "office@toothfairyapp.co.uk",
+    "to_name": "Tooth Fairy App",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:01.800317",
+    "status": "sent"
+  },
+  {
+    "to": "info@neemdentalclinic.co.uk",
+    "to_name": "Neem Dental Clinic - Harrow",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:06.210761",
+    "status": "sent"
+  },
+  {
+    "to": "smile@bespokesmile.co.uk",
+    "to_name": "Bespoke Smile",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:10.733662",
+    "status": "sent"
+  },
+  {
+    "to": "info@midsummer.dental",
+    "to_name": "Midsummer Dentalmidsummer.dental",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:15.172278",
+    "status": "sent"
+  },
+  {
+    "to": "info@bhclinics.com",
+    "to_name": "Best Health Clinics",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:19.756757",
+    "status": "sent"
+  },
+  {
+    "to": "customercare@headmasters.com",
+    "to_name": "Headmasters",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:24.170833",
+    "status": "sent"
+  },
+  {
+    "to": "support@blowltd.com",
+    "to_name": "BLOW | Mobile Beauty",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:28.550095",
+    "status": "sent"
+  },
+  {
+    "to": "comments@larrykinghair.com",
+    "to_name": "Larry King Hair Salons",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:32.842539",
+    "status": "sent"
+  },
+  {
+    "to": "haircare@sacohaircare.com",
+    "to_name": "Saco Hair",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:37.175681",
+    "status": "sent"
+  },
+  {
+    "to": "mail@harveys1.co.uk",
+    "to_name": "Harveys Plumbing & Heating",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:41.769832",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@acwilgar.co.uk",
+    "to_name": "A.C. Wilgar Plumbing, Heating & Cooling",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:46.172520",
+    "status": "sent"
+  },
+  {
+    "to": "neil@m20plumbing.co.uk",
+    "to_name": "M20 Plumbing",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:50.602062",
+    "status": "sent"
+  },
+  {
+    "to": "eben@eyebytes.com",
+    "to_name": "The Plumber",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:54.956454",
+    "status": "sent"
+  },
+  {
+    "to": "info@blueflamecumbria.co.uk",
+    "to_name": "Blue Flame Services",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:03:59.798154",
+    "status": "sent"
+  },
+  {
+    "to": "info@elextric.co.uk",
+    "to_name": "Elextric Ltd",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:04.769185",
+    "status": "sent"
+  },
+  {
+    "to": "contact@dfordog.co.uk",
+    "to_name": "D for Dog",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:09.572003",
+    "status": "sent"
+  },
+  {
+    "to": "info@dudiedogbandanas.co.uk",
+    "to_name": "Dudiedog bandanas",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:14.096199",
+    "status": "sent"
+  },
+  {
+    "to": "3fatcatsuk@gmail.com",
+    "to_name": "3fatcats3fatcats.shop",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:18.864906",
+    "status": "sent"
+  },
+  {
+    "to": "info@northernparrots.com",
+    "to_name": "Northern Parrots",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:23.474619",
+    "status": "sent"
+  },
+  {
+    "to": "info@dorwest.com",
+    "to_name": "Dorwest Herbs",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:28.198950",
+    "status": "sent"
+  },
+  {
+    "to": "customersupport@angellpetco.com",
+    "to_name": "Angell Petco",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:32.814612",
+    "status": "sent"
+  },
+  {
+    "to": "info@dogandfield.co.uk",
+    "to_name": "Dog & Field",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:37.295867",
+    "status": "sent"
+  },
+  {
+    "to": "sales@oscarandhooch.com",
+    "to_name": "Oscar & Hooch",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:42.373887",
+    "status": "sent"
+  },
+  {
+    "to": "webteam@direct2florist.com",
+    "to_name": "Direct2florist",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:46.780930",
+    "status": "sent"
+  },
+  {
+    "to": "info@theurbanbotanist.co.uk",
+    "to_name": "The Urban Botanist",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:51.175124",
+    "status": "sent"
+  },
+  {
+    "to": "shepperton@longacres.co.uk",
+    "to_name": "Longacres Garden Centres",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:04:55.716078",
+    "status": "sent"
+  },
+  {
+    "to": "alan@southlakesovencleaning.co.uk",
+    "to_name": "Southlakesovencleaning",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:00.304312",
+    "status": "sent"
+  },
+  {
+    "to": "mail@missmaid.co.uk",
+    "to_name": "Miss Maid",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:05.843612",
+    "status": "sent"
+  },
+  {
+    "to": "cleanerthanevernorbury@gmail.com",
+    "to_name": "Cleaner Than Ever Norbury Ltdcleaner-than-ever-norbury.square.site",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:10.541982",
+    "status": "sent"
+  },
+  {
+    "to": "office@holdemremovals.co.uk",
+    "to_name": "Holdem Removals",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:15.120982",
+    "status": "sent"
+  },
+  {
+    "to": "info@gbliners.com",
+    "to_name": "GB Liners Limited",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:19.617489",
+    "status": "sent"
+  },
+  {
+    "to": "info@vertigotransport.co.uk",
+    "to_name": "Vertigo Transport Ltd",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:24.134349",
+    "status": "sent"
+  },
+  {
+    "to": "sales@johnmason.com",
+    "to_name": "John Mason International Movers",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:28.876894",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@theprofs.co.uk",
+    "to_name": "The Profs",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:33.849690",
+    "status": "sent"
+  },
+  {
+    "to": "admin@tnlg.co.uk",
+    "to_name": "National Learning Group",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:38.534031",
+    "status": "sent"
+  },
+  {
+    "to": "team@breakthroughmaths.co.uk",
+    "to_name": "Breakthrough Maths Tutoring",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:42.850285",
+    "status": "sent"
+  },
+  {
+    "to": "info@linkythinks.com",
+    "to_name": "LinkyThinks",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:47.328377",
+    "status": "sent"
+  },
+  {
+    "to": "info@theukcatpeople.co.uk",
+    "to_name": "TheUKCATPeople",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:51.886594",
+    "status": "sent"
+  },
+  {
+    "to": "dentdetailpdr@gmail.com",
+    "to_name": "Dent Detail PDR (Paintless Dent Repair)dentdetailpdr.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:05:56.642917",
+    "status": "sent"
+  },
+  {
+    "to": "customerservice@dwv.co.uk",
+    "to_name": "DWV Smart Repair Solutions (official)dwv.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:01.667958",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@shinerepair.com",
+    "to_name": "Shine",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:06.420042",
+    "status": "sent"
+  },
+  {
+    "to": "info@famousfour.co.uk",
+    "to_name": "Famous Four Products Ltd.famousfour.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:11.253357",
+    "status": "sent"
+  },
+  {
+    "to": "info@kcauto.co.uk",
+    "to_name": "KC Autos Accident Repair Centres Ltd",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:15.870616",
+    "status": "sent"
+  },
+  {
+    "to": "hello@axioma.co.uk",
+    "to_name": "Axioma",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:20.837745",
+    "status": "sent"
+  },
+  {
+    "to": "info@urban.co",
+    "to_name": "Urban | Massage & beauty at homeurban.co",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:25.441526",
+    "status": "sent"
+  },
+  {
+    "to": "victoria@proback.co.uk",
+    "to_name": "Proback Clinics",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:30.514809",
+    "status": "sent"
+  },
+  {
+    "to": "admin@ircclimited.co.uk",
+    "to_name": "Injury Rehabilitation Care Centre (IRCC)ircclimited.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:35.121931",
+    "status": "sent"
+  },
+  {
+    "to": "info@nailseaphysio.com",
+    "to_name": "Nailsea Physio Ltd",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:39.857419",
+    "status": "sent"
+  },
+  {
+    "to": "contact@hshealthgroup.co.uk",
+    "to_name": "HS Health Group (HS Physiotherapy)hshealthgroup.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:44.485307",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@petairuk.com",
+    "to_name": "PetAir UK",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:50.490096",
+    "status": "sent"
+  },
+  {
+    "to": "customer.services@vetuk.co.uk",
+    "to_name": "VetUK",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:55.080020",
+    "status": "sent"
+  },
+  {
+    "to": "contact@petdrugsonline.co.uk",
+    "to_name": "Pet Drugs Online",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:06:59.700145",
+    "status": "sent"
+  },
+  {
+    "to": "orders@southcatering.co.uk",
+    "to_name": "South Catering",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:04.188324",
+    "status": "sent"
+  },
+  {
+    "to": "lucas.toborek@cheflucas.co.uk",
+    "to_name": "Chef Lucas Catering Services Ltd.cheflucas.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:08.718155",
+    "status": "sent"
+  },
+  {
+    "to": "accounts@fastkeys.co.uk",
+    "to_name": "Fast Key Services Ltd",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:13.343224",
+    "status": "sent"
+  },
+  {
+    "to": "sales@updateyourmaps.co.uk",
+    "to_name": "Remote Key Repairs",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:17.957050",
+    "status": "sent"
+  },
+  {
+    "to": "info@libertylocksmiths.co.uk",
+    "to_name": "Liberty locksmiths",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:22.587707",
+    "status": "sent"
+  },
+  {
+    "to": "hello@ecowoodrings.com",
+    "to_name": "Eco Wood Rings",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:27.194176",
+    "status": "sent"
+  },
+  {
+    "to": "sales@jonesandson.co.uk",
+    "to_name": "Defender Bird Spikes",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:32.048659",
+    "status": "sent"
+  },
+  {
+    "to": "sales@pest-expert.com",
+    "to_name": "Pest Expert",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:36.694755",
+    "status": "sent"
+  },
+  {
+    "to": "sales@discountgardenstatues.co.uk",
+    "to_name": "Discount Garden Statues Ltd.discountgardenstatues.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:41.351264",
+    "status": "sent"
+  },
+  {
+    "to": "info@sarahraven.com",
+    "to_name": "Sarah Raven",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:46.771250",
+    "status": "sent"
+  },
+  {
+    "to": "tricho@cactocereus.co.uk",
+    "to_name": "Cactocereus Ltd t/a Trichocereus UK",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:51.389728",
+    "status": "sent"
+  },
+  {
+    "to": "info@theaccountancy.co.uk",
+    "to_name": "The Accountancy Partnership",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:07:55.858396",
+    "status": "sent"
+  },
+  {
+    "to": "info@smartaware.co.uk",
+    "to_name": "SmartAWARE Accounts & Tax (UK)smartaware.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:00.502498",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@birdandco.co.uk",
+    "to_name": "Bird & Co Solicitors",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:05.156486",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@motoroffence.co.uk",
+    "to_name": "Geoffrey Miller Solicitors",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:09.902877",
+    "status": "sent"
+  },
+  {
+    "to": "mail@pinneytalfourd.co.uk",
+    "to_name": "Pinney Talfourd LLP",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:14.667212",
+    "status": "sent"
+  },
+  {
+    "to": "info@rglaw.com",
+    "to_name": "RG Law",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:19.498630",
+    "status": "sent"
+  },
+  {
+    "to": "reception@lumedental.co.uk",
+    "to_name": "Most relevantLume dentallumedental.co.uk4.855reviews16 hall road, Wilmslow, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:24.787719",
+    "status": "sent"
+  },
+  {
+    "to": "usuario@exemplo.com",
+    "to_name": "Most relevantDentaleaderdentaleader.com3.881reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:30.442019",
+    "status": "sent"
+  },
+  {
+    "to": "img6-150x150@2x.jpg",
+    "to_name": "Kissdentalkissdental.co.uk5.0869reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:35.640352",
+    "status": "sent"
+  },
+  {
+    "to": "england.contactus@nhs.net",
+    "to_name": "Smile Hub, Londonsmile-hub.co.uk4.9587reviews8a Brushfield Street, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:40.669742",
+    "status": "sent"
+  },
+  {
+    "to": "bury@eyeanddentalclinic.com",
+    "to_name": "Eye & Dental Cliniceyeanddentalclinic.com4.9171reviews110 Ainsworth Road, Bury, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:46.356028",
+    "status": "sent"
+  },
+  {
+    "to": "info@oakdaledental.co.uk",
+    "to_name": "Oakdale Dentaloakdaledental.co.uk4.9128reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:51.915884",
+    "status": "sent"
+  },
+  {
+    "to": "hello@shmile.co.uk",
+    "to_name": "Shmile Dentist Bromleyshmile.co.uk4.9115reviews235 High Street, Bromley, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:08:56.984281",
+    "status": "sent"
+  },
+  {
+    "to": "reception@wvdp.co.uk",
+    "to_name": "Wallasey Village Dental Practicewvdp.co.uk4.9113reviews39 Leasowe Road, Wirral, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:02.091127",
+    "status": "sent"
+  },
+  {
+    "to": "example@mysite.com",
+    "to_name": "HAUS of Dentistryhausofdentistry.com4.971reviewsShaw Road, Prestwick, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:07.024377",
+    "status": "sent"
+  },
+  {
+    "to": "pr@headmasters.com",
+    "to_name": "Most relevantHeadmasterswww.headmasters.com3.8763reviews1 The Broadway, Tolworth, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:13.052995",
+    "status": "sent"
+  },
+  {
+    "to": "hello@craigsbarbershop.co.uk",
+    "to_name": "Craig's Barber Shopcraigsbarbershop.co.uk5.0361reviews194 Tonge Moor Road, Bolton, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:17.737390",
+    "status": "sent"
+  },
+  {
+    "to": "missrachelhunter@hotmail.com",
+    "to_name": "Rachel Hunter Clinicrachelhunterbeautyclinic.co.uk4.9448reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:23.871665",
+    "status": "sent"
+  },
+  {
+    "to": "bobbysbarbersmcr@gmail.com",
+    "to_name": "BOBBYS BARBERSbobbysmcr.co.uk4.9154reviews106 Heaton Moor road, Stockport , United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:29.272572",
+    "status": "sent"
+  },
+  {
+    "to": "user@domain.com",
+    "to_name": "The Lion and The Foxthelionandthefox.com4.999reviews28 Hatton Wall, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:34.943612",
+    "status": "sent"
+  },
+  {
+    "to": "hello@izabellabordignon.com",
+    "to_name": "Izabella Bordignon Londonizabellabordignon.com4.979reviews357 City Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:40.069780",
+    "status": "sent"
+  },
+  {
+    "to": "info@no1hairandbeauty.com",
+    "to_name": "No1 Hair and Beautyno1hairandbeauty.com4.886reviewsUxbridge Road 148, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:45.235959",
+    "status": "sent"
+  },
+  {
+    "to": "asmr.shhiva@hotmail.com",
+    "to_name": "Shhivaasmrshhiva.co.uk4.863reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:51.080637",
+    "status": "sent"
+  },
+  {
+    "to": "phoebe-101-hope@hotmail.co.uk",
+    "to_name": "Hairbyphoebehairbyphoebe.com4.836reviews6 Bridge Street, bishops stortford, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:09:56.031155",
+    "status": "sent"
+  },
+  {
+    "to": "impallari@gmail.com",
+    "to_name": "KallysHairkallyshair.co.uk4.797reviews146 Crail Street, Glasgow, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:00.877787",
+    "status": "sent"
+  },
+  {
+    "to": "tabularasa.hairsalon@gmail.com",
+    "to_name": "Tabula Rasa Hair Salontabularasastyle.com4.741reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:05.639072",
+    "status": "sent"
+  },
+  {
+    "to": "hello@thebeautyninjas.co.uk",
+    "to_name": "Beauty Ninjasthebeautyninjas.co.uk4.736reviews28 Ifield Close, Saltdean, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:10.312185",
+    "status": "sent"
+  },
+  {
+    "to": "info@serenityhairandspa.co.uk",
+    "to_name": "Serenity hair health & well-beingserenityhairandspa.co.uk4.734reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:16.735931",
+    "status": "sent"
+  },
+  {
+    "to": "becky@beckyknowles.com",
+    "to_name": "Larry King Hair Salonswww.larryking.co.uk4.661reviews34-36 Harrington Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:21.542935",
+    "status": "sent"
+  },
+  {
+    "to": "info@inanch.com",
+    "to_name": "Inanch Londoninanch.com4.655reviews220 Great Portland Street, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:26.461172",
+    "status": "sent"
+  },
+  {
+    "to": "sales@seanhanna.com",
+    "to_name": "seanhannaseanhanna.com4.630reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:31.011774",
+    "status": "sent"
+  },
+  {
+    "to": "untitled-2_100x100@2x.png",
+    "to_name": "Saco Hairwww.sacohair.com4.629reviews4 Charlotte Place, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:35.786902",
+    "status": "sent"
+  },
+  {
+    "to": "talk@agfraser.co.uk",
+    "to_name": "Most relevantAG Fraseragfraser.co.uk5.01,138reviews38 Kirkstile Crescent, Wigan, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:40.682046",
+    "status": "sent"
+  },
+  {
+    "to": "info@westcountrygasservices.co.uk",
+    "to_name": "Most relevantWest Country Gas Serviceswestcountrygasservices.co.uk5.0763reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:52.113453",
+    "status": "sent"
+  },
+  {
+    "to": "info@stembridge.uk",
+    "to_name": "Most relevantStembridge Limitedstembridge.uk5.0444reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:10:56.761989",
+    "status": "sent"
+  },
+  {
+    "to": "info@flamesmart.co.uk",
+    "to_name": "Most relevantFlamesmartflamesmart.co.uk5.0343reviews4 Roundel Close, Thornhill, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:01.960336",
+    "status": "sent"
+  },
+  {
+    "to": "info@plumbcoheating.co.uk",
+    "to_name": "Most relevantPLUMBCO HEATINGplumbcoheating.co.uk4.92,148reviews220 Kingsway, BRISTOL, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:06.350837",
+    "status": "sent"
+  },
+  {
+    "to": "mapleplumbing1@outlook.com",
+    "to_name": "Most relevantWirral Gaswirralgas.com4.9789reviews106 Wallasey Road, Wallasey, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:11.404526",
+    "status": "sent"
+  },
+  {
+    "to": "info@mr-group.co.uk",
+    "to_name": "Most relevantmr-group.co.ukwww.mr-group.co.uk4.9643reviews290 Chorley New Rd, Bolton, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:16.301975",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@ambientheatingsolutions.com",
+    "to_name": "Most relevantAmbient Heating Solutions Ltdambientheatingsolutions.com4.9355reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:21.285783",
+    "status": "sent"
+  },
+  {
+    "to": "info@mwhplumbing.co.uk",
+    "to_name": "Most relevantMWH Plumbing/Heatingmwhplumbing.co.uk4.9316reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:26.182670",
+    "status": "sent"
+  },
+  {
+    "to": "contact@kingdomheating.org",
+    "to_name": "Most relevantKingdom Heatingkingdomheating.org4.9233reviews1 Melbourne Road, Chester, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:31.503241",
+    "status": "sent"
+  },
+  {
+    "to": "info@gh1.co.uk",
+    "to_name": "Most relevantGlobal Heatinggh1.co.uk4.9191reviews7 keighley avenue, Broadstone, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:36.714312",
+    "status": "sent"
+  },
+  {
+    "to": "office@customheat.co.uk",
+    "to_name": "Most relevantCustom Heat Ltdcustomheat.co.uk4.84,484reviews9 Somers Road , RUGBY, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:41.581564",
+    "status": "sent"
+  },
+  {
+    "to": "newlogocorrect_colours_450x@2x.png",
+    "to_name": "Most relevantTough Leadstoughleads.co.uk4.8387reviewsCrimchard, Chard, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:46.408573",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@wil-lec.co.uk",
+    "to_name": "Most relevantWil-Lec Groupwil-lec.co.uk4.8202reviews18-24 Kent Street, Grimsby, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:51.235225",
+    "status": "sent"
+  },
+  {
+    "to": "hello@housekeep.com",
+    "to_name": "Most relevantHousekeephousekeep.com4.613,681reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:11:56.364087",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@serviceteam.co.uk",
+    "to_name": "Most relevantServiceteamserviceteam.co.uk4.61,250reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:01.114137",
+    "status": "sent"
+  },
+  {
+    "to": "accreditation-firas@2x-300x158.webp",
+    "to_name": "Most relevantMasterfixmaster-fix.com4.552reviewsUnit 1, 33 Stannary Street, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:05.827972",
+    "status": "sent"
+  },
+  {
+    "to": "mail@justfix.app",
+    "to_name": "Most relevantJustFixjustfix.app4.4191reviews128 City Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:12.136119",
+    "status": "sent"
+  },
+  {
+    "to": "marketing@dorwest.com",
+    "to_name": "Most relevantDorwest Herbswww.dorwest.com4.910,334reviewsPoundbury, Dorchester, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:17.257379",
+    "status": "sent"
+  },
+  {
+    "to": "hello@vetmedi.co.uk",
+    "to_name": "Most relevantVetMedi.co.ukvetmedi.co.uk4.93,648reviewsSutton-on-the-Forest, York, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:22.605462",
+    "status": "sent"
+  },
+  {
+    "to": "feedme@differentdog.com",
+    "to_name": "Most relevantDifferent Dogdifferentdog.com4.92,472reviewsHaston Road, Hadnall, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:27.782613",
+    "status": "sent"
+  },
+  {
+    "to": "complaints@mediatoolkit.com",
+    "to_name": "Most relevantKatzenworldkatzenworld.shop4.9844reviews53 Willow Road, Kettering, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:34.056205",
+    "status": "sent"
+  },
+  {
+    "to": "info@antsdavey.co.uk",
+    "to_name": "Most relevantAntsDaveyantsdavey.co.uk4.9487reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:39.258783",
+    "status": "sent"
+  },
+  {
+    "to": "info@himalayan-chew.co.uk",
+    "to_name": "Most relevantHimalayan Chewhimalayan-chew.co.uk4.9441reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:44.313975",
+    "status": "sent"
+  },
+  {
+    "to": "asset-3@2x-1.png",
+    "to_name": "Most relevantFeelwellsfeelwells.co.uk4.9343reviewsPO Box 174, Northallerton, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:49.235834",
+    "status": "sent"
+  },
+  {
+    "to": "info@fauxquet.co.uk",
+    "to_name": "Most relevantFauxquetfauxquet.co.uk4.9155reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:12:54.922581",
+    "status": "sent"
+  },
+  {
+    "to": "lucy@theurbanbotanist.co.uk",
+    "to_name": "Most relevantThe Urban Botanistwww.theurbanbotanist.co.uk4.8376reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:00.447935",
+    "status": "sent"
+  },
+  {
+    "to": "hello@flyingflowers.co.uk",
+    "to_name": "Most relevantFlying Flowerswww.flyingflowers.co.uk4.464,973reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:05.690257",
+    "status": "sent"
+  },
+  {
+    "to": "support@eternalpetals.com",
+    "to_name": "Most relevantEternal Petalseternalpetals.com4.01,100reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:11.285626",
+    "status": "sent"
+  },
+  {
+    "to": "info@flowerstation.co.uk",
+    "to_name": "Most relevantFlower Stationflowerstation.co.uk3.83,391reviews55 Park Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:16.181371",
+    "status": "sent"
+  },
+  {
+    "to": "contact@floristlondon.co.uk",
+    "to_name": "Most relevantxxx xxxdeliveredflowers.co.uk3.4104reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:21.328944",
+    "status": "sent"
+  },
+  {
+    "to": "checkout_logo_4_x50@2x.png",
+    "to_name": "GroovyRubygroovyruby.co.uk4.9260reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:26.823147",
+    "status": "sent"
+  },
+  {
+    "to": "info@twiggsandthistles.co.uk",
+    "to_name": "Twiggsandthistlestwiggsandthistles.co.uk4.9112reviews23 Carnegie Crescent, Aberdeen, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:32.617656",
+    "status": "sent"
+  },
+  {
+    "to": "hello@wildehill.co.uk",
+    "to_name": "Wilde Hillwildehill.co.uk4.9103reviewsPuckeridge, Hertfordshire, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:37.712197",
+    "status": "sent"
+  },
+  {
+    "to": "hello@zenoven.co.uk",
+    "to_name": "Most relevantZen Oven Cleaning Ltdzenoven.co.uk4.9144reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:42.539808",
+    "status": "sent"
+  },
+  {
+    "to": "help@stackt.co.uk",
+    "to_name": "Most relevantStacktstackt.co.uk4.4232reviews411 Oxford Street, Office 1.01, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:47.628864",
+    "status": "sent"
+  },
+  {
+    "to": "info@anyclean.co.uk",
+    "to_name": "Anycleananyclean.co.uk5.0449reviews124 City Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:53.687678",
+    "status": "sent"
+  },
+  {
+    "to": "info@extremepressureclean.co.uk",
+    "to_name": "Extremepressurecleanextremepressureclean.co.uk4.9139reviews272 Bath Street, Glasgow, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:13:58.678362",
+    "status": "sent"
+  },
+  {
+    "to": "info@cascarpetcare.com",
+    "to_name": "CAS Carpet Carecascarpetcare.com4.9127reviews65 Barley Ponds Road, Ware, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:03.716718",
+    "status": "sent"
+  },
+  {
+    "to": "info@white-water.co.uk",
+    "to_name": "White Water Window Cleaningwhite-water.co.uk4.9121reviews15 Lancot Drive, Dunstable, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:09.045087",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@finestvan.co.uk",
+    "to_name": "Most relevantFinest Vanfinestvan.co.uk4.91,373reviews7 Bell Yard, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:14.125353",
+    "status": "sent"
+  },
+  {
+    "to": "info@kanguro.com.pl",
+    "to_name": "Most relevantKangurokanguro.com.pl4.91,239reviewsOffice, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:19.347704",
+    "status": "sent"
+  },
+  {
+    "to": "info@mariomoving.co.uk",
+    "to_name": "Most relevantMario Moving Londonmariomoving.co.uk4.8405reviews47 Rugby Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:25.069391",
+    "status": "sent"
+  },
+  {
+    "to": "info@anyvan.com",
+    "to_name": "Most relevantAnyVananyvan.com4.6190,059reviews5-17 Hammersmith Grove, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:29.936515",
+    "status": "sent"
+  },
+  {
+    "to": "hello@homemove.com",
+    "to_name": "Most relevantHomemovehomemove.com4.6265reviewsHomemove, Norwich, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:34.554086",
+    "status": "sent"
+  },
+  {
+    "to": "customerservice@sevenseasworldwide.com",
+    "to_name": "Most relevantSeven Seas Worldwidewww.sevenseasworldwide.com4.510,031reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:39.445573",
+    "status": "sent"
+  },
+  {
+    "to": "support@webador.com",
+    "to_name": "Most relevantCountrywide Training Ltdcountrywidetraining.org4.9108reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:44.182053",
+    "status": "sent"
+  },
+  {
+    "to": "support@algolia.com",
+    "to_name": "Most relevantMyEdSpacemyedspace.co.uk4.82,139reviews1 Waterhouse Square, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:48.763538",
+    "status": "sent"
+  },
+  {
+    "to": "info@thequranhub.co.uk",
+    "to_name": "Most relevantThe Quran Hubthequranhub.co.uk4.8106reviews483 Green Lanes, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:53.517921",
+    "status": "sent"
+  },
+  {
+    "to": "steppingstonemaths@gmail.com",
+    "to_name": "Most relevantStepping Stone Mathssteppingstonemaths.co.uk4.845reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:14:58.053776",
+    "status": "sent"
+  },
+  {
+    "to": "josephwells@ignitotuition.co.uk",
+    "to_name": "Ignito Tuitionignitotuition.co.uk5.0279reviews13-14 bergen way, King's Lynn, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:03.921095",
+    "status": "sent"
+  },
+  {
+    "to": "care@suitedtutor.com",
+    "to_name": "Suited Tutorwww.suitedtutor.com4.9358reviews25 Palmer Road, Oxford, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:08.987946",
+    "status": "sent"
+  },
+  {
+    "to": "hello@tailoredtutors.co.uk",
+    "to_name": "Tailored Tutorstailoredtutors.co.uk4.9269reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:14.216869",
+    "status": "sent"
+  },
+  {
+    "to": "enquiries@caledoniatutors.co.uk",
+    "to_name": "Caledonia Tutorscaledoniatutors.co.uk4.9223reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:18.983742",
+    "status": "sent"
+  },
+  {
+    "to": "rishi@tutoringaibest.com",
+    "to_name": "Tutoring At Its Besttutoringaibest.com4.9146reviews7 Adrienne Avenue , London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:23.869534",
+    "status": "sent"
+  },
+  {
+    "to": "info@speak-greek.com",
+    "to_name": "Speak Greekspeak-greek.com4.9100reviewsFlat 28, Cloverley, 108 Brooklands Road, Sale, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:28.970607",
+    "status": "sent"
+  },
+  {
+    "to": "support@mathmo.com",
+    "to_name": "Mathmomathmo.com4.994reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:34.077529",
+    "status": "sent"
+  },
+  {
+    "to": "admin@my-medx.com",
+    "to_name": "MedXmy-medx.com4.8253reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:39.074261",
+    "status": "sent"
+  },
+  {
+    "to": "info@edumentors.co.uk",
+    "to_name": "Edumentorsedumentors.co.uk4.8240reviews505 Pinner Road, Harrow, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:43.699176",
+    "status": "sent"
+  },
+  {
+    "to": "info@dukestutoring.com",
+    "to_name": "Dukes Tutoringdukestutoring.com4.8220reviews58 Buckingham Gate, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:48.853549",
+    "status": "sent"
+  },
+  {
+    "to": "info@m2reducation.com",
+    "to_name": "m2r Educationm2rglobal.com4.8121reviewsLangham House, Wakefield, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:53.575874",
+    "status": "sent"
+  },
+  {
+    "to": "support@piacademy.co.uk",
+    "to_name": "PiAcademy Tutorspiacademy.co.uk4.8100reviews174, Holders Hill Road,, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:15:58.553763",
+    "status": "sent"
+  },
+  {
+    "to": "hello@wordier.online",
+    "to_name": "Wordierwordier.online4.889reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:03.283290",
+    "status": "sent"
+  },
+  {
+    "to": "mathifytutoring@outlook.com",
+    "to_name": "Mathify Tutoringmathify.co.uk4.875reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:08.189857",
+    "status": "sent"
+  },
+  {
+    "to": "info@chipsaway.co.uk",
+    "to_name": "Most relevantChipsAwaywww.chipsaway.co.uk4.990,209reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:13.025910",
+    "status": "sent"
+  },
+  {
+    "to": "vancentre.bookings@sandown-mercedes.co.uk",
+    "to_name": "Most relevantSandown Groupwww.sandown-group.co.uk4.96,936reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:19.160211",
+    "status": "sent"
+  },
+  {
+    "to": "orders@groveshop.co.uk",
+    "to_name": "Most relevantGrove Shopgroveshop.co.uk4.91,443reviews22 Victoria Way, Burgess Hill, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:24.165771",
+    "status": "sent"
+  },
+  {
+    "to": "info@cbautomotive.co.uk",
+    "to_name": "Most relevantCB Automotivecbautomotive.co.uk4.9113reviews8 Victory Road, Westbury, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:28.937493",
+    "status": "sent"
+  },
+  {
+    "to": "payment-icons@2x.png",
+    "to_name": "Most relevantRapidRadioCodesrapidradiocodes.co.uk4.8573reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:33.645655",
+    "status": "sent"
+  },
+  {
+    "to": "sales@chelmsfordcarcompany.co.uk",
+    "to_name": "Most relevantChelmsford Car Companychelmsfordcarcompany.co.uk4.8423reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:38.596956",
+    "status": "sent"
+  },
+  {
+    "to": "service@freshmotors.co.uk",
+    "to_name": "Most relevantFresh Motorswww.freshmotors.co.uk4.8296reviewsNorwich Road, Watton, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:43.350044",
+    "status": "sent"
+  },
+  {
+    "to": "info@motoreasy.com",
+    "to_name": "Most relevantMotorEasymotoreasy.com4.717,225reviews60 Portman Road, Reading, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:48.429610",
+    "status": "sent"
+  },
+  {
+    "to": "care@sprayster.com",
+    "to_name": "Most relevantSpraystersprayster.com4.713,400reviewsMain Road, King's Lynn, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:53.290115",
+    "status": "sent"
+  },
+  {
+    "to": "info@complete-physio.co.uk",
+    "to_name": "Most relevantComplete Physiocomplete-physio.co.uk4.92,216reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:16:58.271119",
+    "status": "sent"
+  },
+  {
+    "to": "info@movementperfected.com",
+    "to_name": "Movement Perfectedmovementperfected.com5.0311reviews65 London Wall , London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:03.021076",
+    "status": "sent"
+  },
+  {
+    "to": "rehab@annphysiocare.com",
+    "to_name": "Ann Physiocareannphysiocare.com4.95,380reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:07.698905",
+    "status": "sent"
+  },
+  {
+    "to": "healthy@physiologichythe.co.uk",
+    "to_name": "Physiologic Hythephysiologichythe.co.uk4.9220reviewsPhysiologic, Hythe, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:12.709906",
+    "status": "sent"
+  },
+  {
+    "to": "info@medicclinic.co.uk",
+    "to_name": "The Medic Clinic  Bedfordmedicclinic.co.uk4.9173reviews90 High Street, Bedford, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:17.442551",
+    "status": "sent"
+  },
+  {
+    "to": "admin.hsphysio@nhs.net",
+    "to_name": "HS Health Group (HS Physiotherapy)hshealthgroup.co.uk4.9133reviewsReed House, Boston, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:22.095821",
+    "status": "sent"
+  },
+  {
+    "to": "info@atherapy.org",
+    "to_name": "Atherapy Physiotherapy Limitedatherapy.org4.9125reviews7 Cardigan Fields, Leeds, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:26.650733",
+    "status": "sent"
+  },
+  {
+    "to": "info@blizardphysiotherapy.co.uk",
+    "to_name": "Blizard Physioblizardphysiotherapy.co.uk4.9120reviewsShrewsbury Road, Bircotes, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:31.315479",
+    "status": "sent"
+  },
+  {
+    "to": "info@purephysiotherapy.co.uk",
+    "to_name": "Chapman Physiotherapychapmanphysiotherapy.com4.993reviews154 Thorne Road, Doncaster, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:36.177861",
+    "status": "sent"
+  },
+  {
+    "to": "info@quora.com",
+    "to_name": "BackHugmybackhug.com4.976reviews21 Lansdowne Crescent, Edinburgh, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:40.588437",
+    "status": "sent"
+  },
+  {
+    "to": "reception@w5physio.co.uk",
+    "to_name": "W5 Physio Ltd.www.w5physio.co.uk4.975reviews27 Haven Lane, Ealing, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:45.275772",
+    "status": "sent"
+  },
+  {
+    "to": "info@onebodyldn.com",
+    "to_name": "One Body LDNonebodyldn.com4.8633reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:49.952291",
+    "status": "sent"
+  },
+  {
+    "to": "rijo.paul@webchoiceuk.com",
+    "to_name": "Scoliosis SOS Clinicscoliosissos.com4.8147reviews63 Mansell Street, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:54.395375",
+    "status": "sent"
+  },
+  {
+    "to": "info@homephysio247.co.uk",
+    "to_name": "Homephysio247homephysio247.co.uk4.896reviews307 Regent Park Rd, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:17:58.910902",
+    "status": "sent"
+  },
+  {
+    "to": "info@stagheaddesigns.com",
+    "to_name": "Most relevantJoii Pet Carejoiipetcare.com4.88,587reviewsNexus. Discovery Way., Leeds, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:03.425571",
+    "status": "sent"
+  },
+  {
+    "to": "info@pethealthclub.com",
+    "to_name": "Most relevantPet Health Clubthepethealthclub.co.uk4.713,571reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:08.524601",
+    "status": "sent"
+  },
+  {
+    "to": "hello@thehorsevet.co.uk",
+    "to_name": "Most relevantThe Horse Vetthehorsevet.co.uk4.782reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:13.327308",
+    "status": "sent"
+  },
+  {
+    "to": "help@protect-mypet.com",
+    "to_name": "Most relevantProtect My Petprotect-mypet.com4.54,757reviews152-160 City Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:17.835016",
+    "status": "sent"
+  },
+  {
+    "to": "cservice@vets4pets.com",
+    "to_name": "Most relevantVets for Petsvets4pets.com4.38,166reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:22.788584",
+    "status": "sent"
+  },
+  {
+    "to": "google_places@2x.png",
+    "to_name": "Most relevantVets Nowwww.vets-now.com4.224,957reviewsPenguin House, Dunfermline, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:27.557598",
+    "status": "sent"
+  },
+  {
+    "to": "reception@dignipets.co.uk",
+    "to_name": "Dignipetsdignipets.co.uk5.01,011reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:32.484999",
+    "status": "sent"
+  },
+  {
+    "to": "ukloupes-logo-2019-10-06@2x.png",
+    "to_name": "UKloupesukloupes.co.uk5.0251reviews17 Castle Road, Oldland Common, Bristol, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:37.404496",
+    "status": "sent"
+  },
+  {
+    "to": "info@thedogfirstaid.co",
+    "to_name": "The Dog First Aid Co.thedogfirstaid.co4.9103reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:42.298919",
+    "status": "sent"
+  },
+  {
+    "to": "help@worldwide-vets.org",
+    "to_name": "Worldwide Vetsworldwidevets.com4.8158reviewsBurges Close 4, Southend-on-Sea, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:47.243197",
+    "status": "sent"
+  },
+  {
+    "to": "thelovingvetbee@gmail.com",
+    "to_name": "The Loving Vetthelovingvet.com4.855reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:52.061104",
+    "status": "sent"
+  },
+  {
+    "to": "stjohnswood@creaturecomforts.co.uk",
+    "to_name": "Creature Comfortscreaturecomforts.co.uk4.7124reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:18:56.927563",
+    "status": "sent"
+  },
+  {
+    "to": "info@vetark.co.uk",
+    "to_name": "Vetarkvetark.co.uk4.760reviewsUnit 2-3 Barfield Close, Winchester, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:01.677540",
+    "status": "sent"
+  },
+  {
+    "to": "info@passpets.co.uk",
+    "to_name": "PassPetspasspets.co.uk4.734reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:06.493750",
+    "status": "sent"
+  },
+  {
+    "to": "info@skypawsuk.com",
+    "to_name": "SkyPaws UKskypawsuk.com4.733reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:11.568354",
+    "status": "sent"
+  },
+  {
+    "to": "info@thepettravelvet.co.uk",
+    "to_name": "The Pet Travel Vetthepettravelvet.co.uk4.731reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:16.940856",
+    "status": "sent"
+  },
+  {
+    "to": "u003eaccounts@frankscatering.co.uk",
+    "to_name": "Most relevantFrank's Cateringfrankscatering.co.uk4.9851reviews72 Albion Mews, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:22.504973",
+    "status": "sent"
+  },
+  {
+    "to": "info@dinnerwithshaun.com",
+    "to_name": "Dinnerwithshaundinnerwithshaun.com4.9102reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:28.351730",
+    "status": "sent"
+  },
+  {
+    "to": "info@dookiesgrill.co.uk",
+    "to_name": "Dookies Caribbean Grilldookiesgrill.co.uk4.996reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:33.091025",
+    "status": "sent"
+  },
+  {
+    "to": "hello@rdgevents.co.uk",
+    "to_name": "Rdgeventsrdgevents.co.uk4.969reviews10 Alconbury Close, Borehamwood, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:37.780008",
+    "status": "sent"
+  },
+  {
+    "to": "customercare@thelittlepastacompany.co.uk",
+    "to_name": "Thelittlepastacompanythelittlepastacompany.co.uk4.967reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:42.901138",
+    "status": "sent"
+  },
+  {
+    "to": "contact@manchesterpasta.co.uk",
+    "to_name": "Pasta Co-Your Private Chefmanchesterpasta.co.uk4.967reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:47.873079",
+    "status": "sent"
+  },
+  {
+    "to": "video2@2x.jpg",
+    "to_name": "Ceylon & Beyondceylonandbeyond.co.uk4.870reviews3 Battenburg Road, Bristol, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:53.750537",
+    "status": "sent"
+  },
+  {
+    "to": "hello@lot33.co.uk",
+    "to_name": "Lot 33 Pizzalot33.co.uk4.863reviews46 Parkdale, Danbury, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:19:58.362464",
+    "status": "sent"
+  },
+  {
+    "to": "info@piptreecatering.com",
+    "to_name": "Piptreepiptreecatering.com4.862reviews32, Isleworth, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:02.848735",
+    "status": "sent"
+  },
+  {
+    "to": "toby@thehumblepie.co.uk",
+    "to_name": "The Humble pie Companywww.thehumblepie.co.uk4.854reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:07.402719",
+    "status": "sent"
+  },
+  {
+    "to": "rabbitandruncatering@gmail.com",
+    "to_name": "Rabbit and Runrabbitandrun.co.uk4.853reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:11.950066",
+    "status": "sent"
+  },
+  {
+    "to": "knowlsey204@hotmail.com",
+    "to_name": "Argyll Exclusivewww.argyll-exclusive.co.uk4.847reviewscruachan cottages, argyll, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:16.483808",
+    "status": "sent"
+  },
+  {
+    "to": "info@kevroncatering.com",
+    "to_name": "Kevroncateringkevroncatering.com4.838reviewsWinchester crescent, Gravesend, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:21.078017",
+    "status": "sent"
+  },
+  {
+    "to": "info@buffetheroes.com",
+    "to_name": "Buffet Heroesbuffetheroes.com4.836reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:25.774989",
+    "status": "sent"
+  },
+  {
+    "to": "info@foodchamps2020.co.uk",
+    "to_name": "Food Champswww.foodchamps2020.co.uk4.835reviewsThe Arden Centre, Little Alne , United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:30.519800",
+    "status": "sent"
+  },
+  {
+    "to": "feedme@relishfood.co.uk",
+    "to_name": "Relishfoodrelishfood.co.uk4.7104reviews59 Brussels Street, Leeds, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:36.239397",
+    "status": "sent"
+  },
+  {
+    "to": "indulge@mannadew.co.uk",
+    "to_name": "Manna Dewmannadew.co.uk4.787reviews169 Battersea High Street, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:40.666500",
+    "status": "sent"
+  },
+  {
+    "to": "postmaster@7-locksmiths.co.uk",
+    "to_name": "Most relevant7-Locksmiths7-locksmiths.co.uk4.9228reviews65 Radley Road, Bristol, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:45.331111",
+    "status": "sent"
+  },
+  {
+    "to": "office@londonlocksmith24h.co.uk",
+    "to_name": "Most relevantlondonlocksmith24h.co.uklondonlocksmith24h.co.uk4.64,011reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:50.127074",
+    "status": "sent"
+  },
+  {
+    "to": "contact@tvaerialinstaller.co.uk",
+    "to_name": "Most relevantPaul Davies TV Aerial Installertvaerialinstaller.co.uk4.4415reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:54.681010",
+    "status": "sent"
+  },
+  {
+    "to": "sales@lockdoctor.biz",
+    "to_name": "Lockdoctor.bizlockdoctor.biz5.0358reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:20:59.318336",
+    "status": "sent"
+  },
+  {
+    "to": "ryan@cityoflondonlocksmiths.co.uk",
+    "to_name": "Cityoflondonlocksmithscityoflondonlocksmiths.co.uk4.9152reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:03.933016",
+    "status": "sent"
+  },
+  {
+    "to": "info@haleslocks.com",
+    "to_name": "Haleslocks Ltd - Master Locksmithshaleslocks.com4.9135reviewsDays Lane, Sidcup, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:08.579096",
+    "status": "sent"
+  },
+  {
+    "to": "info@lincolnsecurity.co.uk",
+    "to_name": "Lincoln Security Ltd.lincolnsecurity.co.uk4.9128reviewsWhisby Way, Lincoln, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:13.504068",
+    "status": "sent"
+  },
+  {
+    "to": "hello@teapowered.pro",
+    "to_name": "AD Locksmithingadlocksmithing.co.uk4.9123reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:18.073477",
+    "status": "sent"
+  },
+  {
+    "to": "info@thekeyteam.co.uk",
+    "to_name": "The Key Teamthekeyteam.co.uk4.982reviewsMorwick Hall, York Rd, Leeds, Leeds, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:22.570899",
+    "status": "sent"
+  },
+  {
+    "to": "info@smrlocksmiths.co.uk",
+    "to_name": "SMR Locksmiths Ltdsmrlocksmiths.co.uk4.979reviews10 Cranbourne Close, Norbury, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:27.245390",
+    "status": "sent"
+  },
+  {
+    "to": "hello@togather.com",
+    "to_name": "Most relevantTogathertogather.com4.8549reviews6 Orsman Road, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:32.016942",
+    "status": "sent"
+  },
+  {
+    "to": "support@wedissimo.com",
+    "to_name": "Most relevantWedissimowedissimo.com4.5140reviews5 Luke Street, London, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:37.699154",
+    "status": "sent"
+  },
+  {
+    "to": "sales@kenteventpackages.com",
+    "to_name": "Kent Event Packageskenteventpackages.com4.9118reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:42.589768",
+    "status": "sent"
+  },
+  {
+    "to": "info@highendchauffeurs.com",
+    "to_name": "High End Chauffeurshighendchauffeurs.com4.864reviews105 Station Lane, Leicester, United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:47.340942",
+    "status": "sent"
+  },
+  {
+    "to": "events@djmaj-ik.com",
+    "to_name": "DJMaj-ikdjmaj-ik.com4.844reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:51.962852",
+    "status": "sent"
+  },
+  {
+    "to": "dave@lab6.com",
+    "to_name": "CTM Evnts Ltdctmevnts.co.uk4.841reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:21:56.645715",
+    "status": "sent"
+  },
+  {
+    "to": "jessica@vintageeventsmanchester.co.uk",
+    "to_name": "Vintageeventsmanchesterwww.vintageeventsmanchester.co.uk4.735reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:01.358785",
+    "status": "sent"
+  },
+  {
+    "to": "petra@consulting-and-events.com",
+    "to_name": "Consulting & Events Ltd.consulting-and-events.com4.624reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:05.888848",
+    "status": "sent"
+  },
+  {
+    "to": "hello@marrymeinsicily.co.uk",
+    "to_name": "Marrymeinsicilymarrymeinsicily.co.uk4.623reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:10.600362",
+    "status": "sent"
+  },
+  {
+    "to": "support@partycentral.co.uk",
+    "to_name": "Party Centralpartycentral.co.uk4.542reviews,  , United Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:15.350970",
+    "status": "sent"
+  },
+  {
+    "to": "filler@godaddy.com",
+    "to_name": "Nicole Haynes | Weddings and Eventsnicolehaynes.uk4.516reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:19.866353",
+    "status": "sent"
+  },
+  {
+    "to": "info@asianbritishmusic.com",
+    "to_name": "Asian British Musicasianbritishmusic.com4.514reviewsUnited Kingdom",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:24.644414",
+    "status": "sent"
+  },
+  {
+    "to": "anyoccasion2party@yahoo.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:28.624574",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c01c4sm61872795e9.9 - gsmtp')"
+  },
+  {
+    "to": "enquiries@jgpestcontrol.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:32.647001",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc375dsm3184363f8f.14 - gsmtp')"
+  },
+  {
+    "to": "enquiries@jgpestcontrol.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:36.589088",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1365sm3560504f8f.7 - gsmtp')"
+  },
+  {
+    "to": "maestro@2x.png",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:40.417873",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a381sm3830004f8f.21 - gsmtp')"
+  },
+  {
+    "to": "support@support.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:44.479815",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4dc26a3sm3658218f8f.15 - gsmtp')"
+  },
+  {
+    "to": "sales@mothcontrol.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:48.550090",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc07bbsm3374482f8f.11 - gsmtp')"
+  },
+  {
+    "to": "youremail@email.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:52.497882",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d525sm3218775f8f.31 - gsmtp')"
+  },
+  {
+    "to": "info@sussexponddoctor.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:22:56.390440",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1ce408sm29766635e9.14 - gsmtp')"
+  },
+  {
+    "to": "twolionsoffice@gmail.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:03.261401",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb78d1bcsm18631635e9.5 - gsmtp')"
+  },
+  {
+    "to": "mail@autopot.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:07.069574",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4c221cdsm3729415f8f.0 - gsmtp')"
+  },
+  {
+    "to": "info@oakleaf-enterprise.org",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:10.960460",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb72d365sm22956645e9.1 - gsmtp')"
+  },
+  {
+    "to": "court-xl-v2@2x.png",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:14.924323",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb7a051dsm13631245e9.18 - gsmtp')"
+  },
+  {
+    "to": "info@bethchatto.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:18.793484",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc14a61asm32840455e9.15 - gsmtp')"
+  },
+  {
+    "to": "hello@groundsco.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:22.603936",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4dc24cfsm3501853f8f.16 - gsmtp')"
+  },
+  {
+    "to": "info@debitam.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:26.585540",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc14a61asm32848175e9.15 - gsmtp')"
+  },
+  {
+    "to": "help@helpboxuk.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:30.761089",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc13938fsm49269065e9.10 - gsmtp')"
+  },
+  {
+    "to": "info@taxflowpartners.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:35.006285",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc13938fsm49275475e9.10 - gsmtp')"
+  },
+  {
+    "to": "enquiries@comanandco.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:39.135337",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a397sm3790738f8f.23 - gsmtp')"
+  },
+  {
+    "to": "info@crunch.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:43.157605",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc143a0fsm35678085e9.14 - gsmtp')"
+  },
+  {
+    "to": "info@dnsaccountants.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:47.160488",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc10019bsm35365765e9.4 - gsmtp')"
+  },
+  {
+    "to": "info@evlateam.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:51.161332",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c01c4sm62019075e9.9 - gsmtp')"
+  },
+  {
+    "to": "info@suretax.co",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:55.366214",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb74c7dcsm13775505e9.4 - gsmtp')"
+  },
+  {
+    "to": "hello@juno.legal",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:23:59.363291",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1682sm3496282f8f.1 - gsmtp')"
+  },
+  {
+    "to": "info@threemo-co-uk.preview-domain.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:03.213292",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb7b2716sm14766855e9.30 - gsmtp')"
+  },
+  {
+    "to": "info@setfords.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:07.125427",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d525sm3227674f8f.31 - gsmtp')"
+  },
+  {
+    "to": "sarah.robertson@equilaw.uk.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:10.948215",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e59f97sm3560968f8f.37 - gsmtp')"
+  },
+  {
+    "to": "ask@ila.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:14.814515",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1682sm3498178f8f.1 - gsmtp')"
+  },
+  {
+    "to": "info@irwell-law.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:18.924921",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc10019bsm35397795e9.4 - gsmtp')"
+  },
+  {
+    "to": "manchester@pls-solicitors.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:22.789155",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d525sm3229674f8f.31 - gsmtp')"
+  },
+  {
+    "to": "enquiries@stephensons.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:26.771925",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c01cfsm36024525e9.10 - gsmtp')"
+  },
+  {
+    "to": "info@bbhlegal.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:30.692904",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc14a61asm32911255e9.15 - gsmtp')"
+  },
+  {
+    "to": "u003eservice@smartinsurance.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:34.571321",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1682sm3500361f8f.1 - gsmtp')"
+  },
+  {
+    "to": "info@insuredhealth.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:38.356348",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4633bsm3422397f8f.26 - gsmtp')"
+  },
+  {
+    "to": "office@equippedgym.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:42.135697",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e591cesm4864907f8f.36 - gsmtp')"
+  },
+  {
+    "to": "sales@vikingshopsuple.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:46.130592",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc16f8c3sm31661375e9.2 - gsmtp')"
+  },
+  {
+    "to": "sales@strongway.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:50.178090",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a174sm3760854f8f.18 - gsmtp')"
+  },
+  {
+    "to": "info@theuniit.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:54.105993",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc177dafsm41952375e9.4 - gsmtp')"
+  },
+  {
+    "to": "manager.epsom@lifestylefitness.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:24:58.039039",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc16f93dsm46178015e9.3 - gsmtp')"
+  },
+  {
+    "to": "customerservice@simplygym.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:01.936703",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1682sm3503279f8f.1 - gsmtp')"
+  },
+  {
+    "to": "member.services@puregym.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:06.066144",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d6casm3093137f8f.32 - gsmtp')"
+  },
+  {
+    "to": "tile_mobile@2x.jpg",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:10.003200",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d5b1sm3572928f8f.30 - gsmtp')"
+  },
+  {
+    "to": "team@rechargefitness.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:13.999629",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4c221cdsm3744793f8f.0 - gsmtp')"
+  },
+  {
+    "to": "xxx@xxx.xxx",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:17.899400",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4dc24cfsm3516239f8f.16 - gsmtp')"
+  },
+  {
+    "to": "info@mammalstrength.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:21.822200",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc189f2esm54809605e9.7 - gsmtp')"
+  },
+  {
+    "to": "hello@ionbody.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:25.686377",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc07bbsm3390466f8f.11 - gsmtp')"
+  },
+  {
+    "to": "claire@conturuk.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:29.616161",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e46898sm3356678f8f.27 - gsmtp')"
+  },
+  {
+    "to": "contact@houseofsculpt.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:33.535428",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4dc24cfsm3518133f8f.16 - gsmtp')"
+  },
+  {
+    "to": "info@alphawolfgymwear.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:37.630528",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc0f82bbsm57581705e9.3 - gsmtp')"
+  },
+  {
+    "to": "cropped-dynamic-golf-@-the-bunker-profile-pic-192x192.jpg",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:41.822704",
+    "status": "failed",
+    "error": "{'cropped-dynamic-golf-@-the-bunker-profile-pic-192x192.jpg': (553, b'5.1.3 The recipient address <cropped-dynamic-golf-@-the-bunker-profile-pic-1\\n5.1.3 92x192.jpg> is not a valid RFC 5321 address. For more information, go\\n5.1.3 to\\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\\n5.1.3 specifications. 5b1f17b1804b1-488fc14a61asm32980145e9.15 - gsmtp')}"
+  },
+  {
+    "to": "emily.jelley@icloud.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:45.798750",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc10019bsm35474945e9.4 - gsmtp')"
+  },
+  {
+    "to": "hello@akhealthandfitness.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:49.660451",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc0d51sm3635198f8f.10 - gsmtp')"
+  },
+  {
+    "to": "suttoncoldfield@iamyogi.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:53.657065",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc189f2esm54867785e9.7 - gsmtp')"
+  },
+  {
+    "to": "info@stretchandflex.co",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:25:57.705019",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c773fsm30557285e9.12 - gsmtp')"
+  },
+  {
+    "to": "admin@ekotexyoga.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:01.633755",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c96b4sm55824695e9.13 - gsmtp')"
+  },
+  {
+    "to": "info@yogacourse.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:05.594744",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc14a61asm33005655e9.15 - gsmtp')"
+  },
+  {
+    "to": "movewell_wordmark_interim_rgb-black.ai_160x@2x.jpg",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:09.556329",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc100162sm38144815e9.5 - gsmtp')"
+  },
+  {
+    "to": "info@sallyparkesyoga.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:13.801527",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc0b4c85sm32893175e9.0 - gsmtp')"
+  },
+  {
+    "to": "hello@neitiv.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:17.904641",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1070bfsm34839105e9.7 - gsmtp')"
+  },
+  {
+    "to": "yoga@yogasanctuary.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:21.803044",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a381sm3855478f8f.21 - gsmtp')"
+  },
+  {
+    "to": "thesanctuaryatairedalebooking@gmail.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:25.767473",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1176sm3705997f8f.3 - gsmtp')"
+  },
+  {
+    "to": "yogapathuk@gmail.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:30.458264",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1cfbf2sm32620985e9.15 - gsmtp')"
+  },
+  {
+    "to": "paula@happyyoga.wales",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:34.601943",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb75af76sm13855825e9.13 - gsmtp')"
+  },
+  {
+    "to": "info@samadhi.org.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:38.799554",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4daf2sm3276952f8f.33 - gsmtp')"
+  },
+  {
+    "to": "hello@theofficeyogaco.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:42.819581",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb754842sm13941595e9.8 - gsmtp')"
+  },
+  {
+    "to": "info@breatheyoga.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:50.269469",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb7b2634sm13847835e9.28 - gsmtp')"
+  },
+  {
+    "to": "towardyoga@gmail.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:54.466332",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb767961sm13928205e9.16 - gsmtp')"
+  },
+  {
+    "to": "info@thebreatheinspace.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:26:58.456114",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc0d51sm3643140f8f.10 - gsmtp')"
+  },
+  {
+    "to": "info@mindfulnessconnections.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:02.719911",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a397sm3814253f8f.23 - gsmtp')"
+  },
+  {
+    "to": "pd@graciebarrafrome.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:07.854717",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1249sm3059508f8f.5 - gsmtp')"
+  },
+  {
+    "to": "julie.pe@icloud.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:12.197386",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc0f82bbsm57756125e9.3 - gsmtp')"
+  },
+  {
+    "to": "info@ourretreat.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:16.701647",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc100162sm38218575e9.5 - gsmtp')"
+  },
+  {
+    "to": "sales@uk-pilatesreformers.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:20.873210",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c0354sm29953685e9.11 - gsmtp')"
+  },
+  {
+    "to": "admin@seraphinapilates.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:27.056322",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb78becdsm20694075e9.5 - gsmtp')"
+  },
+  {
+    "to": "hello@ankorpilates.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:31.197588",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e46471sm3014509f8f.28 - gsmtp')"
+  },
+  {
+    "to": "info@juliawillmott.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:35.761570",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb13a0sm3576259f8f.8 - gsmtp')"
+  },
+  {
+    "to": "lyndsay@yourpilatesphysio.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:40.060049",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c01c4sm62447005e9.9 - gsmtp')"
+  },
+  {
+    "to": "info@studyactive.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:44.395328",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb7aec91sm14049905e9.26 - gsmtp')"
+  },
+  {
+    "to": "swimcore_pro_round_logo_x120@2x.jpg",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:49.064981",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d5b1sm3591699f8f.30 - gsmtp')"
+  },
+  {
+    "to": "press@strava.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:27:53.711387",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc0f82bbsm57820795e9.3 - gsmtp')"
+  },
+  {
+    "to": "hello@livewellhealth.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:00.573928",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1c773fsm30668035e9.12 - gsmtp')"
+  },
+  {
+    "to": "info@coachedbyglj.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:07.143092",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb7a051dsm13718365e9.18 - gsmtp')"
+  },
+  {
+    "to": "hello@we-run.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:12.267734",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb767961sm13951115e9.16 - gsmtp')"
+  },
+  {
+    "to": "admin@differentbreedcoaching.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:16.517332",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1070bfsm34960335e9.7 - gsmtp')"
+  },
+  {
+    "to": "info@teddybfitness.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:20.580171",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cb1405sm3297010f8f.4 - gsmtp')"
+  },
+  {
+    "to": "flags@2x.png",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:25.062277",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb74c7e7sm14754095e9.2 - gsmtp')"
+  },
+  {
+    "to": "support@fionasimpsonscoaching.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:29.234351",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc189f2esm55144355e9.7 - gsmtp')"
+  },
+  {
+    "to": "pippa@improvfit.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:33.581421",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1001bdsm57180645e9.6 - gsmtp')"
+  },
+  {
+    "to": "vivien.fitnesspt@gmail.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:38.600202",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1393d3sm53589865e9.11 - gsmtp')"
+  },
+  {
+    "to": "concierge@littlecitytreat.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:43.189472",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc11ced7sm31275365e9.0 - gsmtp')"
+  },
+  {
+    "to": "harborough@adjustmassage.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:47.268315",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc0f31sm3498706f8f.12 - gsmtp')"
+  },
+  {
+    "to": "signature-1@2x.png",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:52.388830",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb74c7cbsm14958365e9.7 - gsmtp')"
+  },
+  {
+    "to": "katharine@angelofwellness.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:28:57.248922",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc16f784sm29816355e9.1 - gsmtp')"
+  },
+  {
+    "to": "info@thekarmamama.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:02.017282",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc16f8c3sm31912005e9.2 - gsmtp')"
+  },
+  {
+    "to": "info@thisislondonwellness.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:09.506117",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc17f642sm30310025e9.5 - gsmtp')"
+  },
+  {
+    "to": "glowbeauty.longcrendon@gmail.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:15.983462",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4cc07bbsm3414551f8f.11 - gsmtp')"
+  },
+  {
+    "to": "info@feelgoodhq.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:20.740058",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1cfbf2sm32815675e9.15 - gsmtp')"
+  },
+  {
+    "to": "hello@healingshapers.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:24.901125",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb74fce0sm17708515e9.2 - gsmtp')"
+  },
+  {
+    "to": "louise@my-innabeauty.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:29.173415",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc1393f5sm31957385e9.9 - gsmtp')"
+  },
+  {
+    "to": "info@fab-skincare.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:34.191023",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc0f82bbsm57991825e9.3 - gsmtp')"
+  },
+  {
+    "to": "hanna@londonlashpro.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:39.113951",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fbc46824sm24483735e9.0 - gsmtp')"
+  },
+  {
+    "to": "customerservice@dollbeauty.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:43.455560",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc16f93dsm46625105e9.3 - gsmtp')"
+  },
+  {
+    "to": "customerservices@purespauk.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:47.463146",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb74c7cbsm14973645e9.7 - gsmtp')"
+  },
+  {
+    "to": "info@nuwavelaserclinic.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:51.904809",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb754f15sm14232065e9.9 - gsmtp')"
+  },
+  {
+    "to": "enquiries@aukclinic.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:29:56.546022",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb767961sm13979605e9.16 - gsmtp')"
+  },
+  {
+    "to": "customerservice@kglashsupplies.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:00.567087",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb78d1bcsm18813795e9.5 - gsmtp')"
+  },
+  {
+    "to": "info@indiantypefoundry.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:04.505847",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a381sm3882088f8f.21 - gsmtp')"
+  },
+  {
+    "to": "youare@worthyof.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:08.368498",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc0b4c85sm33102655e9.0 - gsmtp')"
+  },
+  {
+    "to": "info@wildabouttan.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:12.201360",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e4d525sm3269087f8f.31 - gsmtp')"
+  },
+  {
+    "to": "brad@4uhairproducts.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:15.915426",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e591cesm4917807f8f.36 - gsmtp')"
+  },
+  {
+    "to": "jose@hairbyjose.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:20.650567",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e46898sm3386161f8f.27 - gsmtp')"
+  },
+  {
+    "to": "info@mysite.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:24.579169",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc100162sm38415015e9.5 - gsmtp')"
+  },
+  {
+    "to": "info@enicutz.com",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:28.287801",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 ffacd0b85a97d-43fe4e3a166sm3673301f8f.19 - gsmtp')"
+  },
+  {
+    "to": "info@sammies.studio",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:32.621794",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fb78446csm20415945e9.4 - gsmtp')"
+  },
+  {
+    "to": "info@visualcode.co.uk",
+    "subject": "Automate Your Business — SAP, Priority, Monday.com, M365 & SharePoint",
+    "sent_at": "2026-04-17T11:30:39.267332",
+    "status": "failed",
+    "error": "(550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\\n5.4.5 sending limits go to\\n5.4.5  https://support.google.com/a/answer/166852 5b1f17b1804b1-488fc10777csm43162835e9.8 - gsmtp')"
+  }
+]

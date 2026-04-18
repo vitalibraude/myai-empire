@@ -1,0 +1,151 @@
+{
+  "generated": "2026-04-16T12:04:49.468513",
+  "scripts": [
+    {
+      "id": "yt_001",
+      "platform": "youtube",
+      "title": "How AI Agents Can Run Your Entire Business in 2025",
+      "duration": "8 min",
+      "hook": "What if I told you there's an AI that can build your website, write your content, manage your social media, and grow your revenue \u2014 all while you sleep?",
+      "outline": [
+        {
+          "time": "0:00-0:30",
+          "section": "HOOK",
+          "content": "Open with shocking stat: 87% of businesses still do marketing manually. Show the problem \u2014 late nights, repetitive tasks, missed opportunities."
+        },
+        {
+          "time": "0:30-2:00",
+          "section": "THE PROBLEM",
+          "content": "Walk through a typical business owner's day: emails, social media, website updates, customer service. It's a 60-hour workweek just to keep up."
+        },
+        {
+          "time": "2:00-4:00",
+          "section": "THE SOLUTION",
+          "content": "Introduce myAI: an autonomous system that handles all of this. Show the agent loop \u2014 execute tasks, learn, improve, repeat 24/7."
+        },
+        {
+          "time": "4:00-6:00",
+          "section": "DEMO",
+          "content": "Screen recording: run the agent, watch it generate a landing page, write blog posts, create social content, and send email campaigns."
+        },
+        {
+          "time": "6:00-7:30",
+          "section": "RESULTS",
+          "content": "Case study: from 0 to 500 leads/month. 10x faster content production. 40% cost reduction vs. hiring."
+        },
+        {
+          "time": "7:30-8:00",
+          "section": "CTA",
+          "content": "Start your free 14-day trial at myai.com. Link in description. Like, subscribe, turn on notifications."
+        }
+      ],
+      "tags": [
+        "AI automation",
+        "business AI",
+        "autonomous agents",
+        "marketing automation",
+        "startup tools"
+      ],
+      "thumbnail_text": "AI RUNS MY BUSINESS"
+    },
+    {
+      "id": "yt_002",
+      "platform": "youtube",
+      "title": "I Let AI Handle My Marketing for 30 Days \u2014 Here's What Happened",
+      "duration": "10 min",
+      "hook": "I handed my entire marketing operation to an AI agent for 30 days. The results were absolutely insane.",
+      "outline": [
+        {
+          "time": "0:00-0:30",
+          "section": "HOOK",
+          "content": "Teaser of results \u2014 show the dashboard with metrics popping up. 'I couldn't believe it either.'"
+        },
+        {
+          "time": "0:30-2:30",
+          "section": "THE SETUP",
+          "content": "Day 1: Configure the AI agent. Set business goals, target audience, and content preferences. One command starts everything."
+        },
+        {
+          "time": "2:30-5:00",
+          "section": "WEEK BY WEEK",
+          "content": "Week 1: Website built, 5 blog posts published. Week 2: Social media pipeline flowing, video scripts created. Week 3: Email campaigns active, leads coming in. Week 4: System self-optimized based on performance data."
+        },
+        {
+          "time": "5:00-7:00",
+          "section": "THE NUMBERS",
+          "content": "Traffic: 0 \u2192 12,000 visitors. Leads: 0 \u2192 347. Content pieces: 67 published automatically. Time spent by me: approximately 2 hours total."
+        },
+        {
+          "time": "7:00-9:00",
+          "section": "DEEP DIVE",
+          "content": "How the AI decides what to do next. The task queue system. How it self-corrects and improves with each run cycle."
+        },
+        {
+          "time": "9:00-10:00",
+          "section": "CTA",
+          "content": "Your business deserves this. Free trial, no credit card. Link below."
+        }
+      ],
+      "tags": [
+        "AI experiment",
+        "marketing AI",
+        "30 day challenge",
+        "autonomous business",
+        "AI results"
+      ],
+      "thumbnail_text": "30 DAYS OF AI"
+    },
+    {
+      "id": "yt_003",
+      "platform": "youtube",
+      "title": "5 Tasks You Should NEVER Do Manually Again (AI Does Them Better)",
+      "duration": "7 min",
+      "hook": "You're wasting 20+ hours a week on tasks that AI can do in minutes. Here are the top 5.",
+      "outline": [
+        {
+          "time": "0:00-0:30",
+          "section": "HOOK",
+          "content": "Quick montage of boring manual tasks. 'Stop. Just stop. There's a better way.'"
+        },
+        {
+          "time": "0:30-2:00",
+          "section": "1. CONTENT WRITING",
+          "content": "Blog posts, product descriptions, email campaigns. AI writes them faster AND optimized for SEO."
+        },
+        {
+          "time": "2:00-3:00",
+          "section": "2. SOCIAL MEDIA",
+          "content": "Creating posts, scheduling, optimizing hashtags. AI handles all platforms simultaneously."
+        },
+        {
+          "time": "3:00-4:00",
+          "section": "3. WEBSITE UPDATES",
+          "content": "Design changes, new pages, content refreshes. AI rebuilds and optimizes continuously."
+        },
+        {
+          "time": "4:00-5:30",
+          "section": "4. CUSTOMER SERVICE",
+          "content": "FAQ responses, meeting booking, lead qualification. AI chatbot handles 80% of inquiries."
+        },
+        {
+          "time": "5:30-6:30",
+          "section": "5. REPORTING",
+          "content": "Weekly reports, market analysis, competitor tracking. AI generates them automatically."
+        },
+        {
+          "time": "6:30-7:00",
+          "section": "CTA",
+          "content": "Start automating today. Link in description for your free trial."
+        }
+      ],
+      "tags": [
+        "productivity",
+        "automation",
+        "AI tools",
+        "business tips",
+        "time saving"
+      ],
+      "thumbnail_text": "STOP DOING THIS!"
+    }
+  ]
+}

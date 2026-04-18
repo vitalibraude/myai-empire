@@ -1,0 +1,13 @@
+# Local Netlify folder
+.netlify
+
+# Credentials - NEVER commit
+credentials.json
+client_secrets.json
+.env
+data/youtube_token.json
+data/payment_config.json
+
+# Python
+__pycache__/
+*.pyc

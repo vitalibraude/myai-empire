@@ -1,0 +1,1172 @@
+[
+  {
+    "id": 1,
+    "title": "Build landing page with hero, services, testimonials, and contact form",
+    "status": "completed",
+    "priority": "high",
+    "category": "website",
+    "created": "2026-04-16T11:43:19.543894",
+    "completed": "2026-04-16T11:43:19.613065"
+  },
+  {
+    "id": 2,
+    "title": "Create initial blog content \u2014 3 posts on AI and automation",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T11:43:19.557890",
+    "completed": "2026-04-16T11:43:19.750207"
+  },
+  {
+    "id": 3,
+    "title": "Set up logging system with detailed run reports",
+    "status": "completed",
+    "priority": "medium",
+    "category": "system",
+    "created": "2026-04-16T11:43:19.571058",
+    "completed": "2026-04-16T11:43:19.779211"
+  },
+  {
+    "id": 4,
+    "title": "Build market analysis module \u2014 competitor & trend research",
+    "status": "completed",
+    "priority": "medium",
+    "category": "research",
+    "created": "2026-04-16T11:43:19.583060",
+    "completed": "2026-04-16T11:43:19.799218"
+  },
+  {
+    "id": 5,
+    "title": "Create basic CRM system with JSON storage",
+    "status": "completed",
+    "priority": "medium",
+    "category": "system",
+    "created": "2026-04-16T11:43:19.594059",
+    "completed": "2026-04-16T11:43:19.814556"
+  },
+  {
+    "id": 6,
+    "title": "Enhance landing page \u2014 add animations, particles, and responsive nav",
+    "status": "completed",
+    "priority": "high",
+    "category": "website",
+    "created": "2026-04-16T11:43:19.831070",
+    "completed": "2026-04-16T11:43:30.646777"
+  },
+  {
+    "id": 7,
+    "title": "Build About page and Services page for the website",
+    "status": "completed",
+    "priority": "high",
+    "category": "website",
+    "created": "2026-04-16T11:43:19.845187",
+    "completed": "2026-04-16T11:43:30.662792"
+  },
+  {
+    "id": 8,
+    "title": "Write 3 case study blog posts \u2014 real AI business results",
+    "status": "completed",
+    "priority": "medium",
+    "category": "content",
+    "created": "2026-04-16T11:43:19.856315",
+    "completed": "2026-04-16T11:43:30.771752"
+  },
+  {
+    "id": 9,
+    "title": "Build pricing page with 3 tiers (Starter/Pro/Enterprise)",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T11:43:19.896490",
+    "completed": "2026-04-16T11:43:30.788103"
+  },
+  {
+    "id": 10,
+    "title": "Generate email templates (welcome, weekly report, new lead)",
+    "status": "completed",
+    "priority": "medium",
+    "category": "system",
+    "created": "2026-04-16T11:43:19.924491",
+    "completed": "2026-04-16T11:43:30.840227"
+  },
+  {
+    "id": 11,
+    "title": "Generate YouTube video scripts (3 educational videos)",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T11:43:30.854416",
+    "completed": "2026-04-16T11:46:19.492718"
+  },
+  {
+    "id": 12,
+    "title": "Generate short-form Reels/TikTok scripts (5 scripts)",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T11:43:30.870570",
+    "completed": "2026-04-16T11:46:19.514115"
+  },
+  {
+    "id": 13,
+    "title": "Create 4-week content calendar for all platforms",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T11:43:30.884570",
+    "completed": "2026-04-16T11:46:19.534274"
+  },
+  {
+    "id": 14,
+    "title": "Generate social media posts for Twitter, LinkedIn, Instagram, TikTok",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T11:43:30.899714",
+    "completed": "2026-04-16T11:46:19.561275"
+  },
+  {
+    "id": 15,
+    "title": "Generate thumbnails for all YouTube video scripts",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T11:43:30.910714",
+    "completed": "2026-04-16T11:46:19.609786"
+  },
+  {
+    "id": 16,
+    "title": "Generate LinkedIn articles and Twitter threads",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T11:46:19.639244",
+    "completed": "2026-04-16T11:46:26.954392"
+  },
+  {
+    "id": 17,
+    "title": "Build admin dashboard page with business statistics",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T11:46:19.657962",
+    "completed": "2026-04-16T11:46:26.970590"
+  },
+  {
+    "id": 18,
+    "title": "Add SEO optimization to all website pages",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T11:46:19.674961",
+    "completed": "2026-04-16T11:46:26.994588"
+  },
+  {
+    "id": 19,
+    "title": "Create API specification for business services",
+    "status": "completed",
+    "priority": "medium",
+    "category": "system",
+    "created": "2026-04-16T11:46:19.693596",
+    "completed": "2026-04-16T11:46:27.012594"
+  },
+  {
+    "id": 20,
+    "title": "Generate automated weekly performance report module",
+    "status": "completed",
+    "priority": "medium",
+    "category": "system",
+    "created": "2026-04-16T11:46:19.712786",
+    "completed": "2026-04-16T11:46:27.027596"
+  },
+  {
+    "id": 21,
+    "title": "Build Stripe checkout page with payment flow for all plans",
+    "status": "completed",
+    "priority": "high",
+    "category": "payments",
+    "created": "2026-04-16T11:53:41.420726",
+    "completed": "2026-04-16T11:54:45.560420"
+  },
+  {
+    "id": 22,
+    "title": "Generate investor pitch page with opportunity and roadmap",
+    "status": "completed",
+    "priority": "high",
+    "category": "investors",
+    "created": "2026-04-16T11:53:41.437729",
+    "completed": "2026-04-16T11:54:45.584026"
+  },
+  {
+    "id": 23,
+    "title": "Generate structured pitch deck data for investor presentations",
+    "status": "completed",
+    "priority": "medium",
+    "category": "investors",
+    "created": "2026-04-16T11:53:41.450896",
+    "completed": "2026-04-16T11:54:45.600329"
+  },
+  {
+    "id": 24,
+    "title": "Create payment configuration with Stripe integration setup",
+    "status": "completed",
+    "priority": "medium",
+    "category": "payments",
+    "created": "2026-04-16T11:53:41.462164",
+    "completed": "2026-04-16T11:54:45.618330"
+  },
+  {
+    "id": 25,
+    "title": "Update all website pages with checkout and investor links",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T11:53:41.475164",
+    "completed": "2026-04-16T11:54:45.636330"
+  },
+  {
+    "id": 26,
+    "title": "Generate 3 new blog posts about payment automation and investor relations",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T11:54:45.656610",
+    "completed": "2026-04-16T11:54:54.861042"
+  },
+  {
+    "id": 27,
+    "title": "Create investor outreach email templates",
+    "status": "completed",
+    "priority": "high",
+    "category": "investors",
+    "created": "2026-04-16T11:54:45.670973",
+    "completed": "2026-04-16T11:54:54.884044"
+  },
+  {
+    "id": 28,
+    "title": "Generate social media announcement posts for funding round",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T11:54:45.685972",
+    "completed": "2026-04-16T11:54:54.906042"
+  },
+  {
+    "id": 29,
+    "title": "Build financial projections dashboard page",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T11:54:45.703691",
+    "completed": "2026-04-16T11:54:54.923042"
+  },
+  {
+    "id": 30,
+    "title": "Generate press release content for product launch",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T11:54:45.720827",
+    "completed": "2026-04-16T11:54:54.941337"
+  },
+  {
+    "id": 31,
+    "title": "Optimize and improve the system \u2014 run #7",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T11:54:54.961231",
+    "completed": "2026-04-16T12:04:46.501231"
+  },
+  {
+    "id": 32,
+    "title": "Generate new content \u2014 posts #19 to #21",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T11:54:54.977233",
+    "completed": "2026-04-16T12:04:46.740442"
+  },
+  {
+    "id": 33,
+    "title": "Analyze performance and improve conversions \u2014 round #7",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T11:54:54.993520",
+    "completed": "2026-04-16T12:04:46.837542"
+  },
+  {
+    "id": 34,
+    "title": "Update website with new features \u2014 round #7",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T11:54:55.009665",
+    "completed": "2026-04-16T12:04:47.116993"
+  },
+  {
+    "id": 35,
+    "title": "Review and enrich client database \u2014 round #7",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T11:54:55.021664",
+    "completed": "2026-04-16T12:04:47.330439"
+  },
+  {
+    "id": 36,
+    "title": "Generate new blog content \u2014 posts for run #8",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:04:47.954300",
+    "completed": "2026-04-16T12:04:48.460560"
+  },
+  {
+    "id": 37,
+    "title": "Create LinkedIn articles showcasing the 50-business empire",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.004964",
+    "completed": "2026-04-16T12:04:48.496555"
+  },
+  {
+    "id": 38,
+    "title": "Generate Twitter threads about each business niche",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.077221",
+    "completed": "2026-04-16T12:04:48.521557"
+  },
+  {
+    "id": 39,
+    "title": "Create YouTube video scripts for business empire launch",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.116396",
+    "completed": "2026-04-16T12:04:48.547558"
+  },
+  {
+    "id": 40,
+    "title": "Generate Reels/TikTok scripts for niche business promotions",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.174392",
+    "completed": "2026-04-16T12:04:48.574574"
+  },
+  {
+    "id": 41,
+    "title": "Generate social media posts for all niche businesses",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.597558",
+    "completed": "2026-04-16T12:04:48.825503"
+  },
+  {
+    "id": 42,
+    "title": "Create content calendar for multi-business marketing",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.624557",
+    "completed": "2026-04-16T12:04:48.849496"
+  },
+  {
+    "id": 43,
+    "title": "Build enhanced pricing page with all 50 business options",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:04:48.647558",
+    "completed": "2026-04-16T12:04:48.868500"
+  },
+  {
+    "id": 44,
+    "title": "Generate investor pitch update with 50-business portfolio",
+    "status": "completed",
+    "priority": "high",
+    "category": "investors",
+    "created": "2026-04-16T12:04:48.706558",
+    "completed": "2026-04-16T12:04:48.896498"
+  },
+  {
+    "id": 45,
+    "title": "Create email templates for investor outreach",
+    "status": "completed",
+    "priority": "medium",
+    "category": "investors",
+    "created": "2026-04-16T12:04:48.766556",
+    "completed": "2026-04-16T12:04:48.926495"
+  },
+  {
+    "id": 46,
+    "title": "Generate case study blog posts for top-performing niches",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:04:48.950496",
+    "completed": "2026-04-16T12:04:49.413495"
+  },
+  {
+    "id": 47,
+    "title": "Create YouTube scripts for 5 niche-specific demo videos",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:48.980498",
+    "completed": "2026-04-16T12:04:49.515495"
+  },
+  {
+    "id": 48,
+    "title": "Generate thumbnail designs for niche demo videos",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:49.000495",
+    "completed": "2026-04-16T12:04:49.581496"
+  },
+  {
+    "id": 49,
+    "title": "Build automated performance report for all 50 businesses",
+    "status": "completed",
+    "priority": "medium",
+    "category": "system",
+    "created": "2026-04-16T12:04:49.025494",
+    "completed": "2026-04-16T12:04:50.877494"
+  },
+  {
+    "id": 50,
+    "title": "Generate press release for 50-business AI platform launch",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:49.045496",
+    "completed": "2026-04-16T12:04:50.904495"
+  },
+  {
+    "id": 51,
+    "title": "Enhance landing page with animated business counter",
+    "status": "completed",
+    "priority": "high",
+    "category": "website",
+    "created": "2026-04-16T12:04:51.255496",
+    "completed": "2026-04-16T12:04:52.114496"
+  },
+  {
+    "id": 52,
+    "title": "Generate social media posts for week 2 campaign",
+    "status": "completed",
+    "priority": "high",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:51.323496",
+    "completed": "2026-04-16T12:04:52.178498"
+  },
+  {
+    "id": 53,
+    "title": "Create email sequence for lead nurturing",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:51.465496",
+    "completed": "2026-04-16T12:04:52.295496"
+  },
+  {
+    "id": 54,
+    "title": "Generate Reels/TikTok batch 2 \u2014 success story scripts",
+    "status": "completed",
+    "priority": "medium",
+    "category": "marketing",
+    "created": "2026-04-16T12:04:51.597495",
+    "completed": "2026-04-16T12:04:52.328499"
+  },
+  {
+    "id": 55,
+    "title": "Build comprehensive market report update",
+    "status": "completed",
+    "priority": "medium",
+    "category": "research",
+    "created": "2026-04-16T12:04:51.726498",
+    "completed": "2026-04-16T12:04:52.356495"
+  },
+  {
+    "id": 56,
+    "title": "Optimize and improve the system \u2014 run #12",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:04:52.428496",
+    "completed": "2026-04-16T12:05:21.725823"
+  },
+  {
+    "id": 57,
+    "title": "Generate new content \u2014 posts #34 to #36",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:04:52.477495",
+    "completed": "2026-04-16T12:05:21.842927"
+  },
+  {
+    "id": 58,
+    "title": "Analyze performance and improve conversions \u2014 round #12",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:04:52.495495",
+    "completed": "2026-04-16T12:05:21.861327"
+  },
+  {
+    "id": 59,
+    "title": "Update website with new features \u2014 round #12",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:04:52.513493",
+    "completed": "2026-04-16T12:05:21.879584"
+  },
+  {
+    "id": 60,
+    "title": "Review and enrich client database \u2014 round #12",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:04:52.534493",
+    "completed": "2026-04-16T12:05:21.901295"
+  },
+  {
+    "id": 61,
+    "title": "Optimize and improve the system \u2014 run #13",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:05:21.918955",
+    "completed": "2026-04-16T12:05:22.415075"
+  },
+  {
+    "id": 62,
+    "title": "Generate new content \u2014 posts #37 to #39",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:05:21.937242",
+    "completed": "2026-04-16T12:05:22.526476"
+  },
+  {
+    "id": 63,
+    "title": "Analyze performance and improve conversions \u2014 round #13",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:22.015244",
+    "completed": "2026-04-16T12:05:22.540611"
+  },
+  {
+    "id": 64,
+    "title": "Update website with new features \u2014 round #13",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:05:22.040247",
+    "completed": "2026-04-16T12:05:22.555613"
+  },
+  {
+    "id": 65,
+    "title": "Review and enrich client database \u2014 round #13",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:22.070247",
+    "completed": "2026-04-16T12:05:22.573614"
+  },
+  {
+    "id": 66,
+    "title": "Optimize and improve the system \u2014 run #14",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:05:22.595110",
+    "completed": "2026-04-16T12:05:23.458999"
+  },
+  {
+    "id": 67,
+    "title": "Generate new content \u2014 posts #40 to #42",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:05:22.612535",
+    "completed": "2026-04-16T12:05:23.583997"
+  },
+  {
+    "id": 68,
+    "title": "Analyze performance and improve conversions \u2014 round #14",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:22.629537",
+    "completed": "2026-04-16T12:05:23.596999"
+  },
+  {
+    "id": 69,
+    "title": "Update website with new features \u2014 round #14",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:05:22.642531",
+    "completed": "2026-04-16T12:05:23.616997"
+  },
+  {
+    "id": 70,
+    "title": "Review and enrich client database \u2014 round #14",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:22.656531",
+    "completed": "2026-04-16T12:05:23.635177"
+  },
+  {
+    "id": 71,
+    "title": "Optimize and improve the system \u2014 run #15",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:05:23.652178",
+    "completed": "2026-04-16T12:05:24.200587"
+  },
+  {
+    "id": 72,
+    "title": "Generate new content \u2014 posts #43 to #45",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:05:23.667317",
+    "completed": "2026-04-16T12:05:24.313365"
+  },
+  {
+    "id": 73,
+    "title": "Analyze performance and improve conversions \u2014 round #15",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:23.683606",
+    "completed": "2026-04-16T12:05:24.328520"
+  },
+  {
+    "id": 74,
+    "title": "Update website with new features \u2014 round #15",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:05:23.697244",
+    "completed": "2026-04-16T12:05:24.344522"
+  },
+  {
+    "id": 75,
+    "title": "Review and enrich client database \u2014 round #15",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:23.710564",
+    "completed": "2026-04-16T12:05:24.361520"
+  },
+  {
+    "id": 76,
+    "title": "Optimize and improve the system \u2014 run #16",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:05:24.384676",
+    "completed": "2026-04-16T12:05:24.736490"
+  },
+  {
+    "id": 77,
+    "title": "Generate new content \u2014 posts #46 to #48",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:05:24.401936",
+    "completed": "2026-04-16T12:05:24.862707"
+  },
+  {
+    "id": 78,
+    "title": "Analyze performance and improve conversions \u2014 round #16",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:24.417937",
+    "completed": "2026-04-16T12:05:24.879870"
+  },
+  {
+    "id": 79,
+    "title": "Update website with new features \u2014 round #16",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:05:24.441058",
+    "completed": "2026-04-16T12:05:24.901868"
+  },
+  {
+    "id": 80,
+    "title": "Review and enrich client database \u2014 round #16",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:24.454063",
+    "completed": "2026-04-16T12:05:24.918864"
+  },
+  {
+    "id": 81,
+    "title": "Optimize and improve the system \u2014 run #17",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:05:24.950016",
+    "completed": "2026-04-16T12:06:41.274262"
+  },
+  {
+    "id": 82,
+    "title": "Generate new content \u2014 posts #49 to #51",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:05:24.966179",
+    "completed": "2026-04-16T12:06:41.392880"
+  },
+  {
+    "id": 83,
+    "title": "Analyze performance and improve conversions \u2014 round #17",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:24.981518",
+    "completed": "2026-04-16T12:06:41.408056"
+  },
+  {
+    "id": 84,
+    "title": "Update website with new features \u2014 round #17",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:05:24.995708",
+    "completed": "2026-04-16T12:06:41.430058"
+  },
+  {
+    "id": 85,
+    "title": "Review and enrich client database \u2014 round #17",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:05:25.009155",
+    "completed": "2026-04-16T12:06:41.454285"
+  },
+  {
+    "id": 86,
+    "title": "Optimize and improve the system \u2014 run #18",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:06:41.471416",
+    "completed": "2026-04-16T12:06:42.019454"
+  },
+  {
+    "id": 87,
+    "title": "Generate new content \u2014 posts #52 to #54",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:06:41.486418",
+    "completed": "2026-04-16T12:06:42.148694"
+  },
+  {
+    "id": 88,
+    "title": "Analyze performance and improve conversions \u2014 round #18",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:41.505421",
+    "completed": "2026-04-16T12:06:42.164952"
+  },
+  {
+    "id": 89,
+    "title": "Update website with new features \u2014 round #18",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:06:41.525570",
+    "completed": "2026-04-16T12:06:42.190169"
+  },
+  {
+    "id": 90,
+    "title": "Review and enrich client database \u2014 round #18",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:41.542567",
+    "completed": "2026-04-16T12:06:42.211368"
+  },
+  {
+    "id": 91,
+    "title": "Optimize and improve the system \u2014 run #19",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:06:42.231781",
+    "completed": "2026-04-16T12:06:42.622940"
+  },
+  {
+    "id": 92,
+    "title": "Generate new content \u2014 posts #55 to #57",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:06:42.252122",
+    "completed": "2026-04-16T12:06:42.743231"
+  },
+  {
+    "id": 93,
+    "title": "Analyze performance and improve conversions \u2014 round #19",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:42.272516",
+    "completed": "2026-04-16T12:06:42.764367"
+  },
+  {
+    "id": 94,
+    "title": "Update website with new features \u2014 round #19",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:06:42.298071",
+    "completed": "2026-04-16T12:06:42.786576"
+  },
+  {
+    "id": 95,
+    "title": "Review and enrich client database \u2014 round #19",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:42.314378",
+    "completed": "2026-04-16T12:06:42.805728"
+  },
+  {
+    "id": 96,
+    "title": "Optimize and improve the system \u2014 run #20",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:06:42.833724",
+    "completed": "2026-04-16T12:06:43.229471"
+  },
+  {
+    "id": 97,
+    "title": "Generate new content \u2014 posts #58 to #60",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:06:42.857966",
+    "completed": "2026-04-16T12:06:43.360925"
+  },
+  {
+    "id": 98,
+    "title": "Analyze performance and improve conversions \u2014 round #20",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:42.874966",
+    "completed": "2026-04-16T12:06:43.374925"
+  },
+  {
+    "id": 99,
+    "title": "Update website with new features \u2014 round #20",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:06:42.890401",
+    "completed": "2026-04-16T12:06:43.391471"
+  },
+  {
+    "id": 100,
+    "title": "Review and enrich client database \u2014 round #20",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:42.903576",
+    "completed": "2026-04-16T12:06:43.407461"
+  },
+  {
+    "id": 101,
+    "title": "Optimize and improve the system \u2014 run #21",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:06:43.427644",
+    "completed": "2026-04-16T12:20:42.705325"
+  },
+  {
+    "id": 102,
+    "title": "Generate new content \u2014 posts #61 to #63",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:06:43.442809",
+    "completed": "2026-04-16T12:20:42.810290"
+  },
+  {
+    "id": 103,
+    "title": "Analyze performance and improve conversions \u2014 round #21",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:43.459814",
+    "completed": "2026-04-16T12:20:42.824001"
+  },
+  {
+    "id": 104,
+    "title": "Update website with new features \u2014 round #21",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:06:43.478993",
+    "completed": "2026-04-16T12:20:42.839253"
+  },
+  {
+    "id": 105,
+    "title": "Review and enrich client database \u2014 round #21",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:06:43.493258",
+    "completed": "2026-04-16T12:20:42.851255"
+  },
+  {
+    "id": 106,
+    "title": "Optimize and improve the system \u2014 run #22",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:20:42.869170",
+    "completed": "2026-04-16T12:20:43.267345"
+  },
+  {
+    "id": 107,
+    "title": "Generate new content \u2014 posts #64 to #66",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:20:42.884227",
+    "completed": "2026-04-16T12:20:43.396953"
+  },
+  {
+    "id": 108,
+    "title": "Analyze performance and improve conversions \u2014 round #22",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:42.898217",
+    "completed": "2026-04-16T12:20:43.410106"
+  },
+  {
+    "id": 109,
+    "title": "Update website with new features \u2014 round #22",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:20:42.913218",
+    "completed": "2026-04-16T12:20:43.428104"
+  },
+  {
+    "id": 110,
+    "title": "Review and enrich client database \u2014 round #22",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:42.931832",
+    "completed": "2026-04-16T12:20:43.445396"
+  },
+  {
+    "id": 111,
+    "title": "Optimize and improve the system \u2014 run #23",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:20:43.468455",
+    "completed": "2026-04-16T12:20:43.859458"
+  },
+  {
+    "id": 112,
+    "title": "Generate new content \u2014 posts #67 to #69",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:20:43.488268",
+    "completed": "2026-04-16T12:20:44.007476"
+  },
+  {
+    "id": 113,
+    "title": "Analyze performance and improve conversions \u2014 round #23",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:43.505267",
+    "completed": "2026-04-16T12:20:44.020479"
+  },
+  {
+    "id": 114,
+    "title": "Update website with new features \u2014 round #23",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:20:43.522267",
+    "completed": "2026-04-16T12:20:44.038480"
+  },
+  {
+    "id": 115,
+    "title": "Review and enrich client database \u2014 round #23",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:43.535267",
+    "completed": "2026-04-16T12:20:44.060480"
+  },
+  {
+    "id": 116,
+    "title": "Optimize and improve the system \u2014 run #24",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:20:44.080856",
+    "completed": "2026-04-16T12:20:44.466769"
+  },
+  {
+    "id": 117,
+    "title": "Generate new content \u2014 posts #70 to #72",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:20:44.102008",
+    "completed": "2026-04-16T12:20:44.600716"
+  },
+  {
+    "id": 118,
+    "title": "Analyze performance and improve conversions \u2014 round #24",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:44.119306",
+    "completed": "2026-04-16T12:20:44.614716"
+  },
+  {
+    "id": 119,
+    "title": "Update website with new features \u2014 round #24",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:20:44.135484",
+    "completed": "2026-04-16T12:20:44.633720"
+  },
+  {
+    "id": 120,
+    "title": "Review and enrich client database \u2014 round #24",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:44.150485",
+    "completed": "2026-04-16T12:20:44.652719"
+  },
+  {
+    "id": 121,
+    "title": "Optimize and improve the system \u2014 run #25",
+    "status": "completed",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:20:44.677036",
+    "completed": "2026-04-16T12:20:45.081133"
+  },
+  {
+    "id": 122,
+    "title": "Generate new content \u2014 posts #73 to #75",
+    "status": "completed",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:20:44.696184",
+    "completed": "2026-04-16T12:20:45.211475"
+  },
+  {
+    "id": 123,
+    "title": "Analyze performance and improve conversions \u2014 round #25",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:44.748428",
+    "completed": "2026-04-16T12:20:45.225474"
+  },
+  {
+    "id": 124,
+    "title": "Update website with new features \u2014 round #25",
+    "status": "completed",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:20:44.763429",
+    "completed": "2026-04-16T12:20:45.244476"
+  },
+  {
+    "id": 125,
+    "title": "Review and enrich client database \u2014 round #25",
+    "status": "completed",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:44.776427",
+    "completed": "2026-04-16T12:20:45.262486"
+  },
+  {
+    "id": 126,
+    "title": "Optimize and improve the system \u2014 run #26",
+    "status": "pending",
+    "priority": "high",
+    "category": "system",
+    "created": "2026-04-16T12:20:45.288653",
+    "completed": null
+  },
+  {
+    "id": 127,
+    "title": "Generate new content \u2014 posts #76 to #78",
+    "status": "pending",
+    "priority": "high",
+    "category": "content",
+    "created": "2026-04-16T12:20:45.310851",
+    "completed": null
+  },
+  {
+    "id": 128,
+    "title": "Analyze performance and improve conversions \u2014 round #26",
+    "status": "pending",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:45.330148",
+    "completed": null
+  },
+  {
+    "id": 129,
+    "title": "Update website with new features \u2014 round #26",
+    "status": "pending",
+    "priority": "medium",
+    "category": "website",
+    "created": "2026-04-16T12:20:45.348560",
+    "completed": null
+  },
+  {
+    "id": 130,
+    "title": "Review and enrich client database \u2014 round #26",
+    "status": "pending",
+    "priority": "medium",
+    "category": "business",
+    "created": "2026-04-16T12:20:45.364562",
+    "completed": null
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "generated": "2026-04-16T12:04:48.501560",
+  "threads": [
+    {
+      "title": "Build in Public \u2014 myAI Architecture",
+      "tweets": [
+        "\ud83e\uddf5 I built an AI that runs an entire business autonomously.\n\nWebsite. Blog. Social media. Email. Video scripts. Analytics.\n\nAll on autopilot. Here's how:",
+        "1/ The Architecture:\n\nA central agent loop runs every cycle:\n\u2192 Load 5 pending tasks\n\u2192 Execute each one\n\u2192 Generate 5 new tasks\n\u2192 Log everything\n\u2192 Repeat\n\nIt's a self-perpetuating business engine.",
+        "2/ Website Generation:\n\nThe agent builds full HTML/CSS pages:\n\u2022 Landing page with animations & particles\n\u2022 About, Services, Pricing, Blog\n\u2022 Responsive design, dark theme\n\u2022 Lead capture forms\n\nAll generated from code. Zero manual design.",
+        "3/ Content Engine:\n\nEvery run produces:\n\u2022 SEO blog posts\n\u2022 Email campaigns\n\u2022 Social media posts (4 platforms)\n\u2022 Video scripts (YouTube + Reels)\n\u2022 Thumbnails\n\nContent is the fuel. AI is the engine.",
+        "4/ Video Marketing:\n\nThe agent writes:\n\u2022 Full YouTube scripts with timestamps\n\u2022 TikTok/Instagram Reels scripts\n\u2022 Content calendars\n\u2022 Hashtag strategies\n\nVideo is king. AI makes it scalable.",
+        "5/ The Business Model:\n\nStarter: $399/mo \u2014 1 agent, basic site\nPro: $999/mo \u2014 3 agents, full suite\nEnterprise: $2,499/mo \u2014 unlimited everything\n\n14-day free trial. No credit card.\n\nThe math works at scale. 1,000 Pro users = $1M/month.",
+        "6/ What's next:\n\n\u2192 Real hosting & deployment (Vercel/Netlify)\n\u2192 Stripe payment integration\n\u2192 Live AI chatbot\n\u2192 API access for enterprise\n\u2192 More platforms & integrations\n\nThis is just the beginning. Follow for updates.\n\nLink to try it: myai.com"
+      ]
+    }
+  ]
+}

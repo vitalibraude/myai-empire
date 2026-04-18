@@ -1,0 +1,9 @@
+{
+  "started": "2026-04-16T12:04:45.807914",
+  "completed": "2026-04-16T12:04:52.646496",
+  "elapsed_seconds": 6.8,
+  "phases_completed": 5,
+  "businesses_generated": 50,
+  "agent_runs": 5,
+  "status": "SUCCESS"
+}

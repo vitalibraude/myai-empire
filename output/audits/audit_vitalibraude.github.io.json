@@ -1,0 +1,67 @@
+{
+  "url": "https://aoeua.com/",
+  "audit_date": "2026-04-16T15:55:18.799621",
+  "overall_score": 88,
+  "grade": "B+",
+  "seo": {
+    "score": 88,
+    "grade": "B+",
+    "issues": [],
+    "warnings": [
+      "No favicon \u2014 looks unprofessional in browser tabs",
+      "No structured data \u2014 add Schema.org markup for rich snippets",
+      "Missing security headers: X-Frame-Options, X-Content-Type-Options",
+      "Thin content (279 words). Aim for 800+ words for SEO"
+    ],
+    "good": [
+      "Title length is optimal (35 chars)",
+      "Meta description length is good (122 chars)",
+      "Single H1 tag present",
+      "Uses H2 subheadings (3 found)",
+      "Viewport meta tag present (mobile-friendly)",
+      "HTTPS enabled",
+      "Fast load time (0.2s)",
+      "Open Graph tags present (good for social sharing)",
+      "Twitter Card tags present",
+      "Canonical URL set",
+      "HSTS header present",
+      "Links: 17 internal, 0 external"
+    ],
+    "stats": {
+      "title": "myAI \u00e2\u20ac\u201d Autonomous AI for Business",
+      "title_length": 35,
+      "meta_desc_length": 122,
+      "h1_count": 1,
+      "h2_count": 3,
+      "h3_count": 6,
+      "image_count": 0,
+      "images_without_alt": 0,
+      "word_count": 279,
+      "internal_links": 17,
+      "external_links": 0,
+      "scripts_count": 0,
+      "stylesheets_count": 0,
+      "load_time_sec": 0.17,
+      "page_size_kb": 19.7
+    }
+  },
+  "performance": {
+    "load_time": 0.166441,
+    "page_size_kb": 19.67578125,
+    "server": "GitHub.com",
+    "has_gzip": false
+  },
+  "security": {
+    "https": true,
+    "hsts": true,
+    "xframe": false,
+    "xcontent_type": false
+  },
+  "mobile": {
+    "has_viewport": true
+  },
+  "social": {
+    "og_tags": true,
+    "twitter_tags": true
+  }
+}

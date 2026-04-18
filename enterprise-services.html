@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enterprise Software Implementation — SAP, Priority, Microsoft 365, Azure | myAI</title>
+<meta name="description" content="Expert implementation of SAP Business One, Priority ERP, Monday.com, SharePoint, Microsoft 365 & Azure for UK manufacturers. Free consultation.">
+<meta property="og:title" content="Enterprise Software Implementation for UK Manufacturers">
+<meta property="og:description" content="SAP, Priority, Microsoft 365, Azure — implemented by experts. Free consultation.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://aoeua.com/enterprise-services.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How long does SAP Business One implementation take?","acceptedAnswer":{"@type":"Answer","text":"A typical SAP Business One implementation for a mid-size manufacturer takes 8-16 weeks, depending on complexity. We follow SAP's Accelerated Implementation methodology to deliver faster with fewer risks."}},
+{"@type":"Question","name":"What is Priority ERP and who is it for?","acceptedAnswer":{"@type":"Answer","text":"Priority ERP is a flexible, cloud-ready enterprise resource planning system popular with manufacturers, distributors, and service companies. It covers finance, supply chain, manufacturing, HR, CRM, and business intelligence in one platform."}},
+{"@type":"Question","name":"How much does Microsoft 365 implementation cost?","acceptedAnswer":{"@type":"Answer","text":"Microsoft 365 licensing starts from £4.60/user/month (Business Basic) to £18.50/user/month (E3). Implementation and migration services typically cost £2,000-£15,000 depending on user count, data migration complexity, and training requirements."}},
+{"@type":"Question","name":"Can you migrate our data from legacy systems?","acceptedAnswer":{"@type":"Answer","text":"Yes. We specialise in data migration from legacy ERP systems, spreadsheets, and on-premise servers to modern cloud platforms. We handle mapping, cleansing, validation, and parallel running to ensure zero data loss."}},
+{"@type":"Question","name":"Do you provide training for staff?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every implementation includes structured training programmes: admin training, super-user workshops, end-user sessions, and ongoing support documentation. We also offer refresher courses and new-starter onboarding packages."}}
+]}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.7}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:rgba(10,10,10,.95);border-bottom:1px solid #1a1a1a;position:fixed;top:0;left:0;right:0;z-index:100}
+.nav-brand{font-size:1.5rem;font-weight:800;background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{color:#a0a0a0;text-decoration:none;font-size:.95rem}
+.nav-links a:hover{color:#00d4ff}
+
+.hero{min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8rem 2rem 4rem;background:linear-gradient(135deg,#0a0a0a,#0d1117,#1a1a2e)}
+.hero h1{font-size:3rem;font-weight:900;background:linear-gradient(90deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.hero p{color:#888;font-size:1.2rem;max-width:700px;margin-bottom:2rem}
+.hero-badges{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
+.badge{background:#111;border:1px solid #222;border-radius:8px;padding:.5rem 1.2rem;color:#ccc;font-size:.85rem;font-weight:600}
+
+.cta-btn{display:inline-block;padding:1rem 2.5rem;background:linear-gradient(90deg,#00d4ff,#7b2ff7);color:#fff;text-decoration:none;border-radius:50px;font-weight:700;font-size:1.1rem;transition:transform .3s,box-shadow .3s}
+.cta-btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,212,255,.3)}
+.cta-secondary{display:inline-block;padding:1rem 2.5rem;border:2px solid #333;border-radius:50px;color:#aaa;text-decoration:none;font-weight:600;transition:all .3s}
+.cta-secondary:hover{border-color:#00d4ff;color:#00d4ff}
+
+.section{max-width:1100px;margin:0 auto;padding:5rem 2rem}
+.section-title{text-align:center;font-size:2.2rem;font-weight:800;color:#fff;margin-bottom:.5rem}
+.section-subtitle{text-align:center;color:#888;font-size:1.1rem;margin-bottom:3rem}
+
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+.product-card{background:#111;border:1px solid #222;border-radius:16px;padding:2rem;transition:transform .3s,border-color .3s}
+.product-card:hover{transform:translateY(-5px);border-color:#00d4ff40}
+.product-card .icon{font-size:2.5rem;margin-bottom:1rem}
+.product-card h3{color:#00d4ff;font-size:1.3rem;margin-bottom:.5rem}
+.product-card p{color:#999;font-size:.95rem;margin-bottom:1rem}
+.product-card ul{list-style:none;padding:0}
+.product-card ul li{color:#aaa;padding:.3rem 0;font-size:.9rem}
+.product-card ul li::before{content:"✓ ";color:#00cc66}
+.product-card .price{color:#7b2ff7;font-size:1.1rem;font-weight:700;margin-top:1rem}
+
+.process{background:#0d0d0d;padding:5rem 2rem}
+.process-steps{max-width:800px;margin:0 auto}
+.step{display:flex;gap:2rem;margin-bottom:2rem;align-items:flex-start}
+.step-number{background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;flex-shrink:0}
+.step-content h3{color:#fff;margin-bottom:.3rem}
+.step-content p{color:#888}
+
+.industries{padding:5rem 2rem;max-width:1100px;margin:0 auto}
+.industry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.industry-tag{background:#111;border:1px solid #222;border-radius:12px;padding:1rem;text-align:center;color:#ccc;font-size:.95rem;transition:border-color .3s}
+.industry-tag:hover{border-color:#7b2ff740}
+.industry-tag .emoji{font-size:1.5rem;display:block;margin-bottom:.3rem}
+
+.training-section{background:#0d0d0d;padding:5rem 2rem}
+.training-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+.training-card{background:#111;border:1px solid #222;border-radius:16px;padding:2rem}
+.training-card h3{color:#7b2ff7;margin-bottom:.5rem}
+.training-card p{color:#999;margin-bottom:1rem;font-size:.9rem}
+.training-card .duration{color:#00d4ff;font-size:.85rem;font-weight:600}
+
+.cta-section{text-align:center;padding:5rem 2rem;background:linear-gradient(135deg,#0d1117,#1a1a2e)}
+.cta-section h2{font-size:2rem;margin-bottom:1rem}
+.cta-section p{color:#888;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+
+.faq-section{max-width:800px;margin:0 auto;padding:5rem 2rem}
+.faq-item{background:#111;border:1px solid #222;border-radius:12px;padding:1.2rem;margin-bottom:1rem}
+.faq-item h3{color:#00d4ff;font-size:1rem;margin-bottom:.5rem}
+.faq-item p{color:#aaa;margin:0;font-size:.95rem}
+
+footer{text-align:center;padding:2rem;border-top:1px solid #1a1a1a;color:#555;font-size:.85rem}
+footer a{color:#00d4ff;text-decoration:none}
+
+@media(max-width:768px){
+.hero h1{font-size:2rem}
+.nav-links{display:none}
+.step{flex-direction:column;gap:1rem}
+.hero-badges{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<a href="/" class="nav-brand">myAI</a>
+<div class="nav-links">
+<a href="/free-audit.html">Free Audit</a>
+<a href="/enterprise-services.html" style="color:#00d4ff">Enterprise</a>
+<a href="/ai-tools.html">AI Tools</a>
+<a href="/blog/">Blog</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Enterprise Software Implementation</h1>
+<p>We implement SAP, Priority ERP, Monday.com, SharePoint, Microsoft 365 &amp; Azure for UK manufacturers and industrial businesses.</p>
+<div class="hero-badges">
+<span class="badge">&#127981; SAP Business One</span>
+<span class="badge">&#9889; Priority ERP</span>
+<span class="badge">&#128203; Monday.com</span>
+<span class="badge">&#128193; SharePoint</span>
+<span class="badge">&#9729;&#65039; Microsoft 365</span>
+<span class="badge">&#128311; Azure Cloud</span>
+</div>
+<div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center">
+<a href="#contact" class="cta-btn">Free Consultation &#8594;</a>
+<a href="#products" class="cta-secondary">See Services</a>
+</div>
+</section>
+
+<section class="section" id="products">
+<h2 class="section-title">Our Implementation Services</h2>
+<p class="section-subtitle">End-to-end deployment, migration, training &amp; support</p>
+
+<div class="products-grid">
+
+<div class="product-card">
+<div class="icon">&#127981;</div>
+<h3>SAP Business One</h3>
+<p>Complete ERP for mid-size manufacturers. Finance, production planning, inventory, MRP, quality management and shop floor control.</p>
+<ul>
+<li>Needs assessment &amp; gap analysis</li>
+<li>System configuration &amp; customisation</li>
+<li>Data migration from legacy systems</li>
+<li>Integration with existing tools</li>
+<li>Go-live support &amp; hypercare</li>
+</ul>
+<div class="price">From &#163;15,000</div>
+</div>
+
+<div class="product-card">
+<div class="icon">&#9889;</div>
+<h3>Priority ERP</h3>
+<p>Flexible cloud-ready ERP with deep manufacturing capabilities. BOM management, work orders, scheduling, quality control and full traceability.</p>
+<ul>
+<li>Cloud or on-premise deployment</li>
+<li>Manufacturing module setup</li>
+<li>Supply chain optimisation</li>
+<li>Custom reports &amp; dashboards</li>
+<li>API integrations</li>
+</ul>
+<div class="price">From &#163;8,000</div>
+</div>
+
+<div class="product-card">
+<div class="icon">&#128203;</div>
+<h3>Monday.com</h3>
+<p>Work management platform for production tracking, project management, and team collaboration. Visual boards, automations and integrations.</p>
+<ul>
+<li>Workspace design &amp; setup</li>
+<li>Custom board templates</li>
+<li>Automation workflows</li>
+<li>Integration with ERP/CRM</li>
+<li>Team training (all levels)</li>
+</ul>
+<div class="price">From &#163;2,000</div>
+</div>
+
+<div class="product-card">
+<div class="icon">&#128193;</div>
+<h3>SharePoint &amp; Intranet</h3>
+<p>Document management, company intranet, SOPs, quality documents, and team collaboration — all within Microsoft's ecosystem.</p>
+<ul>
+<li>Intranet site design</li>
+<li>Document library architecture</li>
+<li>Permission &amp; compliance setup</li>
+<li>Power Automate workflows</li>
+<li>Migration from file servers</li>
+</ul>
+<div class="price">From &#163;3,000</div>
+</div>
+
+<div class="product-card">
+<div class="icon">&#9729;&#65039;</div>
+<h3>Microsoft 365</h3>
+<p>Full Microsoft 365 deployment — Exchange, Teams, OneDrive, Outlook, and Office apps. Licensing, migration, security and governance.</p>
+<ul>
+<li>Licensing optimisation</li>
+<li>Email migration (any source)</li>
+<li>Teams setup &amp; governance</li>
+<li>Security &amp; compliance policies</li>
+<li>User onboarding programme</li>
+</ul>
+<div class="price">From &#163;2,500</div>
+</div>
+
+<div class="product-card">
+<div class="icon">&#128311;</div>
+<h3>Azure Cloud</h3>
+<p>Cloud infrastructure for manufacturing: VMs, Azure SQL, IoT Hub, AI/ML workloads, backup, disaster recovery, and hybrid connectivity.</p>
+<ul>
+<li>Cloud architecture design</li>
+<li>Server &amp; app migration</li>
+<li>Azure AD &amp; identity management</li>
+<li>Backup &amp; disaster recovery</li>
+<li>Cost optimisation &amp; monitoring</li>
+</ul>
+<div class="price">From &#163;5,000</div>
+</div>
+
+</div>
+</section>
+
+<section class="process">
+<h2 class="section-title">Our Implementation Process</h2>
+<p class="section-subtitle">Proven methodology — on time, on budget</p>
+<div class="process-steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<div class="step-content">
+<h3>Discovery &amp; Assessment</h3>
+<p>We audit your current systems, processes, and pain points. Map requirements. Define scope, timeline, and budget. Free, no obligation.</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<div class="step-content">
+<h3>Solution Design</h3>
+<p>Architect the solution. Configure modules. Design data migration plan. Build integration specs. Sign off on detailed project plan.</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<div class="step-content">
+<h3>Build &amp; Configure</h3>
+<p>Set up the system. Migrate data. Build custom reports. Configure automations. Integrate with your existing tools.</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<div class="step-content">
+<h3>Test &amp; Train</h3>
+<p>UAT with your team. Fix issues. Run structured training: admins, super-users, end-users. Create SOPs and help docs.</p>
+</div>
+</div>
+
+<div class="step">
+<div class="step-number">5</div>
+<div class="step-content">
+<h3>Go-Live &amp; Support</h3>
+<p>Controlled go-live with parallel running. 4-week hypercare. Ongoing support package. Quarterly reviews and optimisation.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="industries">
+<h2 class="section-title">Industries We Serve</h2>
+<p class="section-subtitle">Deep expertise in UK manufacturing and industrial sectors</p>
+<div class="industry-grid">
+<div class="industry-tag"><span class="emoji">&#127981;</span>General Manufacturing</div>
+<div class="industry-tag"><span class="emoji">&#128295;</span>Engineering &amp; Precision</div>
+<div class="industry-tag"><span class="emoji">&#127838;</span>Food &amp; Beverage</div>
+<div class="industry-tag"><span class="emoji">&#128138;</span>Pharmaceuticals</div>
+<div class="industry-tag"><span class="emoji">&#129514;</span>Chemicals</div>
+<div class="industry-tag"><span class="emoji">&#128663;</span>Automotive Parts</div>
+<div class="industry-tag"><span class="emoji">&#9992;&#65039;</span>Aerospace</div>
+<div class="industry-tag"><span class="emoji">&#128268;</span>Electronics</div>
+<div class="industry-tag"><span class="emoji">&#128230;</span>Packaging</div>
+<div class="industry-tag"><span class="emoji">&#129717;</span>Timber &amp; Furniture</div>
+<div class="industry-tag"><span class="emoji">&#128087;</span>Textiles &amp; Fashion</div>
+<div class="industry-tag"><span class="emoji">&#129521;</span>Building Materials</div>
+<div class="industry-tag"><span class="emoji">&#9881;&#65039;</span>Industrial Equipment</div>
+<div class="industry-tag"><span class="emoji">&#128297;</span>Metal Fabrication</div>
+<div class="industry-tag"><span class="emoji">&#129524;</span>Cosmetics &amp; Personal Care</div>
+<div class="industry-tag"><span class="emoji">&#9851;&#65039;</span>Recycling &amp; Waste</div>
+</div>
+</section>
+
+<section class="training-section">
+<h2 class="section-title">Training Programmes</h2>
+<p class="section-subtitle">Structured training for every level — from shop floor to boardroom</p>
+<div class="training-grid">
+
+<div class="training-card">
+<h3>SAP Business One Training</h3>
+<p>Complete user training: navigation, transactions, reporting, production planning, MRP runs, and inventory management.</p>
+<div class="duration">&#128197; 3-5 days · On-site or remote</div>
+</div>
+
+<div class="training-card">
+<h3>Priority ERP Training</h3>
+<p>Module-specific training: finance, purchasing, sales, manufacturing, warehouse, and custom report building.</p>
+<div class="duration">&#128197; 3-5 days · On-site or remote</div>
+</div>
+
+<div class="training-card">
+<h3>Monday.com Mastery</h3>
+<p>Board design, automation recipes, integrations, dashboards, and admin management. Interactive hands-on workshops.</p>
+<div class="duration">&#128197; 1-2 days · On-site or remote</div>
+</div>
+
+<div class="training-card">
+<h3>Microsoft 365 &amp; Teams</h3>
+<p>Office apps, Teams collaboration, OneDrive/SharePoint, Outlook, and Power Platform basics for everyday productivity.</p>
+<div class="duration">&#128197; 1-2 days · On-site or remote</div>
+</div>
+
+<div class="training-card">
+<h3>SharePoint Admin &amp; Power User</h3>
+<p>Site creation, document management, permissions, Power Automate flows, and custom lists for business processes.</p>
+<div class="duration">&#128197; 2-3 days · On-site or remote</div>
+</div>
+
+<div class="training-card">
+<h3>Azure Fundamentals</h3>
+<p>Cloud concepts, Azure portal navigation, VM management, Azure AD, backup management, and cost monitoring.</p>
+<div class="duration">&#128197; 2-3 days · On-site or remote</div>
+</div>
+
+</div>
+</section>
+
+<section class="cta-section" id="contact">
+<h2>Ready to Modernise Your Operations?</h2>
+<p>Book a free 30-minute discovery call. We'll assess your current systems and show you exactly how we can help — with a clear timeline and budget.</p>
+<a href="/book-consultation.html" class="cta-btn">Book Free Consultation &#8594;</a>
+<p style="margin-top:1rem;color:#666;font-size:.9rem">Or email us directly: <a href="mailto:info@aoeua.com" style="color:#00d4ff">info@aoeua.com</a></p>
+</section>
+
+<section class="faq-section">
+<h2 class="section-title" style="margin-bottom:2rem">FAQ</h2>
+
+<div class="faq-item">
+<h3>How long does SAP Business One implementation take?</h3>
+<p>A typical SAP Business One implementation for a mid-size manufacturer takes 8-16 weeks, depending on complexity. We follow SAP's Accelerated Implementation methodology.</p>
+</div>
+
+<div class="faq-item">
+<h3>What is Priority ERP and who is it for?</h3>
+<p>Priority ERP is a flexible, cloud-ready enterprise resource planning system for manufacturers, distributors, and service companies. It covers finance, supply chain, manufacturing, HR, CRM, and BI.</p>
+</div>
+
+<div class="faq-item">
+<h3>How much does Microsoft 365 implementation cost?</h3>
+<p>Microsoft 365 licensing starts from £4.60/user/month. Implementation and migration services typically cost £2,000-£15,000 depending on user count and complexity.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can you migrate our data from legacy systems?</h3>
+<p>Yes. We specialise in data migration from legacy ERP systems, spreadsheets, and on-premise servers. We handle mapping, cleansing, validation, and parallel running.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you provide training for staff?</h3>
+<p>Every implementation includes structured training: admin training, super-user workshops, end-user sessions, and ongoing support documentation.</p>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 <a href="https://aoeua.com">myAI</a> · <a href="mailto:info@aoeua.com">info@aoeua.com</a> · <a href="/blog/">Blog</a> · <a href="/enterprise-services.html">Enterprise</a></p>
+</footer>
+</body>
+</html>

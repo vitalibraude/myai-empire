@@ -1,0 +1,114 @@
+{
+  "generated": "2026-04-16T12:04:52.301495",
+  "scripts": [
+    {
+      "id": "reel_001",
+      "platforms": [
+        "tiktok",
+        "instagram_reels",
+        "youtube_shorts"
+      ],
+      "title": "POV: Your business runs itself",
+      "duration": "30 sec",
+      "script": "POV: You wake up and check your phone...\n[Show notification: '15 new leads captured']\n[Show notification: '3 blog posts published']\n[Show notification: 'Social media posted to 4 platforms']\n[Show notification: 'Revenue up 23% this week']\n...and your AI agent did it all while you slept.\n[Text overlay: 'myAI \u2014 Your business on autopilot']",
+      "hashtags": [
+        "#AIbusiness",
+        "#automation",
+        "#entrepreneurlife",
+        "#passiveincome",
+        "#techstartup",
+        "#aitools",
+        "#businessautomation"
+      ],
+      "music_suggestion": "Trending upbeat lo-fi or tech beat",
+      "style": "screen_recording_with_overlays"
+    },
+    {
+      "id": "reel_002",
+      "platforms": [
+        "tiktok",
+        "instagram_reels",
+        "youtube_shorts"
+      ],
+      "title": "Things AI agents can do that most people don't know",
+      "duration": "45 sec",
+      "script": "Things AI agents can do that most people don't know:\n1. Build your entire website from scratch [show website generating]\n2. Write and publish blog posts daily [show blog posts]\n3. Create marketing videos and thumbnails [show assets]\n4. Manage all your social media [show dashboard]\n5. Handle customer service 24/7 [show chatbot]\n6. Generate revenue reports weekly [show charts]\n...and it costs less than one employee.\n[Text: 'Link in bio for free trial']",
+      "hashtags": [
+        "#AI",
+        "#didyouknow",
+        "#businesstips",
+        "#automation",
+        "#techtools",
+        "#marketing",
+        "#growth"
+      ],
+      "music_suggestion": "Dramatic reveal / list trend audio",
+      "style": "text_overlay_with_broll"
+    },
+    {
+      "id": "reel_003",
+      "platforms": [
+        "tiktok",
+        "instagram_reels",
+        "youtube_shorts"
+      ],
+      "title": "My morning routine as an AI-powered business owner",
+      "duration": "25 sec",
+      "script": "My morning routine as a business owner:\n6:00 AM \u2014 Wake up naturally (no alarm) \u2615\n6:15 AM \u2014 Check AI dashboard \u2014 everything's running\n6:20 AM \u2014 Review overnight metrics \u2014 12 new leads\n6:25 AM \u2014 Approve AI-generated content for the day\n6:30 AM \u2014 Done. Time for yoga.\nThe AI handles the rest.\n[Text: '@myai \u2014 automation that actually works']",
+      "hashtags": [
+        "#morningroutine",
+        "#CEO",
+        "#AIautomation",
+        "#lifestyle",
+        "#techengineer",
+        "#buildInPublic",
+        "#startup"
+      ],
+      "music_suggestion": "Chill morning vibe / aesthetic routine audio",
+      "style": "lifestyle_vlog"
+    },
+    {
+      "id": "reel_004",
+      "platforms": [
+        "tiktok",
+        "instagram_reels"
+      ],
+      "title": "Hiring an employee vs. using AI \ud83e\udd16",
+      "duration": "20 sec",
+      "script": "Hiring an employee:\n\u274c $4,000/month salary\n\u274c 40 hours/week max\n\u274c Sick days, vacations\n\u274c Training needed\n\nUsing myAI:\n\u2705 $399/month\n\u2705 Works 24/7/365\n\u2705 Never calls in sick\n\u2705 Self-learning\n\nThe choice is obvious.\n[Text: 'Start free trial \u2014 link in bio']",
+      "hashtags": [
+        "#AIvsHuman",
+        "#businesshack",
+        "#startup",
+        "#entrepreneurship",
+        "#costcutting",
+        "#hiring",
+        "#AItools"
+      ],
+      "music_suggestion": "Comparison trend audio",
+      "style": "split_screen_comparison"
+    },
+    {
+      "id": "reel_005",
+      "platforms": [
+        "tiktok",
+        "instagram_reels",
+        "youtube_shorts"
+      ],
+      "title": "Watch AI build a website in 60 seconds",
+      "duration": "60 sec",
+      "script": "[Screen recording with timer overlay]\n0:00 \u2014 Run the command: python run.py\n0:10 \u2014 Agent starts executing tasks from queue\n0:20 \u2014 Landing page generated with full design\n0:30 \u2014 Blog posts created and published\n0:40 \u2014 Pricing page with 3 tiers\n0:50 \u2014 Email templates generated\n0:55 \u2014 5 new tasks queued for next run\n1:00 \u2014 Done. Full business website. From zero.\n[Text: 'This is myAI. Link in bio.']",
+      "hashtags": [
+        "#speedrun",
+        "#webdev",
+        "#AI",
+        "#coding",
+        "#automation",
+        "#nocode",
+        "#buildinpublic"
+      ],
+      "music_suggestion": "Fast-paced electronic / racing countdown",
+      "style": "screen_recording_timelapse"
+    }
+  ]
+}

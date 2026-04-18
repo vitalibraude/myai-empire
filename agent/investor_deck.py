@@ -1,0 +1,436 @@
+import os
+import json
+from datetime import datetime
+
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '..', 'output', 'website')
+
+
+def ensure_dir():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+
+def generate_investor_page(config):
+    """Generate a professional investor pitch page."""
+    ensure_dir()
+    year = datetime.now().year
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest in myAI — The Autonomous Business Platform</title>
+    <style>
+        * {{ margin:0; padding:0; box-sizing:border-box; }}
+        body {{
+            font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
+            background:#0a0a0a; color:#e0e0e0; line-height:1.7;
+        }}
+        .nav {{
+            display:flex; justify-content:space-between; align-items:center;
+            padding:1rem 3rem; background:rgba(10,10,10,.95);
+            border-bottom:1px solid #1a1a1a; position:fixed; top:0; left:0; right:0; z-index:100;
+        }}
+        .nav-brand {{
+            font-size:1.5rem; font-weight:800;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+        }}
+        .nav-links a {{ color:#a0a0a0; text-decoration:none; margin-left:2rem; }}
+        .nav-links a:hover {{ color:#00d4ff; }}
+
+        .hero {{
+            min-height:100vh; display:flex; flex-direction:column;
+            justify-content:center; align-items:center; text-align:center;
+            padding:8rem 2rem 4rem;
+            background:linear-gradient(135deg,#0a0a0a 0%,#0d1b2a 50%,#1b2838 100%);
+        }}
+        .hero-badge {{
+            display:inline-block; padding:.5rem 1.5rem; border-radius:50px;
+            background:rgba(0,212,255,.1); border:1px solid rgba(0,212,255,.3);
+            color:#00d4ff; font-size:.9rem; font-weight:600; margin-bottom:2rem;
+        }}
+        .hero h1 {{
+            font-size:4rem; font-weight:900; max-width:900px;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7,#ff6b6b);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            margin-bottom:1.5rem;
+        }}
+        .hero p {{ font-size:1.3rem; color:#888; max-width:700px; margin-bottom:2rem; }}
+        .hero-stats {{
+            display:flex; gap:4rem; margin:2rem 0;
+        }}
+        .hero-stat {{ text-align:center; }}
+        .hero-stat .num {{ font-size:3rem; font-weight:800; color:#00d4ff; }}
+        .hero-stat .lbl {{ color:#666; font-size:.9rem; }}
+        .cta-btn {{
+            display:inline-block; padding:1.1rem 3rem; border-radius:50px;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            color:white; text-decoration:none; font-weight:700; font-size:1.1rem;
+            transition:transform .3s,box-shadow .3s;
+        }}
+        .cta-btn:hover {{
+            transform:translateY(-3px);
+            box-shadow:0 10px 30px rgba(0,212,255,.3);
+        }}
+
+        section {{ padding:5rem 2rem; }}
+        .container {{ max-width:1000px; margin:0 auto; }}
+        .section-title {{
+            text-align:center; font-size:2.5rem; margin-bottom:.5rem; color:#00d4ff;
+        }}
+        .section-sub {{ text-align:center; color:#666; margin-bottom:3rem; font-size:1.1rem; }}
+
+        .opportunity {{ background:#0d0d0d; }}
+        .opp-grid {{
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem;
+        }}
+        .opp-card {{
+            background:#111; border:1px solid #222; border-radius:16px; padding:2rem;
+            transition:transform .3s;
+        }}
+        .opp-card:hover {{ transform:translateY(-5px); }}
+        .opp-card .icon {{ font-size:3rem; margin-bottom:1rem; }}
+        .opp-card h3 {{ color:#7b2ff7; margin-bottom:.5rem; }}
+        .opp-card p {{ color:#888; font-size:.95rem; }}
+
+        .metrics-grid {{
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:1.5rem; margin:2rem 0;
+        }}
+        .metric {{
+            background:#111; border:1px solid #222; border-radius:16px;
+            padding:2rem; text-align:center;
+        }}
+        .metric .value {{ font-size:2.5rem; font-weight:800; color:#00d4ff; }}
+        .metric .label {{ color:#666; font-size:.9rem; margin-top:.3rem; }}
+
+        .roadmap {{ background:#0d0d0d; }}
+        .timeline {{ max-width:700px; margin:0 auto; position:relative; padding-left:3rem; }}
+        .timeline::before {{
+            content:''; position:absolute; left:0; top:0; bottom:0; width:2px;
+            background:linear-gradient(to bottom,#00d4ff,#7b2ff7);
+        }}
+        .tl-item {{ margin-bottom:2.5rem; position:relative; }}
+        .tl-item::before {{
+            content:''; position:absolute; left:-3.4rem; top:.4rem;
+            width:14px; height:14px; border-radius:50%;
+            background:#7b2ff7; border:3px solid #0a0a0a;
+        }}
+        .tl-item .date {{ color:#00d4ff; font-weight:700; font-size:1.1rem; }}
+        .tl-item .desc {{ color:#999; margin-top:.3rem; }}
+        .tl-item.done .date::after {{ content:' \\2713'; color:#00ff88; }}
+
+        .unit-econ {{ background:#111; border:1px solid #222; border-radius:16px; padding:2.5rem; margin:2rem 0; }}
+        .unit-econ h3 {{ color:#00d4ff; margin-bottom:1rem; font-size:1.3rem; }}
+        .econ-row {{ display:flex; justify-content:space-between; padding:.6rem 0; border-bottom:1px solid #1a1a1a; }}
+        .econ-row .lbl {{ color:#888; }}
+        .econ-row .val {{ color:#e0e0e0; font-weight:600; }}
+        .econ-row.highlight .val {{ color:#00d4ff; font-size:1.2rem; }}
+
+        .ask {{ background:#0d0d0d; text-align:center; }}
+        .ask-amount {{
+            font-size:4rem; font-weight:900;
+            background:linear-gradient(90deg,#00d4ff,#7b2ff7);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            margin:1rem 0;
+        }}
+        .ask-details {{ color:#888; max-width:600px; margin:0 auto 2rem; }}
+        .use-of-funds {{ max-width:500px; margin:2rem auto; text-align:left; }}
+        .fund-item {{
+            display:flex; justify-content:space-between; padding:.8rem 0;
+            border-bottom:1px solid #1a1a1a;
+        }}
+        .fund-item .purpose {{ color:#a0a0a0; }}
+        .fund-item .pct {{ color:#00d4ff; font-weight:700; }}
+
+        .contact-section {{ text-align:center; }}
+        .contact-form {{
+            max-width:500px; margin:2rem auto; display:flex; flex-direction:column; gap:1rem;
+        }}
+        .contact-form input, .contact-form textarea, .contact-form select {{
+            padding:1rem; background:#1a1a1a; border:1px solid #333;
+            border-radius:12px; color:#e0e0e0; font-size:1rem;
+        }}
+        .contact-form input:focus, .contact-form textarea:focus {{ outline:none; border-color:#7b2ff7; }}
+
+        footer {{
+            text-align:center; padding:3rem 2rem; color:#444; font-size:.85rem;
+            border-top:1px solid #1a1a1a;
+        }}
+        footer a {{ color:#00d4ff; text-decoration:none; }}
+
+        @media(max-width:768px) {{
+            .hero h1 {{ font-size:2.5rem; }}
+            .hero-stats {{ flex-direction:column; gap:1rem; }}
+            .nav-links {{ display:none; }}
+        }}
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-brand">&#x1F916; myAI</div>
+        <div class="nav-links">
+            <a href="index.html">Product</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="#opportunity">Opportunity</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#invest">Invest</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge">&#x1F4C8; Seed Round — Now Open</div>
+        <h1>The Future of Business Is Autonomous</h1>
+        <p>myAI is building the world's first fully autonomous AI platform that runs entire businesses — from website creation to marketing to revenue generation — without human intervention.</p>
+        <div class="hero-stats">
+            <div class="hero-stat"><div class="num">$500B+</div><div class="lbl">TAM by 2027</div></div>
+            <div class="hero-stat"><div class="num">10x</div><div class="lbl">Cost Reduction</div></div>
+            <div class="hero-stat"><div class="num">24/7</div><div class="lbl">Autonomous Ops</div></div>
+            <div class="hero-stat"><div class="num">4</div><div class="lbl">Runs Completed</div></div>
+        </div>
+        <a href="#invest" class="cta-btn">View Investment Opportunity</a>
+    </section>
+
+    <section class="opportunity" id="opportunity">
+        <div class="container">
+            <h2 class="section-title">The Opportunity</h2>
+            <p class="section-sub">Why autonomous AI platforms will be the biggest SaaS category of the decade</p>
+            <div class="opp-grid">
+                <div class="opp-card">
+                    <div class="icon">&#x1F4CA;</div>
+                    <h3>Massive Market</h3>
+                    <p>The AI automation market is projected to reach $500B+ by 2027 (McKinsey). Every business needs automation — most can't afford enterprise solutions.</p>
+                </div>
+                <div class="opp-card">
+                    <div class="icon">&#x26A1;</div>
+                    <h3>Perfect Timing</h3>
+                    <p>LLMs reached production-grade quality in 2024-2025. Autonomous agents are the natural next step. We're building at the inflection point.</p>
+                </div>
+                <div class="opp-card">
+                    <div class="icon">&#x1F3AF;</div>
+                    <h3>Unfair Advantage</h3>
+                    <p>Our self-improving agent loop is a compounding moat. Every run makes the system smarter. Competitors start from zero — we start from thousands of optimized cycles.</p>
+                </div>
+                <div class="opp-card">
+                    <div class="icon">&#x1F4B0;</div>
+                    <h3>SaaS Economics</h3>
+                    <p>90%+ gross margins. Recurring monthly revenue. Low churn (businesses can't go back to manual). CAC recovery in &lt;2 months through content marketing.</p>
+                </div>
+                <div class="opp-card">
+                    <div class="icon">&#x1F310;</div>
+                    <h3>Global from Day 1</h3>
+                    <p>English-first platform targeting 200M+ small businesses worldwide. No geographic limitations. Digital product = instant delivery anywhere.</p>
+                </div>
+                <div class="opp-card">
+                    <div class="icon">&#x1F680;</div>
+                    <h3>Built-in Distribution</h3>
+                    <p>The product creates its own marketing: AI generates blog posts, social media, videos, and SEO content automatically. Zero marginal cost for user acquisition content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="traction">
+        <div class="container">
+            <h2 class="section-title">Traction &amp; Metrics</h2>
+            <p class="section-sub">What we've built in the first sprint</p>
+            <div class="metrics-grid">
+                <div class="metric"><div class="value">7</div><div class="label">Modules Built</div></div>
+                <div class="metric"><div class="value">6</div><div class="label">Website Pages</div></div>
+                <div class="metric"><div class="value">6</div><div class="label">Blog Posts</div></div>
+                <div class="metric"><div class="value">3</div><div class="label">YouTube Scripts</div></div>
+                <div class="metric"><div class="value">5</div><div class="label">Reels Scripts</div></div>
+                <div class="metric"><div class="value">12+</div><div class="label">Social Posts</div></div>
+                <div class="metric"><div class="value">3</div><div class="label">Email Templates</div></div>
+                <div class="metric"><div class="value">4</div><div class="label">Agent Runs</div></div>
+            </div>
+
+            <div class="unit-econ">
+                <h3>&#x1F4B0; Unit Economics (Projected)</h3>
+                <div class="econ-row"><span class="lbl">Average Revenue Per User (ARPU)</span><span class="val">$999/mo (Pro plan)</span></div>
+                <div class="econ-row"><span class="lbl">Customer Acquisition Cost (CAC)</span><span class="val">$200 (content marketing)</span></div>
+                <div class="econ-row"><span class="lbl">CAC Payback Period</span><span class="val">&lt; 1 month</span></div>
+                <div class="econ-row"><span class="lbl">Gross Margin</span><span class="val">90%+</span></div>
+                <div class="econ-row"><span class="lbl">Expected LTV (24-month avg)</span><span class="val">$18,000+</span></div>
+                <div class="econ-row"><span class="lbl">LTV:CAC Ratio</span><span class="val">90:1</span></div>
+                <div class="econ-row highlight"><span class="lbl">1,000 Pro customers =</span><span class="val">$12M ARR</span></div>
+                <div class="econ-row highlight"><span class="lbl">10,000 Mixed customers =</span><span class="val">$84M ARR</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+            <h2 class="section-title">Roadmap</h2>
+            <p class="section-sub">From MVP to market dominance</p>
+            <div class="timeline">
+                <div class="tl-item done">
+                    <div class="date">Q1-Q2 2026 — Foundation (DONE)</div>
+                    <div class="desc">Core agent loop, website generator, blog engine, CRM, email system, market analysis module. 4 successful automated runs.</div>
+                </div>
+                <div class="tl-item done">
+                    <div class="date">Q2 2026 — Marketing Engine (DONE)</div>
+                    <div class="desc">Video marketing (YouTube + Reels/TikTok), social media automation (4 platforms), content calendar, thumbnail generator, investor pitch.</div>
+                </div>
+                <div class="tl-item">
+                    <div class="date">Q2 2026 — Payment &amp; Launch</div>
+                    <div class="desc">Stripe integration, live checkout, hosting deployment (Vercel/Netlify), domain setup, first paying customers.</div>
+                </div>
+                <div class="tl-item">
+                    <div class="date">Q3 2026 — Growth</div>
+                    <div class="desc">AI chatbot for customer support, admin dashboard, advanced analytics, enterprise API. Target: 100 paying customers.</div>
+                </div>
+                <div class="tl-item">
+                    <div class="date">Q4 2026 — Scale</div>
+                    <div class="desc">Multi-tenant SaaS platform, white-label offering, partner integrations (Shopify, WordPress, HubSpot). Target: 1,000 customers.</div>
+                </div>
+                <div class="tl-item">
+                    <div class="date">2027 — Series A</div>
+                    <div class="desc">International expansion, AI model fine-tuning, enterprise sales team, $50M+ ARR target.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ask" id="invest">
+        <div class="container">
+            <h2 class="section-title">Investment Opportunity</h2>
+            <p class="section-sub">Seed Round — Building the autonomous business platform</p>
+            <div class="ask-amount">$2M Seed Round</div>
+            <p class="ask-details">
+                We're raising $2M to take myAI from working prototype to revenue-generating SaaS platform.
+                The technology works. The market is massive. We need capital to deploy, acquire customers, and scale.
+            </p>
+
+            <div class="use-of-funds">
+                <h3 style="color:#00d4ff; text-align:center; margin-bottom:1rem;">Use of Funds</h3>
+                <div class="fund-item"><span class="purpose">Engineering &amp; AI Infrastructure</span><span class="pct">40%</span></div>
+                <div class="fund-item"><span class="purpose">Marketing &amp; Customer Acquisition</span><span class="pct">25%</span></div>
+                <div class="fund-item"><span class="purpose">Sales &amp; Partnerships</span><span class="pct">15%</span></div>
+                <div class="fund-item"><span class="purpose">Operations &amp; Legal</span><span class="pct">10%</span></div>
+                <div class="fund-item"><span class="purpose">Reserve / Runway</span><span class="pct">10%</span></div>
+            </div>
+
+            <a href="#contact-investor" class="cta-btn" style="margin-top:2rem;">Schedule a Call</a>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-investor">
+        <div class="container">
+            <h2 class="section-title">Let's Talk</h2>
+            <p class="section-sub">Interested in investing? Get in touch.</p>
+            <form class="contact-form" onsubmit="handleInvestorContact(event)">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Fund / Organization">
+                <select>
+                    <option value="">Investment Range</option>
+                    <option>$25K - $100K</option>
+                    <option>$100K - $500K</option>
+                    <option>$500K - $1M</option>
+                    <option>$1M+</option>
+                </select>
+                <textarea placeholder="What interests you about myAI?" rows="4"></textarea>
+                <button type="submit" class="cta-btn">Send Interest</button>
+            </form>
+            <div id="investorSuccess" style="display:none; margin-top:2rem; padding:2rem; background:rgba(0,212,255,.05); border:1px solid #00d4ff; border-radius:12px;">
+                <h3 style="color:#00d4ff;">&#x2705; Thank you for your interest!</h3>
+                <p style="color:#888; margin-top:.5rem;">We'll respond within 24 hours with our full pitch deck and financials.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; {year} myAI Inc. &middot; <a href="index.html">Home</a> &middot; <a href="pricing.html">Pricing</a> &middot; <a href="about.html">About</a></p>
+        <p style="margin-top:.5rem;">Building the future of autonomous business.</p>
+    </footer>
+
+    <script>
+        function handleInvestorContact(e) {{
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const leads = JSON.parse(localStorage.getItem('myai_investors') || '[]');
+            leads.push({{
+                timestamp: new Date().toISOString(),
+                type: 'investor_inquiry'
+            }});
+            localStorage.setItem('myai_investors', JSON.stringify(leads));
+            e.target.style.display = 'none';
+            document.getElementById('investorSuccess').style.display = 'block';
+        }}
+    </script>
+</body>
+</html>"""
+
+    path = os.path.join(OUTPUT_DIR, 'investors.html')
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(html)
+    return path
+
+
+def generate_pitch_deck_data(config):
+    """Generate structured pitch deck data for investor presentations."""
+    deck = {
+        "generated": datetime.now().isoformat(),
+        "company": "myAI Inc.",
+        "tagline": "Autonomous AI That Runs Your Business",
+        "slides": [
+            {
+                "slide": 1,
+                "title": "The Problem",
+                "content": "Small and mid-size businesses spend 60+ hours/week on repetitive operations: marketing, content creation, customer service, website management, and reporting. They can't afford to hire full teams, and existing tools require constant manual input."
+            },
+            {
+                "slide": 2,
+                "title": "The Solution",
+                "content": "myAI is a fully autonomous AI platform that runs business operations end-to-end. One command starts a self-improving loop that handles website creation, content marketing, video production, social media, email campaigns, and customer management — 24/7, without human intervention."
+            },
+            {
+                "slide": 3,
+                "title": "Market Opportunity",
+                "content": "TAM: $500B+ (AI automation market by 2027, McKinsey). SAM: $50B (SMB automation SaaS). SOM: $500M (English-speaking SMBs seeking full automation). 200M+ small businesses globally need affordable automation."
+            },
+            {
+                "slide": 4,
+                "title": "Product",
+                "content": "7 autonomous modules: Website Generator, Blog Engine, Video Marketing (YouTube + Reels/TikTok), Social Media (Twitter, LinkedIn, Instagram, TikTok), Email System, CRM, Analytics. Self-improving agent loop — every run makes the system smarter."
+            },
+            {
+                "slide": 5,
+                "title": "Business Model",
+                "content": "SaaS with 3 tiers: Starter ($399/mo), Pro ($999/mo), Enterprise ($2,499/mo). 14-day free trial. 90%+ gross margins. Projected LTV:CAC ratio of 90:1."
+            },
+            {
+                "slide": 6,
+                "title": "Traction",
+                "content": "Working prototype with 7 modules. 4 successful autonomous runs. 6 website pages, 6 blog posts, 3 YouTube scripts, 5 Reels scripts, 12+ social posts, 3 email templates, content calendar, CRM — all generated autonomously."
+            },
+            {
+                "slide": 7,
+                "title": "Competitive Advantage",
+                "content": "1. Full autonomy (competitors require manual input). 2. Self-improving loop (compounding moat). 3. All-in-one platform (vs. point solutions). 4. Built-in distribution (AI creates its own marketing content at zero marginal cost). 5. 10x cheaper than hiring."
+            },
+            {
+                "slide": 8,
+                "title": "Revenue Projections",
+                "content": "Year 1: 500 customers → $4.2M ARR. Year 2: 5,000 customers → $42M ARR. Year 3: 20,000 customers → $168M ARR. Path to $1B ARR in 5 years with enterprise expansion and international markets."
+            },
+            {
+                "slide": 9,
+                "title": "The Ask",
+                "content": "$2M Seed Round. Use of funds: 40% Engineering, 25% Marketing, 15% Sales, 10% Operations, 10% Reserve. 18-month runway to reach $5M ARR and Series A readiness."
+            },
+            {
+                "slide": 10,
+                "title": "Why Now",
+                "content": "LLMs reached production quality in 2024-2025. Autonomous agents are the logical next step. First-mover advantage in autonomous business platforms. The window to capture this market is 12-18 months."
+            }
+        ]
+    }
+
+    path = os.path.join(os.path.dirname(__file__), '..', 'output', 'marketing', 'pitch_deck.json')
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(deck, f, indent=2)
+    return path

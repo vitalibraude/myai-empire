@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-04-16T12:51:19.723364",
+  "overview": {
+    "lifetime_revenue": "$0.00",
+    "monthly_recurring_revenue": "$0.00",
+    "active_subscriptions": 0,
+    "total_transactions": 0
+  },
+  "projections": {
+    "next_month": "$0.00",
+    "annual_run_rate": "$0.00"
+  },
+  "monthly_breakdown": {},
+  "portfolio": {
+    "total_businesses": 50,
+    "live_sites": 2,
+    "urls": {
+      "main": "https://myai-empire.netlify.app",
+      "businesses": "https://myai-businesses.netlify.app"
+    }
+  }
+}
