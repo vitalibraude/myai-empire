@@ -655,6 +655,7 @@
         var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbzosB5Ps0bswx310b5tFhlL8Y3I6COHz72RieFR7xEvRSfwKFlI8GV07s2gYPWRT7pu/exec';
         function handleSubmit(e) {
             e.preventDefault();
+            console.log('[myAI] handleSubmit triggered');
             var form = document.getElementById('contactForm');
             var data = new FormData(form);
             var payload = {
@@ -665,33 +666,64 @@
                 interest: data.get('interest') || '',
                 message: data.get('message') || ''
             };
-            // Save to Google Sheets via hidden iframe (bypasses CORS 100%)
-            var iframeName = 'sh_' + Date.now();
-            var iframe = document.createElement('iframe');
-            iframe.name = iframeName;
-            iframe.style.display = 'none';
-            document.body.appendChild(iframe);
-            var f = document.createElement('form');
-            f.method = 'POST';
-            f.action = SHEETS_URL;
-            f.target = iframeName;
-            Object.keys(payload).forEach(function(key) {
-                var inp = document.createElement('input');
-                inp.type = 'hidden'; inp.name = key; inp.value = payload[key];
-                f.appendChild(inp);
+            console.log('[myAI] payload:', JSON.stringify(payload));
+
+            // Method 1: Google Sheets via fetch (form-urlencoded)
+            var params = new URLSearchParams(payload);
+            console.log('[myAI] Sending to Sheets via fetch POST (urlencoded)...');
+            fetch(SHEETS_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: params.toString()
+            }).then(function(resp) {
+                console.log('[myAI] Sheets fetch OK, status:', resp.status, 'type:', resp.type);
+            }).catch(function(err) {
+                console.error('[myAI] Sheets fetch ERROR:', err);
             });
-            document.body.appendChild(f);
-            f.submit();
-            document.body.removeChild(f);
-            setTimeout(function() { try { document.body.removeChild(iframe); } catch(ex){} }, 8000);
-            // Send email via FormSubmit
+
+            // Method 2: Google Sheets via hidden iframe as backup
+            try {
+                var iframeName = 'sh_' + Date.now();
+                var iframe = document.createElement('iframe');
+                iframe.name = iframeName;
+                iframe.style.display = 'none';
+                document.body.appendChild(iframe);
+                var f = document.createElement('form');
+                f.method = 'POST';
+                f.action = SHEETS_URL;
+                f.target = iframeName;
+                Object.keys(payload).forEach(function(key) {
+                    var inp = document.createElement('input');
+                    inp.type = 'hidden'; inp.name = key; inp.value = payload[key];
+                    f.appendChild(inp);
+                });
+                document.body.appendChild(f);
+                f.submit();
+                document.body.removeChild(f);
+                console.log('[myAI] Sheets iframe form submitted OK');
+                setTimeout(function() { try { document.body.removeChild(iframe); } catch(ex){} }, 8000);
+            } catch(iframeErr) {
+                console.error('[myAI] Sheets iframe ERROR:', iframeErr);
+            }
+
+            // Method 3: FormSubmit email
+            console.log('[myAI] Sending to FormSubmit...');
             fetch('https://formsubmit.co/ajax/info@aoeua.com', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
                 body: JSON.stringify(payload)
-            }).catch(function(){});
-            // Redirect after short delay
-            setTimeout(function() { window.location.href = 'thank-you.html'; }, 1500);
+            }).then(function(resp) {
+                return resp.json();
+            }).then(function(json) {
+                console.log('[myAI] FormSubmit response:', JSON.stringify(json));
+            }).catch(function(err) {
+                console.error('[myAI] FormSubmit ERROR:', err);
+            });
+
+            // Redirect after delay
+            console.log('[myAI] Will redirect to thank-you.html in 2.5s...');
+            setTimeout(function() { window.location.href = 'thank-you.html'; }, 2500);
             return false;
         }
         </script>
