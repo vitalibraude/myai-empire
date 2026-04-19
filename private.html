@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>דף פנימי — myAI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a0a;color:#e0e0e0;padding:0}
+.topbar{background:#111;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222}
+.topbar h2{font-size:1.1rem;color:#00d4ff}
+.topbar button{padding:8px 16px;border-radius:6px;border:none;background:#f97316;color:#fff;cursor:pointer;font-size:0.9rem}
+.wrap{max-width:1000px;margin:24px auto;padding:0 20px}
+.card{background:#111;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #222}
+.card h3{color:#00d4ff;margin-bottom:8px}
+.badge{display:inline-block;background:#7b2ff7;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.8rem;margin-left:8px}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{text-align:right;padding:10px 12px;border-bottom:1px solid #222}
+th{background:#1a1a2e;color:#00d4ff;font-size:0.85rem}
+td{font-size:0.9rem;color:#ccc}
+tr:hover td{background:#1a1a1a}
+.empty{text-align:center;padding:40px;color:#666}
+.info{background:#0d2137;border:1px solid #1a4a6e;border-radius:8px;padding:16px;margin-bottom:16px;font-size:0.9rem;color:#7dd3fc}
+</style>
+<script>
+if(sessionStorage.getItem('aoeua_auth')!=='1'){window.location.href='login.html';}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <h2>myAI — דף פנימי</h2>
+  <button onclick="sessionStorage.removeItem('aoeua_auth');window.location.href='login.html'">התנתק</button>
+</div>
+<div class="wrap">
+
+  <div class="info">
+    ברוך הבא! כאן תוכל לראות את כל הפניות שנשלחו דרך הטופס באתר.<br>
+    ההגשות נשלחות למייל <strong>info@aoeua.com</strong> דרך FormSubmit.co.
+  </div>
+
+  <div class="card">
+    <h3>📬 פניות שהתקבלו <span class="badge" id="countBadge">טוען...</span></h3>
+    <p style="color:#888;font-size:0.85rem;margin-bottom:8px">הנתונים מגיעים ישירות מ-FormSubmit. אם אין נתונים, בדוק את תיבת המייל.</p>
+    <div id="submissionsArea">
+      <table>
+        <thead>
+          <tr><th>שם</th><th>אימייל</th><th>חברה</th><th>עניין</th><th>הודעה</th></tr>
+        </thead>
+        <tbody id="subBody">
+        </tbody>
+      </table>
+      <div class="empty" id="emptyMsg">
+        <p style="font-size:1.5rem;margin-bottom:8px">📭</p>
+        <p>עדיין אין פניות שנשמרו כאן.</p>
+        <p style="margin-top:8px;font-size:0.85rem;color:#888">
+          FormSubmit שולח את ההגשות ישירות למייל <strong>info@aoeua.com</strong>.<br>
+          כדי לראות אותן כאן, אפשר לחבר Google Sheets או webhook.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🔗 קישורים מהירים</h3>
+    <ul style="list-style:none;padding:0;margin-top:8px">
+      <li style="margin-bottom:8px"><a href="index.html" style="color:#00d4ff">🏠 דף הבית</a></li>
+      <li style="margin-bottom:8px"><a href="dashboard.html" style="color:#00d4ff">📊 דשבורד</a></li>
+      <li style="margin-bottom:8px"><a href="about.html" style="color:#00d4ff">ℹ️ אודות</a></li>
+      <li style="margin-bottom:8px"><a href="pricing.html" style="color:#00d4ff">💰 תמחור</a></li>
+      <li style="margin-bottom:8px"><a href="mailto:info@aoeua.com" style="color:#f97316">📧 פתח מייל info@aoeua.com</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>⚙️ פרטי מערכת</h3>
+    <table>
+      <tr><td>אתר</td><td>aoeua.com</td></tr>
+      <tr><td>שירות טפסים</td><td>FormSubmit.co → info@aoeua.com</td></tr>
+      <tr><td>אחסון</td><td>GitHub Pages</td></tr>
+      <tr><td>גרסה</td><td>v3.7</td></tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
