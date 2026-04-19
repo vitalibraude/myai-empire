@@ -652,21 +652,32 @@
             &#x2705; Thanks! We'll be in touch within 24 hours. Check your inbox.
         </div>
         <script>
+        var SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwDummyPlaceholder/exec';
         function handleSubmit(e) {
             e.preventDefault();
             var form = document.getElementById('contactForm');
             var data = new FormData(form);
-            // Send to email via mailto as fallback
-            var name = data.get('name');
-            var email = data.get('email');
-            var company = data.get('company');
-            var interest = data.get('interest');
-            var message = data.get('message');
-            // Send form data to our endpoint
+            var payload = {
+                name: data.get('name') || '',
+                email: data.get('email') || '',
+                company: data.get('company') || '',
+                phone: data.get('phone') || '',
+                interest: data.get('interest') || '',
+                message: data.get('message') || ''
+            };
+            // Save to Google Sheets
+            if (SHEETS_URL.indexOf('Dummy') === -1) {
+                fetch(SHEETS_URL, {
+                    method: 'POST', mode: 'no-cors',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(payload)
+                }).catch(function(){});
+            }
+            // Send email via FormSubmit
             fetch('https://formsubmit.co/ajax/info@aoeua.com', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-                body: JSON.stringify({name:name, email:email, company:company, interest:interest, message:message})
+                body: JSON.stringify(payload)
             }).then(function(){
                 window.location.href = 'thank-you.html';
             }).catch(function(){

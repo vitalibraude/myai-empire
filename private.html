@@ -11,10 +11,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a0a;color:#e0e0e0;pa
 .topbar{background:#111;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222}
 .topbar h2{font-size:1.1rem;color:#00d4ff}
 .topbar button{padding:8px 16px;border-radius:6px;border:none;background:#f97316;color:#fff;cursor:pointer;font-size:0.9rem}
-.wrap{max-width:1000px;margin:24px auto;padding:0 20px}
+.wrap{max-width:1100px;margin:24px auto;padding:0 20px}
 .card{background:#111;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #222}
 .card h3{color:#00d4ff;margin-bottom:8px}
-.badge{display:inline-block;background:#7b2ff7;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.8rem;margin-left:8px}
+.badge{display:inline-block;background:#7b2ff7;color:#fff;padding:2px 10px;border-radius:12px;font-size:0.8rem;margin-right:8px}
 table{width:100%;border-collapse:collapse;margin-top:12px}
 th,td{text-align:right;padding:10px 12px;border-bottom:1px solid #222}
 th{background:#1a1a2e;color:#00d4ff;font-size:0.85rem}
@@ -22,6 +22,20 @@ td{font-size:0.9rem;color:#ccc}
 tr:hover td{background:#1a1a1a}
 .empty{text-align:center;padding:40px;color:#666}
 .info{background:#0d2137;border:1px solid #1a4a6e;border-radius:8px;padding:16px;margin-bottom:16px;font-size:0.9rem;color:#7dd3fc}
+.setup-box{background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px;margin-bottom:16px}
+.setup-box input{width:100%;padding:10px;border-radius:6px;border:1px solid #333;background:#0a0a0a;color:#fff;font-size:0.9rem;direction:ltr;margin:8px 0}
+.setup-box button{padding:8px 16px;border-radius:6px;border:none;background:#06b6d4;color:#fff;cursor:pointer;font-size:0.9rem;margin-left:8px}
+.setup-box button.del{background:#ef4444}
+.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-left:6px}
+.status-dot.green{background:#22c55e}
+.status-dot.red{background:#ef4444}
+.status-dot.yellow{background:#fbbf24}
+.refresh-btn{padding:6px 12px;border-radius:6px;border:1px solid #333;background:#1a1a1a;color:#00d4ff;cursor:pointer;font-size:0.85rem;margin-right:8px}
+.refresh-btn:hover{background:#222}
+pre{background:#00121a;padding:12px;border-radius:6px;overflow:auto;color:#cde;font-size:0.85rem;direction:ltr;text-align:left;margin-top:8px}
+code{background:#1a1a2e;padding:2px 6px;border-radius:4px;font-size:0.85rem;direction:ltr}
+details{margin-top:8px}
+details summary{cursor:pointer;color:#00d4ff;font-size:0.9rem}
 </style>
 <script>
 if(sessionStorage.getItem('aoeua_auth')!=='1'){window.location.href='login.html';}
@@ -34,28 +48,75 @@ if(sessionStorage.getItem('aoeua_auth')!=='1'){window.location.href='login.html'
 </div>
 <div class="wrap">
 
-  <div class="info">
-    ברוך הבא! כאן תוכל לראות את כל הפניות שנשלחו דרך הטופס באתר.<br>
-    ההגשות נשלחות למייל <strong>info@aoeua.com</strong> דרך FormSubmit.co.
+  <div class="card setup-box" id="setupCard">
+    <h3>⚙️ הגדרת חיבור ל-Google Sheets</h3>
+    <p style="color:#aaa;font-size:0.85rem;margin-bottom:8px">הכנס את כתובת ה-Google Apps Script שלך כדי לראות את הפניות כאן:</p>
+    <input type="text" id="scriptUrl" placeholder="https://script.google.com/macros/s/.../exec" dir="ltr">
+    <div>
+      <button onclick="saveUrl()">שמור וחבר</button>
+      <button class="del" onclick="clearUrl()">נקה</button>
+      <span id="connStatus"></span>
+    </div>
+    <details style="margin-top:12px">
+      <summary>📋 איך מקימים את זה? (3 שלבים)</summary>
+      <div style="margin-top:8px;color:#ccc;font-size:0.85rem;line-height:1.8">
+        <strong>שלב 1:</strong> פתח <a href="https://sheets.google.com" target="_blank" style="color:#00d4ff">Google Sheets</a> → צור גיליון חדש → קרא לו "aoeua submissions"<br>
+        <strong>שלב 2:</strong> לחץ <strong>Extensions → Apps Script</strong> → מחק את הקוד הקיים → הדבק את הקוד הזה:<br>
+        <pre id="scriptCode">function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([
+    new Date().toLocaleString('he-IL'),
+    data.name || '', data.email || '', data.company || '',
+    data.phone || '', data.interest || '', data.message || ''
+  ]);
+  return ContentService.createTextOutput(JSON.stringify({status:'ok'}))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var rows = sheet.getDataRange().getValues();
+  var result = [];
+  for (var i = 1; i &lt; rows.length; i++) {
+    result.push({
+      date: rows[i][0], name: rows[i][1], email: rows[i][2],
+      company: rows[i][3], phone: rows[i][4],
+      interest: rows[i][5], message: rows[i][6]
+    });
+  }
+  return ContentService.createTextOutput(JSON.stringify(result))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function setupHeaders() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  sheet.getRange(1,1,1,7).setValues([['תאריך','שם','אימייל','חברה','טלפון','עניין','הודעה']]);
+}</pre>
+        <strong>שלב 3:</strong> לחץ <strong>Deploy → New deployment → Web app</strong> → הגדר "Anyone" ב-"Who has access" → לחץ <strong>Deploy</strong> → העתק את ה-URL<br>
+        <em style="color:#888">* הרץ את הפונקציה <code>setupHeaders</code> פעם אחת כדי ליצור כותרות בגיליון</em>
+      </div>
+    </details>
   </div>
 
   <div class="card">
-    <h3>📬 פניות שהתקבלו <span class="badge" id="countBadge">טוען...</span></h3>
-    <p style="color:#888;font-size:0.85rem;margin-bottom:8px">הנתונים מגיעים ישירות מ-FormSubmit. אם אין נתונים, בדוק את תיבת המייל.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+      <h3>📬 פניות שהתקבלו <span class="badge" id="countBadge">0</span></h3>
+      <button class="refresh-btn" onclick="loadSubmissions()">🔄 רענן</button>
+    </div>
     <div id="submissionsArea">
       <table>
         <thead>
-          <tr><th>שם</th><th>אימייל</th><th>חברה</th><th>עניין</th><th>הודעה</th></tr>
+          <tr><th>תאריך</th><th>שם</th><th>אימייל</th><th>חברה</th><th>טלפון</th><th>עניין</th><th>הודעה</th></tr>
         </thead>
         <tbody id="subBody">
         </tbody>
       </table>
       <div class="empty" id="emptyMsg">
         <p style="font-size:1.5rem;margin-bottom:8px">📭</p>
-        <p>עדיין אין פניות שנשמרו כאן.</p>
-        <p style="margin-top:8px;font-size:0.85rem;color:#888">
-          FormSubmit שולח את ההגשות ישירות למייל <strong>info@aoeua.com</strong>.<br>
-          כדי לראות אותן כאן, אפשר לחבר Google Sheets או webhook.
+        <p>עדיין אין פניות.</p>
+        <p style="margin-top:8px;font-size:0.85rem;color:#888" id="emptyHint">
+          הגדר את חיבור Google Sheets למעלה כדי לראות פניות כאן.
         </p>
       </div>
     </div>
@@ -77,11 +138,86 @@ if(sessionStorage.getItem('aoeua_auth')!=='1'){window.location.href='login.html'
     <table>
       <tr><td>אתר</td><td>aoeua.com</td></tr>
       <tr><td>שירות טפסים</td><td>FormSubmit.co → info@aoeua.com</td></tr>
-      <tr><td>אחסון</td><td>GitHub Pages</td></tr>
-      <tr><td>גרסה</td><td>v3.7</td></tr>
+      <tr><td>אחסון נתונים</td><td id="storageInfo">לא מחובר</td></tr>
+      <tr><td>אחסון אתר</td><td>GitHub Pages</td></tr>
+      <tr><td>גרסה</td><td>v3.8</td></tr>
     </table>
   </div>
 
 </div>
+
+<script>
+var SCRIPT_URL = localStorage.getItem('aoeua_script_url') || '';
+if (SCRIPT_URL) {
+  document.getElementById('scriptUrl').value = SCRIPT_URL;
+  document.getElementById('storageInfo').textContent = 'Google Sheets (מחובר)';
+}
+
+function saveUrl() {
+  SCRIPT_URL = document.getElementById('scriptUrl').value.trim();
+  if (!SCRIPT_URL) { alert('הכנס כתובת URL'); return; }
+  localStorage.setItem('aoeua_script_url', SCRIPT_URL);
+  document.getElementById('connStatus').innerHTML = '<span class="status-dot yellow"></span> בודק חיבור...';
+  loadSubmissions();
+}
+
+function clearUrl() {
+  localStorage.removeItem('aoeua_script_url');
+  SCRIPT_URL = '';
+  document.getElementById('scriptUrl').value = '';
+  document.getElementById('connStatus').innerHTML = '';
+  document.getElementById('subBody').innerHTML = '';
+  document.getElementById('countBadge').textContent = '0';
+  document.getElementById('emptyMsg').style.display = 'block';
+  document.getElementById('storageInfo').textContent = 'לא מחובר';
+}
+
+function loadSubmissions() {
+  if (!SCRIPT_URL) return;
+  fetch(SCRIPT_URL)
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      document.getElementById('connStatus').innerHTML = '<span class="status-dot green"></span> מחובר';
+      document.getElementById('storageInfo').textContent = 'Google Sheets (מחובר)';
+      var tbody = document.getElementById('subBody');
+      tbody.innerHTML = '';
+      document.getElementById('countBadge').textContent = data.length;
+      if (data.length === 0) {
+        document.getElementById('emptyMsg').style.display = 'block';
+        document.getElementById('emptyHint').textContent = 'מחובר ל-Google Sheets אבל עדיין אין פניות.';
+        return;
+      }
+      document.getElementById('emptyMsg').style.display = 'none';
+      data.reverse();
+      for (var i = 0; i < data.length; i++) {
+        var row = data[i];
+        var tr = document.createElement('tr');
+        tr.innerHTML =
+          '<td>' + esc(row.date) + '</td>' +
+          '<td>' + esc(row.name) + '</td>' +
+          '<td><a href="mailto:' + esc(row.email) + '" style="color:#00d4ff">' + esc(row.email) + '</a></td>' +
+          '<td>' + esc(row.company) + '</td>' +
+          '<td>' + esc(row.phone) + '</td>' +
+          '<td>' + esc(row.interest) + '</td>' +
+          '<td>' + esc(row.message) + '</td>';
+        tbody.appendChild(tr);
+      }
+    })
+    .catch(function(err) {
+      document.getElementById('connStatus').innerHTML = '<span class="status-dot red"></span> שגיאת חיבור';
+      console.error('Fetch error:', err);
+    });
+}
+
+function esc(s) {
+  if (s === null || s === undefined) return '';
+  var d = document.createElement('div');
+  d.textContent = String(s);
+  return d.innerHTML;
+}
+
+if (SCRIPT_URL) { loadSubmissions(); }
+setInterval(function() { if (SCRIPT_URL) loadSubmissions(); }, 30000);
+</script>
 </body>
 </html>
