@@ -379,8 +379,7 @@ def generate_landing_page(config):
     <section class="contact" id="contact">
         <h2 class="section-title animate-on-scroll">Get Started Today</h2>
         <p class="section-subtitle animate-on-scroll">14-day free trial. No credit card required.</p>
-        <form class="contact-form animate-on-scroll" name="contact-main" method="POST" data-netlify="true" action="thank-you.html">
-            <input type="hidden" name="form-name" value="contact-main">
+        <form class="contact-form animate-on-scroll" id="contactForm" onsubmit="return handleSubmit(event)">
             <div class="form-row">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="text" name="company" placeholder="Company" required>
@@ -407,6 +406,19 @@ def generate_landing_page(config):
         <div class="form-success" id="formSuccess">
             &#x2705; Thanks! We'll be in touch within 24 hours. Check your inbox.
         </div>
+        <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            var form = document.getElementById('contactForm');
+            var data = new FormData(form);
+            fetch('https://formsubmit.co/ajax/info@aoeua.com', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+                body: JSON.stringify(Object.fromEntries(data))
+            }).then(function(){ window.location.href = 'thank-you.html'; }).catch(function(){ window.location.href = 'thank-you.html'; });
+            return false;
+        }
+        </script>
     </section>
 
     {_footer(year)}

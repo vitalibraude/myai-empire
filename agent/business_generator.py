@@ -277,8 +277,7 @@ def generate_business_site(biz):
         <h2 class="section-title">Get Started Today</h2>
         <p class="section-sub">14-day free trial. No credit card required.</p>
         <div style="max-width:600px;margin:2rem auto;">
-            <form name="contact-{biz['id']}" method="POST" data-netlify="true" action="/thank-you.html">
-                <input type="hidden" name="form-name" value="contact-{biz['id']}">
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
                 <input type="hidden" name="business-niche" value="{biz['name']}">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -293,6 +292,19 @@ def generate_business_site(biz):
                 <textarea name="message" placeholder="Tell us about your {biz['niche'].lower()} needs..."></textarea>
                 <button type="submit" class="cta-btn" style="width:100%;text-align:center;font-size:1.1rem;padding:1rem;">Get My Free Trial</button>
             </form>
+            <script>
+            function handleSubmit(e) {{
+                e.preventDefault();
+                var form = document.getElementById('contactForm');
+                var data = new FormData(form);
+                fetch('https://formsubmit.co/ajax/info@aoeua.com', {{
+                    method: 'POST',
+                    headers: {{'Content-Type': 'application/json', 'Accept': 'application/json'}},
+                    body: JSON.stringify(Object.fromEntries(data))
+                }}).then(function(){{ window.location.href = '/thank-you.html'; }}).catch(function(){{ window.location.href = '/thank-you.html'; }});
+                return false;
+            }}
+            </script>
         </div>
     </section>
 
