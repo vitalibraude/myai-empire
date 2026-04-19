@@ -665,24 +665,20 @@
                 interest: data.get('interest') || '',
                 message: data.get('message') || ''
             };
-            // Save to Google Sheets
-            if (SHEETS_URL.indexOf('Dummy') === -1) {
-                fetch(SHEETS_URL, {
-                    method: 'POST', mode: 'no-cors',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify(payload)
-                }).catch(function(){});
-            }
+            var done = 0;
+            function finish() { done++; if (done >= 2) window.location.href = 'thank-you.html'; }
+            // Save to Google Sheets (text/plain so no-cors allows it)
+            fetch(SHEETS_URL, {
+                method: 'POST', mode: 'no-cors',
+                headers: {'Content-Type': 'text/plain;charset=utf-8'},
+                body: JSON.stringify(payload)
+            }).then(finish).catch(finish);
             // Send email via FormSubmit
             fetch('https://formsubmit.co/ajax/info@aoeua.com', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
                 body: JSON.stringify(payload)
-            }).then(function(){
-                window.location.href = 'thank-you.html';
-            }).catch(function(){
-                window.location.href = 'thank-you.html';
-            });
+            }).then(finish).catch(finish);
             return false;
         }
         </script>
